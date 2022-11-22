@@ -1,0 +1,197 @@
+{
+	"landingPage": {
+		"searchBoxText": "यहां खोज करने के लिए टाइप करें ",
+		"menuTitle":"मेन्यू"
+	},
+	"sideNav": {
+		"time": "पहर",
+		"date": "तारीख",
+		"weather": "मौसम",
+		"savedLocation": "सहेजे गए स्थान",
+		"shareLocation": "स्थान साझा करें",
+		"sendFeedback": "प्रतिक्रिया भेजें",
+		"termsOfService": "सेवा की शर्तें",
+		"privacyPolicy": "गोपनीयता नीति",
+		"copyright": "कॉपीराइट",
+		"version": "संस्करण"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "साइन इन करें",
+		"registerNow": "अभी पंजीकरण करें",
+		"emailIdLable": "ईमेल आईडी",
+		"password": "पारण शब्द",
+		"userName": "उपयोगकर्ता नाम",
+		"register": "पंजीकरण करें"
+	},
+	"feedBackModal": {
+		"feedback": "प्रतिक्रिया",
+		"textAreaLabel": "हमें अपना अनुभव बताओ",
+		"send": "भेजें"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "दिशा-निर्देश",
+		"detailsButton": "विवरण",
+		"callButton": "कॉल",
+		"currentLocationPopup":"आपके वर्तमान स्थान"
+	},
+	
+	"privacyPolicy": {
+		"privacyPolicy": "गोपनीयता नीति"
+	},
+	"profileModal": {
+		"emailIdLable": "ईमेल आईडी",
+		"editDetails": "विवरण संपादित करें",
+		"username": "उपयोगकर्ता नाम",
+		"oldPassword": "पुराना पासवर्ड",
+		"newPassword": "नया पासवर्ड",
+		"confirmPassword": "अनुरूप पासवर्ड",
+		"update": "अद्यतन करें",
+		"logOut": "लोग आउट"
+	},
+	"bottomSheetModal": {
+		"address": "पता",
+		"telephone": "टेलीफोन",
+		"category": "वर्ग",
+		"description": "हमारे बारे में",
+		"directions": "दिशा-निर्देश",
+		"call": "कॉल",
+		"share": "शेयर",
+		"save": "बचाना",
+		"menu": "मेन्यू",
+		"menuItem": "मेनू आइटम",
+		"details": "विवरण",
+		"hours": "घंटे",
+		"web": "वेब"
+	},
+
+	"accommodation": {
+	"accommodation" :"आवास",
+	"allAccommodation": "सभी आवास",
+	"apartments": "अपार्टमेंट",
+	"hostels": "छात्रावास",
+	"bedAndBreakfast": "रात्रि निवास और सुबह का नाश्ता",
+	"cottages": "कुटिया",
+	"camping": "शिविर वास",
+	"hotels": "विश्रामालय",
+	"resorts": "आश्रय",
+	"motels": "मोटेल",
+	"holidayHouses": "अवकाश गृह",
+	"farmStays": "फ़ार्म स्थल",
+	"retreatAndLodge": "आश्रय और समिति-स्थान",
+	"selfContained": "स्वपूर्ण",
+	"wildernessSafariRetreat": "जंगल सफारी आश्रय"
+},
+
+"thingsToDo": {
+	"thingsToDo": "करने के लिए काम",
+	"allAttractions": "सभी आकर्षण",
+	"amusementAndThemeParks": "मनोरंजन और थीम पार्क",
+	"beaches": "समुद्र तट",
+	"surfingLessons": "सर्फिंग शिक्षा",
+	"standUpPaddleboarding": "पेडल बोर्डिंग",
+	"casinos": "कैसिनो",
+	"cinemas": "सिनेमा",
+	"galleriesMuseumsAndCollections": "गैलरी, संग्रहालय और संग्रह",
+	"golfCourse": "गोल्फ कोर्स",
+	"karaoke": "कराओके",
+	"kids": "बच्चे",
+	"libraries": "पुस्तकालय",
+	"nationalParksAndReserves": "राष्ट्रीय उद्यान और आरिक्षत",
+	"naturalAttractions": "प्राकृतिक आकर्षण",
+	"nightclubs": "नाइट क्लब",
+	"parksAndGardens": "बाग़ और उद्यान",
+	"sportsAndRecreationFacilities": "खेल और मनोरंजन सुविधाएं",
+	"watersports": "पानी के खेल",
+	"wineriesVineyardsAndBreweries": "वाइनरीज़, दाख की बारियां और ब्रुअरीज",
+	"zoosSanctuariesAquariumsAndWildlifeParks": "चिड़ियाघर, अभयारण्य, एक्वैरियम और वन्यजीव पार्क"
+},
+
+"toursAndHire": {
+	"toursAndHire": "पर्यटन और किराया",
+	"allTours": "सभी पर्यटन",
+	"extendedTours": "विस्तारित पर्यटन",
+	"nightTours": "रात्रि पर्यटन",
+	"helicopterTours": "हेलीकॉप्टर पर्यटन",
+	"adventures": "साहसिक कार्य",
+	"carHire": "कार",
+	"bicycleHire": "साइकिल",
+	"boatHire": "नाव",
+	"campervansAndMotorhomeHire": "कैंपवर्न्स और मोटरहोम",
+	"fourWheelDriveHire": "चार पहियों का गमन",
+	"houseboatHire": "तैरनेवाला घर",
+	"minibusAndCoachHire": "मिनीबस और कोच",
+	"motorcycleHire": "मोटरसाइकिल",
+	"yachtHire": "नौका"
+},
+
+"foodAndDrink": {
+	"foodAndDrink": "खाद्य पेय",
+	"restaurants": "भोजनालय",
+	"chineseRestaurants": "चीनी भोजनालय",
+	"thaiRestaurants": "थाई भोजनालय",
+	"indianRestaurants": "भारतीय भोजनालय",
+	"italianRestaurants": "इटली भोजनालय",
+	"cafesAndCoffeeShops": "कैफे और कॉफी की दुकानें",
+	"fastFoods": "फ़ास्ट फ़ूड",
+	"bars": "मधुशाला",
+	"clubs": "क्लब",
+	"pubs": "शराबख़ाना",
+	"iceCream": "आइसक्रीम",
+	"bottleshops": "बोतल की दुकानें",
+	"supermarkets": "सुपरमार्केट"
+},
+
+"gettingAround": {
+	"gettingAround": "आस-पास",
+	"allTransport": "सभी परिवहन",
+	"airServices": "वायु सेवा",
+	"busesAndCoachServices": "बस और कोच सेवा",
+	"information": "जानकारी",
+	"taxisAndWaterTaxis": "टैक्सी और पानी टैक्सी",
+	"railServices": "रेल सेवा",
+	"transfers": "ट्रान्सफर",
+	"rechargeStations": "रिचार्ज स्टेशन"
+
+},
+
+"shopping": {
+	"shopping": "खरीदारी",
+	"shoppingCentres": "खरीदारी केंद्र",
+	"womensFashion": "महिला फैशन",
+	"mensClothing": "पुरुषों के कपड़े",
+	"womensClothing": "महिलाओं के वस्त्र",
+	"childrensFashion": "बच्चों के फैशन",
+	"hairdressers": "नाई",
+	"florists": "फूल विक्रेता",
+	"handbags": "हैंडबैग",
+	"furnitureAndHomewares": "फर्नीचर और होमवेर्स",
+	"dutyFree": "शुल्क मुक्त",
+	"footwear": "जूते",
+	"newsagencies": "समाचार संस्थाएँ",
+	"dryCleaning": "ड्राई क्लीनिंग",
+	"alterations": "परिवर्तन",
+	"convenienceStore": "सुविधा की दुकान",
+	"souvenirs": "स्मृति चिन्ह"
+},
+
+"amenities": {
+	"amenities": "सुविधाएँ",
+	"toilets": "शौचालय",
+	"hospitals": "अस्पताल",
+	"atms": "एटीएम",
+	"chemists": "कैमिस्ट",
+	"policeStation": "पुलिस स्टेशन",
+	"bikeRacks": "बाइक रैक",
+	"parking": "पार्किंग"
+},
+
+"accessibility": {
+	"accessibility": "पहुँच",
+	"accessibilityToilets": "सुलभ शौचालय",
+	"busStops": "बस स्टॉप",
+	"accessibilityBeachShowers": "सुगम बाग़ शिखर",
+	"accessibilityParking": "सुलभ पार्किंग",
+	"accessibleBarbeque": "सुगम उद्यानभोज"
+}
+
+}

@@ -1,0 +1,21 @@
+<template name="adminBody">
+  <style type="text/css">
+    .at-oauth,
+    .at-sep.row.center-align{
+      display: none;
+    }
+  </style>
+  {{#if authInProcess}}
+    {{> loader}}
+  {{else}}
+    {{#if canShow}}
+      {{> Template.dynamic template=main}}
+    {{else}}
+      <div class="authForm">
+        <div class="container atForm">
+          {{> atForm}}
+        </div>
+      </div>
+    {{/if}}
+  {{/if}}
+</template>

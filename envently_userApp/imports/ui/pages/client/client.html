@@ -1,0 +1,55 @@
+<template name="client">
+  {{#if isOnline }}
+    {{#if Template.subscriptionsReady}}
+      {{# if isSlider }}
+        {{> slider }}
+      {{ else }}
+     <!--  {{# if isNotKioskUser }}
+      {{/if}} -->
+      
+        <main class="client-page {{isNotKioskUser}}" id='{{currentClient}}' style="overflow:hidden">
+         <!--  {{#if isNotKioskUser}} -->
+            <!-- 
+            {{else}} -->
+            {{> sideNav}}
+                <!--  {{> languageSelect }}  -->
+          <!-- {{/if}} -->
+          {{# if ifKiosk }}
+          {{> landingPage getMenuItemName}}
+          {{/ if }}
+
+          {{> fab getMenuItemName}}
+          {{#if showMap}}
+          {{> mapbox}}
+          {{/if}}
+
+          {{#if pageLoading}}
+          {{> spinner}}
+          {{/if}}
+
+          {{> bottomSheetModal getMenuItemName}}
+          {{> dynamicFooter getMenuItemName}}
+        </main>
+        
+      {{/ if }}
+    {{ else }}
+      {{> spinner}}
+    {{/ if }}
+  {{ else }}
+  <div style="margin: auto; text-align: center;">
+    <div class="row" >
+      <div class="col s12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">GONE OFFLINE</span>
+            <p>Please reconnect to the internet...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  {{/if}}
+
+  <!-- {{ updateAvailable }} -->
+</template>

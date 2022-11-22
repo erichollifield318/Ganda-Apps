@@ -1,0 +1,240 @@
+<template name="subdomainUsers">
+  {{#if Template.subscriptionsReady}}
+    {{#if pageLoading }}
+        {{> spinner }}
+    {{/if}}
+    <div class="users-page-heading">
+      <h4 class="pull-left">
+        <i class="userIconSize material-icons">people</i>
+         <span>Users of {{subdomainName}}</span>
+      </h4>
+      <a href="#!" class="btn waves-effect waves-light pull-right" id="addUser" title="Add User">
+        <i class="small material-icons edit dark" style="color: #fff">person_add</i>
+        <span>&nbsp;&nbsp;Add User</span>
+      </a>
+    </div>
+    <section id="usersContainer">
+      <div class="card-panel grey lighten-5 z-depth-1">
+        {{# if checkUserCount }}
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                  <th>User Name</th>
+                  <th> Email Id </th>
+                  <th>Status</th>
+                  <th>Role</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {{# each users }}
+                <tr class="userData {{ isPasswordSet _id }}" id={{_id}}>
+                  <td class="selectUser">
+                    {{ profile.name }}
+                  </td>
+                  <td class="selectUser">
+                    {{userEmail _id}}
+                  </td>
+                  <td class="selectUser">
+                    {{# if isPasswordSet _id }}
+                      Password not set yet
+                    {{ else }}
+                      {{userStatus profile.status }}
+                    {{/ if }}
+                  </td>
+                  <td class="selectUser">
+                    <ul class="roles-list">
+                      {{# each userRoles _id }}
+                        <li class="user-role-li">
+                          {{ this }}
+                        </li>
+                      {{/ each}}
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="action-list">
+                      <li>
+                        <a href="#!" id="userEdit" title="Edit">
+                          <i class="small material-icons edit dark">edit</i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#!" id="userDelete" title="Delete">
+                          <i class="small material-icons delete dark">delete</i>
+                        </a>
+                      </li>
+                      {{# unless isPasswordSet _id }}
+                        <li>
+                          <a href="#!" id="userChangeStatus" title={{statusTitle _id}}>
+                            <i class="small material-icons {{ isColor _id}}">{{ checkStatus _id}}</i> 
+                          </a>
+                        </li>
+
+                        {{# if iskioskLogin _id}}
+                          <li>
+                            <a href="#!" id="userLogout" title="Logout">
+                              <i class="small material-icons logout dark">power_settings_new</i>
+                            </a>
+                          </li>
+                        {{/ if }}
+                      {{/ unless }}
+                    </ul>
+                  </td>
+                </tr>
+              {{/ each }}
+            </tbody>
+          </table>
+        {{ else }}
+          <p class="center">No Users found</p>
+        {{/ if}}
+        
+      </div>
+      
+      <!--Add User Modal Structure -->
+      <div id="addUserModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Add User</h4>
+          <form id="userForm">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="userName" type="text" class="validate" required>
+                <label for="userName">User Name</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="userEmail" type="email" class="validate" required>
+                <label for="userEmail">Email Id</label>
+              </div>
+              <div class="input-field col s12">
+                <select id="userRole" required>
+                  {{# each roles}}
+                      <option value="{{ this }}">{{ this }}</option>
+                    {{/ each }}
+                </select>
+                <label for="userRole">Roles</label>
+              </div>
+              {{# if isKioskRole }}
+                <div class="input-field col s6">
+                  <input id="kioskLatitude" type="number" step="any" class="validate" required>
+                  <label for="kioskLatitude">Latitude</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="kioskLongitude" type="number" step="any" class="validate" required>
+                  <label for="kioskLongitude">Longitude</label>
+                </div>
+              {{/ if }}
+              <div class="input-field col s6">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Edit User Modal Structure -->
+      <div id="editUserModal" class="modal">
+        <div class="modal-content">
+          <h4>Edit User</h4>
+          {{# if showValue }}
+            <form id="userFormEdit">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="editUserEmail" type="email" class="validate" value={{userEmail showValue._id}} disabled>
+                <label class="active" for="editUserEmail">Email Id</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="editUserName" type="text" class="validate" value={{showValue.profile.name}} required>
+                  <label class="active" for="editUserName">User Name</label>
+                </div>
+              </div>
+
+              <!-- <div class="row">
+                <div class="input-field col s12">
+                  <input id="newpassword" type="text" class="validate">
+                  <label class="active" for="editUserName">New Password</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="confirmpassword" type="text" class="validate">
+                  <label class="active" for="editUserName">Confirm Password</label>
+                </div>
+              </div> -->
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <!-- <select id="editUserRole" required>
+                    <option {{ isChecked showValue 'admin' 'selected' }} {{ isChecked showValue 'admin' 'disbaled' }} value="admin">Admin</option>
+                    <option {{ isChecked showValue 'kiosk' 'selected' }} {{ isChecked showValue 'kiosk' 'disbaled' }} value="kiosk">Kiosk</option>
+                  </select>
+                  <label for="userRole">Roles</label> -->
+                  <select id="editUserRole" required>
+                    {{# each roles}}
+                      <option {{ isChecked showValue this 'selected' }} {{ isChecked showValue this 'disbaled' }} value="{{ this }}">{{ this }}</option>
+                    {{/ each }}
+                  </select>
+                  <label for="userRole">Roles</label>
+                </div>
+              </div>
+              {{# if isKioskRole }}
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="editKioskLatitude" type="number" step="any" value="{{ showValue.profile.coordinates.lat }}" class="validate" required>
+                    <label for="editKioskLatitude">Latitude</label>
+                  </div>       
+                  <div class="input-field col s6">
+                    <input id="editKioskLongitude" type="number" step="any" value="{{ showValue.profile.coordinates.long }}" class="validate" required>
+                    <label for="editKioskLongitude">Longitude</label>
+                  </div>
+                </div>
+              {{/ if }}
+              {{# if userRoles showValue._id }}
+                <div class="edit-user-role-box row">
+                  <p>
+                    <strong>Manage User's Roles </strong>
+                  </p>
+                  <div class="col s12">
+                    <ul class="user-role collection">
+                      <li class="collection-item">
+                        <div class="user-role-li-heading">
+                          <p class="pull-left">
+                            <strong>Role</strong>
+                          </p>
+                          <p class="pull-right">
+                            <strong>Remove</strong>
+                          </p>
+                        </div>
+                      </li>
+                      {{# each userRoles showValue._id }}
+                        <li class="collection-item">
+                          <div class="">
+                              {{ this }}
+                            <i class="material-icons secondary-content remove-role" title="Remove {{ this }} role from {{ checkUserName }}" id="{{ this }}" style="cursor: pointer;">close</i>
+                          </div>
+                        </li>
+                      {{/ each }}
+                    </ul>
+                  </div>
+                </div>
+              {{/ if }}
+              <div class="row">
+                <div class="input-field col s6">
+                  <button class="btn waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          {{/ if }}
+        </div>
+      </div>
+    </section>
+
+  {{/ if }}
+</template>

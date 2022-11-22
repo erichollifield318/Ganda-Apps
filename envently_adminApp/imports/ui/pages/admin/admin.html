@@ -1,0 +1,484 @@
+<template name="admin">
+  {{# if Template.subscriptionsReady }}
+    <!-- SideBar and Navigation -->
+    <ul id="admin-nav" class="side-nav fixed collection">
+      <li>
+        <div class="userView">
+            <div class="background">
+            </div>
+            <a class="right-align navClose secondary-content" href="#">
+                <i class="material-icons hoverable">
+                    close
+                </i>
+            </a>
+            <h4 class="client">
+                {{ client }}
+            </h4>
+            <p>
+                {{ getSubdomainName }}
+            </p>
+        </div>
+      </li>
+
+      {{# if checkUserSuperAdmin }}
+        <li>
+          <select id="subDomainForSuperAdmin">
+            <option value="none">select subdomain</option>
+            {{#each subdomainList}}
+              <option value="{{this.name}}" {{isselected}}>{{this.name}}</option>
+            {{/each}}
+          </select>
+        </li>
+
+        <li>
+          <a class="modal-trigger waves-effect" id="subdomain">
+            <i class="material-icons">public</i>
+            Subdomain
+          </a>
+        </li>
+      {{/ if }}
+      {{# if checkUserAdmin}}
+      {{# if checkAdminSubdomainList}}
+      <li>
+        <select id="subDomainForAdmin">
+          <option value="none">select subdomain</option>
+          {{#each adminSubdomainList}}
+          <option value="{{this}}" {{adminIsSelected @index}}>{{this}}</option>
+          {{/each}}
+        </select>
+      </li>
+      {{/ if }}
+      <li>
+        <a class="modal-trigger waves-effect" id="usersList">
+          <i class="material-icons">people</i>
+          Users List
+        </a>
+      </li>
+      {{/ if }}
+      <li>
+        <a class="waves-effect" id="advertisementTrigger" >
+          <i class="material-icons">add_circle_outline</i>
+          Advertisement
+        </a>
+      </li>
+      <!-- href="#settingsModal" -->
+      <li>
+        <a class="modal-trigger waves-effect" id="settingsModalTrigger" >
+          <i class="material-icons">settings</i>
+          Settings
+        </a>
+      </li>
+      <!-- href="#geoJsonMapModal" -->
+      <li>
+        <a class="modal-trigger waves-effect" id="geoJsonMapTrigger">
+          <i class="material-icons">language</i>
+          Geo Fence
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="brandingSectionTrigger">
+          <i class="material-icons">perm_data_setting</i>
+          Branding
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="routeLocationsTrigger">
+          <i class="material-icons">album</i>
+          Route Locations
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="locationsTrigger">
+          <i class="material-icons">track_changes</i>
+          Locations
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="termsServiceTrigger">
+          <i class="material-icons">label_outline</i>
+          Terms of Service
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="privacyPolicyTrigger">
+          <i class="fa fa-user-secret" style="font-size:24px;"></i>
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="copyrightTrigger">
+          <i class="material-icons">copyright</i>
+          Copyright
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="colorsTrigger">
+          <i class="material-icons">color_lens</i>
+          Colors
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" id="adminReport">
+          <i class="material-icons">book</i>
+          Reports
+        </a>
+      </li>
+      <li>
+        <a class="modal-trigger waves-effect" href="#newMenu" id="newMenuBtn">
+          <i class="material-icons">playlist_add</i>
+          New Main Category
+        </a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Main Categories</a>
+      </li>
+
+      <div id="sortable-list">
+        {{#each menu in menuItems}}
+          <li class="collection-item" style="cursor: pointer;">
+            <div class="menuItem" id="{{menu._id}}">{{menu.defaultLangForMenu}}
+              <a href="#editMenu" class="modal-trigger waves-effect secondary-content hoverable">
+                <i class="tiny material-icons getMenuToEdit" id="{{menu._id}}">edit</i>
+
+              </a>
+          </div>
+          </li>
+        {{/each}}
+      </div>
+    </ul>
+    {{> Template.dynamic template=loadTemplate data=selectedDomain }}
+    <!-- {{> geoJsonMap}} -->
+    <!-- {{> brandingSection}} -->
+    <!-- {{> settingsModal}} -->
+    <!-- {{> routeLocations}} -->
+    {{#if pageLoading}}
+      {{> spinner}}
+    {{/if}}
+    <!-- New Menu Modal -->
+    <div class="modal modal-fixed-footer" id="newMenu">
+      <form id="addMenu">
+        <div class="modal-content">
+          <h4 class="pull-left">
+              Create Menu Item
+          </h4>
+          <span aria-hidden="true" aria-label="Close" class="modal-action modal-close pull-right" data-dismiss="modal">
+            <i aria-hidden="true" class="fa fa-times">
+            </i>
+          </span>
+           <div class="clearfix"></div>
+          <div class="row">
+              <div class="col s4">
+                <div class="adminLanguage">{{>languageSelect}}</div>
+              </div>
+              <div class="col s8">
+                 {{# each language in languagesListForMenu }}
+                <div class="input-field col s12 allLanguageMenu"  id="{{ language.tag }}">
+                      <input class="validate" id="menu-name" type="text">
+                    <label class="active" for="menu-name">
+                    Menu Name
+                    </label>
+                </div>
+            {{/ each }}
+              </div>
+            </div>
+          <div class="row">
+
+            <div class="input-field col s9">
+              <a class="modal-trigger waves-effect waves-light btn" href="#IconModal">
+                Choose Icon
+              </a>
+            </div>
+            <div class="input-field col s3 icon-img-container">
+              {{#if selectedIcon}}
+                <input id="insert-menu-icon" name="insert-menu-icon" type="hidden" value="{{selectedIcon}}"/>
+                <img class="edit-menu-icon-img openColorPickerNewMenuAdmin img" height="30px" src="/img/maki/{{selectedIcon}}.svg" style="background-color: {{initialColor}}"/>
+              {{else}}
+                <input id="insert-menu-icon" name="insert-menu-icon" type="hidden" value=""/>
+              {{/if}}
+            </div>
+            <div class="file-field input-field col s8">
+              <label class="active" for="menu-item-color">
+                  Menu Item Color
+              </label>
+              <input class="menu-item-color" id="menu-item-color-admin-new-menu-modal" name="menu-item-color" type="text" value="{{initialColor}}"/>
+            </div>
+            <div class="col s10">
+              <div class="color-out" id="outColorPickerAdminNewItemModal" style="position: relative;">
+                </div>
+            </div>
+            <div class="col s10">
+              <input type="checkbox" id="isEvent">
+              <label for="isEvent">Event type</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="waves-effect waves-green btn-flat hoverable">
+            Add new menu
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Edit Menu Modal -->
+    <div class="modal modal-fixed-footer" id="editMenu">
+      <form class="editMenuForm"  id="{{menuEdit}}">
+        <div class="modal-content">
+          <h4 class="pull-left">
+            Edit Main Category
+          </h4>
+          <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+
+            <div class="row">
+               <div class="col s4"><div class="adminLanguage">{{>languageSelect}}</div></div>
+               <div class="col s8">
+                  {{# each language in languagesListForMenu }}
+                <div class="input-field col s12 allLanguageMenuEdit {{language.tag}}"  id="">
+                      <input class="validate" id="menu-name-edit" type="text" value="{{forValue getLangMenuItem.name language.tag}}">
+                    <label class="active" for="menu-name">
+                    Name
+                    </label>
+                </div>
+            {{/ each }}
+               </div>
+            </div>
+          <div class="row">
+           <!--  <div class="input-field col s12">
+              <input class="validate" id="menu-name-edit" type="text" value="{{eachMenu.name.}}" required>
+              <label for="menu-name">
+                Menu Name
+              </label>
+            </div> -->
+
+            <div class="input-field col s9">
+              <a class="modal-trigger waves-effect waves-light btn" href="#IconModal">
+                Choose Icon
+              </a>
+            </div>
+            <div class="input-field col s3 icon-img-container">
+              {{#if selectedIcon}}
+                <input id="edit-menu-icon" name="edit-menu-icon" type="hidden" value="{{selectedIcon}}">
+                <img class="edit-menu-icon-img openColorPickerEditAdmin" src="/img/maki/{{selectedIcon}}.svg" style="background-color: {{eachMenu.preference.iconColor}}"/>
+              {{else}}
+                <input id="edit-menu-icon" name="edit-menu-icon" type="hidden" value="">
+              {{/if}}
+            </div>
+            <div class="file-field input-field col s8">
+              <label class="active" for="edit-menu-color2">
+                Color
+              </label>
+              <input class="edit-menu-color2" data-colormode="hex" id="edit-menu-color2" name="edit-menu-color2" type="text" value="{{eachMenu.preference.color}}"/>
+            </div>
+            <div class="col s10">
+              <div class="color-out" id="outColorPicker" style="position: relative;">
+              </div>
+            </div>
+            <div class="col s10">
+              <input type="checkbox" id="edit-isEvent" checked="{{eachMenu.isEvent}}">
+              <label for="edit-isEvent">Event type</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="waves-effect waves-green btn-flat editMenu">
+            Save Changes
+          </button>
+          <a class="modal-action modal-close waves-effect waves-green btn-flat deleteMenu" href="#!" id="{{menuEdit}}">
+            Delete Category
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <div class="openButton col sm6 left-align">
+      <a class="button-collapse" data-activates="admin-nav" href="#">
+        <i class="material-icons">
+          menu
+        </i>
+      </a>
+    </div>
+    <div class="col sm6 right-align">
+      <a class="modal-trigger waves-effect btn-flat" href="#logout" title="Logout">
+        <i class="material-icons">
+          power_settings_new
+        </i>
+      </a>
+      <!-- Logout Modal -->
+      <div class="modal" id="logout">
+        <div class="modal-content center-align">
+          <h5 class="flow-text">
+            Do you want to log out?
+          </h5>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-action modal-close waves-effect btn-flat teal lighten-5" href="#!" id="logoutButton">
+            Yes
+          </a>
+          <a class="modal-action modal-close waves-effect btn-flat teal lighten-5" href="#!">
+            No
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of SideBar and Navigation -->
+    <!-- Dynamic content -->
+    <main id="adminMain">
+      {{> IconModal}}
+      <div class="{{ isHide }} adminLanding container valign-wrapper" id="adminLandingId">
+        <div class="noSelect">
+          <div class="row">
+            <div class="col s12">
+              <div class="card blue-grey lighten-2">
+                <div class="card-content white-text">
+                  <span class="card-title">
+                    Welcome!
+                  </span>
+                  <p>
+                    You can manage the app menus from here. Create a new menu or edit an existing one from the list on the left.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="http://{{ client }}.ganda.app" target="_blank">
+                    Go to your homepage
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="templatesAdded"> -->
+      {{#if showLocationModal }}
+        {{> locationsDataTable}}
+      {{else}}
+        {{# if showSubdomainPage }}
+          {{> subdomain }}
+        {{ else }}
+          {{#if showAdvertisementPage }}
+            {{> advertisement}}
+          {{else}}
+            {{# if showReportPage }}
+              {{> report}}
+      <!--<div>Report Test</div>-->
+            {{else}}
+              {{# if showUsersListPage }}
+                {{> subdomainUsers subdomainId = showUsersListPage }}
+              {{ else }}
+            <!-- </div> -->
+              <div class="{{visible}} categoriesList">
+
+                <a class="waves-effect waves-light btn right s12 m6 newItemBtn margin-left-five" id="createMenuItemTrigger"><span class="plus">+</span> New Item</a>
+
+                <a class="waves-effect waves-light btn right s12 m6 publish margin-left-five" href="#"><span class=""></span> Publish</a>
+
+                <a class="right thin color-grey cursor-default" href="#"><span class=""></span> Last published on: {{ publishedOn eachMenu.publishDetails }}</a>
+
+                <!-- {{> newMenuItemModal}} -->
+
+                <h4 class="medium col s12 m6">{{ eachMenu.defaultLangForMenu }}</h4>
+                <h5 class="thin s12">Sub Categories</h5>
+              </div>
+              <div class="row {{visible}}" id="selected">
+                <div class="col s12">
+                  <ul id="sortable-submenu-list" class="collapsible popout" data-collapsible="accordion">
+                    <!-- <div > -->
+                    {{#each item in selectedMenu}}
+                      <li class="droppable-area">
+                        <div class="collapsible-header subMenuItem" id="{{item._id}}">
+                          <i class="material-icons">filter_drama</i>{{ decodeString item.defaultLangforSubmenu }}
+                          <a href="#!" class="waves-effect secondary-content hoverable">
+                            <i class="tiny material-icons delete-category" id={{item.defaultLangforSubmenu}}>delete</i>
+                          </a>
+                          <a href="#editMenuItem" class="modal-trigger waves-effect secondary-content hoverable">
+                            <i class="tiny material-icons right edit-menu-item" id={{item._id}} >mode_edit</i>
+                          </a>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                              <p class="flow-text">Add items to query</p>
+                              <div class="col s12 m4 searchButtons">
+                                <a class="modal-trigger waves-effect btn deep-orange lighten-5" id={{item._id}} href="#eventsList">
+                                  <i class="material-icons right">library_add</i>
+                                  Events
+                                </a>
+                              </div>
+                              <div class="col s12 m4 searchButtons">
+                                <a class="modal-trigger waves-effect btn blue lighten-5" id={{item._id}} href="#locationsList">
+                                  <i class="material-icons right">library_add</i>
+                                  Locations
+                                </a>
+                              </div>
+                              <div class="col s12 m4 searchButtons">
+                                <a class="modal-trigger waves-effect btn lime lighten-5" id={{item._id}} href="#categoriesList">
+                                  <i class="material-icons right">search</i>
+                                  Categories
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row" id="row-{{item._id}}">
+                                {{#each category in item.sensis_categories}}
+                                  <div class="chip lime lighten-5">
+                                    {{ categoryName category }}
+                                    <i class="close material-icons remove-category-from-query" data-sensisId={{category}} data-thisItemId={{item._id}}>close</i>
+                                  </div>
+                                {{/each}}
+
+                                {{#each event in item.events}}
+                                  <div class="chip deep-orange lighten-5">
+                                    <a href="#" class="view-edit-event" data-eventId={{event}} >{{ eventName event }}</a>
+                                    <i class="close material-icons remove-event-from-query" data-eventId={{event}} data-thisItemId={{item._id}}>close</i>
+                                  </div>
+                                {{/each}}
+
+                                {{#each custom_location in item.custom_locations}}
+                                  <div class="chip blue lighten-5 chip-locations" data-customLocationId={{custom_location}} draggable="true">
+                                    <a href="#" class="view-edit-custom-location" data-customLocationId={{custom_location}} >{{ customLocationName custom_location }}</a>
+                                    <i class="close material-icons remove-custom-location-from-query" data-customLocationId={{custom_location}} data-thisItemId={{item._id}}>close</i>
+                                  </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                      </li>
+                    {{/each}}
+                  <!-- </div> --></ul>
+                </div>
+
+
+                <!-- Modals -->
+                {{> categoriesList}}
+
+                {{> eventForm eventFormData}}
+
+                {{> locationForm locationFormData}}
+
+                {{> editMenuItemModal menuItemId=getEditMenuItemInfo}}
+              </div>
+              {{/ if }}
+            {{/ if }}
+          {{/if}}
+        {{/if}}
+      {{/if}}
+    </main>
+  {{ else }}
+    {{> spinner }}
+  {{/ if }}
+</template>
+<template name="languageSelect">
+  <div class="input-field">
+      <select name="language-select" id="language-select">
+        <!-- <option value="" disabled selected>Choose your option</option> -->
+        {{# each language in languagesList }}
+      <!-- iterate through languages -->
+      {{# with language }} <!-- create a local data context -->
+        <option value="{{ tag }}" {{ activeLanguage }} > {{ name }} </option>
+      {{/ with }}
+    {{/ each }}
+    </select>
+    </div>
+</template>

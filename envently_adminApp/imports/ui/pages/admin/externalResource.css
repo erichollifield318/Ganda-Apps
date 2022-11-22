@@ -1,0 +1,31 @@
+
+#atdw-result {
+	display: none;
+    background: #e6e5e3;
+    border: 1px solid #d0cfcf;
+    box-shadow: 1px black;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+
+
+#atdw-url {
+	word-wrap: break-word;
+    background: #e6e5e3;
+    border: 1px solid #d0cfcf;
+    margin-bottom: 25px;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#atdw-url > strong {
+	display: block;
+}
+
+
+#atdw-result > strong {
+	display: block;
+}

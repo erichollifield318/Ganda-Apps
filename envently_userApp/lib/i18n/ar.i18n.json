@@ -1,0 +1,193 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "القائمة"
+	},
+		"sideNav": {
+		"time": "الوقت",
+		"date": "التاريخ",
+		"weather": "الطقس",
+		"savedLocation": "المواقع المحفوظة",
+		"shareLocation": "مشاركة موقع",
+		"sendFeedback": "إرسال ملاحظة",
+		"termsOfService": "شروط الخدمة",
+		"privacyPolicy": "سياسة الخصوصية",
+		"copyright": "حقوق الطبع والنشر",
+		"version": "الإصدار"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "تسجيل الدخول",
+		"registerNow": "سجل الآن",
+		"emailIdLable": "الإيميل",
+		"password": "كلمة المرور",
+		"userName": "اسم المستخدم",
+		"register": "تسجيل"
+	},
+		"feedBackModal": {
+		"feedback": "ملاحظة",
+		"textAreaLabel": "احكي لنا خبرتك",
+		"send": "إرسال"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "سياسة الخصوصية"
+	},
+		"mapBoxMarkers": {
+		"directionButton": "الاتجاه",
+		"detailsButton": "التفاصيل",
+		"callButton": "اتصال",
+		"currentLocationPopup":"موقعك الحالي"
+	},
+		"profileModal": {
+		"emailIdLable": "الإيميل",
+		"editDetails": "تحرير تفاصيل",
+		"username": "اسم المستخدم",
+		"oldPassword": "كلمة المرور القديمة",
+		"newPassword": "ਨكلمة المرور الجديدة",
+		"confirmPassword": "تأكيد كلمة المرور",
+		"update": "UPDATE",
+		"logOut": "تسجيل الخروج"
+},
+
+	"bottomSheetModal": {
+		"address": "العنوان",
+		"telephone": "الهاتف",
+		"category": "الفئة",
+		"description": "من نحن",
+		"directions": "اتجاهات",
+		"call": "اتصال",
+		"share": "مشاركة",
+		"save": "حفظ",
+		"menu": "القائمة",
+		"menuItem": "عنصر القائمة",
+		"details": "تفاصيل",
+		"hours": "ساعات",
+		"web": "ويب"
+	},
+
+	"accommodation": {
+		"accommodation" :"مكان إقامة",
+		"allAccommodation": "أماكن إقامة",
+		"apartments": "شقق",
+		"hostels": "نزل",
+		"bedAndBreakfast": "إفطار ونوم",
+		"cottages": "البيوت",
+		"camping": "التخييم",
+		"hotels": "الفنادق",
+		"resorts": "Resorts",
+		"motels": "الموتيلات",
+		"holidayHouses": "منازل العطلات",
+		"farmStays": "إقامة في المزارع",
+		"retreatAndLodge": "ترفيه وأماكن إقامة",
+		"selfContained": "ذاتية",
+		"wildernessSafariRetreat": "ترفيه رحلات سفاري برية"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "أشياء للقيام بها",
+		"allAttractions": "مناطق الجذب السياحي",
+		"amusementAndThemeParks": "الملاهي والحدائق",
+		"beaches": "الشواطئ",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "الكازينوهات",
+		"cinemas": "السينمات",
+		"galleriesMuseumsAndCollections": "المعارض، والمتاحف والمجموعات",
+		"golfCourse": "ملعب جولف",
+		"karaoke": "حفلات",
+		"kids": "الأطفال",
+		"libraries": "مكتبات",
+		"nationalParksAndReserves": "محميات وحدائق وطنية",
+		"naturalAttractions": "المعالم الطبيعية",
+		"nightclubs": "النوادي الليلية",
+		"parksAndGardens": "متنزهات وحدائق",
+		"sportsAndRecreationFacilities": "مرافق رياضية وترفيهية",
+		"watersports": "الرياضات المائية",
+		"wineriesVineyardsAndBreweries": "مصانع ومزارع العنب ومصانع الجعة",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "حدائق حيوان، ومحميات طبيعية، وحدائق أسماك وحياة برية"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "جولات واستئجار",
+		"allTours": "جميع الجولات",
+		"extendedTours": "جولات طويلة",
+		"nightTours": "رحلات ليلية",
+		"helicopterTours": "رحلات الهليكوبتر",
+		"adventures": "مغامرات",
+		"carHire": "تأجير سيارات",
+		"bicycleHire": "تأجير دراجات",
+		"boatHire": "استئجار قارب",
+		"campervansAndMotorhomeHire": "استئجار منازل محمولة على سيارات",
+		"fourWheelDriveHire": "تأجير سيارات دفع رباعي",
+		"houseboatHire": "استئجار مركب",
+		"minibusAndCoachHire": "استئجار حافلة صغيرة وحافلة لرحلات طويلة",
+		"motorcycleHire": "استئجار دراجة نارية",
+		"yachtHire": "تأجير اليخوت"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "الطعام والشراب",
+		"restaurants": "ਰੈਸਟੋਰੈਂਟ",
+		"chineseRestaurants": "المطاعم الصينية",
+		"thaiRestaurants": "مطاعم تايلاندي",
+		"indianRestaurants": "المطاعم الهندية",
+		"italianRestaurants": "المطاعم الإيطالية",
+		"cafesAndCoffeeShops": "المقاهي ومحلات القهوة",
+		"fastFoods": "الأطعمة السريعة",
+		"bars": "بارات",
+		"clubs": "نوادي",
+		"pubs": "حانات",
+		"iceCream": "آيس كريم",
+		"bottleshops": "محل مشروبات",
+		"supermarkets": "سوبرماركت"
+	},
+	"gettingAround": {
+		"gettingAround": "التجول",
+		"allTransport": "كافة الانتقالات",
+		"airServices": "خدمات طيران",
+		"busesAndCoachServices": "حافلات وخدمات تدريب",
+		"information": "استعلامات",
+		"taxisAndWaterTaxis": "سيارات أجرة وسيارات أجرة مائية",
+		"railServices": "خدمات السكك الحديدية",
+		"transfers": "كافة الانتقالات",
+		"rechargeStations": "محطات شحن"
+
+	},
+	"shopping": {
+		"shopping": "تسوق",
+		"shoppingCentres": "مراكز تسوق",
+		"womensFashion": "أزياء نسائية",
+		"mensClothing": "ملابس رجالي",
+		"womensClothing": "ملابس نسائية",
+		"childrensFashion": "أزياء الأطفال",
+		"hairdressers": "مصففي الشعر",
+		"florists": "بائعي الزهور",
+		"handbags": "حقائب اليد",
+		"furnitureAndHomewares": "أثاث والأدوات المنزلية",
+		"dutyFree": "السوق الحرة",
+		"footwear": "الأحذية",
+		"newsagencies": "وكالات الأخبار",
+		"dryCleaning": "التنظيف الجاف",
+		"alterations": "بدائل",
+		"convenienceStore": "متجر متعدد",
+		"souvenirs": "هدايا"
+	},
+
+	"amenities": {
+		"amenities": "وسائل الراحة",
+		"toilets": "دورات المياه",
+		"hospitals": "المستشفيات",
+		"atms": "أجهزة الصراف الآلي",
+		"chemists": "صيدليات",
+		"policeStation": "مركز الشرطة",
+		"bikeRacks": "رفوف الدراجة",
+		"parking": "مواقف السيارات"
+	},
+	"accessibility": {
+		"accessibility": "إمكانية الوصول",
+		"accessibilityToilets": "حمامات مجهزة",
+		"busStops": "محطات الحافلات",
+		"accessibilityBeachShowers": "شاور مجهز على الشاطئ",
+		"accessibilityParking": "مواقف مجهزة",
+		"accessibleBarbeque": "حفلة شواء مجهزة"
+	}
+
+}

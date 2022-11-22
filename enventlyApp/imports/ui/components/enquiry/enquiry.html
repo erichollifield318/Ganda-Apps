@@ -1,0 +1,30 @@
+<template name="enquiryModal">
+    <div id="enquiryModal" class="modal modal-fixed-footer enquiry-modal">
+        <form id="newEnquiry">
+            <div class="modal-content modal-grey-bg">
+                <h4 class="custom-label">Enquiry</h4>
+           
+                    <div class="input-field">
+                        <input id="contactName" type="text" class="validate custom-input text-white" required />
+                        <label for="contactName">Enter your full name</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="tel" type="tel" class="validate custom-input text-white" required />
+                        <label for="tel">Enter your mobile Number</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="text" class="validate custom-input text-white" required  autocomplete="off" />
+                        <label for="email">Enter your email address</label>
+                    </div>    
+                    <div class="input-field">
+                        <textarea id="query" class="text-white" required ></textarea>
+                        <label for="query">Enter your Comments</label>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-action modal-close waves-effect waves-green btn-flat">close</button>
+                <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat">Submit</button>
+            </div>
+        </form>
+    </div>
+</template>

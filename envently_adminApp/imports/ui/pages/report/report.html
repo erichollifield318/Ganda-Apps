@@ -1,0 +1,116 @@
+<template name="report">
+  {{#if Template.subscriptionsReady}}
+  {{#if pageLoading }}
+  {{> spinner }}
+  {{/if}}
+  <h2>
+    <div class="reportIconSize material-icons">book</div>
+    Report
+  </h2>
+  <section id="reportContainer">
+    <div class="card-panel z-depth-1">
+      <div class="create-report">
+        <h5>Generate Report</h5>
+        <div class="row">
+          <div class="col s6">
+            <form id="report-generate-form" autocomplete="off">
+              <div class="input-field">
+                <select id="report-type" name="report-type">
+                  <option value="main_category" selected>Top Main Categories</option>
+                  <option value="sub_category">Top Sub Categories</option>
+                  <option value="destination">Top Destinations</option>
+                  <option value="user_session">User Sessions</option>
+                  <!--{{#each menu in getMenu}}-->
+                  <!--<option value="{{ menu._id }}" > {{dynamicLangMenu menu.name}} </option>-->
+                  <!--{{/each}}-->
+                </select>
+                <label for="report-type">Report Type</label>
+              </div>
+
+              {{# if getDestinationFlag }}
+              <div class="input-field">
+                <select id="report-main-category" name="report-main-category">
+                  <option value="all" selected>All</option>
+                  {{#each menu in getMenu}}
+                  <option value="{{menu._id}}">{{dynamicLangMenu menu.name}}</option>
+                  {{/each}}
+                </select>
+                <label for="report-main-category">Select Main-Category</label>
+              </div>
+              {{ /if }}
+
+              {{# if getSubCategoryFlag }}
+              <div class="input-field">
+                <select id="report-sub-category" name="report-sub-category">
+                  <option value="all" selected>All</option>
+                  {{#each subCategory in getSubCategories}}
+                  <option value="{{subCategory._id}}">{{dynamicLangMenu subCategory.name}}</option>
+                  {{/each}}
+                </select>
+                <label for="report-sub-category">Select Sub-Category</label>
+              </div>
+              {{ /if }}
+
+              {{# if getDestinationDetailsFlag }}
+              <div class="input-field">
+                <select id="report-destination" name="report-destination">
+                  <option value="all" selected>All</option>
+                  {{#each eachDestination in getCurrentDestinations}}
+                  <option value="{{eachDestination._id}}">{{ eachDestination.name}}</option>
+                  {{/each}}
+                </select>
+                <label for="report-destination">Select Destination</label>
+              </div>
+              {{ /if }}
+              <div class="row">
+                <div class="col s6">
+                  <label for="report-start-date">Starting Date</label>
+                  <input type="text" name="report-start-date" id="report-start-date" class="form-field datetimepicker"/>
+                </div>
+                <div class="col s6">
+                  <label for="report-end-date">Ending Date</label>
+                  <input type="text" name="report-end-date" id="report-end-date" class="form-field datetimepicker"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s4">
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Generate
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            {{ #if getReportDataFlag }}
+            <div style="height: 350px;">
+              <canvas id="report-chart"></canvas>
+            </div>
+            {{ /if }}
+          </div>
+          <div class="col s6">
+            {{ #if getReportFlag }}
+
+            <table class="responsive-table report-table">
+              <thead>
+              <tr>
+                {{ #each header in getDataTableHeaders }}
+                <th>{{ header }}</th>
+                {{ /each }}
+              </tr>
+              </thead>
+            </table>
+            <div>
+              <button class="btn waves-effect waves-light" id="report-export" type="button">Export
+                <i class="material-icons right">save_alt</i>
+              </button>
+            </div>
+            {{ /if }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  {{/ if }}
+</template>
+
+

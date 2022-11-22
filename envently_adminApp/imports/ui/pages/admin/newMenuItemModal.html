@@ -1,0 +1,90 @@
+<template name="languageSelectSubmenu">
+  <div class="input-field">
+      <select name="language-select" id="language-select">
+        <!-- <option value="" disabled selected>Choose your option</option> -->
+        {{# each language in languagesListSubmenu }}
+      <!-- iterate through languages -->
+      {{# with language }} <!-- create a local data context -->
+        <option value="{{ tag }}" {{ activeLanguage }}> {{ name }} </option>
+      {{/ with }}
+    {{/ each }}
+    </select>
+    </div>
+</template>
+<template name="newMenuItemModal">
+    <!-- New Menu Item Modal -->
+    <div class="modal modal-fixed-footer" id="createMenuItem">
+        <form id="newMenuItem">
+            <div class="modal-content">
+                <span aria-hidden="true" aria-label="Close" class="modal-action modal-close pull-right" data-dismiss="modal">
+                    <i aria-hidden="true" class="fa fa-times">
+                    </i>
+                </span>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <h4 class="thin pull-left">
+                                Create sub category
+                            </h4>
+                            <div class="input-field pull-right dt-add-external-resources-button">
+                                <a class="modal-trigger waves-effect waves-light btn" id="addExternalResourcesModal">Add External Resources</a>
+                            </div>
+                             <div class="clearfix"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s4"> 
+                               <div class="adminLanguageSubmenu">{{>languageSelectSubmenu}}</div>
+                            </div>
+                            <div class="col s8">
+                                {{# each language in languagesListForSubMenu }}
+                                    <div class="input-field col s12 allLanguageSubMenu"  id="{{ language.tag }}">
+                                        <input class="validate" id="subMenu-name" type="text" >
+                                        <label class="active" for="menu-name">
+                                        Name
+                                        </label>
+                                    </div>
+                                {{/ each }}
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="input-field col s9">
+                            <a class="modal-trigger waves-effect waves-light btn" href="#IconModal">
+                                Choose Icon
+                            </a>
+                        </div>
+                        <div class="input-field col s3 icon-img-container">
+                            {{#if selectedNewMenuIcon}}
+                            <input id="menu-item-icon" name="menu-item-icon" type="hidden" value="{{selectedNewMenuIcon}}"/>
+                            <img class="edit-menu-icon-img openColorPickerNewMenu img" height="30px" src="/img/maki/{{selectedNewMenuIcon}}.svg" style="background-color: {{initialColor}}"/>
+                            {{else}}
+                            <input id="menu-item-icon" name="menu-item-icon" type="hidden" value=""/>
+                            {{/if}}
+                        </div>
+                        <div class="file-field input-field col s8">
+                            <label class="active" for="menu-item-color">
+                                Color
+                            </label>
+                            <input class="menu-item-color" id="menu-item-color-new-menu" name="menu-item-color" type="text"/>
+                        </div>
+                        <div class="col s10">
+                            <div class="color-out" id="outColorPickerNewMenu" style="position: relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="waves-effect waves-green btn-flat">
+                    Save
+                </button>
+                <a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">
+                    cancel
+                </a>
+            </div>
+        </form>
+    </div>
+    {{> externalResource externalResourceObject=externalResourceObject }}
+</template>

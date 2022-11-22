@@ -1,0 +1,82 @@
+<template name="locationsDataTable">
+    <div id="data-table-div">
+    <h5>Categories</h5>
+    <div id="cat-list">
+        <div class="swiper-container" id="swiper-container1">
+            <div class="swiper-wrapper">
+                {{#each categories}}
+                    <div class="swiper-slide">
+                        <a class="waves-effect waves-light btn align-center category" id={{id}} title={{name}} data-name={{name}}>{{name}}</a>
+                    </div>
+                {{/each}}
+            </div>
+            <a class="prevButton waves-effect waves-light btn brown blue align-center">PREVIOUS</a>
+            <a class="nextButton waves-effect waves-light btn brown blue align-center pull-right">NEXT</a>
+        </div>
+    </div>
+    <h5>Business Locations</h5>
+
+    <div class="input-field col s12">
+        <select id="recordsPerPage">
+            <option value="10" selected>10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+        </select>
+        <label class="custom-label" for="recordsPerPage">Records per page</label>
+    </div>
+
+    <div class="input-field col s3">
+        <input id="tableLocationSearch" type="text" class="validate custom-input" />
+        <label class="custom-label" for="tableLocationSearch">Search in table</label>
+    </div>
+    
+    <br>
+    <table id="location-datatable" width="100%">
+        <thead>
+            <th class="arr-item name-h" data-sort="name-asc">Name<i class="tiny material-icons sorting-icon name-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon name-desc">arrow_drop_down</i></th>
+            
+            <th class="arr-item address-h" data-sort="address-asc">Address<i class="tiny material-icons sorting-icon address-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon address-desc">arrow_drop_down</i></th>
+            
+            <th class="arr-item phone-h" data-sort="phone-asc">Phone<i class="tiny material-icons sorting-icon phone-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon phone-desc">arrow_drop_down</i></th>
+            
+            <th class="arr-item website-h" data-sort="website-asc">Website<i class="tiny material-icons sorting-icon website-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon website-desc">arrow_drop_down</i></th>
+
+            <th class="arr-item category-h" data-sort="category-asc">Categories<i class="tiny material-icons sorting-icon category-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon category-desc">arrow_drop_down</i></th>
+            <!-- <th>Status</th> -->
+            <!-- <th>Data Source</th> -->
+            <th>Action</th>
+        </thead>
+        <tbody id="data-table-body">
+            {{#each locations }}
+                <tr id="{{getLocationId}}">
+                    <td style="max-width: 200px; overflow: hidden;">{{name}}</td>
+                    <td style="max-width: 200px; overflow: hidden;">{{getAddress}}</td>
+                    <td style="max-width: 100px; overflow: hidden;">{{getPhone}}</td>
+                    <td style="max-width: 200px; overflow: hidden;">{{getWebsite}}</td>
+                    <td>{{getCategory}}</td>
+                    <!-- <td>{{locationStatus getLocationStatus}}</td> -->
+                    <!-- <td>{{getType}}</td> -->
+                    <td>
+                        <span>
+                            <button class="waves-effect waves-light btn" id="location-edit" data-type={{getType}}>EDIT</button>
+                        </span>
+                        <span>
+                            <input style="position:relative;" type="checkbox" id="locationStatus-{{getLocationId}}" class="location-status" checked={{getLocationStatus}} title='{{locationBtnText getLocationStatus}}' />
+                            <label for="locationStatus-{{getLocationId}}"></label>
+                        </span>
+                        <!-- <a class="waves-effect waves-light btn brown darken-3 align-center call" id="location-delete" style="width: 100%;">DELETE</a> -->
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{#if paginationText }}
+        {{ paginationText }}
+        {{>paginationTemplate totalRecords=totalRecords recordPerPage=recordPerPage currentPage=currentPage}}
+    {{/if}}
+    
+    </div>
+    {{#if showEditModal }}
+        {{> editLocationModal selectedLocation=selectedLocation}}
+    {{/if}}
+</template>

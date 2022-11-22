@@ -1,0 +1,36 @@
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+    padding-left: 27px;
+    line-height: 28px;
+    font-size: 23px;
+}
+
+#maps {
+    margin-top: 60px
+}
+
+#map-box {
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    width: 96%;
+    height: 75%;
+}
+
+/*
+#ride-map {
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    width: 96%;
+    height: 75%;
+}*/
+
+
+/*.map{
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  width: 96%;
+  height: 75%;
+}*/

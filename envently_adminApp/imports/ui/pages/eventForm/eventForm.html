@@ -1,0 +1,107 @@
+<template name="eventForm">
+  <section class="container" id="eventFormContainer">
+    <div id="eventForm" class="modal modal-fixed-footer">
+      <form id="editEvent">
+        <div class="modal-content">
+          <h4 class="pull-left">Event Form</h4>
+          <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+          {{#with eventFormData}}
+            <div class="row">
+              <div class="col s12">
+                <label class="label-icon" for="editName">Name</label>
+                <input name="eventName" id="editName" class="" type="text" placeholder="New Event Name" autocomplete="off" value={{name}} required >
+              </div>
+
+              <div class="col s12">
+                <label class="label-icon" for="editAddress">Address</label>
+                <input name="eventAddress" id="editAddress" class="" type="text" placeholder="Address" autocomplete="off" value={{address}} required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editPhone">Phone Number</label>
+                <input name="eventphone" id="editPhone" class="" type="tel" placeholder="XXX-XXX-XXXX" autocomplete="off" value={{phone}} required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editWebsite" >Website</label>
+                <input name="eventWebsite" title="Must be a valid URL" id="editWebsite" class="" type="text" placeholder="Valid Website Adress" pattern="https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,}" autocomplete="off" value={{website}}>
+              </div>
+              <div class="col s6">
+                <label class="label-icon" for="editFrom" >Starting Date</label>
+                <input type="text" name="eventFrom" id="editFrom" placeholder="Select Start Date" class="datepicker" value={{from}} required>
+              </div>
+              <div class="col s6">
+                <label class="label-icon" for="editTo" >Ending Date</label>
+                <input type="text" name="eventTo" id="editTo" placeholder="Select End Date" class="datepicker" value={{to}} required>
+              </div>
+
+              <div class="col s12">
+                <label class="label-icon" for="editHeader">Header</label>
+                <input name="eventHeader" id="editHeader" class="" type="text" placeholder="Header" autocomplete="off" value={{header}} required>
+              </div>
+              
+              <div class="col s12 m6">
+                <label class="label-icon" for="editDetail1" >Details1</label>
+                <textarea id="editDetail1" class="materialize-textarea" value={{details1}}></textarea>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editDetail2" >Details2</label>
+                <textarea id="editDetail2" class="materialize-textarea" value={{details2}}></textarea>
+              </div>
+
+              <div class="col s12 m12">
+                <p class="logo-size-term">Logo should be 100X100.</p>
+                <!-- <label class="label-icon" for="editImage1" >Image1</label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Logo</span>
+                    <input id="editImage1" type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path" id="editImagetext1" type="text" value="{{image1}}">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m12">
+                <!-- <label class="label-icon" for="editImage2" >Image2</label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Image</span>
+                    <input id="editImage2" type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path" id="editImagetext2" type="text" value="{{image2}}">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- for custom latitude & longitude values -->
+              <div class="col s12 m6">
+                <label class="label-icon" for="latitude">Latitude</label>
+                <input name="latitude" id="latitude" class="" type="tel" placeholder="Latitude" autocomplete="off" title="Must be a valid latitude" value={{latitude}} required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="longitude" >Longitude</label>
+                <input name="longitude" title="Must be a valid longitude" id="longitude" class="" type="text" placeholder="Longitude" value={{longitude}} autocomplete="off">
+              </div>
+              <!-- for custom latitude & longitude values -->
+              <div class="col s12">
+                <div id="eventEditMapPane"></div>
+              </div>
+          </div>
+          {{/with}}
+        </div>
+        <div class="modal-footer">
+          <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat">Update</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+</template>

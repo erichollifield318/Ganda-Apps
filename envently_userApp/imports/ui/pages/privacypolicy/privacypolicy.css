@@ -1,0 +1,11 @@
+@media (max-width: 767px){
+	.modal.modal-fixed-footer.open{
+		width: 90% !important;
+		height: 70% !important;
+	}
+}
+
+
+#privacypolicy{
+ z-index: 1055!important;
+}

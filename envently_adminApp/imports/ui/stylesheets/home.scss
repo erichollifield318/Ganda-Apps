@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.homepage {
+  height: 100%;
+}
+
+.appMenu {
+  display: flex;
+  height: 60vh;
+  min-width: 20em;
+  width: 100%;
+
+  .collection {
+    min-width: 100%;
+  }
+}
+
+// **************
+// @media start
+// **************
+@media only screen and (max-width : 992px) {
+  // .appMenu {
+  //   height: 100%;
+  // }
+}
+// **************
+// @media end
+// **************
+
+.mobile-fab-tip {
+  background-color: #323232;
+  border-radius: 2px;
+  color: #FFF;
+  padding: 0 .5rem;
+  position: fixed;
+  right: 85px;
+  text-align: right;
+  width: auto;
+}
+
+#mapBox {
+  position: absolute;
+  width: 100%;
+}
+
+
+.page-footer {
+  padding-top: 0;
+}
+
+.authForm {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+.loader {
+  height: auto;
+  min-height: 100%;
+  min-width: 100;
+  width: auto;
+}
+
+.autocomplete-content {
+  position: relative;
+  z-index: 1003;
+}
+
+#selected .card-panel{
+  padding: 0;
+}
+
+.material-tooltip {
+  color: teal;
+
+  .backdrop {
+    background-color: white;
+  }
+}

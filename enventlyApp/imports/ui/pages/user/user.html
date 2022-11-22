@@ -1,0 +1,150 @@
+<template name="subdomainUsers">
+  {{#if Template.subscriptionsReady}}
+    {{#if pageLoading }}
+        {{> spinner }}
+    {{/if}}
+    <h4>
+      <i class="userIconSize material-icons">group_add</i>
+       <span>Users of {{subdomainName}}</span>
+    </h4>
+    <section id="usersContainer">
+      <div class="card-panel grey lighten-5 z-depth-1">
+        {{# if checkUserCount }}
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                  <th>User Name</th>
+                  <th> Email Id </th>
+                  <th>Status</th>
+                  <th>Role</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {{# each users }}
+                <tr class="userData" id={{_id}}>
+                  <td class="selectUser">
+                    {{ profile.name }}
+                  </td>
+                  <td class="selectUser">
+                    {{userEmail _id}}
+                  </td>
+                  <td class="selectUser">{{userStatus profile.status }}</td>
+                  <td class="selectUser">{{ userRole _id }}</td>
+                  <td>
+                    <ul class="action-list">
+                      <li>
+                        <a href="#!" id="userEdit" title="Edit">
+                          <i class="small material-icons edit dark">edit</i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#!" id="userDelete" title="Delete">
+                          <i class="small material-icons delete dark">delete</i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#!" id="userChangeStatus" title={{statusTitle _id}}>
+                          <i class="small material-icons {{ isColor _id}}">{{ checkStatus _id}}</i> 
+                        </a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              {{/ each }}
+            </tbody>
+          </table>
+        {{ else }}
+          <p class="center">No Users found</p>
+        {{/ if}}
+        <form id="userForm">
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="userName" type="text" class="validate" required>
+              <label for="userName">User Name</label>
+            </div>
+             <div class="input-field col s3">
+              <input id="userEmail" type="email" class="validate" required>
+              <label for="userEmail">Email Id</label>
+            </div>
+            <div class="input-field col s3">
+              <select id="userRole" required>
+                <option value="admin">Admin</option>
+              </select>
+              <label for="userRole">Roles</label>
+            </div>
+            <div class="input-field col s3">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <a class="waves-effect waves-light btn modal-trigger" id="editUserButton" href="#editUserModal">Open Edit Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="editUserModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Edit User</h4>
+          {{# if showValue }}
+            <form id="userFormEdit">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="editUserEmail" type="email" class="validate" value={{userEmail showValue._id}} disabled>
+                <label class="active" for="userEeditUserEmailmail">Email Id</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="editUserName" type="text" class="validate" value={{showValue.profile.name}} required>
+                  <label class="active" for="editUserName">User Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="editUserRole" required>
+                    <option selected={{isSelected showValue 'admin'}} value="admin">Admin</option>
+                  </select>
+                  <label for="userRole">Roles</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <button class="btn waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          {{/ if }}
+        </div>
+      </div>
+    </section>
+
+    <section id="usersContainer">
+      <div style="padding: 10px;">
+         <form id="tempForm">
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="tempName" type="text" class="validate" required>
+              <label for="tempName">User Name</label>
+            </div>
+             <div class="input-field col s3">
+              <input id="tempEmail" type="email" class="validate" required>
+              <label for="tempEmail">Email Id</label>
+            </div>
+            <div class="input-field col s3">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  {{/ if }}
+</template>

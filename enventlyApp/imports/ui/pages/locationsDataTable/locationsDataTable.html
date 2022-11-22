@@ -1,0 +1,202 @@
+<template name="locationsDataTable">
+    <div id="data-table-div">
+      <div class="default-csv" style="float: left; display: block;">
+        <h5 style="display: inline;"><a style="color:black" class="waves-effect waves-light btn white darken-3 align-center call" id="list-button">Locations List <i class="small material-icons right">room</i></a></h5>
+        <h5 style="display: inline;"><a style="color:black" class="waves-effect waves-light btn white darken-3 align-center call" id="marker-button">Location Marker <i class="small material-icons right">room</i></a></h5>
+        <h5 style="display: inline;"><a style="color:black" class="waves-effect waves-light btn white darken-3 align-center" id="export">Export to CSV <i class="small material-icons right">backup</i></a></h5>
+      </div>
+        <h5 style="display: block;"><a class="waves-effect waves-light btn white darken-3 align-center" id="category-search" style="color:black;" title="Search Categories">Categories <i class="small material-icons right">search</i></a></h5>
+        <!-- <a class="waves-effect waves-light btn grey darken-3 align-center call" id="category-search">Search Category</a> -->
+    <div id="cat-list">
+        <div class="swiper-container" id="swiper-container1">
+            <div class="swiper-wrapper">
+                {{#each categories}}
+                    <div class="swiper-slide chip lime lighten-3 category" id={{id}} title={{name}} data-name={{name}}>
+                        {{name}}
+                        <!-- <a class="waves-effect waves-light btn align-center category" id={{id}} title={{name}} data-name={{name}}>{{name}}</a> -->
+                    </div>
+                {{/each}}
+            </div>
+            <!-- <a class="prevButton waves-effect waves-light btn brown blue align-center">PREVIOUS</a>
+            <a class="nextButton waves-effect waves-light btn brown blue align-center pull-right">NEXT</a> -->
+            <br>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+     <div class="row">
+       <div class="col s12">
+           <div class="left col s7"><h5 class="margin-top-20">Business Locations</h5></div>
+           <!-- <div class="right">
+               <div class="input-field col s8">
+                    <input id="sensisLocationText" type="text" class="custom-input margin-bottom-0"/>
+                    <label class="custom-label" for="sensisLocationText">Search on sensis</label>
+                </div>
+                <a class="waves-effect waves-light btn grey darken-1 align-center col s4 margin-top-20" id="sensisLocationSearch" title="Search Categories">Find</a>
+           </div> -->
+       </div>
+       <div class="col s12">
+        <div class="input-field left col s5">
+            <select id="recordsPerPage">
+                <option value="10" selected>10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+             </select>
+             <label class="custom-label" for="recordsPerPage">Records per page</label>
+         </div>
+          <div class="input-field right col s5">
+             <input id="tableLocationSearch" type="text" class="custom-input" />
+             <label class="custom-label" for="tableLocationSearch">Search on table</label>
+         </div>
+     </div>
+     </div>
+    
+
+    <br>
+    <table id="location-datatable" width="100%">
+        <thead>
+            <!-- arr-item class should be used on only column headers where sorting is required -->
+            <th class="arr-item name-h" data-sort="name-asc">Name
+                <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon name-asc">arrow_drop_up</i>
+                    <i class="tiny material-icons sorting-icon name-desc">arrow_drop_down</i>
+                </span>
+            </th>
+            
+            <th class="address-h" data-sort="address-asc">Address
+                <!-- <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon address-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon address-desc">arrow_drop_down</i>
+                </span> -->
+            </th>
+            
+            <th class="phone-h" data-sort="phone-asc">Phone
+                <!-- <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon phone-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon phone-desc">arrow_drop_down</i>
+                </span> -->
+            </th>
+            
+            <th class="website-h" data-sort="website-asc">Website
+                <!-- <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon website-asc">arrow_drop_up</i>
+                    <i class="tiny material-icons sorting-icon website-desc">arrow_drop_down</i>
+                </span> -->
+            </th>
+
+            <th class="arr-item category-h" data-sort="category-asc">Categories
+                <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon category-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon category-desc">arrow_drop_down</i>
+                </span>
+            </th>
+
+            <th class="arr-item menu-h" data-sort="menu-asc">Active Menu
+                <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon menu-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon menu-desc">arrow_drop_down</i>
+                </span>
+            </th>
+
+            <th class="arr-item menuItem-h" data-sort="menuItem-asc">Menu Item
+                <span class="tinyicon">
+                    <i class="tiny material-icons sorting-icon menuItem-asc">arrow_drop_up</i><i class="tiny material-icons sorting-icon menuItem-desc">arrow_drop_down</i>
+                </span>
+            </th>
+            <!-- <th>Status</th> -->
+            <!-- <th>Data Source</th> -->
+            <th>Action</th>
+        </thead>
+        <tbody id="data-table-body">
+            {{#each locations }}
+                {{#if name}}
+                    <tr id="{{getLocationId}}">
+                        <td style="max-width: 200px; overflow: hidden;">{{name}}</td>
+                        <td style="max-width: 200px; overflow: hidden;">{{getAddress}}</td>
+                        <td style="max-width: 100px; overflow: hidden;">{{getPhone}}</td>
+                        <td style="max-width: 200px; overflow: hidden;">{{getWebsite}}</td>
+                        <td>{{getCategory}}</td>
+                        <td>
+                            {{#if mainMenu}}
+                                {{mainMenu}}
+                            {{else}}
+                                {{getMenu.mainMenu}}
+                            {{/if}}
+                        </td>
+                        <td>
+                            {{#if subMenu}}
+                                {{subMenu}}
+                            {{else}}
+                                {{getMenu.subMenuName}}
+                            {{/if}}
+                        </td>
+                        <!-- <td>{{locationStatus getLocationStatus}}</td> -->
+                        <!-- <td>{{getType}}</td> -->
+                        <td>
+                            <span>
+                                <button class="waves-effect waves-light btn" id="location-edit" data-type={{getType}}>EDIT</button>
+                            </span>
+                            <span>
+                                <input style="position:relative;" type="checkbox" id="locationStatus-{{getLocationId}}" class="location-status" checked={{getLocationStatus}} title='{{locationBtnText getLocationStatus}}' />
+                                <label for="locationStatus-{{getLocationId}}"></label>
+                            </span>
+                            <!-- <a class="waves-effect waves-light btn brown darken-3 align-center call" id="location-delete" style="width: 100%;">DELETE</a> -->
+                        </td>
+                    </tr>
+                {{/if}}
+            {{/each}}
+        </tbody>
+    </table>
+    {{#if paginationText }}
+        {{ paginationText }}
+        {{>paginationTemplate totalRecords=totalRecords recordPerPage=recordPerPage currentPage=currentPage}}
+    {{/if}}
+        <!-- <div id="routeLocations" class="modal modal-fixed-footer" style="width: 90%; height:90%; max-height: 90%; overflow-y: inherit">
+        {{#if showMap}}
+            {{> mapbox}}
+        {{/if}}
+        </div> -->
+
+        <div id="routeLocationsMarkers" class="modal modal-fixed-footer" style="width: 90%; height:90%; max-height: 90%; overflow-y: inherit">
+            {{#if showMap}}
+                {{> mapbox}}
+            {{/if}}
+        </div>
+
+    <!-- Modal Structure -->
+    <div id="addCategoryModal" class="modal">
+        <div class="modal-content">
+            <p class="pull-left">Select a category to add it to the menu</p>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+            <div class="nav-wrapper">
+                <div class="input-field">
+                    <input name="search" id="search" type="search" placeholder="Search categories" required autocomplete="off">
+                    <label class="label-icon" for="search" ><i style="cursor: pointer" class="material-icons searchIcon">search</i></label>
+                    <i class="material-icons close">close</i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <ul class="collection with-header">
+                        <p class="center-align">{{ count }}</p>
+                        {{#if searching}}
+                            {{> loader }}
+                        {{else}}
+                            {{#each searchCategories}}
+                                <li class="collection-item category" id={{id}} title={{name}} data-name={{name}}>{{ name }}</li>
+                            {{else}}
+                                <p class="alert alert-warning">Nothing found for {{query}}. Try again</p>
+                            {{/each}}
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    {{#if showEditModal }}
+        {{> editLocationModal selectedLocation=selectedLocation}}
+    {{/if}}
+</template>

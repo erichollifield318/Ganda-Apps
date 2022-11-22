@@ -1,0 +1,27 @@
+<template name="fab">
+  <div class="fixed-action-btn click-to-toggle bottom-fifty-five" >
+  <!-- <div class="fixed-action-btn"> -->
+    <a class="btn-floating btn-large black toggle-btm">
+    <i id="fabModal" class="large material-icons">menu</i></a>
+    <ul class="menuList" id="mainMenuList" style="display:none;">
+      {{#each menu in getMenu}}
+        <li class="clicker" id="{{menu._id}}" data-name={{menu.name}}>
+
+         <a href="#{{menu._id}}" class="btn-floating icon" style="background-color:{{getMenuColor menu}}"><img src="/img/maki-white/{{getMenuIcon menu}}.svg" height='20px' class="icon-area" style="margin-top:9px;" /></a>
+
+         <span><a href="#{{menu._id}}" class="btn-floating  grey darken-1" >{{decodeString menu.name}}</a></span>
+
+       </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class=" fixed-mobilemenu fab-zindex bottom-fifty-five locate-me-wrapper" style="{{#if isVisibleText}}{{/if}}">
+      <a id="fabUserLocationBtn" class="btn-floating btn-large black" style="padding:8px 2px 0px 4px;display: none;"><img src="/img/locate-me5.svg" height="40px"></a>
+  </div>
+  {{#if isVisibleText}}
+  <div class=" fixed-mobilemenu fab-zindex bottom-fifty-five heading-list" style="">
+      <a  class="btn-floating btn-large black " style="padding:7px 5px 0px 4px;"><img src="/img/list.svg" height="40px" style="height: 37px;width: 19px;padding-top: 5px;"></a>
+  </div>
+  {{/if}}
+
+</template>

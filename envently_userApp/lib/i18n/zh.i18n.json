@@ -1,0 +1,193 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "菜单"
+	},
+	"sideNav": {
+		"time": "时间",
+		"date": "日期",
+		"weather": "天气",
+		"savedLocation": "保存的位置",
+		"shareLocation": "共享位置",
+		"sendFeedback": "发送反馈",
+		"termsOfService": "服务条款",
+		"privacyPolicy": "隐私政策",
+		"copyright": "版权",
+		"version": "版本"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "登录",
+		"registerNow": "立即注册",
+		"emailIdLable": "电子邮件 ID",
+		"password": "密码",
+		"userName": "用户名",
+		"register": "立即注册"
+	},
+	"feedBackModal": {
+		"feedback": "反馈",
+		"textAreaLabel": "告诉我们你的经历",
+		"send": "发送"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "隐私政策"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "方向",
+		"detailsButton": "详情",
+		"callButton": "呼叫",
+		"currentLocationPopup":"您当前的位置"
+	},
+	"profileModal": {
+		"emailIdLable": "电子邮件 ID",
+		"editDetails": "编辑详情",
+		"username": "用户名",
+		"oldPassword": "旧密码",
+		"newPassword": "新密码",
+		"confirmPassword": "确认密码",
+		"update": "UPDATE",
+		"logOut": "注销"
+},
+
+	"bottomSheetModal": {
+		"address": "地址",
+		"telephone": "电话",
+		"category": "类别",
+		"description": "关于我们",
+		"directions": "方向",
+		"call": "呼叫",
+		"share": "分享",
+		"save": "保存",
+		"menu": "菜单",
+		"menuItem": "菜单项",
+		"details": "详情",
+		"hours": "小时",
+		"web": "网页"
+	},
+
+	"accommodation": {
+		"accommodation" :"住宿",
+		"allAccommodation": "所有住宿类型",
+		"apartments": "公寓",
+		"hostels": "旅社",
+		"bedAndBreakfast": "B&B酒店",
+		"cottages": "别墅",
+		"camping": "露营地",
+		"hotels": "酒店",
+		"resorts": "度假区",
+		"motels": "汽车旅馆",
+		"holidayHouses": "家庭式度假短租",
+		"farmStays": "农场住宿",
+		"retreatAndLodge": "乡间小屋",
+		"selfContained": "独立套间",
+		"wildernessSafariRetreat": "自然游猎住宿"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "待办事项",
+		"allAttractions": "所有景点",
+		"amusementAndThemeParks": "娱乐和主题公园",
+		"beaches": "海滩",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "娱乐场",
+		"cinemas": "电影院",
+		"galleriesMuseumsAndCollections": "画廊、博物馆和收藏馆",
+		"golfCourse": "高尔夫球场",
+		"karaoke": "卡拉OK",
+		"kids": "儿童乐园",
+		"libraries": "图书馆",
+		"nationalParksAndReserves": "国家公园和保护区",
+		"naturalAttractions": "自然景点",
+		"nightclubs": "夜总会",
+		"parksAndGardens": "公园和花园",
+		"sportsAndRecreationFacilities": "体育及康乐设施",
+		"watersports": "水上运动",
+		"wineriesVineyardsAndBreweries": "酿酒厂、葡萄园和酒庄",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "动物园、动物保护区、水族馆和野生动物园"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "游览和用品租赁",
+		"allTours": "所有旅游项目",
+		"extendedTours": "延展旅行",
+		"nightTours": "夜间游览",
+		"helicopterTours": "直升机游览",
+		"adventures": "冒险旅行",
+		"carHire": "汽车租赁",
+		"bicycleHire": "自行车租赁",
+		"boatHire": "船只租赁",
+		"campervansAndMotorhomeHire": "房车和旅宿车租赁",
+		"fourWheelDriveHire": "四轮驱动汽车租赁",
+		"houseboatHire": "游艇租赁",
+		"minibusAndCoachHire": "小巴及专线大巴租赁",
+		"motorcycleHire": "摩托车租赁",
+		"yachtHire": "游艇租赁"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "食物和饮料",
+		"restaurants": "餐厅",
+		"chineseRestaurants": "中餐厅",
+		"thaiRestaurants": "泰国餐厅",
+		"indianRestaurants": "印度餐厅",
+		"italianRestaurants": "意大利餐厅",
+		"cafesAndCoffeeShops": "咖啡馆和咖啡店",
+		"fastFoods": "快餐",
+		"bars": "酒店",
+		"clubs": "俱乐部",
+		"pubs": "酒馆",
+		"iceCream": "冰淇淋",
+		"bottleshops": "酒水店",
+		"supermarkets": "超市"
+	},
+	"gettingAround": {
+		"gettingAround": "交通",
+		"allTransport": "所有交通",
+		"airServices": "飞行",
+		"busesAndCoachServices": "巴士和专线大巴",
+		"information": "信息中心",
+		"taxisAndWaterTaxis": "出租车和水上的士",
+		"railServices": "铁路",
+		"transfers": "中转",
+		"rechargeStations": "补给站"
+
+	},
+	"shopping": {
+		"shopping": "购物",
+		"shoppingCentres": "购物中心",
+		"womensFashion": "女性时尚",
+		"mensClothing": "男装",
+		"womensClothing": "女装",
+		"childrensFashion": "儿童时尚",
+		"hairdressers": "理发师",
+		"florists": "花匠",
+		"handbags": "手袋",
+		"furnitureAndHomewares": "家具和家居用品",
+		"dutyFree": "免税店",
+		"footwear": "鞋",
+		"newsagencies": "新闻机构",
+		"dryCleaning": "干洗店",
+		"alterations": "裁缝店",
+		"convenienceStore": "便利店",
+		"souvenirs": "纪念品"
+	},
+
+	"amenities": {
+		"amenities": "公共设施",
+		"toilets": "厕所",
+		"hospitals": "医院",
+		"atms": "ATMS",
+		"chemists": "药店",
+		"policeStation": "警察局",
+		"bikeRacks": "自行车架",
+		"parking": "停车场"
+	},
+	"accessibility": {
+		"accessibility": "残疾人辅助设施",
+		"accessibilityToilets": "残疾人厕所",
+		"busStops": "公交车站",
+		"accessibilityBeachShowers": "残疾人海滩淋浴设施",
+		"accessibilityParking": "残疾人停车场",
+		"accessibleBarbeque": "残疾人烧烤设施"
+	}
+
+}

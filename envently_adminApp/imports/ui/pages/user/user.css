@@ -1,0 +1,80 @@
+#userEdit, #userDelete {
+	cursor: pointer;
+}
+
+.selectedUsers {
+	background: #beb9b9;
+}
+
+.userIconSize{
+	font-size: 1.5em;
+}
+
+.activate {
+	color: #218838;
+}
+
+.deactivate {
+	color: #dc3545;
+}
+
+.dark {
+	color: #343a40
+}
+
+.action-list > li {
+    display: inline-block;
+}
+
+#usersContainer {
+	margin-top: 10%;
+}
+
+.users-page-heading{
+	width: 100%;
+}
+
+.users-page-heading > h4 > span{
+	vertical-align: top;
+	line-height: 55px;
+}
+
+.users-page-heading > a {
+	margin-top: 20px;
+}
+
+.users-page-heading > a > span{
+	vertical-align: top;
+	line-height: inherit;
+}
+
+.edit-user-role-box {
+	background: #dcd9d9;
+    padding: 13px;
+    border: solid 2px #dcd9d9;
+    margin-top: 50px;
+}
+
+.edit-user-role-box > p {
+	font-size: larger;
+}
+
+.user-role-column {
+	border-bottom: 1px solid #9b9b9b;
+}
+
+.user-role-li{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.user-role-li-heading{
+    margin-bottom: 10%;
+}
+.userDisabled {
+    background-color: #ececec;
+    color: #b9b9b9;
+}
+
+

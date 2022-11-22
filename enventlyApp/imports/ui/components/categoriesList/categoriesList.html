@@ -1,0 +1,250 @@
+<template name="categoriesList">
+  <section class="container" id="outerContainer">
+    
+    <!-- Modal Structure -->
+    <div id="categoriesList" class="modal">
+      <div class="modal-content">
+        <p class="pull-left">Select a category to add it to the menu</p>
+        <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+        <div class="clearfix"></div>
+        <div class="nav-wrapper">
+          <div class="input-field">
+            <input name="search" id="search" type="search" placeholder="Search categories" required autocomplete="off">
+            <label class="label-icon" for="search" ><i style="cursor: pointer" class="material-icons searchIcon">search</i></label>
+            <i class="material-icons close">close</i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <ul class="collection with-header">
+              <p class="center-align">{{ count }}</p>
+              {{#if searching}}
+                {{> loader}}
+              {{else}}
+                {{#each category in categories}}
+                  <li class="collection-item category" id={{category.id}}>{{ category.name }}</li>
+                {{else}}
+                  <p class="alert alert-warning">Nothing found for {{query}}. Try again</p>
+                {{/each}}
+              {{/if}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="eventsList" class="modal modal-fixed-footer">
+      <form id="newEvent">
+        <div class="modal-content">
+          <h4 class="pull-left">Add an Event</h4>
+          <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div class="clearfix"></div>
+            <div class="row">
+
+              <div class="input-field col s9">
+                <input name="eventName" id="eventName" class="form-field" type="text" autocomplete="off" required />
+                <input name="eventId" id="eventId" class="form-field" type="hidden" />
+                <label for="eventName">Name</label>
+              </div>
+              <div class="input-field col s3">
+                <a class="modal-action waves-effect waves-green btn-flat padding-zero" id="searchEventOnLocal">Local search</a>
+              </div>
+
+              <div class="input-field col s12">
+                <input name="eventAddress" id="eventAddress" class="form-field" type="text" autocomplete="off" required />
+                <label for="eventAddress">Address</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <input name="eventphone" id="eventPhone" class="form-field" type="tel" autocomplete="off" required />
+                <label for="eventPhone">Phone Number</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <!-- <input name="website" title="help here" id="eventWebsite" class="" type="url"  autocomplete="off" required> -->
+                <input name="eventWebsite" title="Must be a valid URL" id="eventWebsite" class="form-field" type="text" pattern="https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,}" autocomplete="off" />
+                <label for="eventWebsite" >Website</label>
+              </div>
+
+              <div class="col s6">
+                <label for="eventFrom" >Starting Date</label>
+                <input type="text" name="eventFrom" id="eventFrom" class="form-field datepicker" required />
+              </div>
+              <div class="col s6">
+                <label for="eventTo" >Ending Date</label>
+                <input type="text" name="eventTo" id="eventTo" class="form-field datepicker" required />
+              </div>
+
+              <div class="input-field col s12">
+                <input name="eventHeader" id="eventHeader" class="form-field" type="text" autocomplete="off" required />
+                <label for="eventHeader">Header</label>
+              </div>
+              
+              <div class="input-field col s12 m6">
+                <textarea id="details1" class="form-field materialize-textarea "></textarea>
+                <label for="details1" >Details1</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <textarea id="details2" class="form-field materialize-textarea "></textarea>
+                <label for="details2" >Details2</label>
+              </div>
+
+              <div class="input-field col s12 m12">
+              <p class="logo-size-term">Logo should be 100X100.</p>
+                <!-- <label for="eventimage1" >Image1</label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Logo</span>
+                    <input id="eventimage1" type="file" class="form-field">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input id="image1path" class="file-path form-field" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-field col s12 m12">
+                <label for="eventimage2" >Image2</label>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Image</span>
+                    <input id="eventimage2" type="file" class="form-field">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input id="image2path" class="file-path form-field" type="text">
+                  </div>
+                </div>
+              </div>
+              <!-- for custom latitude & longitude values -->
+              <div class="col s12 m6">
+                <label class="label-icon" for="eventLatitude">Latitude</label>
+                <input name="eventLatitude" id="eventLatitude" class="form-field" type="tel" placeholder="Latitude" autocomplete="off" value="{{latitude}}" title="Must be a valid latitude" required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="eventLongitude" >Longitude</label>
+                <input name="eventLongitude" title="Must be a valid longitude" id="eventLongitude" class="form-field" type="text" value="{{longitude}}" placeholder="Longitude" autocomplete="off">
+              </div>
+              <!-- for custom latitude & longitude values -->
+              <div class="input-field col s12">
+                <div id="eventMapPane"></div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat">Add New Event</button>
+        </div>
+      </form>
+    </div>
+
+
+    <div id="locationsList" class="modal modal-fixed-footer">
+      <form id="newLocation">
+        <div class="modal-content">
+          <h4 class="pull-left">Add a Location</h4>
+          <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div class="clearfix"></div>
+            <div class="row">
+              <div class="input-field col s7">
+                <input name="LocationName" id="LocationName" class="form-field" type="text" autocomplete="off" required />
+                <label for="LocationName">Location Name</label>
+              </div>
+              <div class="input-field col s5">
+                <a class="modal-action waves-effect waves-green btn-flat padding-zero" id="searchInCustom">Local search</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="modal-action waves-effect waves-green btn-flat padding-zero" id="searchInSensis">Sensis search</a>
+              </div>
+              <!-- {{> spinner}} -->
+
+              <input name="sensisId" id="sensisId" class="hidden form-field" type="text" autocomplete="off">
+              <input name="locationDevId" id="locationDevId" class="hidden form-field" type="text" autocomplete="off">
+              <input name="locationRefId" id="locationRefId" class="hidden form-field" type="text" autocomplete="off">
+
+              <div class="input-field col s12">
+                <input name="locationAddress" id="locationAddress" class="form-field" type="text" autocomplete="off" required />
+                <label for="locationAddress">Location Address</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <input name="locationPhone" id="locationPhone" class="form-field" type="tel" autocomplete="off" required>
+                <label for="locationPhone">Location Phone</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <input name="locationWebsite" title="Must be a valid URL" id="locationWebsite" class="form-field" type="text" pattern="https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,}" autocomplete="off" />
+                <label for="locationWebsite" >Location Website</label>
+              </div>
+              
+              <div class="input-field col s12">
+                <input name="categories" id="categories" class="form-field" type="text" autocomplete="off" required />
+                <label for="categories">Categories</label>
+              </div>
+              
+              <div class="input-field col s12 m6">
+                <textarea id="text1" class="materialize-textarea form-field"></textarea>
+                <label for="text1" >About us</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <textarea id="text2" class="materialize-textarea form-field"></textarea>
+                <label for="text2" >Hours</label>
+              </div>
+
+              <div class="input-field col s12 m12">
+                <p class="logo-size-term">Logo should be 100X100.</p>
+                <!-- <label for="locationImage1"></label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Logo</span>
+                    <input id="locationImage1" type="file" class="form-field">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path form-field" id="locationImageText1" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-field col s12 m12">
+                <label for="locationImage2">Image2</label>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Image</span>
+                    <input id="locationImage2" type="file" class="form-field">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path form-field" id="locationImageText2" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <!-- for custom latitude & longitude values -->
+              <div class="col s12 m6">
+                <label class="label-icon" for="locationLatitude">Latitude</label>
+                <input name="locationLatitude" id="locationLatitude" class="form-field" type="tel" placeholder="Latitude" autocomplete="off" value="{{latitude}}" title="Must be a valid latitude" required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon form-field" for="locationLongitude" >Longitude</label>
+                <input name="locationLongitude" title="Must be a valid longitude" id="locationLongitude" class="" type="text" value="{{longitude}}" placeholder="Longitude" autocomplete="off">
+              </div>
+              <!-- for custom latitude & longitude values -->
+
+              <div class="input-field col s12">
+                <div id="locationMapPane"></div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat">Add Location</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</template>

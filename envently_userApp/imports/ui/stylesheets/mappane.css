@@ -1,0 +1,43 @@
+/*#eventMapPane{
+  position: relative;
+  width: 100%;
+}
+*/
+.mapboxgl-map {
+  position: relative;
+  overflow: visible;
+  background:#000;
+}
+
+.mapboxgl-canvas {
+  // position: relative !important;
+  // width: 100% !important;
+}
+
+#markerModal {
+    z-index: 2000 !important;
+    display: block;
+    opacity: 1;
+    transform: scaleX(1);
+    top: 10%;
+}
+
+.marker {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/universal-7/614/17_-_Location-64.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    draggable: true;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.logo-size-term {
+  color: #868686;
+  font-weight: bold;
+  font-size: 13px;
+}

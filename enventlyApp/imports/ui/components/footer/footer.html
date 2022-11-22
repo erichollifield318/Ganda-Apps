@@ -1,0 +1,41 @@
+<template name="footer">
+  <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="col l6">
+          <h5 class="white-text">envent.ly logo</h5>
+        </div>
+        © {{currentYear}} envent.ly
+      </div>
+    </div>
+  </footer>
+</template>
+
+<template name="dynamicFooter">
+  <footer class="page-footer {{currentClient}}">
+    <div class="footer-main">
+
+    {{#if getFooterImage}}
+      <div class="main-logo pull-left">
+        <img id="branding" src="{{getFooterImage}}">
+        <img id="branding-2" src="{{getFooterImage2}}">
+      </div>
+        <!-- <div class="container">
+          <div class="col l6">
+            <h5 class="white-text">{{currentClient}} logo</h5>
+          </div>
+          © {{currentYear}} {{currentClient}} Municipal Council
+        </div> -->
+    {{/if}}
+
+    <!-- {{#if isVisibleText}}
+        <div class="heading-list" style="top: 17px;">
+          <div style="height: 57px;width: 57px;background-color: #000;text-align: center;border-radius: 48%;">
+            <img src="/img/list.svg" style="height: 48px;width: 19px;padding-top: 5px;">
+          </div>
+        </div>
+        {{/if}}  -->
+      </div>
+  </footer>
+  {{> brandingModal}}
+</template>

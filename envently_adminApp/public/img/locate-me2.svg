@@ -1,0 +1,40 @@
+<svg width="56.99999999999999" height="56.99999999999999" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <path d="m47.74,28.53c0,10.02 -8.73,18.15 -19.48,18.15c-10.74,0 -19.47,-8.13 -19.47,-18.15c0,-10.03 8.73,-18.16 19.47,-18.16c10.75,0 19.48,8.13 19.48,18.16z" id="b3Q4SzZGf3" stroke="null"/>
+  <path d="m1130.32,-84.89l-0.32,27.01l0,24.56" id="hOvFmSKar" stroke="null"/>
+  <path d="m56.33,28.34l-28.36,0.36l-26.95,0.05" id="bnis25YxY" stroke="null"/>
+  <path d="m27.94,56.45l-0.17,-28.37l0.14,-26.94" id="a3IZve7vNc" stroke="null"/>
+ </defs>
+ <g stroke="null">
+  <title>background</title>
+  <rect x="-1" y="-1" width="59" height="59" id="canvas_background" fill="none" stroke="null"/>
+ </g>
+ <g stroke="null">
+  <title>Layer 1</title>
+  <g id="svg_1" stroke="null">
+   <g id="svg_2" stroke="null">
+    <g stroke="null" id="svg_3">
+     <use transform="matrix(0.6732407808303833,0,0,0.7614127993583679,2.8372660656236803,2.4223869681798647) " stroke="null" xlink:href="#b3Q4SzZGf3" fill="#ffffff" fill-opacity="0" id="svg_4" y="4.418393" x="8.789278"/>
+     <g stroke="null" id="svg_5">
+      <use transform="matrix(0.6732407808303833,0,0,0.7614127993583679,2.8372660656236803,2.4223869681798647) " stroke="#ffffff" xlink:href="#b3Q4SzZGf3" fill-opacity="0" stroke-width="2" id="svg_6" y="4.418393" x="8.789278"/>
+     </g>
+    </g>
+    <g id="svg_7" stroke="null">
+     <g id="svg_8" stroke="null">
+      <use xlink:href="#hOvFmSKar" fill-opacity="0" id="svg_9" stroke="#8babb1" y="-0.323905" x="0.106952"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_10">
+     <g stroke="null" id="svg_11">
+      <use stroke="#ffffff" xlink:href="#bnis25YxY" fill-opacity="0" stroke-width="2" id="svg_12" y="-1.790906" x="0.086952" transform="matrix(0.5745903369859917,0,0,0.223242849111557,11.379999039804268,21.749200224876404) "/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_13">
+     <g stroke="null" id="svg_14">
+      <use stroke="#ffffff" xlink:href="#a3IZve7vNc" fill-opacity="0" stroke-width="2" id="svg_15" y="-0.323905" x="0.231343" transform="matrix(0.462307870388031,0,0,0.6190649437112583,14.931710685460303,10.15045120057475) "/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

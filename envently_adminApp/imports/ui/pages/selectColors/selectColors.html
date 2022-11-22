@@ -1,0 +1,1895 @@
+<template name="chooseColors">
+  <div id="chooseColors" class="modal modal-fixed-footer" style="width: 60%; height:80%; max-height: 80%">
+    <div class="modal-content">
+      <h4 class="pull-left"> Choose Colors </h4>
+      <span aria-hidden="true" aria-label="Close" class="modal-action modal-close pull-right" data-dismiss="modal">
+      <i aria-hidden="true" class="fa fa-times">
+      </i>
+      </span>
+      <div class="clearfix"></div>
+
+    
+      <div>{{initialColor}}</div>
+
+      <!-- :::::::::::::::MENUS LIST::::::::::::::: -->
+
+      <h5>Landing Page</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="menu-list-heading-color">
+            Main Heading Color
+            </label>
+            <input id="menu-list-heading-color" name="menu-list-heading-color" type="text" value="{{initialMenuList.headingTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img menu-list-heading-color-div" height="30px" style="background-color: {{initialMenuList.headingTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="menu-list-heading-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="menu-list-subHeading-color">
+            Sub Heading color
+            </label>
+            <input id="menu-list-subHeading-color" name="menu-list-subHeading-color" type="text" value="{{initialMenuList.subHeadingTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img menu-list-subHeading-color-div" height="30px" style="background-color: {{initialMenuList.subHeadingTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="menu-list-subHeading-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-name-color">
+          Menu Item Background Color
+          </label>
+          <input id="menu-list-name-color" name="menu-list-name-color" type="text" value="{{initialMenuList.nameBackgroundColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin25" height="30px" style="background-color: {{initialMenuList.nameBackgroundColor}}"></div>
+              <!-- <img> -->
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-name-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-text-color">
+          Item Text Color
+          </label>
+          <input id="menu-text-color" name="menu-text-color" type="text" value="{{initialMenuList.menuTextColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin50" height="30px" style="background-color: {{initialMenuList.menuTextColor}}"></div>
+              <!-- <img> -->
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-text-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-icon-background-color">
+          Icon Background Color
+          </label>
+          <input id="menu-list-icon-background-color" name="menu-list-icon-background-color" type="text" value="{{initialMenuList.iconBackgroundColor}}" />
+        </div>
+
+
+        <div class="input-field col s4 icon-img-container">
+              
+              <div class="edit-menu-icon-img openColorPickerNewMenuAdmin26" height="30px" style="background-color: {{initialMenuList.iconBackgroundColor}}"></div>
+        </div>
+
+
+        <div class="col s12">
+          <div class="color-out" id="menu-list-icon-background-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-icon-color">
+          Icon Color
+          </label>
+          <input id="menu-list-icon-color" name="menu-list-icon-color" type="text" value="{{initialMenuList.iconColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+             
+              <div class="edit-menu-icon-img openColorPickerNewMenuAdmin27" height="30px" style="background-color: {{initialMenuList.iconColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-icon-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-footer-color">
+          Footer Background Color
+          </label>
+          <input id="menu-list-footer-color" name="menu-list-footer-color" type="text" value="{{initialMenuList.footerBackgroundColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+              <!-- <img> -->
+              <div class="edit-menu-icon-img openColorPickerNewMenuAdmin28" height="30px" style="background-color: {{initialMenuList.footerBackgroundColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-footer-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-footer-button">
+          Footer Button Color
+          </label>
+          <input id="menu-list-footer-button" name="menu-list-footer-button" type="text" value="{{initialMenuList.showMenusButtonColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin30" height="30px" style="background-color: {{initialMenuList.showMenusButtonColor}}"></div>
+              <!-- <img> -->
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-footer-button-open" style="position: relative;">
+          </div>
+        </div>
+      </div>   
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-footer-button-text">
+          Footer Button Text Color
+          </label>
+          <input id="menu-list-footer-button-text" name="menu-list-footer-button-text" type="text" value="{{initialMenuList.footerButtonTextColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img menu-list-footer-button-text-div" height="30px" style="background-color: {{initialMenuList.footerButtonTextColor}}"></div>
+              <!-- <img> -->
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-footer-button-text-open" style="position: relative;">
+          </div>
+        </div>
+      </div>   
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-search-color">
+          Search Bar Background Color
+          </label>
+          <input id="menu-list-search-color" name="menu-list-search-color" type="text" value="{{initialMenuList.searchBarBackgroundColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+             <!--  <img> -->
+             <div class="edit-menu-icon-img openColorPickerNewMenuAdmin29" height="30px" style="background-color: {{initialMenuList.searchBarBackgroundColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-search-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-sideNav-opener">
+          Side Nave Open Icon Color
+          </label>
+          <input id="menu-list-sideNav-opener" name="menu-list-sideNav-opener" type="text" value="{{initialMenuList.sideNavOpenIconColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+             <!--  <img> -->
+             <div class="edit-menu-icon-img menu-list-sideNav-opener-div" height="30px" style="background-color: {{initialMenuList.sideNavOpenIconColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-sideNav-opener-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-searchbar-search-icon-color">
+          Search Bar Search Icon Color
+          </label>
+          <input id="menu-list-searchbar-search-icon-color" name="menu-list-searchbar-search-icon-color" type="text" value="{{initialMenuList.searchBarSearchIconColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+             <!--  <img> -->
+             <div class="edit-menu-icon-img menu-list-searchbar-search-icon-color-div" height="30px" style="background-color: {{initialMenuList.searchBarSearchIconColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-searchbar-search-icon-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="menu-list-close-button-color">
+          Search Bar Close Button Color
+          </label>
+          <input id="menu-list-close-button-color" name="menu-list-close-button-color" type="text" value="{{initialMenuList.searchbarCloseButtonColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+             <!--  <img> -->
+             <div class="edit-menu-icon-img menu-list-close-button-color-div" height="30px" style="background-color: {{initialMenuList.searchbarCloseButtonColor}}"></div>
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="menu-list-close-button-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s8">
+          <label class="active" for="searchBar-text-color">
+          Search Bar Text Color
+          </label>
+          <input id="searchBar-text-color" name="searchBar-text-color" type="text" value="{{initialMenuList.searchBarTextColor}}" />
+        </div>
+        <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin51" height="30px" style="background-color: {{initialMenuList.searchBarTextColor}}"></div>
+              <!-- <img> -->
+        </div>
+        <div class="col s12">
+          <div class="color-out" id="searchBar-text-color-open" style="position: relative;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- :::::::::::::::Bottom Sheet Modal Sub Menus::::::::::::::: -->
+
+      <h5>Sub Menus Modal</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-modal-color">
+            Modal Background Color
+            </label>
+            <input class="bottomsheet-submenu-modal-color-color" id="bottomsheet-submenu-modal-color" name="bottomsheet-submenu-modal-color" type="text" value="{{initialBottomSheetSubMenu.modalBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <im> -->
+               <div class="edit-menu-icon-img bottomsheet-submenu-modal-color-div" height="30px" style="background-color: {{initialBottomSheetSubMenu.modalBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-header-color">
+            Header Background Color
+            </label>
+            <input class="bottomsheet-submenu-header-color" id="bottomsheet-submenu-header-color" name="bottomsheet-submenu-header-color" type="text" value="{{initialBottomSheetSubMenu.headerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <im> -->
+               <div class="edit-menu-icon-img openColorPickerNewMenuAdmin9" height="30px" style="background-color: {{initialBottomSheetSubMenu.headerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-header-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-header-font-color">
+            Header Text Color
+            </label>
+            <input class="bottomsheet-submenu-header-font-color" id="bottomsheet-submenu-header-font-color" name="bottomsheet-submenu-header-font-color" type="text" value="{{initialBottomSheetSubMenu.headingFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin42" height="30px" style="background-color: {{initialBottomSheetSubMenu.headingFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-header-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-list-color">
+            List Background Color
+            </label>
+            <input class="bottomsheet-submenu-list-color" id="bottomsheet-submenu-list-color" name="bottomsheet-submenu-list-color" type="text" value="{{initialBottomSheetSubMenu.listBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin10" height="30px" style="background-color: {{initialBottomSheetSubMenu.listBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-list-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-list-font-color">
+            List Text Color
+            </label>
+            <input class="bottomsheet-submenu-header-font-color" id="bottomsheet-submenu-list-font-color" name="bottomsheet-submenu-list-font-color" type="text" value="{{initialBottomSheetSubMenu.listFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin43" height="30px" style="background-color: {{initialBottomSheetSubMenu.listFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-list-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-icon-background-color">
+            Icon Background Color
+            </label>
+            <input class="bottomsheet-submenu-icon-background-color" id="bottomsheet-submenu-icon-background-color" name="bottomsheet-submenu-icon-background-color" type="text" value="{{initialBottomSheetSubMenu.iconBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin11" height="30px" style="background-color: {{initialBottomSheetSubMenu.iconBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-icon-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-icon-color">
+            Icon Color
+            </label>
+            <input class="bottomsheet-submenu-icon-color" id="bottomsheet-submenu-icon-color" name="bottomsheet-submenu-icon-color" type="text" value="{{initialBottomSheetSubMenu.iconColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin12" height="30px" style="background-color: {{initialBottomSheetSubMenu.iconColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-icon-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-icon-box-color">
+            Icon Box Background Color
+            </label>
+            <input class="bottomsheet-submenu-icon-box-color" id="bottomsheet-submenu-icon-box-color" name="bottomsheet-submenu-icon-box-color" type="text" value="{{initialBottomSheetSubMenu.iconBoxColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin41" height="30px" style="background-color: {{initialBottomSheetSubMenu.iconBoxColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-icon-box-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-closeButton-color">
+            Close Button Background Color
+            </label>
+            <input class="bottomsheet-submenu-closeButton-color" id="bottomsheet-submenu-closeButton-color" name="bottomsheet-submenu-closeButton-color" type="text" value="{{initialBottomSheetSubMenu.closeButtonBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottomsheet-submenu-closeButton-color-div" height="30px" style="background-color: {{initialBottomSheetSubMenu.closeButtonBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-closeButton-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottomsheet-submenu-close-text-color">
+            Close Button Text Color
+            </label>
+            <input class="bottomsheet-submenu-close-text-color" id="bottomsheet-submenu-close-text-color" name="bottomsheet-submenu-close-text-color" type="text" value="{{initialBottomSheetSubMenu.closeButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottomsheet-submenu-close-text-color-div" height="30px" style="background-color: {{initialBottomSheetSubMenu.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottomsheet-submenu-close-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>    
+    </div>
+
+<!-- :::::::::::::::LOCATION LIST MODAL::::::::::::::: -->
+
+      <h5>Locations Modal</h5>
+      <div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-list-modal-color">
+            Modal Background Color
+            </label>
+            <input id="location-list-modal-color" name="location-list-modal-color" type="text" value="{{initialBottomSheetLocationList.modalBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin15" height="30px" style="background-color: {{initialBottomSheetLocationList.modalBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="location-list-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-list-modal-border-color">
+            Modal Border Color
+            </label>
+            <input id="location-list-modal-border-color" name="location-list-modal-border-color" type="text" value="{{initialBottomSheetLocationList.modalBorderColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin16" height="30px" style="background-color: {{initialBottomSheetLocationList.modalBorderColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="location-list-modal-border-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-list-detail-button">
+              Datails Button Background Color
+            </label>
+            <input id="location-list-detail-button" name="location-list-detail-button" type="text" value="{{initialBottomSheetLocationList.detailsButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin17" height="30px" style="background-color: {{initialBottomSheetLocationList.detailsButtonColor}}"></div>
+               <!--  <img> -->
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="location-list-detail-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-list-direction-button">
+            Direction Button Background Color
+            </label>
+            <input id="location-list-direction-button" name="location-list-direction-button" type="text" value="{{initialBottomSheetLocationList.directionButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+              <div class="edit-menu-icon-img openColorPickerNewMenuAdmin18" height="30px" style="background-color: {{initialBottomSheetLocationList.directionButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="location-list-direction-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-call-button">
+            Call Button Background Color
+            </label>
+            <input id="location-call-button" name="location-call-button" type="text" value="{{initialBottomSheetLocationList.callButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin19" height="30px" style="background-color: {{initialBottomSheetLocationList.callButtonColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-call-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-button-text-color">
+            Direction Button text Color
+            </label>
+            <input id="location-button-text-color" name="location-button-text-color" type="text" value="{{initialBottomSheetLocationList.directionButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin44" height="30px" style="background-color: {{initialBottomSheetLocationList.directionButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-call-button-text-color">
+            Call Button text Color
+            </label>
+            <input id="location-call-button-text-color" name="location-call-button-text-color" type="text" value="{{initialBottomSheetLocationList.callButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img location-call-button-text-color-div" height="30px" style="background-color: {{initialBottomSheetLocationList.callButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-call-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-details-button-text-color">
+            Details Button text Color
+            </label>
+            <input id="location-details-button-text-color" name="location-details-button-text-color" type="text" value="{{initialBottomSheetLocationList.detailsButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img location-details-button-text-color-div" height="30px" style="background-color: {{initialBottomSheetLocationList.detailsButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-details-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-name-font-color">
+            Location Name Text Color
+            </label>
+            <input id="location-name-font-color" name="location-name-font-color" type="text" value="{{initialBottomSheetLocationList.locationNameFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin45" height="30px" style="background-color: {{initialBottomSheetLocationList.locationNameFontColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-name-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-info-font-color">
+            Location Info Text Color
+            </label>
+            <input id="location-info-font-color" name="location-info-font-color" type="text" value="{{initialBottomSheetLocationList.locationInfoFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin46" height="30px" style="background-color: {{initialBottomSheetLocationList.locationInfoFontColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-info-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-close-background-color">
+            Location close Button Background Color
+            </label>
+            <input id="location-close-background-color" name="location-close-background-color" type="text" value="{{initialBottomSheetLocationList.closeButtonNackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img location-close-background-color-div" height="30px" style="background-color: {{initialBottomSheetLocationList.closeButtonNackgroundColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-close-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-close-font-color">
+            Location close Button Text Color
+            </label>
+            <input id="location-close-font-color" name="location-close-font-color" type="text" value="{{initialBottomSheetLocationList.closeButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img location-close-font-color-div" height="30px" style="background-color: {{initialBottomSheetLocationList.closeButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-close-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+       <!-- :::::::::::::::Location Info Popup::::::::::::::: -->
+
+      <h5>Map Marker Modal</h5>
+      <div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-info-modal-color">
+            Modal Background Color
+            </label>
+            <input id="location-info-modal-color" name="location-info-modal-color" type="text" value="{{initialLocationInfoPopup.modalBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <img> -->
+               <div class="edit-menu-icon-img openColorPickerNewMenuAdmin21" height="30px" style="background-color: {{initialLocationInfoPopup.modalBackgroundColor}}"></div>
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-info-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-info-details-button">
+            Details Button Background Color
+            </label>
+            <input id="location-info-details-button" name="location-info-details-button" type="text" value="{{initialLocationInfoPopup.detailsButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin22" height="30px" style="background-color: {{initialLocationInfoPopup.detailsButtonColor}}"></div>
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-info-details-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-info-direction-button">
+            Direction Button Background Color
+            </label>
+            <input id="location-info-direction-button" name="location-info-direction-button" type="text" value="{{initialLocationInfoPopup.directionButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin23" height="30px" style="background-color: {{initialLocationInfoPopup.directionButtonColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-info-direction-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="location-info-call-button">
+            Call Button Background Color
+            </label>
+            <input id="location-info-call-button" name="location-info-call-button" type="text" value="{{initialLocationInfoPopup.callButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin24" height="30px" style="background-color: {{initialLocationInfoPopup.callButtonColor}}"></div>
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="location-info-call-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-button-text-color">
+            Direction Button Text Color
+            </label>
+            <input id="popup-button-text-color" name="popup-button-text-color" type="text" value="{{initialLocationInfoPopup.directionButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin47" height="30px" style="background-color: {{initialLocationInfoPopup.directionButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-call-button-text-color">
+            Call Button Text Color
+            </label>
+            <input id="popup-call-button-text-color" name="popup-call-button-text-color" type="text" value="{{initialLocationInfoPopup.callButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img popup-call-button-text-color-div" height="30px" style="background-color: {{initialLocationInfoPopup.callButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-call-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-detail-button-text-color">
+            Detail Button Text Color
+            </label>
+            <input id="popup-detail-button-text-color" name="popup-detail-button-text-color" type="text" value="{{initialLocationInfoPopup.detailsButtonTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img popup-detail-button-text-color-div" height="30px" style="background-color: {{initialLocationInfoPopup.detailsButtonTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-detail-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-name-font-color">
+            Location Title Text Color
+            </label>
+            <input id="popup-name-font-color" name="popup-name-font-color" type="text" value="{{initialLocationInfoPopup.locationNameFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin48" height="30px" style="background-color: {{initialLocationInfoPopup.locationNameFontColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-name-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-info-font-color">
+            Location Info Text Color
+            </label>
+            <input id="popup-info-font-color" name="popup-info-font-color" type="text" value="{{initialLocationInfoPopup.locationInfoFontColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin49" height="30px" style="background-color: {{initialLocationInfoPopup.locationInfoFontColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-info-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="popup-cross-button-color">
+            Cross Button Color
+            </label>
+            <input id="popup-cross-button-color" name="popup-cross-button-color" type="text" value="{{initialLocationInfoPopup.crossButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img popup-cross-button-color-div" height="30px" style="background-color: {{initialLocationInfoPopup.crossButtonColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="popup-cross-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- :::::::::::::::Bottom Details Modal::::::::::::::: -->
+      <h5>Location Details Modal</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-modal-color">
+            Modal Background Color
+            </label>
+            <input class="bottom-details-modal-color" id="bottom-details-modal-color" name="bottom-details-call-button" type="text" value="{{initialBottomLocationDetails.modalBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <img> -->
+               <div class="edit-menu-icon-img openColorPickerNewMenuAdmin31" height="30px" style="background-color: {{initialBottomLocationDetails.modalBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-image-color">
+            Image Background Color
+            </label>
+            <input class="bottom-details-image-color" id="bottom-details-image-color" name="bottom-details-image-color" type="text" value="{{initialBottomLocationDetails.imageBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <img> -->
+               <div class="edit-menu-icon-img bottom-details-image-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.imageBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-image-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-direction-button">
+            Directions Button Background Color
+            </label>
+            <input class="bottom-details-direction-button" id="bottom-details-direction-button" name="footer-website-button" type="text" value="{{initialBottomLocationDetails.directionButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+              
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin5" height="30px" style="background-color: {{initialBottomLocationDetails.directionButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-direction-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-website-button">
+            Website Button Background Color
+            </label>
+            <input class="bottom-details-website-button" id="bottom-details-website-button" name="bottom-details-website-button" type="text" value="{{initialBottomLocationDetails.websiteButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+               <!--  <img> -->
+               <div class="edit-menu-icon-img openColorPickerNewMenuAdmin6" height="30px" style="background-color: {{initialBottomLocationDetails.websiteButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-website-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-call-button">
+            Call Button Background Color
+            </label>
+            <input class="bottom-details-call-button" id="bottom-details-call-button" name="bottom-details-call-button" type="text" value="{{initialBottomLocationDetails.callButtonColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+              <!--   <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin7" height="30px" style="background-color: {{initialBottomLocationDetails.callButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-call-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-share-button-color">
+            Share Buton Background Color
+            </label>
+            <input class="bottom-details-share-button-color" id="bottom-details-share-button-color" name="bottom-details-share-button-color" type="text" value="{{initialBottomLocationDetails.shareButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin33" height="30px" style="background-color: {{initialBottomLocationDetails.shareButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-share-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-share-button-text-color">
+            Share Buton Text Color
+            </label>
+            <input class="bottom-details-share-button-text-color" id="bottom-details-share-button-text-color" name="bottom-details-share-button-text-color" type="text" value="{{initialBottomLocationDetails.shareButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-share-button-text-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.shareButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-share-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-modal-footer-color">
+            Modal Footer Background Color
+            </label>
+            <input class="bottom-details-modal-footer-color" id="bottom-details-modal-footer-color" name="bottom-details-call-button" type="text" value="{{initialBottomLocationDetails.modalFooterBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin32" height="30px" style="background-color: {{initialBottomLocationDetails.modalFooterBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-modal-footer-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-heading-font-color">
+            Heading Text Color
+            </label>
+            <input class="bottom-details-heading-font-color" id="bottom-details-heading-font-color" name="bottom-details-heading-font-color" type="text" value="{{initialBottomLocationDetails.headingFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin38" height="30px" style="background-color: {{initialBottomLocationDetails.headingFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-heading-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-information-color">
+            Info Text Color
+            </label>
+            <input class="bottom-details-information-color" id="bottom-details-information-color" name="bottom-details-information-color" type="text" value="{{initialBottomLocationDetails.infoFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin39" height="30px" style="background-color: {{initialBottomLocationDetails.infoFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-information-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-horizontal-line-color">
+            Horizontal Line Color
+            </label>
+            <input class="bottom-details-horizontal-line-color" id="bottom-details-horizontal-line-color" name="bottom-details-horizontal-line-color" type="text" value="{{initialBottomLocationDetails.horizontalLineColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-horizontal-line-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.horizontalLineColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-horizontal-line-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-info-key-color">
+            Info Key Text Color
+            </label>
+            <input class="bottom-details-info-key-color" id="bottom-details-info-key-color" name="bottom-details-info-key-color" type="text" value="{{initialBottomLocationDetails.keyTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-info-key-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.keyTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-info-key-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-info-value-color">
+            Info Value Text Color
+            </label>
+            <input class="bottom-details-info-value-color" id="bottom-details-info-value-color" name="bottom-details-info-value-color" type="text" value="{{initialBottomLocationDetails.valuetextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-info-value-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.valuetextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-info-value-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-closeButton-color">
+            Close Button Background color
+            </label>
+            <input class="bottom-details-closeButton-color" id="bottom-details-closeButton-color" name="bottom-details-closeButton-color" type="text" value="{{initialBottomLocationDetails.closeButtonbackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-closeButton-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.closeButtonbackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-closeButton-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="bottom-details-closeButton-text-color">
+            Close Button Text color
+            </label>
+            <input class="bottom-details-closeButton-text-color" id="bottom-details-closeButton-text-color" name="bottom-details-closeButton-text-color" type="text" value="{{initialBottomLocationDetails.closeButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img bottom-details-closeButton-text-color-div" height="30px" style="background-color: {{initialBottomLocationDetails.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="bottom-details-closeButton-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- :::::::::::::::::::::::::::Branding Modal::::::::::::::::::::::: -->
+      <h5>Branding Modal</h5>
+      <div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-modal-color">
+            Branding Modal Background Color
+            </label>
+            <input class="branding-modal-color" id="branding-modal-color" name="branding-modal-color" type="text" value="{{brandinginitialColor.modalColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+            <div class="edit-menu-icon-img openColorPickerNewMenuAdmin1"  height="30px" style="background-color: {{brandinginitialColor.modalColor}}"> </div>
+          </div>
+          
+          <div class="col s10">
+            <div class="color-out" id="branding-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-website-button">
+            Website Button Background Color
+            </label>
+            <input class="branding-website-button" id="branding-website-button" name="branding-website-button" type="text"  value="{{brandinginitialColor.websiteButtonColor}}"/>
+          </div>
+
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin2" height="30px" style="background-color: {{brandinginitialColor.websiteButtonColor}}"></div>
+          </div>
+
+          <div class="col s10">
+            <div class="color-out" id="branding-website-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-call-button">
+            Call Button Background Color
+            </label>
+            <input class="branding-call-button" id="branding-call-button" name="branding-call-button" type="text"  value="{{brandinginitialColor.callButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin3" height="30px" style="background-color: {{brandinginitialColor.callButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-call-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-footer-button">
+            Enquiry Button Background Color
+            </label>
+            <input class="branding-footer-button" id="branding-footer-button" name="branding-footer-button" type="text" value="{{brandinginitialColor.enquiryButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin4" height="30px" style="background-color: {{brandinginitialColor.enquiryButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-footer-button-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-footer-button-text-color">
+            Enquiry Button Text Color
+            </label>
+            <input class="branding-footer-button-text-color" id="branding-footer-button-text-color" name="branding-footer-button" type="text" value="{{brandinginitialColor.enquiryButtonColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+              
+                <div class="edit-menu-icon-img branding-footer-button-text-color-div" height="30px" style="background-color: {{brandinginitialColor.enquiryButtonColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-footer-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-header-font-color">
+            Header Text Color
+            </label>
+            <input class="branding-header-font-color" id="branding-header-font-color" name="branding-header-font-color" type="text" value="{{brandinginitialColor.headerFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin34" height="30px" style="background-color: {{brandinginitialColor.headerFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-header-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-body-font-color">
+            Body Text Color
+            </label>
+            <input class="branding-body-font-color" id="branding-body-font-color" name="branding-body-font-color" type="text" value="{{brandinginitialColor.bodyFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin35" height="30px" style="background-color: {{brandinginitialColor.bodyFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-body-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-body-button-font-color">
+            Enquiry Button Text Color
+            </label>
+            <input class="branding-body-button-font-color" id="branding-body-button-font-color" name="branding-body-button-font-color" type="text" value="{{brandinginitialColor.buttonFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin36" height="30px" style="background-color: {{brandinginitialColor.buttonFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-body-button-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+       <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-footer-color">
+            Footer Background Color
+            </label>
+            <input class="branding-footer-color" id="branding-footer-color" name="branding-footer-color" type="text" value="{{brandinginitialColor.footerColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img branding-footer-color-div" height="30px" style="background-color: {{brandinginitialColor.footerColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-footer-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-cross-color">
+            cross Button Color
+            </label>
+            <input class="branding-cross-color" id="branding-cross-color" name="branding-footer-color" type="text" value="{{brandinginitialColor.cancleIconColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img branding-cross-color-div" height="30px" style="background-color: {{brandinginitialColor.cancleIconColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-cross-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="branding-cross-text-color">
+            cross Button Text Color
+            </label>
+            <input class="branding-cross-text-color" id="branding-cross-text-color" name="branding-cross-text-color" type="text" value="{{brandinginitialColor.cancleIconTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img branding-cross-text-color-div" height="30px" style="background-color: {{brandinginitialColor.cancleIconTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="branding-cross-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="icon-heading-color">
+            Icon Label Color
+            </label>
+            <input class="icon-heading-color" id="icon-heading-color" name="branding-footer-color" type="text" value="{{brandinginitialColor.iconHeadingColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img icon-heading-color-div" height="30px" style="background-color: {{brandinginitialColor.iconHeadingColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="icon-heading-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- :::::::::::::::Enquiry Form::::::::::::::: -->
+
+      <h5>Enquiry Form Modal</h5>
+      <div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-modal">
+            Modal Background Color
+            </label>
+            <input class="enquiry-modal" id="enquiry-modal" name="enquiry-modal" type="text" value="{{initialEnquiryModal.modalBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <img>
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin8" height="30px" style="background-color: {{initialEnquiryModal.modalBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-modal-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-modal-heading-color">
+            Heading Text Color
+            </label>
+            <input class="enquiry-modal-heading-color" id="enquiry-modal-heading-color" name="enquiry-modal-heading-color" type="text" value="{{initialEnquiryModal.headingFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin40" height="30px" style="background-color: {{initialEnquiryModal.headingFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-modal-heading-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-label-color">
+            Input Label Text Color
+            </label>
+            <input class="enquiry-label-color" id="enquiry-label-color" name="enquiry-label-color" type="text" value="{{initialEnquiryModal.labelFontColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img openColorPickerNewMenuAdmin41" height="30px" style="background-color: {{initialEnquiryModal.labelFontColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-label-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-input-border-color">
+            Input Border Color
+            </label>
+            <input class="enquiry-input-border-color" id="enquiry-input-border-color" name="enquiry-input-border-color" type="text" value="{{initialEnquiryModal.inputBorderColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-input-border-color-div" height="30px" style="background-color: {{initialEnquiryModal.inputBorderColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-input-border-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-input-shadow-color">
+            Input Box Shadow Color
+            </label>
+            <input class="enquiry-input-shadow-color" id="enquiry-input-shadow-color" name="enquiry-input-shadow-color" type="text" value="{{initialEnquiryModal.inputBoxShadowColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-input-shadow-color-div" height="30px" style="background-color: {{initialEnquiryModal.inputBoxShadowColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-input-shadow-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-hover-color">
+            Text Box Focus Color
+            </label>
+            <input class="enquiry-hover-color" id="enquiry-hover-color" name="enquiry-label-color" type="text" value="{{initialEnquiryModal.hoverColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-hover-color-div" height="30px" style="background-color: {{initialEnquiryModal.hoverColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-hover-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-footer-color">
+            Footer Background Color
+            </label>
+            <input class="enquiry-footer-color" id="enquiry-footer-color" name="enquiry-label-color" type="text" value="{{initialEnquiryModal.footerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-footer-color-div" height="30px" style="background-color: {{initialEnquiryModal.footerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-footer-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-close-background-color">
+            Close Button Background Color
+            </label>
+            <input class="enquiry-close-background-color" id="enquiry-close-background-color" name="enquiry-close-background-color" type="text" value="{{initialEnquiryModal.closeButtonBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-close-background-color-div" height="30px" style="background-color: {{initialEnquiryModal.closeButtonBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-close-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-close-text-color">
+            Close Button Text Color
+            </label>
+            <input class="enquiry-close-text-color" id="enquiry-close-text-color" name="enquiry-close-text-color" type="text" value="{{initialEnquiryModal.closeButtontextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-close-text-color-div" height="30px" style="background-color: {{initialEnquiryModal.closeButtontextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-close-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-submit-background-color">
+            Submit Button Background color
+            </label>
+            <input class="enquiry-submit-background-color" id="enquiry-submit-background-color" name="enquiry-submit-background-color" type="text" value="{{initialEnquiryModal.submitButtonBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-submit-background-color-div" height="30px" style="background-color: {{initialEnquiryModal.submitButtonBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-submit-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="enquiry-submit-text-color">
+            Submit Button Text Color
+            </label>
+            <input class="enquiry-submit-text-color" id="enquiry-submit-text-color" name="enquiry-submit-text-color" type="text" value="{{initialEnquiryModal.submitButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img enquiry-submit-text-color-div" height="30px" style="background-color: {{initialEnquiryModal.submitButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="enquiry-submit-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+
+<!-- :::::::::::::::SIDE NAV::::::::::::::: -->
+
+      <h5>Side Nav Modal</h5>
+      <div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="sidenav-modal-color">
+            Modal Background Color
+            </label>
+            <input id="sidenav-modal-color" name="sidenav-modal-color" type="text" value="{{initialSideNavModal.modalBackgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin20" height="30px" style="background-color: {{initialSideNavModal.modalBackgroundColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="sidenav-modal-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="sidenav-heading-text-color">
+            Modal Heading Text Color
+            </label>
+            <input id="sidenav-heading-text-color" name="sidenav-heading-text-color" type="text" value="{{initialSideNavModal.headingTextColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img sidenav-heading-text-color-div" height="30px" style="background-color: {{initialSideNavModal.headingTextColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="sidenav-heading-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="sidenav-text-color">
+            Modal Text Color
+            </label>
+            <input id="sidenav-text-color" name="sidenav-text-color" type="text" value="{{initialSideNavModal.textColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+          <div class="edit-menu-icon-img openColorPickerNewMenuAdmin52" height="30px" style="background-color: {{initialSideNavModal.textColor}}"></div>
+                <!-- <img> -->
+          </div>
+          <div class="col s12">
+            <div class="color-out" id="sidenav-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- :::::::::::::::FEEDBACK MODAL:::::::::::::::-->
+
+    <h5>Feedback Modal</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-modal-background">
+            Modal Background Color
+            </label>
+            <input class="feedback-modal-background" id="feedback-modal-background" name="feedback-modal-background" type="text" value="{{initialFeedbackModal.backgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <img>
+                <div class="edit-menu-icon-img feedback-modal-background-div" height="30px" style="background-color: {{initialFeedbackModal.backgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-modal-background-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-heading-font-color">
+            Modal Heading Text Color
+            </label>
+            <input class="feedback-heading-font-color" id="feedback-heading-font-color" name="feedback-heading-font-color" type="text" value="{{initialFeedbackModal.headingTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-heading-font-color-div" height="30px" style="background-color: {{initialFeedbackModal.headingTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-heading-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-body-font-color">
+            Body Text Color
+            </label>
+            <input class="feedback-body-font-color" id="feedback-body-font-color" name="feedback-body-font-color" type="text" value="{{initialFeedbackModal.bodyTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-body-font-color-div" height="30px" style="background-color: {{initialFeedbackModal.bodyTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-body-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-footer-background-color">
+            Modal Footer Background color
+            </label>
+            <input class="feedback-footer-background-color" id="feedback-footer-background-color" name="feedback-footer-background-color" type="text" value="{{initialFeedbackModal.footerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-footer-background-color-div" height="30px" style="background-color: {{initialFeedbackModal.footerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-footer-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-footer-top-border-color">
+            Footer Top border Color
+            </label>
+            <input class="feedback-footer-top-border-color" id="feedback-footer-top-border-color" name="feedback-footer-top-border-color" type="text" value="{{initialFeedbackModal.footerTopBorderColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <div class="edit-menu-icon-img feedback-footer-top-border-color-div" height="30px" style="background-color: {{initialFeedbackModal.footerTopBorderColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-footer-top-border-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-close-button-color">
+            Close Button Color
+            </label>
+            <input class="feedback-close-button-color" id="feedback-close-button-color" name="feedback-close-button-color" type="text" value="{{initialFeedbackModal.closeButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-close-button-color-div" height="30px" style="background-color: {{initialFeedbackModal.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-close-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-inputBox-border-color">
+            Input Box Border
+            </label>
+            <input class="feedback-inputBox-border-color" id="feedback-inputBox-border-color" name="feedback-inputBox-border-color" type="text" value="{{initialFeedbackModal.inputBoxBorderColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-inputBox-border-color-div" height="30px" style="background-color: {{initialFeedbackModal.inputBoxBorderColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-inputBox-border-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+    <!-- </div> -->
+    <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="feedback-sent-button-text-color">
+           Sent Button text Color
+            </label>
+            <input class="feedback-sent-button-text-color" id="feedback-sent-button-text-color" name="feedback-sent-button-text-color" type="text" value="{{initialFeedbackModal.SentButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img feedback-sent-button-text-color-div" height="30px" style="background-color: {{initialFeedbackModal.SentButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="feedback-sent-button-text-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+   <!--  </div> -->
+
+    </div>
+
+
+      <!-- :::::::::::::::Terms MODAL:::::::::::::::-->
+      <h5>Terms of Service</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="terms-modal-background">
+            Modal Background Color
+            </label>
+            <input class="terms-modal-background" id="terms-modal-background" name="terms-modal-background" type="text" value="{{initialTermsModal.backgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <img>
+                <div class="edit-menu-icon-img terms-modal-background-div" height="30px" style="background-color: {{initialTermsModal.backgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="terms-modal-background-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="terms-heading-font-color">
+            Modal Heading Text Color
+            </label>
+            <input class="terms-heading-font-color" id="terms-heading-font-color" name="terms-heading-font-color" type="text" value="{{initialTermsModal.headingTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img terms-heading-font-color-div" height="30px" style="background-color: {{initialTermsModal.headingTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="terms-heading-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="terms-body-font-color">
+            Body Text Color
+            </label>
+            <input class="terms-body-font-color" id="terms-body-font-color" name="terms-body-font-color" type="text" value="{{initialTermsModal.bodyTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img terms-body-font-color-div" height="30px" style="background-color: {{initialTermsModal.bodyTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="terms-body-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="terms-footer-background-color">
+            Modal Footer Background color
+            </label>
+            <input class="terms-footer-background-color" id="terms-footer-background-color" name="terms-footer-background-color" type="text" value="{{initialTermsModal.footerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img terms-footer-background-color-div" height="30px" style="background-color: {{initialTermsModal.footerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="terms-footer-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="terms-close-button-color">
+            Close Button Color
+            </label>
+            <input class="terms-close-button-color" id="terms-close-button-color" name="terms-close-button-color" type="text" value="{{initialTermsModal.closeButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img terms-close-button-color-div" height="30px" style="background-color: {{initialTermsModal.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="terms-close-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+      <!-- :::::::::::::::PRIVACY MODAL:::::::::::::::-->
+      <h5>Privacy Policy</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="privacy-modal-background">
+            Modal Background Color
+            </label>
+            <input class="privacy-modal-background" id="privacy-modal-background" name="privacy-modal-background" type="text" value="{{initialPrivacyModal.backgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <img>
+                <div class="edit-menu-icon-img privacy-modal-background-div" height="30px" style="background-color: {{initialPrivacyModal.backgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="privacy-modal-background-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="privacy-heading-font-color">
+            Modal Heading Text Color
+            </label>
+            <input class="privacy-heading-font-color" id="privacy-heading-font-color" name="copyright-heading-font-color" type="text" value="{{initialPrivacyModal.headingTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img privacy-heading-font-color-div" height="30px" style="background-color: {{initialPrivacyModal.headingTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="privacy-heading-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="privacy-body-font-color">
+            Body Text Color
+            </label>
+            <input class="privacy-body-font-color" id="privacy-body-font-color" name="copyright-body-font-color" type="text" value="{{initialPrivacyModal.bodyTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img privacy-body-font-color-div" height="30px" style="background-color: {{initialPrivacyModal.bodyTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="privacy-body-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="privacy-footer-background-color">
+            Modal Footer Background color
+            </label>
+            <input class="privacy-footer-background-color" id="privacy-footer-background-color" name="privacy-footer-background-color" type="text" value="{{initialPrivacyModal.footerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img privacy-footer-background-color-div" height="30px" style="background-color: {{initialPrivacyModal.footerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="privacy-footer-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="privacy-close-button-color">
+            Close Button Color
+            </label>
+            <input class="privacy-close-button-color" id="privacy-close-button-color" name="privacy-close-button-color" type="text" value="{{initialPrivacyModal.closeButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img privacy-close-button-color-div" height="30px" style="background-color: {{initialPrivacyModal.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="privacy-close-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+      <!--:::::::::::::::CopyRight MODAL::::::::::::::: -->
+    <h5>Copyright Modal</h5>
+    <div>
+      <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="copyright-modal-background">
+            Modal Background Color
+            </label>
+            <input class="copyright-modal-background" id="copyright-modal-background" name="copyright-modal-background" type="text" value="{{initialCopyrightModal.backgroundColor}}" />
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <img>
+                <div class="edit-menu-icon-img copyright-modal-background-div" height="30px" style="background-color: {{initialCopyrightModal.backgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="copyright-modal-background-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="copyright-heading-font-color">
+            Modal Heading Text Color
+            </label>
+            <input class="copyright-heading-font-color" id="copyright-heading-font-color" name="copyright-heading-font-color" type="text" value="{{initialCopyrightModal.headingTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img copyright-heading-font-color-div" height="30px" style="background-color: {{initialCopyrightModal.headingTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="copyright-heading-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="copyright-body-font-color">
+            Body Text Color
+            </label>
+            <input class="copyright-body-font-color" id="copyright-body-font-color" name="copyright-body-font-color" type="text" value="{{initialCopyrightModal.bodyTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img copyright-body-font-color-div" height="30px" style="background-color: {{initialCopyrightModal.bodyTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="copyright-body-font-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="copyright-footer-background-color">
+            Modal Footer Background color
+            </label>
+            <input class="copyright-footer-background-color" id="copyright-footer-background-color" name="copyright-footer-background-color" type="text" value="{{initialCopyrightModal.footerBackgroundColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img copyright-footer-background-color-div" height="30px" style="background-color: {{initialCopyrightModal.footerBackgroundColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="copyright-footer-background-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s8">
+            <label class="active" for="copyright-close-button-color">
+            Close Button Color
+            </label>
+            <input class="copyright-close-button-color" id="copyright-close-button-color" name="copyright-close-button-color" type="text" value="{{initialCopyrightModal.closeButtonTextColor}}"/>
+          </div>
+          <div class="input-field col s4 icon-img-container">
+                <!-- <img> -->
+                <div class="edit-menu-icon-img copyright-close-button-color-div" height="30px" style="background-color: {{initialCopyrightModal.closeButtonTextColor}}"></div>
+          </div>
+          <div class="col s10">
+            <div class="color-out" id="copyright-close-button-color-open" style="position: relative;">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="updateColor modal-action modal-close waves-effect waves-green btn-flat hoverable" id="updateColor">Submit</button>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,93 @@
+.doublebay-image {
+  min-height: 90vh;
+  height: auto;
+  background-image: url('img/coffee-cup.7bd20e84.jpg');
+  background-size: cover!important;
+   background-position: center;
+}
+
+.kioskScreen #materialize-modal-overlay-2 {
+     position: relative; 
+    
+}
+
+.gcTourism-image {
+  min-height: 90vh;
+  height: auto;
+  background-image: url('img/Surfing with Skyline (1).jpg');
+  background-size: cover!important;
+  background-position: right;
+}
+
+@media (min-width: 520px) {
+  .gcTourism-image {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+}
+@media only screen and (max-width : 420px){
+  .gcTourism-image {
+   background-position: right;
+}
+
+}
+
+.page-footer {
+  background-color: #939597;
+}
+&.page-footer {
+  background-image: url('img/dblbaybg.c6f3bbf2.png');
+  background-repeat: no-repeat;
+  height: 9em;
+}
+
+.footer-copyright {
+  display: none;
+}
+
+
+// @media only screen and (max-width : 992px) {
+//   .doublebay {
+//     &.page-footer.doublebay {
+//       height: 6em;
+//     }
+//   }
+// }
+
+
+
+
+#paddington {
+  min-height: 80vh;
+  height: auto;
+  background-size: cover;
+  
+}
+
+.paddington {
+  &.page-footer {
+    background-color: gray;
+  }
+}
+
+/**********************************
+** Sweet Alert Style Overriding. **
+***********************************/
+.sweet-alert button.cancel,
+.sweet-alert button.cancel:hover {
+    background-color: #463e3e;
+}
+
+.sweet-alert button.cancel:hover{
+  opacity: 0.8;
+}
+
+.sweet-alert button.confirm {
+    background-color: #288ebd !important;
+}
+.sweet-alert button.confirm:hover{
+  opacity: 0.7;
+}
+/********************************/

@@ -1,0 +1,4 @@
+.locationAddress {
+	float: right !important;
+	margin: 0px -25px !important;
+}

@@ -1,0 +1,13 @@
+<template name="languageSelect">
+  <div class="input-field">
+      <select name="language-select" id="language-select">
+        <!-- <option value="" disabled selected>Choose your option</option> -->
+        {{# each language in languagesList }}
+      <!-- iterate through languages -->
+      {{# with language }} <!-- create a local data context -->
+        <option value="{{ tag }}" {{ activeLanguage }}> {{ name }} </option>
+      {{/ with }}
+    {{/ each }}
+    </select>
+    </div>
+</template>

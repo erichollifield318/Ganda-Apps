@@ -1,0 +1,531 @@
+.bottom-fifty-five {
+    bottom: 55px!important;
+    z-index: 100;
+}
+.kioskScreen #materialize-modal-overlay-2 {
+     position: relative; 
+    
+}
+.backgroundGray {
+        background: #757373 !important;
+ 
+}
+
+.page-footer {
+    background-color: #939597;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+.mobile-fab-tip {
+    width: auto!important;
+    position: absolute;
+}
+
+/****** Locate Me Button *****/
+.fixed-action-btn.locate-me-wrapper{
+    right:92px;
+}
+.fixed-action-btn.heading-list{
+    right:92px;
+}
+/*****************************/
+
+.fixed-action-btn ul {
+    padding-left:5px;
+    padding-right:5px;
+    bottom:90px!important;
+    height: auto!important;
+    width: auto;
+    z-index: 200;
+    /*background: rgba(158, 158, 158, 0.50);*/
+    min-width:320px;
+    left: auto;text-align:left;
+    position: static!important;
+    margin-bottom: 30px!important;
+
+}
+
+.fixed-action-btn{
+    left:0;
+    right: 0px;
+    padding-top: 0;
+    
+}
+.toggle-btm{
+    position: fixed;
+    right: 10px;
+    bottom: 14px;
+    z-index: 200;
+}
+.heading-list{
+    position: fixed;
+    right: 80px;
+    bottom: 14px;
+    z-index: 200;
+}
+
+.locate-me-wrapper{
+    position: fixed;
+    right:150px;
+    bottom: 14px;
+    z-index: 200;
+}
+/*.clearfix{clear:both;display: block;content: "";}*/
+.fixed-action-btn ul li {
+    margin-bottom:5px;
+    display: block;
+    /*overflow: hidden;*/
+    /*clear:both;*/
+    padding: 0px 5px;
+    width:50%;
+    float: left;
+}
+.fixed-action-btn ul li .icon{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.fixed-action-btn ul li .icon img{
+    margin-top: 5px!important;
+}
+.fixed-action-btn ul li span{
+   /*display: block;*/
+   padding-left:10px;
+   
+}
+.fixed-action-btn ul li span a{
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    padding: 0px 5px;
+    font-size:12px;
+    line-height: 30px;
+}
+.fixed-action-btn ul li:after,.fixed-action-btn ul:after{
+    clear:both;
+    display: block;
+    content: "";
+}
+.fixed-action-btn ul li .btn-floating {
+    margin:5px 0px;
+}
+.fixed-action-btn ul li:last-child {
+    margin-bottom: 0px;
+}
+.fixed-action-btn.active ul {
+    visibility: visible;
+    margin-bottom: 8px;
+}
+
+.kioskScreen .bottom-fifty-five {
+    z-index: 100!important;
+}
+
+
+
+
+@media (max-height: 736px) {
+    .fixed-action-btn ul {
+        max-height: 565px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 667px) {
+    .fixed-action-btn ul {
+        max-height: 510px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 640px) {
+    .fixed-action-btn ul {
+        max-height: 460px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 568px) {
+    .fixed-action-btn ul {
+        max-height: 460px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 480px) {
+    .fixed-action-btn ul {
+        max-height: 325px;
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width:400px){
+    .btn-floating.btn-large {
+        width:43px;
+        height:43px;
+    }
+
+    .toggle-btm{bottom: 10px;}
+
+    .btn-floating.btn-large i {
+        line-height: 30px;
+    }
+
+    .btn-large i {
+        font-size: 1.4rem;
+    }
+    
+    .btn-large img{
+        width:15px!important;
+        height: auto!important;
+        padding-top: 0;
+        position: relative;
+        top: -9px;
+    }
+
+    #overlay-box{
+        height: calc(100% - 65px);
+    }
+
+    .menuList {
+        height: 360px !important;
+    }
+
+    #fabUserLocationBtn img {
+        width: 28px !important;
+        position: relative;
+        top: -4px;right: 1px;
+    }
+
+    .locate-me-wrapper{
+        right: 117px!important;
+        bottom:10px !important;
+    }
+
+    .heading-list{
+        right: 62px!important;
+        bottom: 10px !important;
+    }
+
+   /* .click-to-toggle  {
+        right: 7px!important;bottom:10px!important;
+    }*/
+    .fixed-action-btn ul li span a{
+        font-size: 11px;
+    }
+    .fixed-action-btn ul{margin-bottom: 8px!important;}
+}
+
+@media(max-width: 370px){
+    .fixed-action-btn ul li span a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menuList{
+        height: 398px;
+    }
+   
+}
+@media (max-width: 346px) {
+    .fixed-action-btn ul li span{
+        padding-left: 4px;
+     }
+     .fixed-action-btn ul{
+        padding-left: 3px;
+        padding-right: 3px;
+     }
+     .fixed-action-btn ul li span a{
+        padding-left:3px;
+        padding-right: 3px;
+     }
+   
+}
+
+
+@media (max-width: 320px) {
+    .fixed-mobilemenu ul li {
+        margin-bottom: 8px;
+    }
+    .fixed-mobilemenu ul li .btn-floating {
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 35px;
+        font-size: 12px;
+    }
+
+    /** adjusting our button's position **/
+    /*.fixed-action-btn{
+        right: 7px;
+    }*/
+    .fixed-action-btn.locate-me-wrapper{
+        right: 70px;
+    }
+    .menuList{
+        height: 338px !important;
+    }
+    .menu-name{
+        right: 55px;
+    }
+   
+    .fixed-action-btn ul{bottom: 0px;}
+}
+.menu-name{
+    height: 34px;
+    line-height: 36px;
+    right: 75px !important;
+}
+.menu-icon-right{
+    width: 35px;
+    height: 35px;
+}
+#branding{
+    cursor: pointer;
+}
+.menu-icon-right>img{
+    margin-top: 7px  !important;
+}
+.modal.bottom-sheet,.modal.modal-fixed-footer,.side-nav{
+    z-index:1000!important;
+}
+.modal-overlay{
+    z-index: 999!important;
+}
+#fabModalBtn, #markersBtn, #fabUserLocationBtn {
+    transition: all .5s ease-out;
+}
+
+/* Override Style KioskScreen */
+
+
+.kioskScreen .btn-floating.btn-large {
+    width: 75px;
+    height: 75px;
+}
+
+.kioskScreen .toggle-btm {
+    right: 15px;
+    bottom: 6px;
+}
+
+.kioskScreen .btn-large i {
+    font-size: 4.2rem;
+}
+.kioskScreen .btn-floating.btn-large i {
+    line-height: 74px;
+}
+.kioskScreen .heading-list {
+    right: 110px;
+    bottom: 6px;
+}
+.kioskScreen .heading-list a{
+    padding:0px!important;
+}
+.kioskScreen .heading-list a img{
+    height: 64px!important;
+    width: 43px!important;
+    padding-top: 8px!important;
+}
+.kioskScreen .locate-me-wrapper {
+    position: fixed;
+    right: 207px;
+    bottom: 6px;
+}
+.kioskScreen .locate-me-wrapper a{
+    padding:0px!important;
+}
+.kioskScreen .locate-me-wrapper a img {
+    width: 70px;
+    height: 73px;
+    margin-top: 2px;
+}
+
+.kioskScreen #searchForm {
+    width: 55%!important;
+    margin-right: 15px;
+}
+.kioskScreen .kioskMultiLang select {
+    height: 5.9rem!important;
+}
+.kioskScreen .kioskMultiLang .input-field {
+    margin-top: 0!important;
+}
+.kioskMultiLang select {
+    padding: 0 5px!important;
+}
+.kioskScreen .KioskFlag {
+    padding-top: 0!important;
+}
+.kioskScreen .KioskFlag {
+    background: #000;
+ }
+ .kioskScreen .kioskFlagImg {
+    margin-top: 20px!important;
+    padding: 0px 5px;
+}
+.kioskScreen .kioskFlagImg {
+    width: 55px!important;
+}
+.kioskScreen .kioskMultiLang {
+    width: 100px!important;
+}
+.kioskMultiLang select {
+    font-size: 20px;
+}
+.kioskScreen input[type=search] {
+    height: 6rem!important;
+}
+.kioskScreen #searchForm .input-field {
+    margin-top: 0;
+}
+.kioskScreen #searchForm .input-field input[type=search] ~ .material-icons {
+    padding: 7px 6px!important;
+    font-size: 4.3rem;
+}
+.kioskScreen .input-field label {
+    top: 1.5rem!important;
+    left: 5rem!important;
+}
+.kioskScreen .input-field label i{
+    cursor: pointer;
+    color: #4d4b4b !important;
+    font-size: 41px;
+}
+.kioskScreen #autocomplete-input {
+    padding-left: 8rem!important;
+    width: calc(100% - 8rem)!important;
+    font-size: 19px!important;
+}
+
+.kioskScreen i.admin-console-link {
+    top: 17px!important;
+    font-size: 4.1rem!important;
+}
+div#mlkeyboard {
+    bottom: 300px!important;
+    width: 100% !important;
+    text-align: center;
+    background: #0000009e;
+}
+.kioskScreen .custom-close {
+    right: 5%;
+     padding: 0px 9px 0px 10px;
+}
+::-webkit-scrollbar {
+    width: 3em;
+    height: 3em;
+    z-index:9999!important;
+}
+::-webkit-scrollbar-button {
+    background: #696868;
+}
+::-webkit-scrollbar-track-piece {
+    background: #939596;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #1e1f1f;
+    height:3.5em;
+    border-radius: 23px;
+}
+.kioskScreen .fixed-action-btn.active ul.menuList {
+    overflow: hidden;
+}
+/*.kioskScreen .pad-r-4 {
+    padding-right: 5%;
+}*/
+
+.kioskScreen .fixed-action-btn.active ul.menuList{
+  padding-bottom:20%;
+}
+
+.kioskScreen .sidenav-popup-content .row{
+    padding-right: 5%;
+}
+.kioskScreen .custom-close i.small {
+    font-size: 17px;
+    color: #0a0a0a;
+}
+.kioskScreen #bottomSheetModalId.modal.bottom-sheet{
+    overflow-y: scroll;
+}
+.kioskScreen .add-whitespace {
+    width: 96%;
+}
+
+.kioskScreen .ksMenuText {
+    font-size: 20px!important;
+    font-style: normal;
+    font-weight: 600;
+}
+.kioskScreen .page-footer.gctourism {
+    background: #000!important;
+}
+.kioskScreen .btn-floating.btn-large {
+    border: #fff solid 2px;
+}
+.kioskScreen .page-footer.gctourism {
+    padding: 5px 0px;
+}
+.kioskScreen input[type=search] {
+    height: 5.4rem!important;
+}
+.kioskScreen #searchForm {
+    border: #fff solid 2px;
+    margin-left: 3px;
+}
+.kioskScreen .kioskMultiLang .select-wrapper input.select-dropdown{
+  height: 5.4rem!important;
+
+}
+.kioskScreen .KioskFlag {
+    border: #fff solid 2px;
+}
+
+/** Landing Page without kiosk Mode **/
+.withFlagSearchbar #autocomplete-input {
+    width: calc(100% - 5rem);
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .withFlagSearchbar #autocomplete-input {
+       width: calc(100% - 19rem);
+    }  
+}
+@media screen and (max-width: 768px) and (min-width: 425px){
+   .withFlagSearchbar{
+        width: 80%;
+    }
+    .withFlagSearchbar #autocomplete-input {
+    width: calc(100% - 10rem);
+    }  
+   .withFlagSearchbar .input-field input[type="search"] ~ .material-icons {
+    right: 0.8em!important;
+    }
+    .headTopFlag {
+      width: 135px;
+    }
+}
+@media screen and (max-width: 425px) and (min-width: 320px){
+    .withFlagSearchbar{
+        width: 100%;
+    }
+    .withFlagSearchbar #autocomplete-input {
+        width: calc(100% - 8rem);
+      }
+    .withFlagSearchbar .input-field input[type=search] ~ .material-icons {
+        right: 0!important;
+    }
+    .withFlagSearchbar .input-field:focus input[type=search] {
+    background-color: #fff;
+}
+    
+}

@@ -1,0 +1,65 @@
+<template name="editMenuItemModal">
+    <!-- New Menu Item Modal -->
+    <div id="editMenuItem" class="modal modal-fixed-footer">
+        {{#with editMenuItemData}}
+        <div>
+            <div class="modal-content">
+                <div class="row">
+                    <form class="col s12">
+                        <h4 class="thin pull-left">Edit menu Item</h4>
+                        <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                        <div class="input-field">
+                            <input id="edit-menu-Item" type="text" class="validate" value={{name}}>
+                            <label class="active" for="edit-menu-Item">Name</label>
+                        </div>
+                        <div class="input-field col s9">
+                            <a class="modal-trigger waves-effect waves-light btn" href="#IconModal">Choose Icon</a>
+                        </div>
+                        <div class="input-field col s3 icon-img-container">
+                        {{#if selectedUpdateMenuIcon}}
+                        <input id="menu-item-icon" name="menu-item-icon" type="hidden" value="{{selectedUpdateMenuIcon}}"/>
+                        <img class="edit-menu-icon-img openColorPickerEditMenu img" height="30px" src="/img/maki/{{selectedUpdateMenuIcon}}.svg" style="background-color: {{initialColor}}"/>
+                        {{else}}
+                        <input id="menu-item-icon" name="menu-item-icon" type="hidden" value=""/>
+                        {{/if}}
+                    </div>
+                    <div class="file-field input-field col s8">
+                        <label for="menu-item-color" class="active">
+                            Menu Item Color
+                        </label>
+                        <input class="menu-item-color" id="menu-item-color-edit-modal" name="menu-item-color" type="text" value="{{initialColor}}" />
+                    </div>
+                    <div class="file-field input-field col s4" style="margin-top: 0px;">
+                        <div class="file-field input-field">
+                            <label class="active edit-menu-icon-color-lbl" for="edit-menu-icon-color">
+                                Icon Color
+                            </label>
+                            <input class="edit-menu-icon-color openColorPicker" id="edit-menu-icon-color" name="edit-menu-icon-color" readonly="" type="text" value="{{initialColor}}"/>
+                        </div>
+                    </div>
+                    <div class="input-field col s12 show-menus">
+                        <label class="active">Parent Menu</label>
+                        <select id="showMenus">
+                            {{#each getMenus}}
+                                <option value="{{_id}}" {{selected _id}}>{{name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div class="col s10">
+                        <div class="color-out" id="outColorPickereditmodal" style="position: relative;">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat edit-menu-item-save" id="{{_id}}">Save</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+            </div>
+        </div>
+        {{/with}}
+    </div>
+</template>

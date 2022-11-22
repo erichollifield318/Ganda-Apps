@@ -1,0 +1,44 @@
+<template name="landingPage">
+  {{# if checkDataLoad }}
+    <nav>
+      <div class="nav-wrapper grey darken-2" style="background: {{landing.searchBarBackgroundColor}}">
+      {{ # if isNotKioskUser }}
+       <!-- <div class="row"> -->
+          <!-- <div class="col s10"> -->
+            {{> searchBar getMenuItemName}}
+        {{/ if }}
+        <div class={{subDomainClass}} style="background-image: url({{landing.landingImage}})">
+          <div id="overlay-box">
+          </div>
+          {{#if isHome}}
+            {{# if getSubDomainName }}
+              {{# if checkHeadingImage landing.landingPageHeadingImage }}
+                <div class="heading" id="mainHeading" style="color: {{landing.headingTextColor}}">
+                  <img src="{{ landing.landingPageHeadingImage }}" id="landingPageHeadingImage">
+                </div>
+              {{ else }}
+                <div class="heading" id="" style="color: {{landing.headingTextColor}}">
+                  {{{ landing.landingHeading }}}
+                </div>
+                <div class="subheading" id="subHeading" style="color: {{landing.subHeadingTextColor}}">
+                  {{{ landing.landingSubHeading }}}
+                </div>
+              {{/ if }}
+            {{ else}}
+              <div class="heading" id="mainHeading" style="color: {{landing.headingTextColor}}">{{{ landing.landingHeading }}}</div>
+              <div class="subheading" style="color: {{landing.subHeadingTextColor}}">{{{ landing.landingSubHeading }}}</div>
+            {{/ if}}
+            
+          {{/if}}
+        </div>
+
+        <!-- {{#unless searching}}
+        <div class="doublebay-image">
+        </div>
+        {{/unless}} -->
+      </div>
+    </nav>
+  {{ else }}
+  {{> spinner}}
+  {{/ if }}
+</template>

@@ -1,0 +1,290 @@
+.bottom-fifty-five {
+    /*bottom: 14px!important;*/
+    z-index: 100;
+}
+
+
+.doublebay.page-footer {
+    background-color: #939597;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+.mobile-fab-tip {
+    width: auto!important;
+    position: absolute;
+}
+
+/****** Locate Me Button *****/
+.fixed-action-btn.locate-me-wrapper{
+    right:92px;
+}
+.fixed-action-btn.heading-list{
+    right:92px;
+}
+/*****************************/
+
+.fixed-action-btn ul {
+    padding-left:5px;
+    padding-right:5px;
+    bottom:90px!important;
+    height: auto!important;
+    width: auto;
+    z-index: 200;
+    /*background: rgba(158, 158, 158, 0.50);*/
+    min-width:320px;
+    left: auto;text-align:left;
+    position: static!important;
+    margin-bottom: 30px!important;
+
+}
+
+.fixed-action-btn{
+    left:0;
+    right: 0px;
+    padding-top: 0;
+    
+}
+.toggle-btm{
+    position: fixed;
+    right: 10px;
+    bottom: 14px;
+    z-index: 200;
+}
+.heading-list{
+    position: fixed;
+    right: 80px;
+    bottom: 14px;
+    z-index: 200;
+}
+
+.locate-me-wrapper{
+    position: fixed;
+    right:150px;
+    bottom: 14px;
+    z-index: 200;
+}
+/*.clearfix{clear:both;display: block;content: "";}*/
+.fixed-action-btn ul li {
+    margin-bottom:5px;
+    display: block;
+    /*overflow: hidden;*/
+    /*clear:both;*/
+    padding: 0px 5px;
+    width:50%;
+    float: left;
+}
+.fixed-action-btn ul li .icon{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.fixed-action-btn ul li .icon img{
+    margin-top: 5px!important;
+}
+.fixed-action-btn ul li span{
+   display: block;
+   padding-left:38px;
+   
+}
+.fixed-action-btn ul li span a{
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    padding: 0px 5px;
+    font-size:12px;
+    line-height: 30px;
+}
+.fixed-action-btn ul li:after,.fixed-action-btn ul:after{
+    clear:both;
+    display: block;
+    content: "";
+}
+.fixed-action-btn ul li .btn-floating {
+    margin:5px 0px;
+}
+.fixed-action-btn ul li:last-child {
+    margin-bottom: 0px;
+}
+.fixed-action-btn.active ul {
+    visibility: visible;
+    margin-bottom: 8px;
+}
+
+
+
+
+@media (max-height: 736px) {
+    .fixed-action-btn ul {
+        max-height: 565px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 667px) {
+    .fixed-action-btn ul {
+        max-height: 510px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 640px) {
+    .fixed-action-btn ul {
+        max-height: 460px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 568px) {
+    .fixed-action-btn ul {
+        max-height: 460px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 480px) {
+    .fixed-action-btn ul {
+        max-height: 325px;
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width:400px){
+    .btn-floating.btn-large {
+        width:43px;
+        height:43px;
+    }
+
+    .toggle-btm{bottom: 10px;}
+
+    .btn-floating.btn-large i {
+        line-height: 30px;
+    }
+
+    .btn-large i {
+        font-size: 1.4rem;
+    }
+    
+    .btn-large img{
+        width:15px!important;
+        height: auto!important;
+        padding-top: 0;
+        position: relative;
+        top: -9px;
+    }
+
+    #overlay-box{
+        height: calc(100% - 65px);
+    }
+
+    .menuList {
+        height: 360px !important;
+    }
+
+    #fabUserLocationBtn img {
+        width: 28px !important;
+        position: relative;
+        top: -4px;right: 1px;
+    }
+
+    .locate-me-wrapper{
+        right: 117px!important;
+        bottom:10px !important;
+    }
+
+    .heading-list{
+        right: 62px!important;
+        bottom: 10px !important;
+    }
+
+   /* .click-to-toggle  {
+        right: 7px!important;bottom:10px!important;
+    }*/
+    .fixed-action-btn ul li span a{
+        font-size: 11px;
+    }
+    .fixed-action-btn ul{margin-bottom: 8px!important;}
+}
+
+@media(max-width: 370px){
+    .fixed-action-btn ul li span a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menuList{
+        height: 398px;
+    }
+   
+}
+@media (max-width: 346px) {
+    .fixed-action-btn ul li span{
+        padding-left: 34px;
+     }
+     .fixed-action-btn ul{
+        padding-left: 3px;
+        padding-right: 3px;
+     }
+     .fixed-action-btn ul li span a{
+        padding-left:3px;
+        padding-right: 3px;
+     }
+   
+}
+
+
+@media (max-width: 320px) {
+    .fixed-mobilemenu ul li {
+        margin-bottom: 8px;
+    }
+    .fixed-mobilemenu ul li .btn-floating {
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 35px;
+        font-size: 12px;
+    }
+
+    /** adjusting our button's position **/
+    /*.fixed-action-btn{
+        right: 7px;
+    }*/
+    .fixed-action-btn.locate-me-wrapper{
+        right: 70px;
+    }
+    .menuList{
+        height: 338px !important;
+    }
+    .menu-name{
+        right: 55px;
+    }
+   
+    .fixed-action-btn ul{bottom: 0px;}
+}
+.menu-name{
+    height: 34px;
+    line-height: 36px;
+    right: 75px !important;
+}
+.menu-icon-right{
+    width: 35px;
+    height: 35px;
+}
+#branding{
+    cursor: pointer;
+}
+.menu-icon-right>img{
+    margin-top: 7px  !important;
+}
+.modal.bottom-sheet,.modal.modal-fixed-footer,.side-nav{
+    z-index:1000!important;
+}
+.modal-overlay{
+    z-index: 999!important;
+}

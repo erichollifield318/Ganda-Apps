@@ -1,0 +1,193 @@
+{
+	"landingPage": {
+	"searchBoxText": "サイト内検索",
+	"menuTitle":"メニュー"
+	},
+	"sideNav": {
+		"time": "時間",
+		"date": "日付",
+		"weather": "天気",
+		"savedLocation": "保存した位置",
+		"shareLocation": "場所をシェア",
+		"sendFeedback": "フィードバックを送る",
+		"termsOfService": "利用規約",
+		"privacyPolicy": "プライバシーポリシー",
+		"copyright": "著作権",
+		"version": "バージョン"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "サインイン",
+		"registerNow": "登録する",
+		"emailIdLable": "EメールID",
+		"password": "パスワード",
+		"userName": "ユーザー名",
+		"register": "登録する"
+	},
+	"feedBackModal": {
+		"feedback": "フィードバック",
+		"textAreaLabel": "ご意見をお聞かせください",
+		"send": "送信"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "プライバシーポリシー"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "行き方",
+		"detailsButton": "詳細",
+		"callButton": "通話",
+		"currentLocationPopup":"あなたの現在の場所"
+	},
+	"profileModal": {
+		"emailIdLable": "EメールID",
+		"editDetails": "詳細を編集する",
+		"username": "ユーザー名",
+		"oldPassword": "旧パスワード",
+		"newPassword": "新パスワード",
+		"confirmPassword": "パスワードを確認",
+		"update": "アップデート",
+		"logOut": "ログアウト"
+},
+
+	"bottomSheetModal": {
+		"address": "住所",
+		"telephone": "電話番号",
+		"category": "カテゴリー",
+		"description": "About Us ",
+		"directions": "行き方",
+		"call": "通話",
+		"share": "シェア",
+		"save": "保存",
+		"menu": "メニュー",
+		"menuItem": "メニュー項目",
+		"details": "詳細",
+		"hours": "営業時間",
+		"web": "ウェブサイト"
+	},
+
+	"accommodation": {
+		"accommodation" :"宿泊",
+		"allAccommodation": "全ての宿泊",
+		"apartments": "アパートメント",
+		"hostels": "ホテル",
+		"bedAndBreakfast": "ベッド＆ブレックファースト",
+		"cottages": "コテージ",
+		"camping": "キャラバン、キャンプ場、ホリデーパーク",
+		"hotels": "ホテル",
+		"resorts": "リゾート",
+		"motels": "モーテル",
+		"holidayHouses": "ホリデーハウス",
+		"farmStays": "ファームステイ",
+		"retreatAndLodge": "リトリート・ロッジ",
+		"selfContained": "セルフコンテインド",
+		"wildernessSafariRetreat": "野生サファリリトリート"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "遊び方・楽しみ方",
+		"allAttractions": "全てのアトラクション",
+		"amusementAndThemeParks": "アミューズメント・テーマパーク",
+		"beaches": "ビーチ",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "Casinos",
+		"cinemas": "シネマ",
+		"galleriesMuseumsAndCollections": "ギャラリー・博物館",
+		"golfCourse": "ゴルフコース",
+		"karaoke": "カラオケ",
+		"kids": "キッズ",
+		"libraries": "図書館",
+		"nationalParksAndReserves": "国立公園や",
+		"naturalAttractions": "自然の見どころ",
+		"nightclubs": "Nightclubs",
+		"parksAndGardens": "公園・庭園",
+		"sportsAndRecreationFacilities": "スポーツ・レクリエーション施設",
+		"watersports": "Watersports",
+		"wineriesVineyardsAndBreweries": "ワイナリー.醸造所",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "動物園・サンクチュアリ・水族館、ワイルドライフパーク"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "ツアーやレンタル",
+		"allTours": "全てのツアー",
+		"extendedTours": "延長",
+		"nightTours": "ナイトライフツアー",
+		"helicopterTours": "飛行機・ヘリコプター・気球ツアー",
+		"adventures": "アドベンチャー・アウトドアツアー",
+		"carHire": "車",
+		"bicycleHire": "自転車",
+		"boatHire": "ボート",
+		"campervansAndMotorhomeHire": "キャンピングカー",
+		"fourWheelDriveHire": "4WD",
+		"houseboatHire": "自家用ボート",
+		"minibusAndCoachHire": "ミニバス、バス",
+		"motorcycleHire": "バイク",
+		"yachtHire": "ヨット"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "飲食",
+		"restaurants": "レストラン",
+		"chineseRestaurants": "中華料理",
+		"thaiRestaurants": "タイ料理",
+		"indianRestaurants": "インド料理",
+		"italianRestaurants": "イタリアンレストラン",
+		"cafesAndCoffeeShops": "カフェ・コーヒーショップ",
+		"fastFoods": "ファーストフード",
+		"bars": "バー",
+		"clubs": "クラブ",
+		"pubs": "パブ",
+		"iceCream": "アイスクリーム",
+		"bottleshops": "リカーショップ",
+		"supermarkets": "スーパー"
+	},
+	"gettingAround": {
+		"gettingAround": "交通手段",
+		"allTransport": "全ての交通手段",
+		"airServices": "航空",
+		"busesAndCoachServices": "バス.長距離バス",
+		"information": "観光案内",
+		"taxisAndWaterTaxis": "タクシー・水上タクシー",
+		"railServices": "電車",
+		"transfers": "交通手段",
+		"rechargeStations": "充電場所"
+
+	},
+	"shopping": {
+		"shopping": "ショッピング",
+		"shoppingCentres": "ショッピング・マーケット",
+		"womensFashion": "レディースファッション",
+		"mensClothing": "メンズ服",
+		"womensClothing": "レディース服",
+		"childrensFashion": "キッズファッション",
+		"hairdressers": "美容室",
+		"florists": "花屋",
+		"handbags": "ハンドバッグ",
+		"furnitureAndHomewares": "家具・ホームウェア",
+		"dutyFree": "免税店",
+		"footwear": "靴屋",
+		"newsagencies": "書店",
+		"dryCleaning": "ドライクリーニング",
+		"alterations": "縫製",
+		"convenienceStore": "コンビニエンスストア",
+		"souvenirs": "お土産"
+	},
+
+	"amenities": {
+		"amenities": "アメニティー",
+		"toilets": "トイレ",
+		"hospitals": "病院",
+		"atms": "ATM",
+		"chemists": "薬局",
+		"policeStation": "警察署",
+		"bikeRacks": "自転車置き場",
+		"parking": "自転車置き場"
+	},
+	"accessibility": {
+		"accessibility": "アクセシビリティ",
+		"accessibilityToilets": "障がい者用トイレ",
+		"busStops": "バス停",
+		"accessibilityBeachShowers": "障がい者用ビーチシャワー",
+		"accessibilityParking": "障がい者用駐車場",
+		"accessibleBarbeque": "障がい者用バーべキューエリア"
+	}
+
+}

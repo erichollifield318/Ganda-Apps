@@ -1,0 +1,38 @@
+<template name="routeLocations">
+   
+    <div id="routeLocations" class="modal modal-fixed-footer" style="width: 90%; height:90%; max-height: 90%">
+   
+    <form id="routeLocationSection">
+        <div class="modal-content">
+            <h4 class="pull-left">Route Location</h4>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <input class="routing-mode" name="routingMode" type="radio" value="drive" id="drive" />
+                    <label for="drive">Drive</label>
+                </div>
+                <div class="input-field col s4">
+                    <input class="routing-mode" name="routingMode" type="radio" value="walk" id="walk" />
+                    <label for="walk">Walk</label>
+                </div>
+                <div class="input-field col s4">
+                    <input class="routing-mode" name="routingMode" type="radio" value="ride" id="ride" />
+                    <label for="ride">Ride</label>
+                </div>
+            </div>
+            <div id="maps">
+                <div id="map-box"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat hoverable">Update</button>
+        </div>
+        </form>
+    </div>
+    
+
+    {{> routeLocationDetail routeLocationMarkerData}}
+</template>

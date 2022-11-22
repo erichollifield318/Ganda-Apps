@@ -1,0 +1,192 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "Menu"
+	},
+	"sideNav": {
+		"time": "Hora",
+		"date": "Fecha",
+		"weather": "Tiempo",
+		"savedLocation": "Ubicación guardada",
+		"shareLocation": "Compartir ubicación",
+		"sendFeedback": "Enviar comentarios",
+		"termsOfService": "Términos de servicio",
+		"privacyPolicy": "Política de privacidad",
+		"copyright": "derechos de autor",
+		"version": "Version"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "INICIAR SESIÓN",
+		"registerNow": "Registrarse ahora",
+		"emailIdLable": "Correo electrónico de identificación",
+		"password": "Contraseña",
+		"userName": "Nombre de usuario",
+		"register": "Registrarse"
+	},
+	"feedBackModal": {
+		"feedback": "Comentarios",
+		"textAreaLabel": "Cuéntanos tu experiencia",
+		"send": "ENVIAR"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "Política de privacidad"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "Dirección",
+		"detailsButton": "Datos",
+		"callButton": "Llamar"
+	},
+	"profileModal": {
+		"emailIdLable": "Correo electrónico de identificación",
+		"editDetails": "Editar datos",
+		"username": "Nombre de usuario",
+		"oldPassword": "Contraseña antigua",
+		"newPassword": "Contraseña nueva",
+		"confirmPassword": "Confirmar contraseña",
+		"update": "UPDATE",
+		"logOut": "CERRAR SESIÓN"
+},
+
+	"bottomSheetModal": {
+		"address": "Dirección",
+		"telephone": "Teléfono",
+		"category": "Categoría",
+		"description": "Sobre nosotros",
+		"directions": "DIRECCIONES",
+		"call": "LLAMAR",
+		"share": "COMPARTIR",
+		"save": "GUARDAR",
+		"menu": "MENÚ",
+		"menuItem": "Elemento del menú",
+		"details": "DATOS",
+		"hours": "Horas",
+		"web": "WEB"
+	},
+
+	"accommodation": {
+		"accommodation" :"Alojamiento",
+		"allAccommodation": "Todos los alojamientos",
+		"apartments": "Apartamentos",
+		"hostels": "Albergues",
+		"bedAndBreakfast": "Alojamiento y desayuno",
+		"cottages": "Casas rurales",
+		"camping": "Capamento",
+		"hotels": "Hoteles",
+		"resorts": "Complejos hoteleros",
+		"motels": "Moteles",
+		"holidayHouses": "Casas de vacaciones",
+		"farmStays": "Estancias en granjas",
+		"retreatAndLodge": "Retiros y albergues",
+		"selfContained": "Independiente",
+		"wildernessSafariRetreat": "Retiro en un safari salvaje"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "Cosas que hacer",
+		"allAttractions": "Todas las atracciones",
+		"amusementAndThemeParks": "Parques de atracciones y temáticos",
+		"beaches": "Playas",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "Casinos",
+		"cinemas": "Cines",
+		"galleriesMuseumsAndCollections": "Galerías, museos y colecciones",
+		"golfCourse": "Campo de golf",
+		"karaoke": "Karaoke",
+		"kids": "Niños",
+		"libraries": "Bibliotecas",
+		"nationalParksAndReserves": "Parques nacionales y reservas",
+		"naturalAttractions": "Atracciones naturales",
+		"nightclubs": "Discotecas",
+		"parksAndGardens": "Parques y jardines",
+		"sportsAndRecreationFacilities": "Deportes y recreación",
+		"watersports": "Deportes acuáticos",
+		"wineriesVineyardsAndBreweries": "Bodegas, viñedos y cervecerías",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "Los parques zoológicos, santuarios, acuarios y reservas"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "Tours y alquileres",
+		"allTours": "Todos los tours",
+		"extendedTours": "Tours extendidos",
+		"nightTours": "Tours nocturnos",
+		"helicopterTours": "Tours en helicóptero",
+		"adventures": "Aventuras",
+		"carHire": "Alquiler de coches",
+		"bicycleHire": "Alquiler de bicicletas",
+		"boatHire": "Alquiler de barcos",
+		"campervansAndMotorhomeHire": "Alquiler de caravanas",
+		"fourWheelDriveHire": "Alquileres de vehículos de cuatro ruedas",
+		"houseboatHire": "Alquiler de casas flotantes",
+		"minibusAndCoachHire": "Alquiler de minibuses y autobuses",
+		"motorcycleHire": "Alquiler de motos",
+		"yachtHire": "Alquiler de yates"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "Alimentos y bebidas",
+		"restaurants": "Restaurantes",
+		"chineseRestaurants": "Restaurantes chinos",
+		"thaiRestaurants": "Restaurantes tailandeses",
+		"indianRestaurants": "Restaurantes indios",
+		"italianRestaurants": "Restaurantes italianos",
+		"cafesAndCoffeeShops": "Cafeterías",
+		"fastFoods": "Comida rápida",
+		"bars": "Bares",
+		"clubs": "Discotecas",
+		"pubs": "Pubs",
+		"iceCream": "Helados",
+		"bottleshops": "Tienda de bebidas",
+		"supermarkets": "Supermercados"
+	},
+	"gettingAround": {
+		"gettingAround": "Cómo desplazarse",
+		"allTransport": "Todos los transportest",
+		"airServices": "Servicios aéreos",
+		"busesAndCoachServices": "Servicios de autobuses",
+		"information": "Información",
+		"taxisAndWaterTaxis": "Taxis y taxis acuáticos",
+		"railServices": "Servicios ferroviarios",
+		"transfers": "Desplazamientos",
+		"rechargeStations": "Estaciones de recarga"
+
+	},
+	"shopping": {
+		"shopping": "Compras",
+		"shoppingCentres": "Centros comerciales",
+		"womensFashion": "Moda para mujer",
+		"mensClothing": "Ropa para hombre",
+		"womensClothing": "Ropa para mujer",
+		"childrensFashion": "Moda para niños",
+		"hairdressers": "Peluquerías",
+		"florists": "Floristerías",
+		"handbags": "Bolsos de mano",
+		"furnitureAndHomewares": "Muebles y artículos para el hogar",
+		"dutyFree": "Tiendas libres de impuestos",
+		"footwear": "Calzado",
+		"newsagencies": "Agencias de noticias",
+		"dryCleaning": "Limpieza en seco",
+		"alterations": "Modificaciones",
+		"convenienceStore": "Súper",
+		"souvenirs": "Recuerdos"
+	},
+
+	"amenities": {
+		"amenities": "Servicios",
+		"toilets": "Aseos",
+		"hospitals": "Hospitales",
+		"atms": "Cajeros automáticos",
+		"chemists": "Farmacias",
+		"policeStation": "Comisaría de policía",
+		"bikeRacks": "Aparcabicicletas",
+		"parking": "Aparcamiento"
+	},
+	"accessibility": {
+		"accessibility": "Accesibilidad",
+		"accessibilityToilets": "ASEOS ACCESIBLES",
+		"busStops": "PARADAS DE AUTOBÚS",
+		"accessibilityBeachShowers": "DUCHAS DE PLAYA ACCESIBLES",
+		"accessibilityParking": "APARCAMIENTO ACCESIBLE",
+		"accessibleBarbeque": "BARBACOA ACCESIBLE"
+	}
+
+}

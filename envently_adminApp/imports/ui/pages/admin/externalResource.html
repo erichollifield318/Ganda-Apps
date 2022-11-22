@@ -1,0 +1,46 @@
+<template name="externalResource">
+    <!-- New Menu Item Modal -->
+    <div class="modal modal-fixed-footer" id="createExternalResource">
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                    <h4 class="thin pull-left">
+                        External Resources
+                    </h4>
+                    <div class="clearfix">
+                    </div>
+                    <div class="input-field col s9">
+                        <input class="validate" id="external-resource-url" type="text" value="{{externalResourceObject}}" />
+                        <label class="{{isAcive}}" for="external-resource-url">
+                            ATDW Options
+                        </label>
+                    </div>
+                     <a class="modal-trigger waves-effect waves-light btn col s3" href="#!" id="showResult">
+                        Show Data
+                    </a>
+                    {{# if atdwUrl}}
+                        <div id="atdw-url" class="col s12">
+                            <strong>Your ATDW full url is:- </strong>
+                            {{ atdwUrl }}
+                        </div>
+                    {{/ if }}
+                    {{# if isLoader }}
+                        {{> spinner }}
+                    {{/ if }}
+                    <div id="atdw-result">
+                        <strong>Your ATDW Result is:- </strong>
+                        <div id="tree" class="col s12" ></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="waves-effect waves-green btn-flat" href="#!" id="saveExternalResource">
+                Save
+            </a>
+            <a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">
+                cancel
+            </a>
+        </div>
+    </div>
+</template>

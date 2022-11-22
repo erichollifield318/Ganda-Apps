@@ -1,0 +1,15 @@
+textarea {
+    height: auto;
+    height: -moz-fill-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    /*height: fill-available;*/
+}
+#editprivacypolicy textarea {
+    border: #dbdbdb solid 1px;
+}
+@media (max-width: 767px){
+	.modal.modal-fixed-footer.open{
+		width: 90% !important;
+		height: 70% !important;
+	}
+}

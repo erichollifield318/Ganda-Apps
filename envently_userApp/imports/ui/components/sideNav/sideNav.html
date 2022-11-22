@@ -1,0 +1,186 @@
+<template name="sideNav">
+    <ul class="side-nav user-detail" id="slide-out" style="background: {{sideNavModal.modalBackgroundColor}}; width: 309px">
+
+        {{#if isLoggedIn}}
+            <li class="userdeta-wrapper" style="color: {{sideNavModal.headingTextColor}};">
+                <div class="sidenav-popup-content" style="min-width: auto; min-height: 77px">
+                    <h4>
+                        {{userName}} {{#if isKioskUser}} <i class="material-icons edit-userdetails-icon">settings</i> {{/if}}
+                    </h4>
+                    <!-- <h6>
+                        {{counts}}
+                    </h6> -->
+                </div>
+            </li>            
+        {{/if}}
+        <!-- <li style="{{getPadding}} {{#unless isLoggedIn}}border-color:#616161;{{/unless}}">
+
+            {{#each markers}}
+            <div>
+                {{markerName}}
+            </div>
+            {{/each}}
+        </li> -->
+        <li class="top-bottom-spacing" style="color: {{sideNavModal.headingTextColor}};">
+            <div style="positon: inline-block">
+                <span style="font-weight: 700;font-size: 20px;">{{currentClient}}</span>
+                {{#if isLoggedIn}}
+                {{else}}
+                    <div id="login-btn" class="login-span pull-right">
+                        <a href="#">Login</a>
+                    </div>
+                {{/if}}
+            </div>
+
+        </li>
+        <li class="top-bottom-spacing" style="color: {{sideNavModal.textColor}};">
+            <div>
+                <span style="font-weight: 600;">{{_ "sideNav.time" }}: </span><span>{{fullTime}}</span>
+            </div>
+            <div>
+                <span style="font-weight: 600;">{{_ "sideNav.date" }}: </span><span>{{fullDate}}</span>
+            </div>
+            <div>
+                <span style="font-weight: 600;">{{_ "sideNav.weather" }}: </span><span id="weatherlbl"> {{weather}}</span>
+            </div>
+        </li>
+        <li class="info-btn-wrapper" style="color: {{sideNavModal.textColor}};">
+            <!-- <div class="row normal-cursor">
+                <div class="col s2" style="padding: 3px 5px 0;height: 30px;">
+                    <img src="{{englishImg}}" style="width:31px;height: auto;">
+                </div>
+                <div class="col s9 navicon-text-wrapper" style="height: 30px;">
+                    English
+                </div>
+            </div> -->
+            {{#if isKioskUser}}
+            <div class="row hand-pointer" id="savedLocationsBtn">
+                <div class="col s2 navicon-wrapper" style="color: #EB992A;">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="col s9 navicon-text-wrapper">
+                    {{_ "sideNav.savedLocation" }}
+                </div>
+            </div>
+            {{/if}}
+                <div class="row hand-pointer" id="shareCurrentLocation">
+                    <div class="col s2 navicon-wrapper">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="col s9 navicon-text-wrapper">
+                        {{_ "sideNav.shareLocation" }}
+                    </div>
+                </div>
+            
+            {{#if isKioskUser}}
+            <div class="row hand-pointer" id="sendFeedBackBtn">
+                <div class="col s2 navicon-wrapper">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+                <div class="col s9 navicon-text-wrapper">
+                    {{_ "sideNav.sendFeedback" }}
+                    
+                </div>
+            </div>
+            {{/if}}
+            {{# if isMultiLanguage }}
+                <div class="row hand-pointer" id="sideflagMobile">
+                    <div class="headTopFlag">
+                        <span class="topFlagImg">
+                            <img src="img/english.svg">
+                        </span>
+                        <span class="topFlagSelection">
+                            {{> languageSelect}}
+                        </span>
+                    </div>
+                </div>
+            {{/ if }}
+        </li>
+        <li class="top-bottom-spacing terms-services" style="color: {{sideNavModal.textColor}};">
+            <div class="row hand-pointer" id="termsOfServiceBtn" style="font-weight: 600;"> {{_ "sideNav.termsOfService" }} </div>
+            <div class="row hand-pointer" id="privacyPolicyBtn" style="font-weight: 600;"> {{_ "sideNav.privacyPolicy" }} </div>
+            <div class="row hand-pointer" id="copyrightBtn" style="font-weight: 600;"> {{_ "sideNav.copyright" }} </div>
+        </li>
+        <li style="color: {{sideNavModal.textColor}};">
+            <small class="pull-right">
+                {{_ "sideNav.version" }} 1.0
+            </small>
+        </li>
+        <!-- <li>
+             
+        </li> -->
+        <!-- <div>
+            {{> languageSelect }} 
+        </div> -->
+        {{# if adminModalImage }}
+            <div class="dt-adminModalImage">
+                <img src="{{ adminModalImage }}">
+            </div>
+        {{/ if }}
+    </ul>
+    <!-- {{# if isKiosk}} -->
+        <a id="sidebarBtn" class="button-collapse show-on-large {{kioskModeClass}}" data-activates="slide-out" href="#" title="Open Admin Modal">
+            <!-- <img alt="" class="admin-console-link" src="/adminConsoleIcon.png"/> -->
+            <i class=" material-icons admin-console-link" style="font-size: 2.1rem;top: 15px; color: {{sideNavModal.sideNavOpenIconColor}};">menu</i>
+            
+            <!--  <i style="color: rgba(255, 255, 255, 0.7); transition: color .3s; font-size: 35px; position: absolute; top: 13px; left: 0px; z-index: 9;" class="material-icons showSideNavigation">chevron_right</i> -->
+        </a>
+    <!-- {{/ if }} -->
+
+    {{> Template.dynamic template=loadTemplate }}
+
+
+    <!-- Edit user details modal -->
+       <div class="modal modal-fixed-footer" id="edit-user-detail">
+         <div class="modal-header" style="background: #6D6B6B;color: #fff; padding: 10px 15px 0px;">
+            <h5 class="pull-left" style="margin-top: 0;">{{_ "profileModal.editDetails" }}</h5>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <form name="updateForm" id="updateForm" >
+                     <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="updateEmail" type="text" class="validate custom-input " value="{{userData.emails.[0].address}}" readonly="" style="background-color:#6d6b6b33;border-bottom: 1px solid #dfdede;box-shadow: 0 1px 0 0 #dfdede;color:#000000;" />
+                            <label for="updateEmail" class="active">{{_ "profileModal.emailIdLable" }}</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="updateUsername" name="updateUsername" type="text" class="custom-input validate" value="{{userData.profile.name}}"/>
+                            <label for="updateUsername" class="{{#if userData.profile.name}}active{{/if}}">{{_ "profileModal.username" }}</label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="oldpassword" type="password" class="validate custom-input " />
+                            <label for="oldpassword">{{_ "profileModal.oldPassword" }}</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="newpassword" type="password" class="validate custom-input " />
+                            <label for="newpassword">{{_ "profileModal.newPassword" }}</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="confirmpassword" type="password" class="validate custom-input " />
+                            <label for="confirmpassword">{{_ "profileModal.confirmPassword" }}</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success update-user socialbtn">{{_ "profileModal.update" }}</button>
+                        <button type="button" class="btn btn-success socialbtn log-out" style="background-color: #bb1d24;">{{_ "profileModal.logOut" }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     
+    </div>
+
+</template>

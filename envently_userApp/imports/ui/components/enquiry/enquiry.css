@@ -1,0 +1,72 @@
+.modal-grey-bg {
+    background: #484848;
+}
+
+.custom-label {
+	color: white!important;
+}
+
+.custom-input {
+	color: #9e9696;
+}
+
+.enquiry-modal{
+	 width: 100%;
+    top: 0!important;
+    max-height: 100%;
+}
+
+.enquiry-modal input, .enquiry-modal textarea{
+	border: #fff solid 1px;
+  padding: 0px 5px;
+  font-size:16px;
+  margin: 10px 0px;
+  width: 95%;
+}
+
+.enquiry-modal input:focus{
+   border: #fff solid 1px !important;
+   box-shadow: 0 1px 0 0 #ffffff !important;
+}
+
+.enquiry-modal textarea#query {
+    min-height: 8rem;
+        padding: 5px 5px;
+}
+
+.modal.modal-fixed-footer.enquiry-modal {
+    padding: 0;
+    height: 100%;
+}
+
+.enquiry-modal textarea#query:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.enquiry-modal .modal-footer .btn-flat {
+    float: left;
+    }
+
+input:focus {
+    background-color: white;
+    color: black;
+}
+
+textarea:focus {
+    background: white!important;
+    color: black;
+}
+.text-white {
+  color: white;
+}
+
+#newEnquiry .custom-input {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+/*input[type=text].validate + label:not(.active),
+input[type=email].validate + label:not(.active) ,
+input[type=tel].validate + label:not(.active)  {
+    padding: 10px;
+}*/

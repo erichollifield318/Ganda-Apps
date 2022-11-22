@@ -1,0 +1,192 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "মেনু"
+	},
+	"sideNav": {
+		"time": "সময়",
+		"date": "তারিখ",
+		"weather": "আবহাওয়া",
+		"savedLocation": "সংরক্ষিত স্থান",
+		"shareLocation": "অবস্থান শেয়ার করুন",
+		"sendFeedback": "ফিডব্যাক পাঠান",
+		"termsOfService": "সেবার শর্তাবলী",
+		"privacyPolicy": "গোপনীয়তা নীতি",
+		"copyright": "কপিরাইট",
+		"version": "সংস্করণ"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "সাইন ইন",
+		"registerNow": "এখুনি নিবন্ধন করুন",
+		"emailIdLable": "ইমেইল আইডি",
+		"password": "পাসওয়ার্ড",
+		"userName": "ব্যবহারকারীর নাম",
+		"register": "নিবন্ধন"
+	},
+	"feedBackModal": {
+		"feedback": "ফিডব্যাক",
+		"textAreaLabel": "আমাদেরকে আপনার অভিজ্ঞতা সম্পর্কে বলুন",
+		"send": "পাঠান"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "গোপনীয়তা নীতি"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "নির্দেশনা",
+		"detailsButton": "বিস্তারিত",
+		"callButton": "কল করুন"
+	},
+	"profileModal": {
+		"emailIdLable": "ইমেইল আইডি",
+		"editDetails": "বিবরণ সম্পাদনা করুন",
+		"username": "ব্যবহারকারীর নাম",
+		"oldPassword": "পুরনো পাসওয়ার্ড",
+		"newPassword": "নতুন পাসওয়ার্ড",
+		"confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+		"update": "UPDATE",
+		"logOut": "লগ আউট"
+},
+
+	"bottomSheetModal": {
+		"address": "ঠিকানা",
+		"telephone": "টেলিফোন",
+		"category": "বিভাগ",
+		"description": "আমাদের সম্পর্কে",
+		"directions": "নির্দেশনাবলী",
+		"call": "কল করুন",
+		"share": "শেয়ার করুন",
+		"save": "সংরক্ষণ করুন",
+		"menu": "মেনু",
+		"menuItem": "মেনু আইটেম",
+		"details": "বিস্তারিত",
+		"hours": "ঘণ্টা",
+		"web": "ওয়েব"
+	},
+
+	"accommodation": {
+		"accommodation" :"আবাসন",
+		"allAccommodation": "আবাসস্থান",
+		"apartments": "এপার্টমেন্ট",
+		"hostels": "হোস্টেল",
+		"bedAndBreakfast": "শয্যা এবং সকালের নাস্তা",
+		"cottages": "কটেজ",
+		"camping": "ক্যাম্পিং",
+		"hotels": "হোটেল",
+		"resorts": "রিসোর্ট",
+		"motels": "মোটেল",
+		"holidayHouses": "হলিডে হাউজ",
+		"farmStays": "ফার্মে অবস্থান",
+		"retreatAndLodge": "রিট্রিট ও লজ",
+		"selfContained": "স্বয়ংসম্পূর্ণ",
+		"wildernessSafariRetreat": "ওয়াইল্ডারনেস সাফারি রিট্রিট"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "করণীয়",
+		"allAttractions": "সকল আকর্ষণীয় স্থান",
+		"amusementAndThemeParks": "চিত্তবিনোদন এবং থিম পার্ক",
+		"beaches": "সমুদ্র সৈকত",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "ক্যাসিনো",
+		"cinemas": "সিনেমা",
+		"galleriesMuseumsAndCollections": "গ্যালারি, জাদুঘর ও সংগ্রহশালা",
+		"golfCourse": "গলফ কোর্স",
+		"karaoke": "কারাওকে",
+		"kids": "কিডস",
+		"libraries": "লাইব্রেরিসমূহ",
+		"nationalParksAndReserves": "জাতীয় উদ্যান এবং রিজার্ভ",
+		"naturalAttractions": "প্রাকৃতিক আকর্ষনীয় স্থানসমূহ",
+		"nightclubs": "নাইটক্লাব",
+		"parksAndGardens": "পার্ক এবং বাগান",
+		"sportsAndRecreationFacilities": "খেলাধুলা এবং বিনোদনের সুবিধা",
+		"watersports": "ওয়াটার স্পোর্টস",
+		"wineriesVineyardsAndBreweries": "ওয়াইনারিস, আঙ্গুর-খেত এবং ব্রিউয়ারি",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "চিড়িয়াখানা, অভয়ারণ্য, অ্যাকোয়ারিয়াম এবং ওয়াইল্ডলাইফ পার্ক"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "ট্যুর এবং ভাড়া",
+		"allTours": "সকল প্রকার ট্যুর",
+		"extendedTours": "দীর্ঘকালীন ভ্রমণ",
+		"nightTours": "নাইট ট্যুর",
+		"helicopterTours": "হেলিকপ্টার ট্যুর",
+		"adventures": "অ্যাডভেঞ্চার",
+		"carHire": "গাড়ি ভাড়া",
+		"bicycleHire": "বাইসাইকেল ভাড়া",
+		"boatHire": "নৌকা ভাড়া",
+		"campervansAndMotorhomeHire": "ক্যাম্পারভ্যান এবং মোটরহোম ভাড়া",
+		"fourWheelDriveHire": "ফোর হুইল ড্রাইভ ভাড়া",
+		"houseboatHire": "হাউসবোট ভাড়া",
+		"minibusAndCoachHire": "মিনিবাস এবং কোচ ভাড়া",
+		"motorcycleHire": "মোটর সাইকেল ভাড়া",
+		"yachtHire": "ইয়ট ভাড়া"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "খাদ্য এবং পানীয়",
+		"restaurants": "রেস্টুরেন্ট",
+		"chineseRestaurants": "চাইনিজ রেস্টুরেন্ট",
+		"thaiRestaurants": "থাই রেস্টুরেন্ট",
+		"indianRestaurants": "ইন্ডিয়ান রেস্টুরেন্ট",
+		"italianRestaurants": "ইতালিয়ান রেস্টুরেন্ট",
+		"cafesAndCoffeeShops": "ক্যাফে এবং কফি শপ",
+		"fastFoods": "ফাষ্ট ফুডস",
+		"bars": "বার",
+		"clubs": "ক্লাব",
+		"pubs": "পানশালা",
+		"iceCream": "আইসক্রিম",
+		"bottleshops": "বোতল শপ",
+		"supermarkets": "সুপারমার্কেট"
+	},
+	"gettingAround": {
+		"gettingAround": "ঘুরে বেড়ানো",
+		"allTransport": "সকল পরিবহন",
+		"airServices": "বিমান সেবাসমূহ",
+		"busesAndCoachServices": "বাস এবং কোচ সংক্রান্ত সেবাসমূহ",
+		"information": "তথ্য",
+		"taxisAndWaterTaxis": "ট্যাক্সি এবং ওয়াটার ট্যাক্সি",
+		"railServices": "ট্রেন সেবাসমূহ",
+		"transfers": "ট্রান্সফার",
+		"rechargeStations": "রিচার্জ স্টেশন"
+
+	},
+	"shopping": {
+		"shopping": "কেনাকাটা",
+		"shoppingCentres": "শপিং সেন্টার",
+		"womensFashion": "উইমেন্স ফ্যাশন",
+		"mensClothing": "পুরুষদের পোশাক",
+		"womensClothing": "মহিলাদের পোশাক",
+		"childrensFashion": "শিশুদের ফ্যাশন",
+		"hairdressers": "হেয়ারড্রেসার/নাপিত",
+		"florists": "মালী",
+		"handbags": "হ্যান্ডব্যাগ",
+		"furnitureAndHomewares": "আসবাবপত্র ও সরঞ্জামসমূহ",
+		"dutyFree": "শুল্ক মুক্ত",
+		"footwear": "পাদুকা",
+		"newsagencies": "সংবাদ সংস্থা",
+		"dryCleaning": "ড্রাই ক্লিনিং",
+		"alterations": "পরিবর্তন",
+		"convenienceStore": "সুবিধাজনক দোকান",
+		"souvenirs": "স্মৃতিচিহ্ন"
+	},
+
+	"amenities": {
+		"amenities": "সুযোগ-সুবিধা",
+		"toilets": "টয়লেট",
+		"hospitals": "হাসপাতাল",
+		"atms": "ATM সমূহ",
+		"chemists": "রসায়নবিদ",
+		"policeStation": "পুলিশ স্টেশন",
+		"bikeRacks": "সাইকেল রেক",
+		"parking": "পার্কিং"
+	},
+	"accessibility": {
+		"accessibility": "ব্যবহারযোগ্যতা",
+		"accessibilityToilets": "ব্যবহারযোগ্য টয়লেট",
+		"busStops": "বাস স্টপগুলি",
+		"accessibilityBeachShowers": "ব্যবহারযোগ্য বীচ শাওয়ার",
+		"accessibilityParking": "ব্যবহারযোগ্য পার্কিং",
+		"accessibleBarbeque": "ব্যবহারযোগ্য বারবিকিউ"
+	}
+
+}

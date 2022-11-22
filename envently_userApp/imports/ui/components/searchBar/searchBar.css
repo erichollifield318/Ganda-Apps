@@ -1,0 +1,256 @@
+.search-loader {
+	background: black;
+  left: 2%;
+  position: absolute;
+  top: 50%;
+}
+
+.autocomplete-content.dropdown-content .right.circle {    
+	width: 30px;
+}
+
+#searchForm.searchbar-fullWidth .input-field input[type=search] ~ .material-icons {
+  right: 1rem;
+}
+
+.searchbar-fullWidth #autocomplete-input {
+  /*  width: 90%;*/
+    width: calc(100% - 11rem);
+    padding-right: 5rem;
+}
+
+ @media screen and (min-width: 768px) and (max-width: 900px) {
+ 	.search-loader {
+		background: black;
+	  left: 4%;
+	  position: absolute;
+	  top: 50%;
+	}
+ }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+  .search-loader {
+    background: black;
+    left: 8%;
+    position: absolute;
+    top: 50%;
+  }
+ }
+
+#autocomplete-input{
+	padding-left: 6rem;
+	/*width: calc(100% - 6rem);*/
+  width: calc(100% - 17rem);
+}
+#searchForm .input-field input[type=search] ~ .material-icons{
+  right:11rem;
+}
+.headTopFlag{
+  position:absolute;
+  right:0%;
+  top:20%;
+  width: 150px;
+}
+.topFlagImg{
+  display: inline-block;
+      width: 35px;
+}
+.topFlagImg img{
+  width:100%;
+  display: block;
+}
+.topFlagSelection{
+  display: inline-block;
+  width: 90px;
+  vertical-align: top;
+}
+.topFlagSelection .select-wrapper input.select-dropdown {
+    height: auto;
+    line-height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 0px 0;
+
+}
+
+.kioskScreen #searchForm{
+  width:70%;
+  float:left;
+}
+.kioskScreen .kiosk-user-searchbar{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background: #000;
+	padding: 1rem 0px;
+}
+.kiosk-user-searchbar #autocomplete-input {
+    margin-left: 4rem;
+    width: calc(100% - 25rem);
+    padding: 3px;
+    border-bottom: none;
+    font-size: 17px;
+    color:#fff;
+    margin-bottom: 0px;
+}
+.kiosk-user-searchbar .input-field input[type=search]:focus {
+    background-color: transparent;
+}
+.kiosk-user-searchbar  .adminModelIcon{
+   font-size: 2.1rem; 
+   top: 25px; 
+   color: #ffffff !important;
+   left: 12px;
+}
+.kiosk-user-searchbar .input-field {
+    margin-top: 0;
+}
+.kioskScreen #overlay-box {
+   height: 100%;
+}
+.kioskScreen .gcTourism-image {
+    min-height: 92vh;
+ }
+.kioskScreen .KioskFlag{
+/*    width: 20%;
+    height: auto;
+    position: fixed;
+    right: 15%;
+    bottom:1.5%;*/
+    /*z-index: 200;
+    display: block;
+    position: absolute;
+    right: 13%;
+    top: 20%;
+    width: 150px;*/
+    z-index: 200;
+    display: block;
+    float: left;
+    padding-top: 21px;
+}
+.kioskScreen .KioskFlag img{
+   	width:100%;
+    display: block;
+ }
+
+.kioskScreen .kioskFlagImg{
+ /* display: inline-block; 
+  width:10%;*/
+  display: inline-block;
+  width: 35px;
+  margin-top: 5px;
+ }
+.kioskScreen .kioskMultiLang{
+  /*display: inline-block;
+  width: auto;
+  vertical-align: top;
+  color: #fff;*/
+  color: #fff;
+  display: inline-block;
+   width: 80px;
+  vertical-align: top;
+ }
+ .kioskScreen .kioskMultiLang .input-field {
+    position: relative;
+    margin-top: 0.5rem;
+}
+ .kioskScreen .kioskMultiLang select {
+    height: 2.4rem;
+}
+
+/* .kioskScreen .kioskMultiLang .select-wrapper input.select-dropdown {
+    height: auto;
+    line-height: 0;
+    margin: 0 0 0px 0;
+
+}
+
+.kioskScreen .kioskMultiLang .select-wrapper span.caret {
+    color: #fff;
+}
+.kioskScreen .kioskMultiLang .input-field {
+    position: relative;
+    margin-top: 0.5rem;
+}
+*/
+/*.kioskScreen .page-footer {
+    z-index: 9999!important;
+}
+
+.kioskScreen .bottom-fifty-five {
+    z-index: 99999;
+}*/
+.KioskFlag{
+   	display:none;
+ }
+.kioskScreen input[type=search]{
+    border-bottom:none;
+    margin-bottom: 0px;
+    height: 4rem;
+ }
+
+.kioskScreen i.admin-console-link{
+  top: 24px;
+  font-size: 3.1rem;
+}
+.kioskScreen .input-field label {
+    top: 1.2rem;
+    left: 5rem;
+}
+.kioskScreen #autocomplete-input {
+    padding-left: 7rem;
+     width: calc(100% - 7rem);
+}
+.kioskScreen #mapBox {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.kioskScreen .dropdown-content {
+    position: absolute!important;
+    width:100%;
+    bottom:100%;
+}
+.kioskScreen #markerDetailModal{
+  height:65%!important;
+}
+.kioskScreen #searchForm .input-field input[type=search] ~ .material-icons {
+    right: 0rem;
+    padding: 14px 6px;
+    box-shadow: 0 0;
+    height: auto;
+}
+
+#sideflagMobile {
+    display:none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 445px) {
+ .headTopFlag{
+    display:none;
+  }
+  #sideflagMobile, #sideflagMobile .headTopFlag{
+    display:block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .searchbar-fullWidth #autocomplete-input {
+    width: calc(100% - 9rem);
+  }
+}		
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.kioskScreen .kiosk-user-searchbar #autocomplete-input {
+	    width: calc(100% - 15rem);
+	}
+  #autocomplete-input {
+    width: calc(100% - 0rem);
+  }
+
+  #searchForm .input-field input[type=search] ~ .material-icons {
+    right: 1rem;
+ }
+ .searchbar-fullWidth #autocomplete-input {
+    width: calc(100% - 9rem);
+  }
+}
+

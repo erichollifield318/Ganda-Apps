@@ -1,0 +1,227 @@
+<template name="brandingModal">
+    <div id="brandingModal" class="modal modal-fixed-footer" style="width: 90%; height:78%; max-height: 78%;">
+        <div class="modal-content modal-lightgrey-bg" style="background: {{ brandingModalColor.modalColor }}">
+            <!-- <h4>Branding Section</h4> -->
+                {{#with branding}}
+                    <div class="row">
+                        {{#if mainImage}}
+                            <div class="col s12 m12 l2">
+                                <div class="td-imgbox-branding valign-wrapper">
+                                    <img src="{{mainImage}}">
+                                </div>
+                            </div>
+                        {{/if}}
+
+                        <div class="col s12 m12 l10">
+                           <div class="branding-modal-header">
+                                 <h1 style="color: {{brandingModalColor.headerFontColor}}">{{header}}</h1>
+                                 <p style="color: {{brandingModalColor.bodyFontColor}}">{{body}}</p>
+                            </div>
+                        </div>
+                    </div>
+                 {{/with}} 
+             <div class="branding-modal-content">
+                 <div class="row">
+
+                    {{# each images }}
+                        <div class="col s6 m4 img-section-1">
+                            <div class="td-imgbox-branding">
+                                {{# if path}}
+                                    <img src="{{path}}">
+                                {{/ if}}
+                            </div>
+                            <div class="branding-modal-link">
+                                
+                                <div class="bm-social">
+                                    {{# if link2}}
+                                        <a href="{{link2}}" target="_blank" onclick="window.open('{{link2}}', '_system')" class="branding-link block facebook" name="{{link2}}">
+                                            <i class="mdi-24px mdi mdi-facebook"></i>
+                                        </a>
+                                    {{/ if }} 
+
+                                    {{# if link3}}
+                                        <a href="{{link3}}" target="_blank" onclick="window.open('{{link3}}', '_system')" class="branding-link block instagram" name="{{link3}}">
+                                            <i class="mdi-24px mdi mdi-instagram "></i>
+                                        </a> 
+                                    {{/ if }} 
+                                    
+                                    {{# if link4}}
+                                        <a href="{{link4}}" target="_blank" onclick="window.open('{{link3}}', '_system')" class="branding-link block twitter" name="{{link4}}">
+                                            <i class="mdi-24px mdi mdi-twitter  "></i>
+                                        </a>
+                                    {{/ if }}
+                                </div>
+                                    <div class="branding-btmlinks">
+                                        <ul>
+                                            {{# if link1}}
+                                                <li>
+                                                    <a href="{{link1}}" target="_blank" onclick="window.open('{{link1}}', '_system')" class="branding-link" name="{{link1}}">
+                                                        <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Website</h2>
+                                                        <div class="bm-icon website-bg" style="background-color: {{ brandingModalColor.websiteButtonColor }}">
+                                                            <i class=" mdi mdi-web"></i>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            {{/ if }}
+                                            {{# if phone}}
+                                                <li>
+                                                    <a href="tel:{{phone}}" class="branding-link block" name="{{phone}}">
+                                                        <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Call</h2>
+                                                        <div class="bm-icon call-bg" style="background-color: {{ brandingModalColor.callButtonColor }}"> 
+                                                            <i class=" mdi mdi-phone-settings"></i>
+                                                        </div>     
+                                                    </a>        
+                                                </li>
+                                            {{/ if }}
+                                        </ul>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    {{/ each}}
+
+
+
+
+                    <!-- {{#if image1}}
+                        <div class="col s6 m4 img-section-1">
+                            <div class="td-imgbox-branding">
+                                <img src="{{image1}}">
+                            </div>
+                            <div class="branding-modal-link">
+                                {{#with imageObj1}}  
+                                    <div class="bm-social">
+                                        <a href="{{link2}}" target="_blank" class="branding-link block facebook" name="{{link2}}">
+                                            <i class="mdi-24px mdi mdi-facebook"></i>
+                                        </a> 
+                                        <a href="{{link3}}" target="_blank" class="branding-link block instagram" name="{{link3}}">
+                                            <i class="mdi-24px mdi mdi-instagram "></i>
+                                        </a> 
+                                        <a href="{{link4}}" target="_blank" class="branding-link block twitter" name="{{link4}}">
+                                            <i class="mdi-24px mdi mdi-twitter  "></i>
+                                        </a>
+                                    </div>
+                                    <div class="branding-btmlinks">
+                                        <ul>
+                                            <li>
+                                                <a href="{{link1}}" target="_blank" class="branding-link" name="{{link1}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Website</h2>
+                                                    <div class="bm-icon website-bg" style="background-color: {{ brandingModalColor.websiteButtonColor }}">
+                                                        <i class=" mdi mdi-web"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:{{phone}}" class="branding-link block" name="{{phone}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Call</h2>
+                                                    <div class="bm-icon call-bg" style="background-color: {{ brandingModalColor.callButtonColor }}"> 
+                                                        <i class=" mdi mdi-phone-settings"></i>
+                                                    </div>     
+                                                </a>        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                {{/with}}
+                            </div>
+                        </div>
+                    {{/if}}
+
+
+                    {{#if image2}}
+                        <div class="col s6 m4 img-section-2">
+                            <div class="td-imgbox-branding">
+                                <img src="{{image2}}">
+                            </div>
+                            <div class="branding-modal-link">
+                                {{#with imageObj2}}  
+                                    <div class="bm-social">
+                                        <a href="{{link2}}" target="_blank" class="branding-link block facebook" name="{{link2}}">
+                                            <i class="mdi-24px mdi mdi-facebook"></i>
+                                        </a> 
+                                        <a href="{{link3}}" target="_blank" class="branding-link block instagram" name="{{link3}}">
+                                            <i class="mdi-24px mdi mdi-instagram "></i>
+                                        </a> 
+                                        <a href="{{link4}}" target="_blank" class="branding-link block twitter" name="{{link4}}">
+                                            <i class="mdi-24px mdi mdi-twitter  "></i>
+                                        </a>
+                                    </div>
+                                    <div class="branding-btmlinks">
+                                        <ul>
+                                            <li>
+                                                <a href="{{link1}}" target="_blank" class="branding-link" name="{{link1}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Website</h2>
+                                                    <div class="bm-icon website-bg" style="background-color: {{ brandingModalColor.websiteButtonColor }}">
+                                                        <i class=" mdi mdi-web"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:{{phone}}" class="branding-link block" name="{{phone}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Call</h2>
+                                                    <div class="bm-icon call-bg" style="background-color: {{ brandingModalColor.callButtonColor }}"> 
+                                                        <i class=" mdi mdi-phone-settings"></i>
+                                                    </div>     
+                                                </a>        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                {{/with}}
+                            </div>
+                        </div>
+                    {{/if}}
+
+
+                    {{#if image3}}
+                        <div class="col s6 m4 img-section-3">
+                            <div class="td-imgbox-branding">
+                                <img src="{{image3}}">
+                            </div>
+                            <div class="branding-modal-link">
+                                {{#with imageObj3}}  
+                                    <div class="bm-social">
+                                        <a href="{{link2}}" target="_blank" class="branding-link block facebook" name="{{link2}}">
+                                            <i class="mdi-24px mdi mdi-facebook"></i>
+                                        </a> 
+                                        <a href="{{link3}}" target="_blank" class="branding-link block instagram" name="{{link3}}">
+                                            <i class="mdi-24px mdi mdi-instagram "></i>
+                                        </a> 
+                                        <a href="{{link4}}" target="_blank" class="branding-link block twitter" name="{{link4}}">
+                                            <i class="mdi-24px mdi mdi-twitter  "></i>
+                                        </a>
+                                    </div>
+                                    <div class="branding-btmlinks">
+                                        <ul>
+                                            <li>
+                                                <a href="{{link1}}" target="_blank" class="branding-link" name="{{link1}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Website</h2>
+                                                    <div class="bm-icon website-bg" style="background-color: {{ brandingModalColor.websiteButtonColor }}">
+                                                        <i class=" mdi mdi-web"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:{{phone}}" class="branding-link block" name="{{phone}}">
+                                                    <h2 style="color: {{brandingModalColor.iconHeadingColor}}">Call</h2>
+                                                    <div class="bm-icon call-bg" style="background-color: {{ brandingModalColor.callButtonColor }}"> 
+                                                        <i class=" mdi mdi-phone-settings"></i>
+                                                    </div>     
+                                                </a>        
+                                            </li>
+                                        </ul>
+                                    </div>
+                                {{/with}}
+                            </div>
+                        </div>
+                    {{/if}} -->
+                </div>
+             </div>
+        </div>
+        <div class="modal-footer" style="background: {{ brandingModalColor.footerColor }}">
+            <!-- <button type="button" class="modal-action modal-close waves-effect waves-green btn-flat">close</button> -->
+
+            <i class="small material-icons modal-action modal-close waves-effect waves-green btn-flat right" title="close" style="background: {{ brandingModalColor.cancleIconColor }}; color:{{brandingModalColor.cancleIconTextColor}} ">close</i> 
+            <button type="button" class="modal-action waves-effect waves-light btn-flat enquiry-btn btn-float-left" id="enquiry" style="background-color: {{ brandingModalColor.enquiryButtonColor }}; color: {{ brandingModalColor.buttonFontColor }};">Enquiry</button>
+        </div>
+    </div>
+    {{> enquiryModal}}
+</template>

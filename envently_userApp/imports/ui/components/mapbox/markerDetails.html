@@ -1,0 +1,203 @@
+<template name="markerDetails">
+    <section>
+        <div id="markerDetailModal" class="modal bottom-sheet modal-fixed-footer" style="z-index:9999 !important">
+            <div class="modal-content modal-imginfo" style="background: {{bottomLocationDetails.modalBackgroundColor}}">
+                <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">CLOSE</a> -->
+
+                {{#with markerDetails}}
+                <!-- {{myCheck}} -->
+                  {{#if isImage2Exist image2}}
+                      <div class="imginfo-mainbox" style="text-align: -webkit-center; background: {{bottomLocationDetails.imageBackgroundColor}};">
+                        {{#if isImageNotLoaded}}
+                         <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                        {{/if}}
+                          <!-- <img data-caption="{{image2}}" src="{{image2}}" class="responsive-img" />  -->
+                      </div>
+
+                  {{/if}}
+                    <div class="header-info scrollbar" id="style-2">
+                        <i class="small material-icons modal-action close-modal right" title="close" style="color: {{bottomLocationDetails.closeButtonTextColor}}; cursor: pointer;">
+                            close
+                        </i>
+                        <div class="container">
+                            <!-- <div class="left right-info"> -->
+                                <h2 style="color: {{bottomLocationDetails.headingFontColor}}">
+                                    {{name}}
+                                </h2>
+
+                                {{#if address}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.address" }} :</strong> {{address}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if primaryAddress}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.address" }} :</strong> {{getPrimaryAddress primaryAddress}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if getTrimmedPhone primaryContacts}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.telephone" }} :</strong> {{getTrimmedPhone primaryContacts}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if phone}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.telephone" }} :</strong> {{phone}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if getBeginDate}}
+                                    {{#if isEventTypeMarkers}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">Beginning :</strong> {{getBeginDate}}
+                                    </p>
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">Ending :</strong> {{getEndDate}}
+                                    </p>
+                                    {{/if}}
+                                {{/if}}
+
+                                {{#if menuName}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.menu" }} :</strong> {{menuName}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if subMenuName}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.menuItem" }} :</strong> {{subMenuName}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if getCategory categories}}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.category" }} :</strong> {{getCategory categories}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if getDetails1 }}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.description" }} :</strong> {{getDetails1}}
+                                    </p>
+                                {{/if}}
+
+                                {{#if getDetails2 }}
+                                    <p style="color: {{bottomLocationDetails.valuetextColor}}">
+                                        <strong style="color: {{bottomLocationDetails.keyTextColor}}">{{_ "bottomSheetModal.hours" }} :</strong> {{getDetails2}}
+                                    </p>
+                                {{/if}}
+                            <!-- </div> -->
+
+                             {{#if image1}}
+                                    <div class="left side-logo-marker">
+                                        <img data-caption="{{image1}}" src="{{image1}}" />
+                                    </div>
+                                {{/if}}
+                        </div>
+                    </div>
+                {{/with}}
+            </div>
+
+            <div class="modal-footer" style="background: {{bottomLocationDetails.modalFooterBackgroundColor}}; border-top: {{bottomLocationDetails.horizontalLineColor}}">
+                <div class="btm-links ft-bottom-icons">
+                    {{#with markerDetails}}
+                        <div class="container" style="width: 95%;">
+                            <ul>
+                                <li>
+                                     <h2>{{_ "bottomSheetModal.directions" }}</h2>
+                                     <a href="#" class="">
+                                        <div class="direct-icon" id="driving" >
+                                            <i class="mdi-24px mdi mdi-car footer-direction" style="background: {{bottomLocationDetails.directionButtonColor}}"></i>
+                                        </div>
+                                     </a>
+                                     <a href="#" class="">
+                                        <div class="direct-icon " id="walking" >
+                                            <i class="mdi-24px mdi mdi-walk footer-direction" style="background: {{bottomLocationDetails.directionButtonColor}}"></i>
+                                        </div>
+                                     </a>
+                                     <a href="#">
+                                        <div class="direct-icon" id="cycling" >
+                                            <i class="mdi-24px mdi mdi-bike footer-direction" style="background: {{bottomLocationDetails.directionButtonColor}}"></i>
+                                        </div>
+                                     </a>
+                                </li>
+                                {{#if isKioskUser}}
+                                <li>
+                                     {{#if website}}
+                                            <h2>{{_ "bottomSheetModal.web" }}</h2>
+                                            <a href="{{getProperUrl website}}" onclick="window.open('{{getProperUrl website}}', '_system')" target="_blank">
+                                                <div class="website-link" id="website" >
+                                                    <i class="mdi-24px mdi mdi-web footer-website" style="background: {{bottomLocationDetails.websiteButtonColor}}"></i>
+                                                </div>
+                                            </a>
+                                        {{/if}}
+                                        {{#if detailsLink}}
+                                            <h2>{{_ "bottomSheetModal.web" }}</h2>
+                                            <a href="{{getProperUrl detailsLink}}" target="_blank">
+                                                <div class="details-link" id="website" >
+                                                    <i class="mdi-24px mdi mdi-web footer-website" style="background: {{bottomLocationDetails.websiteButtonColor}}"></i>
+                                                </div>
+                                            </a>
+                                        {{/if}}
+                                </li>
+                                {{/if}}
+                                {{#if isKioskUser }}
+                                <li>
+                                      {{#if getTrimmedPhone primaryContacts}}
+                                                    <h2>{{_ "bottomSheetModal.call" }}</h2>
+                                                            <a href="tel:{{getTrimmedPhone primaryContacts}}" title="Call" class="">
+                                                                <div id="call" >
+                                                                    <i class="mdi-24px mdi mdi-phone-settings footer-call" style="background: {{bottomLocationDetails.callButtonColor}}"></i>
+                                                                </div>
+                                                            </a>
+                                            {{/if}}
+
+
+                                            {{#if phone}}
+                                                    <h2>{{_ "bottomSheetModal.call" }}</h2>
+                                                            <a href="tel:{{phone}}" title="Call"  class="">
+                                                                <div id="call" >
+                                                                    <i class="mdi-24px mdi mdi-phone-settings footer-call" style="background: {{bottomLocationDetails.callButtonColor}}"></i>
+                                                                </div>
+                                                            </a>
+                                            {{/if}}
+                                </li>
+
+                                {{/if}}                                
+                             
+
+                                <li>
+                                     <h2>{{_ "bottomSheetModal.share" }}</h2>
+
+                                          <a href="#" class="" id="shareBusinessLocation" title="share">
+                                                <div class="share-icon" id="share" >
+                                                    <i class="mdi-24px mdi mdi-share-variant footer-call" style="background: {{bottomLocationDetails.shareButtonColor}}; color: {{bottomLocationDetails.shareButtonTextColor}}"></i>
+                                                </div>
+                                          </a>
+                                </li>
+                                {{#if isKioskUser }}
+                                <li>
+
+                                    <h2>{{_ "bottomSheetModal.save" }}</h2>
+                                            <a href="#" class="" id="saveBusinessLocation" title="star">
+                                                <div class="save-icon" id="save" >
+                                                    <i class="mdi-24px mdi mdi-star footer-call" style="{{saved}}; background: {{bottomLocationDetails.saveButtonColor}}"></i>
+                                                </div>
+                                            </a>
+
+                                </li>
+                                {{/if}}
+                            </ul>
+                        </div>
+                    {{/with}}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>  businesslocation }}
+</template>

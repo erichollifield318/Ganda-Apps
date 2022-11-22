@@ -1,0 +1,193 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "Menu"
+	},
+	"sideNav": {
+		"time": "Time",
+		"date": "Date",
+		"weather": "Weather",
+		"savedLocation": "Saved Location",
+		"shareLocation": "Share Location",
+		"sendFeedback": "Send Feedback",
+		"termsOfService": "Terms Of Service",
+		"privacyPolicy": "Privacy Policy",
+		"copyright": "Copyright",
+		"version": "Version"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "SIGN IN",
+		"registerNow": "Register Now",
+		"emailIdLable": "Email Address",
+		"password": "Password",
+		"userName": "Username",
+		"register": "REGISTER"
+	},
+	"feedBackModal": {
+		"feedback": "Feedback",
+		"textAreaLabel": "Tell us your experience",
+		"send": "SEND"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "Privacy Policy"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "Direction",
+		"detailsButton": "Details",
+		"callButton": "Call",
+		"currentLocationPopup":"Your Current location"
+	},
+	"profileModal": {
+		"emailIdLable": "Email Id",
+		"editDetails": "Edit Details",
+		"username": "User Name",
+		"oldPassword": "Old Password",
+		"newPassword": "New Password",
+		"confirmPassword": "Confirm Password",
+		"update": "UPDATE",
+		"logOut": "LOGOUT"
+},
+
+	"bottomSheetModal": {
+		"address": "Address",
+		"telephone": "Telephone",
+		"category": "Category",
+		"description": "About Us ",
+		"directions": "DIRECTIONS",
+		"call": "CALL",
+		"share": "SHARE",
+		"save": "SAVE",
+		"menu": "MENU",
+		"menuItem": "Menu Item",
+		"details": "DETAILS",
+		"hours": "Hours",
+		"web": "WEB"
+	},
+
+	"accommodation": {
+		"accommodation" :"ACCOMMODATION",
+		"allAccommodation": "All Accommodation",
+		"apartments": "Apartments",
+		"hostels": "Hostels",
+		"bedAndBreakfast": "Bed and Breakfast",
+		"cottages": "Cottages",
+		"camping": "Camping",
+		"hotels": "Hotels",
+		"resorts": "Resorts",
+		"motels": "Motels",
+		"holidayHouses": "Holiday Houses",
+		"farmStays": "Farm Stays",
+		"retreatAndLodge": "Retreat & Lodge",
+		"selfContained": "Self Contained",
+		"wildernessSafariRetreat": "Wilderness Safari Retreat"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "THINGS TO DO",
+		"allAttractions": "All Attractions",
+		"amusementAndThemeParks": "Amusement and Theme Parks",
+		"beaches": "Beaches",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "Casinos",
+		"cinemas": "Cinemas",
+		"galleriesMuseumsAndCollections": "Galleries, Museums & Collections",
+		"golfCourse": "Golf Course",
+		"karaoke": "Karaoke",
+		"kids": "Kids",
+		"libraries": "Libraries",
+		"nationalParksAndReserves": "National Parks & Reserves",
+		"naturalAttractions": "Natural Attractions",
+		"nightclubs": "Nightclubs",
+		"parksAndGardens": "Parks and Gardens",
+		"sportsAndRecreationFacilities": "Sports & Recreation Facilities",
+		"watersports": "Watersports",
+		"wineriesVineyardsAndBreweries": "Wineries, Vineyards and Breweries",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "Zoos, Sanctuaries, Aquariums & Wildlife Parks"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "TOURS & HIRE",
+		"allTours": "All Tours",
+		"extendedTours": "Extended Tours",
+		"nightTours": "Night Tours",
+		"helicopterTours": "Helicopter Tours",
+		"adventures": "Adventures",
+		"carHire": "Car Hire",
+		"bicycleHire": "Bicycle Hire",
+		"boatHire": "Boat Hire",
+		"campervansAndMotorhomeHire": "Campervans & Motorhome Hire",
+		"fourWheelDriveHire": "Four Wheel Drive Hire",
+		"houseboatHire": "Houseboat Hire",
+		"minibusAndCoachHire": "Minibus & Coach Hire",
+		"motorcycleHire": "Motorcycle Hire",
+		"yachtHire": "Yacht Hire"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "FOOD & DRINK",
+		"restaurants": "Restaurants",
+		"chineseRestaurants": "Chinese Restaurants",
+		"thaiRestaurants": "Thai Restaurants",
+		"indianRestaurants": "Indian Restaurants",
+		"italianRestaurants": "Italian Restaurants",
+		"cafesAndCoffeeShops": "Cafes & Coffee Shops",
+		"fastFoods": "Fast Foods",
+		"bars": "Bars",
+		"clubs": "Clubs",
+		"pubs": "Pubs",
+		"iceCream": "Ice Cream",
+		"bottleshops": "Bottleshops",
+		"supermarkets": "Supermarkets"
+	},
+	"gettingAround": {
+		"gettingAround": "GETTING AROUND",
+		"allTransport": "All Transport",
+		"airServices": "Air Services",
+		"busesAndCoachServices": "Buses and Coach Services",
+		"information": "Information",
+		"taxisAndWaterTaxis": "Taxis and Water Taxis",
+		"railServices": "Rail Services",
+		"transfers": "Transfers",
+		"rechargeStations": "Recharge Stations"
+
+	},
+	"shopping": {
+		"shopping": "SHOPPING",
+		"shoppingCentres": "Shopping Centres",
+		"womensFashion": "Womens Fashion",
+		"mensClothing": "Mens Clothing",
+		"womensClothing": "Womens Clothing",
+		"childrensFashion": "Childrens Fashion",
+		"hairdressers": "Hairdressers",
+		"florists": "Florists",
+		"handbags": "Handbags",
+		"furnitureAndHomewares": "Furniture & Homewares",
+		"dutyFree": "Duty Free",
+		"footwear": "Footwear",
+		"newsagencies": "Newsagencies",
+		"dryCleaning": "Dry Cleaning",
+		"alterations": "Alterations",
+		"convenienceStore": "Convenience Store",
+		"souvenirs": "Souvenirs"
+	},
+
+	"amenities": {
+		"amenities": "AMENITIES",
+		"toilets": "Toilets",
+		"hospitals": "Hospitals",
+		"atms": "ATMS",
+		"chemists": "Chemists",
+		"policeStation": "Police Station",
+		"bikeRacks": "Bike Racks",
+		"parking": "Parking"
+	},
+	"accessibility": {
+		"accessibility": "ACCESSIBILITY",
+		"accessibilityToilets": "ACCESSIBLE TOILETS",
+		"busStops": "BUS STOPS",
+		"accessibilityBeachShowers": "ACCESSIBLE BEACH SHOWERS",
+		"accessibilityParking": "ACCESSIBLE PARKING",
+		"accessibleBarbeque": "ACCESSIBLE BARBEQUE"
+	}
+
+}

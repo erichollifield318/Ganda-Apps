@@ -1,0 +1,38 @@
+<template name="routeLocationDetail">
+  <section class="container" id="routeLocationDetailId">
+    <div id="routeLocationDetail" class="modal modal-fixed-footer">
+      <form id="routeLocationMarkerId">
+        {{#with routeLocationMarkerData}}
+          <div class="modal-content">
+            <h4>Route Location For {{type}}</h4>
+              <div class="row">
+                <div class="col s12 m12">
+                  <label class="label-icon" for="name">Name</label>
+                  <input id="name" class="" type="text" placeholder="Name" autocomplete="off" required>
+                </div>
+                <div class="col s12 m12">
+                  <label class="label-icon" for="address">Address</label>
+                  <input id="address" class="" type="text" placeholder="Address" autocomplete="off"  required>
+                </div>
+                <div class="col s12 m12">
+                  <label class="label-icon" for="phone">Phone</label>
+                  <input id="phone" class="" type="tel" placeholder="XXX-XXX-XXXX" autocomplete="off"  required>
+                </div>
+                <div class="col s12 m6">
+                  <label class="label-icon" for="latitude">Latitude</label>
+                  <input id="latitude" class="" type="text" placeholder="Latitude" autocomplete="off"  required value="{{latitude}}" disabled />
+                </div>
+                <div class="col s12 m6">
+                  <label class="label-icon" for="longitude">Longitude</label>
+                  <input id="longitude" class="" type="text" placeholder="Longitude" autocomplete="off"  required value="{{longitude}}" disabled />
+                </div>
+              </div>
+          </div>
+        {{/with}}
+        <div class="modal-footer">
+          <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat">Add Marker</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</template>

@@ -1,0 +1,18 @@
+<template name="copyright">
+    <div id="copyright" class="modal modal-fixed-footer" style="width: 60%; height:80%; max-height: 80%;">
+        <div class="modal-content" style="background: {{copyrightModalColor.backgroundColor}};">
+            <h5 class="pull-left" style="color: {{copyrightModalColor.headingTextColor}}">Copyright</h5>
+            <div class="clearfix"></div>
+            <div class="row" style="color: {{copyrightModalColor.bodyTextColor}}; height: 85%;margin-bottom: 0px;overflow-y: auto;">
+                {{{ getCopyRightText }}}
+            </div>
+        </div>
+        <div class="modal-footer" style="background: {{copyrightModalColor.footerBackgroundColor}};">
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close" style="color: {{copyrightModalColor.closeButtonTextColor}}; height: 95%;width: 40px;margin-right: 15px;">
+                <i class="small material-icons modal-action modal-close right" title="close" style="margin: 6px 0px;">
+                    close
+                </i>
+            </span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,323 @@
+<template name="markerDetails">
+  <section>
+    <div id="markerDetailModal" class="modal bottom-sheet modal-fixed-footer" style="z-index:9999 !important">
+        <div class="modal-content modal-imginfo">
+            <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">CLOSE</a> -->
+           
+            {{#with markerDetails}}
+            {{myCheck}}
+              {{#if isImage2Exist image2}}
+                  <div class="imginfo-mainbox" style="text-align: -webkit-center;">
+                    {{#if isImageNotLoaded}} 
+                     <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                    {{/if}}
+                      <!-- <img data-caption="{{image2}}" src="{{image2}}" class="responsive-img" />  -->
+                  </div>
+                
+              {{/if}}
+                <div class="header-info scrollbar" id="style-2">
+                    <div class="container">
+                        <!-- <div class="left right-info"> -->
+                            <h2>{{name}} <i class="small material-icons modal-action close-modal right" title="close">close</i></h2>
+
+                            {{#if address}}
+                                <p><strong>Address :</strong> {{address}}</p>
+                            {{/if}} 
+
+                            {{#if primaryAddress}}
+                                <p><strong>Address :</strong> {{getPrimaryAddress primaryAddress}}</p>
+                            {{/if}}
+
+                            {{#if getTrimmedPhone primaryContacts}}
+                                <p><strong>Telephone :</strong> {{getTrimmedPhone primaryContacts}}</p>
+                            {{/if}}
+
+                            {{#if phone}}
+                                <p><strong>Telephone :</strong> {{phone}}</p>
+                            {{/if}}
+
+                            {{#if menuName}}
+                                <p><strong>Menu :</strong> {{menuName}}</p>
+                            {{/if}}
+
+                            {{#if subMenuName}}
+                                <p><strong>Menu Item :</strong> {{subMenuName}}</p>
+                            {{/if}}
+
+                            {{#if getCategory categories}}
+                                <p><strong>Category :</strong> {{getCategory categories}}</p>
+                            {{/if}}
+
+                            {{#if getDetails1 }}
+                                <p><strong>Description :</strong> {{getDetails1}}</p>
+                            {{/if}}
+
+                            {{#if getDetails2 }}
+                                <p><strong>Offer :</strong> {{getDetails2}}</p>
+                            {{/if}}
+                        <!-- </div> -->
+
+                         <!-- {{#if image1}}
+                                <div class="left side-logo-marker">
+                                    <img data-caption="{{image1}}" src="{{image1}}" /> 
+                                </div>
+                            {{/if}} -->
+                    </div>
+                </div>
+            {{/with}}
+        </div>
+            
+        <div class="modal-footer">
+            <div class="btm-links ft-bottom-icons">
+                {{#with markerDetails}}
+                    <div class="container" style="width: 95%;">
+                        <ul>
+                            <li>
+                                 <h2>Directions</h2>
+                                 <a href="#" class="">
+                                    <div class="direct-icon" id="driving"><i class="mdi-24px mdi mdi-car footer-direction"></i></div>
+                                 </a>
+                                 <a href="#" class="">
+                                    <div class="direct-icon " id="walking"><i class="mdi-24px mdi mdi-walk footer-direction"></i></div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="direct-icon" id="cycling"><i class="mdi-24px mdi mdi-bike footer-direction"></i></div>
+                                 </a>
+                            </li>
+                            <li>
+                                 {{#if website}}
+                                        <h2>Web</h2>
+                                        <a href="{{getProperUrl website}}" target="_blank">
+                                            <div class="website-link" id="website"><i class="mdi-24px mdi mdi-web footer-website"></i></div>
+                                        </a>
+                                    {{/if}}
+                                    {{#if detailsLink}}
+                                        <h2>Web</h2>
+                                        <a href="{{getProperUrl detailsLink}}" target="_blank">
+                                            <div class="details-link" id="website"><i class="mdi-24px mdi mdi-web footer-website"></i></div>
+                                        </a>
+                                    {{/if}}
+                            </li>
+                            <li>
+                                  {{#if getTrimmedPhone primaryContacts}}
+                                                <h2>Call</h2>
+                                                        <a href="tel:{{getTrimmedPhone primaryContacts}}" title="Call" class="">
+                                                            <div id="call"><i class="mdi-24px mdi mdi-phone-settings footer-call"></i></div>
+                                                        </a>
+                                        {{/if}}
+
+
+                                        {{#if phone}}
+                                                <h2>Call</h2>
+                                                        <a href="tel:{{phone}}" title="Call"  class="">
+                                                            <div id="call"><i class="mdi-24px mdi mdi-phone-settings footer-call"></i></div>
+                                                        </a>
+                                        {{/if}}
+                            </li>
+                            <li>
+                                 <h2>Share</h2>
+
+                                      <a href="#" class="" id="shareBusinessLocation" title="share">
+                                            <div class="share-icon" id="share"><i  style="background:#484848;" class="mdi-24px mdi mdi-share-variant footer-call"></i></div>
+                                      </a>
+                            </li>
+                            <li>
+                                <h2>Save</h2>
+              
+                                        <a href="#" class="" id="saveBusinessLocation" title="star">
+                                            <div class="save-icon" id="save"><i style="{{saved}}" class="mdi-24px mdi mdi-star footer-call"></i></div>
+                                        </a>
+    
+                            </li>
+                           <!--  <li>
+                                 <h2>rate</h2>
+                                    <a href="#" class="">
+                                            <div class="rate-icon" id="rate">
+                                                <i class="mdi-24px mdi mdi-thumb-up footer-call"></i>
+                                            </div>
+                                        </a>
+                            </li> -->
+                        </ul>
+
+       
+                        <!-- <div class="row">
+                            <div class="col s5 m4">
+                                <div class="direction-box">
+                                    <h2>Directions</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="direct-icon" id="driving"><i class="mdi-24px mdi mdi-car"></i></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="direct-icon" id="walking"><i class="mdi-24px mdi mdi-walk"></i></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="direct-icon" id="cycling"><i class="mdi-24px mdi mdi-bike"></i></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            {{#if getTrimmedPhone primaryContacts}}
+                                <div class="col s4 m4">
+                                    <div class="call-box">
+                                        <a class="call darken-3" href="tel:{{getTrimmedPhone primaryContacts}}" title="Call">
+                                            <h2>Call</h2>
+                                            <div class="waves-effect">
+                                                <i class="small material-icons left">settings_phone</i>
+                                                <span class="phone-text">{{getTrimmedPhone primaryContacts}}</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            {{/if}} 
+
+                            {{#if phone}}
+                                <div class="col s4 m4">
+                                    <div class="call-box">
+                                        <a class="call darken-3" href="tel:{{phone}}" title="Call">
+                                            <h2>Call</h2>
+                                            <div class="waves-effect"><i class="small material-icons left">settings_phone</i><span class="phone-text">{{phone}}</span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            {{/if}}
+
+                            <div class="col s3 m4">
+                                <div class="link-box">
+                                    <a href="{{#if website}}{{website}}{{/if}}{{#if detailsLink}}{{detailsLink}}{{/if}}" target="_blank" class="waves-effect waves-light align-center darken-3">
+                                        <h2>Website</h2>
+                                        <i class="mdi-24px mdi mdi-rotate-right-variant"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                {{/with}}
+            </div>
+        </div>
+    </div>
+
+        <!-- {{#with markerDetails}}
+                    <h5>{{name}}</h5>
+                    <table>
+                        {{#if address}}
+                            <tr>
+                                <th>Address</th>
+                                <td>{{address}}</td>
+                            </tr>
+                        {{/if}} 
+                        {{#if primaryAddress}}
+                            <tr>
+                                <th>Address</th>
+                                <td>{{getPrimaryAddress primaryAddress}}</td>
+                            </tr>
+                        {{/if}}
+                        {{#if primaryContacts}}
+                            <tr>
+                                <th>Number</th>
+                                <td>{{getPrimaryContacts primaryContacts}}</td>
+                            </tr>
+                        {{/if}}
+                        {{#if detailsLink}}
+                            <tr>
+                                <th>Details</th>
+                                <td><a href="{{detailsLink}}" target="_blank" class="details-link" name="{{detailsLink}}">Click here</a></td>
+                            </tr>
+                        {{/if}}
+                        {{#if shortDescriptor}}
+                            <tr>
+                                <th>Description</th>
+                                <td>{{shortDescriptor}}</td>
+                            </tr>
+                        {{/if}}
+                        {{#if phone}}
+                            <tr>
+                                <th>Number</th>
+                                <td>{{phone}}</td>
+                            </tr>
+                        {{/if}} 
+                        {{#if website}}
+                            <tr>
+                                <th>Website</th>
+                                <td><a href="{{website}}" target="_blank" class="website-link" name="{{website}}">{{website}}</a></td>
+                            </tr>
+                        {{/if}} 
+                        {{#if text1}}
+                            <tr>
+                                <th>Description1</th>
+                                <td>{{text1}}</td>
+                            </tr> 
+                        {{/if}} 
+                        {{#if text2}}
+                            <tr>
+                                <th>Description2</th>
+                                <td>{{text2}}</td>
+                            </tr> 
+                        {{/if}} 
+                        {{#if details1}}
+                            <tr>
+                                <th>Description1</th>
+                                <td>{{details1}}</td>
+                            </tr>
+                        {{/if}}
+                        {{#if details2}}
+                            <tr>
+                                <th>Description2</th>
+                                <td>{{details2}}</td>
+                            </tr>
+                        {{/if}} 
+                        <tr>
+                            <td><input id="showPath" type="button" class="waves-effect waves-green btn-flat hoverable" style="background-color: rgba(0, 0, 0, 0.2)" value="DIRECTIONS" /></td>
+                            {{#if phone}}
+                                <td><a class="waves-effect waves-light align-center call darken-3" href="tel:{{phone}}" title="Call"><i class="small material-icons">phone</i></a></td>
+                            {{/if}}
+                            {{#if getTrimmedPhone primaryContacts}}
+                                <td><a class="waves-effect waves-light align-center call darken-3" href="tel:{{getTrimmedPhone primaryContacts}}" title="Call"><i class="small material-icons">phone</i></a></td>
+                            {{/if}}
+                        </tr>
+                        {{#if isImageExists image1 image2}}
+                            <tr>
+                                <th>Image Gallery</th>
+                                <td>
+                                    {{#if image1}}
+                                        <span class="td-imgbox">
+                                            <img data-caption="{{image1}}" src="{{image1}}" title="image" >
+                                        </span> 
+                                    {{/if}}
+                                    {{#if image2}}
+                                        <span class="td-imgbox" >
+                                            <img data-caption="{{image2}}" src="{{image2}}" title="image">
+                                        </span> 
+                                    {{/if}}
+                                </td>
+                            </tr>
+                        {{/if}}
+                        {{#if imageGallery}}
+                            <tr>
+                                <th>Image Gallery</th>
+                                <td>
+                                    {{#each imageGallery}}
+                                    <span style="margin-right:10px">
+                                      <img data-caption="{{title}}" src="{{thumbnailUrl}}" title="{{title}}" width="150px">
+                                    </span> 
+                                    {{/each}}
+                                </td>
+                            </tr>
+                        {{/if}}
+                    </table>
+                {{/with}} -->
+        <!-- </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div> -->
+    </section>
+</template>

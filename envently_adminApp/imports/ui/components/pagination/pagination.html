@@ -1,0 +1,13 @@
+<template name="paginationTemplate">
+	  <ul class="pagination">
+
+		    <li class="waves-effect"><a class="decrease-page"><i class="material-icons">chevron_left</i></a></li>
+
+		    {{#each page in numOfPages}}
+		    	<li class={{isPageActive page currentPage }} style="cursor: pointer;" id={{page}}><a class="page-num">{{page}}</a></li>
+		    {{/each}}
+
+		    <li class="waves-effect"><a class="increase-page"><i class="material-icons">chevron_right</i></a></li>
+		    
+	  </ul>
+</template>

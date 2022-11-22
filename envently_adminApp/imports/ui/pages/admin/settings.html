@@ -1,0 +1,182 @@
+<template name="settingsModal">
+    <!-- New Settings Modal -->
+    <div id="settingsModal" class="modal modal-fixed-footer">
+      <form id="updateSettingsForm">
+        <div class="modal-content">
+            <h4 class="pull-left">Settings</h4>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+            <!-- {{#with adminSettings}} -->
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input id="cacheRefreshTime" type="number" class="validate" value="{{adminSettings.cacheRefreshTime}}">
+                      <label class="active" for="cacheRefreshTime">Cache Refresh Time</label>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input name="suburb" id="suburb" type="text" class="validate" value="{{adminSettings.suburb}}">
+                      <label class="active" for="suburb">Suburb</label>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="input-field col s8">
+                      <input name="rssfeed" id="rssfeed" type="text" class="validate" value="{{adminSettings.rssFeed.link}}">
+                      <label class="active" for="rssfeed">RSS feed</label>
+                  </div>
+
+                  <div class="input-field col s4">
+                      <input id="sync" type="button" class="waves-effect waves-green btn-flat hoverable sync-btn" value="Sync">
+                      <span class="synced-at">Last Synced At : {{dateFormat adminSettings.rssFeed.syncedAt}}</span>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input name="liveRssFeed" id="liveRssFeed" type="text" class="validate" value="{{adminSettings.rssFeedLive.link}}">
+                      <label class="active" for="liveRssFeed">Live RSS feed</label>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+            
+              
+              <div class="external-resources">
+                <div class="clearfix"></div>
+                <h5>External Resources</h5>
+                <div class="clearfix"></div>
+                <div class="atdw-request">
+                  <h6>1. ATDW Request</h6>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input name="atdwBaseUrl" id="atdwBaseUrl" type="text" class="validate" value="{{adminSettings.atdw.baseUrl}}">
+                          <label class="active" for="atdwBaseUrl">Base URL</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input name="atdwKey" id="atdwKey" type="text" class="validate" value="{{adminSettings.atdw.key}}">
+                          <label class="active" for="atdwKey">Key</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 row">
+                          <input name="atdwPageSize" id="atdwPageSize" type="number" min="10" class="validate col s11" value="{{adminSettings.atdw.numberOfRecordsPerPage}}">
+                          <label class="active" for="atdwPageSize">Number of Records per page</label>
+                          <i class="material-icons col s1" title="By default shows at least 10 Records per page" style="color: #9e9e9e; cursor: pointer;">help_outline</i>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12 row">
+                          <input name="atdwEventsDays" id="atdwEventsDays" type="number" min="10" class="validate col s11" value="{{adminSettings.atdw.numberOfDaysForEvents}}">
+                          <label class="active" for="atdwEventsDays">Default number of Days for Events</label>
+                          <i class="material-icons col s1" title="By default shows at least 10 days of events" style="color: #9e9e9e; cursor: pointer;">help_outline</i>
+                      </div>
+                  </div>
+                </div>
+              </div>
+               <div class="clearfix"></div>
+            
+              
+              <div class="display-settings">
+                <div class="clearfix"></div>
+                <h5>Display Settings</h5>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="input-field col s12">
+                         <span>
+                              <input type="checkbox" id="location_list_call_button" class="location-status" checked={{adminSettings.displaySettings.callButtonOnLocationListModal}} title='Show/Hide Location List Call Button' />
+                              <label for="location_list_call_button">
+                                Hide Call Button for Location List Modal.
+                              </label>
+                          </span>
+                    </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              
+
+              <div class="display-multilang">
+                <div class="clearfix"></div>
+                <h5>Multi-Language</h5>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="input-field col s12">
+                         <span>
+                              <input type="checkbox" id="multi_language_button" checked={{adminSettings.displayMultiLanguageButton}} title='Show/Hide Multi-Language Button' />
+                              <label for="multi_language_button">
+                                Display Multi-Language Button.
+                              </label>
+                          </span>
+                    </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            
+                
+              <div class="kiosk-user-interface">
+                <div class="clearfix"></div>
+                <h5>Kiosk User Interface</h5>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="input-field col s12 row">
+                         <span>
+                              <input name="" id="kioskScreenSaver" type="number" min="30000" class="validate col s11" value="{{adminSettings.kioskUser.screenSaverTimer}}">
+                              <label class="active" for="kioskScreenSaver">
+                                Waiting time for Screen Saver (in millisecond).
+                              </label>
+                              <i class="material-icons col s1" title="Default Time is 30000 millisecond (30 Seconds) to show Screen Saver" style="color: #9e9e9e; cursor: pointer;">help_outline</i>
+                          </span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="dt-sliderImages">
+                <h5>Advertising</h5>
+                  <div class="input-field col s12 row">
+                    <span>
+                      <input name="" id="slideChangeTime" type="number" min="7000" class="validate col s11" value="{{adminSettings.advertisement.slideChangeTime}}">
+                      <label class="active" for="slideChangeTime">
+                        Slide change time (in millisecond).
+                      </label>
+                      <i class="material-icons col s1" title="Default Time is 7000 millisecond (7 Seconds) to change the slide" style="color: #9e9e9e; cursor: pointer;">help_outline</i>
+                    </span>
+                  </div>
+                  <strong>Images for slider</strong>
+                  <div class="file-field input-field row">
+                    <div class="btn col s4">
+                      <span>Upload</span>
+                      <input id="sliderImages" type="file">
+                    </div>
+                  </div>
+                  {{# each sliderImages }}
+                    <div class="row">
+                      <div class="file-path-wrapper col s8">
+                        <input class="file-path " id="sliderImagesText" type="text" value="{{ this }}">
+                      </div>
+                      <div class="col s4">
+                        <div class="td-imgbox">
+                          <span class="dtImages" id="deleteSliderImages">
+                            <i class="material-icons close">close</i>
+                          </span>
+                          <img class="" src="{{ this }}">
+                        </div>
+                      </div>
+                    </div>
+                  {{/ each }}
+                </div>
+              </div>
+            <!-- {{/with}}   -->
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="waves-effect waves-green btn-flat hoverable" id="updateSettings">Update</button>
+        </div>
+      </form>
+      {{#if pageLoading}}
+        {{> spinner}}
+      {{/if}}
+    </div>
+</template>

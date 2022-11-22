@@ -1,0 +1,59 @@
+<template name="landingPage">
+    <div id="landingPageDiv" class="modal modal-fixed-footer enquiry-modal">
+        <form id="landingPageForm">
+            <div class="modal-content modal-grey-bg">
+                <h4 class="custom-label pull-left">Landing page</h4>
+           		<span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              	<i class="fa fa-times" aria-hidden="true"></i>
+            	</span>
+            	<div class="clearfix"></div>
+                    <div class="input-field">
+                        <input id="heading" type="text" class="custom-input text-white"/>
+                        <label for="heading">Enter Landing Page Heading</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="subheading" type="tel" class="custom-input text-white" />
+                        <label for="subheading">Enter Sub heading</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="color" type="text" class="custom-input text-white"/>
+                        <label for="color">Pick Color</label>
+                    </div>
+                    <div class="row">  
+	                    <div class="col s10">
+	            			<div class="color-out" id="outColorPickerAdminNewItemModal" style="position: relative;">
+	              			</div>
+              			</div>
+          			</div>
+          			
+          			<div class="row">
+
+                    <div class="input-field col s10 mtop">
+        
+                        <label for="mainImage">Landing Page Image</label>
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Landing Image</span>
+                            <input id="mainImage" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path " id="imageText" type="text" value="{{mainImage}}">
+                          </div>
+                        </div>
+                    </div>
+                    {{#if mainImage}}
+                        <div class="col s2">
+                            <div class="td-imgbox">
+                                <img src="{{mainImage}}">
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-action modal-close waves-effect waves-green btn-flat" id="clicked">close</button>
+                <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat" id="submitValue">Submit</button>
+            </div>
+        </form>
+    </div>
+</template>

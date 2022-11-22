@@ -1,0 +1,50 @@
+	
+<template name="slider">
+	<!-- Wrapper Start -->
+	<div class="wrapper"> 
+ 
+		<div class="mainSlider-wrap">
+	     	<div class="tp-banner-container">
+		       	<!-- <div class="tp-banner">
+		            <ul>
+			             <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000" data-thumb="/assets/images/slide-1.jpg" >
+			             	<img src="/assets/images/slide-1.jpg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
+			             </li>
+			             <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000" data-thumb="/assets/images/slide-2.jpg">
+			             	<img src="/assets/images/slide-2.jpg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
+			             </li>
+			             <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000" data-thumb="/assets/images/slide-3.jpg">
+			             	<img src="/assets/images/slide-3.jpg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
+			             </li>
+			             <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000" data-thumb="/assets/images/slide-4.jpg" >
+			             	<img src="/assets/images/slide-4.jpg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
+			             </li>
+		            </ul>
+		       	</div> -->
+		       	<div id="carousel">
+		       		{{# if sliderImages }}
+		       			{{# each sliderImages }}
+		       				{{# if isPublish this }}
+		       					<div>
+
+		       						<img src="{{ imageUrl }}" alt="{{ name }}" class="dt-slide" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+		       					</div>
+		       				{{/ if }}
+		       			{{/ each }}
+		       		{{ else }}
+						<div><img src="/assets/images/slide-1.jpg" class="dt-slide" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" /></div>
+						<div><img src="/assets/images/slide-2.jpg" class="dt-slide" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" /></div>
+						<div><img src="/assets/images/slide-3.jpg" class="dt-slide" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" /></div>
+					{{/ if }}
+				</div>
+	    	</div>
+		</div>
+	</div>
+	<!-- Wrapper Ends -->
+	<div class="bottom-screen" id="touch-anywhere">
+	  	<a href="#">
+	    	<h1><img src="/assets/images/hand-animation.gif" class="img-responsive"><span>Tap the screen to begin</span></h1>
+	  	</a>
+	</div>
+</template>

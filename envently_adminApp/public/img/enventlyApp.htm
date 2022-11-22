@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://doublebay.localhost:3000/#! -->
+<html class="gr__doublebay_localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./enventlyApp_files/merged-stylesheets.css">
+<title>enventlyApp</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="./enventlyApp_files/icon" rel="stylesheet">
+  <link href="./enventlyApp_files/mapbox-gl.css" rel="stylesheet">
+
+</head>
+<body data-gr-c-s-loaded="true">
+
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.4.3.2%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22development%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22mapboxglKey%22%3A%22pk.eyJ1Ijoiaml0b3MiLCJhIjoiOXE1SHc4VSJ9.RRtkSxtWwF2e7jBnLskfiQ%22%7D%2C%22ROOT_URL%22%3A%22http%3A%2F%2Flocalhost%3A3000%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22accountsConfigCalled%22%3Atrue%2C%22appId%22%3A%22d31f15k5g07nh7q9o%22%2C%22autoupdateVersion%22%3A%226c199ab88b92ce0ec3cf96a5f8730c92a9c65467%22%2C%22autoupdateVersionRefreshable%22%3A%22877d94828f8219cd19a6859ba085a09354e05fd7%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="./enventlyApp_files/underscore.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/meteor.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/meteor-base.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/mobile-experience.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/modules-runtime.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/modules.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/es5-shim.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/promise.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ecmascript-runtime.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/babel-compiler.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ecmascript.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/base64.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ejson.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/id-map.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ordered-dict.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/tracker.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/babel-runtime.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/random.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/mongo-id.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/diff-sequence.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/geojson-utils.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/minimongo.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/check.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/retry.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ddp-common.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/reload.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ddp-client.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ddp.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ddp-server.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/allow-deny.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/mongo.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/blaze-html-templates.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/reactive-var.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/jquery.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/reactive-dict.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/session.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/url.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/http.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/standard-minifier-css.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/standard-minifier-js.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/kadira_flow-router.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/observe-sequence.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/deps.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/htmljs.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/blaze.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/spacebars.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/templating-compiler.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/templating-runtime.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/templating.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/kadira_blaze-layout.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/fourseven_scss.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/materialize_materialize.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ddp-rate-limiter.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/localstorage.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/callback-hook.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/accounts-base.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/sha.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/srp.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/accounts-password.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/useraccounts_core.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/coffeescript.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/softwarerero_accounts-t9n.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/useraccounts_flow-routing.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/useraccounts_materialize.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/johanbrook_publication-collector.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/fortawesome_fontawesome.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/themeteorchef_bert.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/webapp.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/livedata.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/hot-code-push.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/launch-screen.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/ui.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/autoupdate.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/global-imports.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/app.js"></script>
+  <script type="text/javascript" src="./enventlyApp_files/service-configuration.js"></script>
+
+
+
+
+<div class="bert-alert clearfix">
+    <div class="bert-container">
+      <div class="bert-gem">
+        <i class="fa"></i>
+      </div>
+      <div class="bert-content">
+        
+        <p></p>
+      </div>
+    </div>
+  </div><div class="hiddendiv common"></div>
+  
+    
+    
+    
+    <main id="doublebay">
+    <nav>
+    <div class="nav-wrapper grey darken-2">
+      <form>
+        <div class="input-field">
+          <input id="autocomplete-input" type="search" name="search" class="autocomplete" autocomplete="off" required="">
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        <ul class="autocomplete-content dropdown-content"></ul></div>
+      </form>
+    </div>
+  </nav>
+    <div class="fixed-action-btn click-to-toggle" style="bottom: 97px;">
+    <a class="btn-floating btn-large black"><i class="large material-icons">menu</i></a>
+    <ul>
+      <li>
+        <a href="http://doublebay.localhost:3000/#transport" class="btn-floating grey darken-3"><i class="material-icons">local_taxi</i></a>
+        <a href="http://doublebay.localhost:3000/#transport" class="btn-floating mobile-fab-tip">TRANSPORT</a>
+      </li>
+      <li>
+        <a href="http://doublebay.localhost:3000/#amenities" class="btn-floating grey darken-3"><i class="material-icons">info_outline</i></a>
+        <a href="http://doublebay.localhost:3000/#amenities" class="btn-floating mobile-fab-tip">AMENITIES AND SERVICES</a>
+      </li>
+      <li>
+        <a href="http://doublebay.localhost:3000/#categories" class="btn-floating grey darken-3"><i class="material-icons">list</i></a>
+        <a href="http://doublebay.localhost:3000/#categories" class="btn-floating mobile-fab-tip modal-trigger">CATEGORIES</a>
+      </li>
+      <li>
+        <a href="http://doublebay.localhost:3000/#events" class="btn-floating grey darken-3"><i class="material-icons">today</i></a>
+        <a href="http://doublebay.localhost:3000/#events" class="btn-floating mobile-fab-tip modal-trigger">CURRENT EVENTS</a>
+      </li>
+      <li>
+        <a href="http://doublebay.localhost:3000/#information" class="btn-floating grey darken-3"><i class="material-icons">card_travel</i></a>
+        <a href="http://doublebay.localhost:3000/#information" class="btn-floating mobile-fab-tip modal-trigger">TOURIST INFORMATION</a>
+      </li>
+    </ul>
+  </div>
+    
+  </main>
+  <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="col l6">
+          <h5 class="white-text">doublebay logo</h5>
+        </div>
+        © 2017 doublebay Municipal Council
+      </div>
+    </div>
+  </footer>
+  <div id="transport" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>TRANSPORT</h4>
+    </div>
+  </div>
+
+  <div id="amenities" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection">
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Car Parking</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Car Parking">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Restaurants</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Restaurants">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Cafes</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Cafes">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">ATM</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="ATM">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Karaoke</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Karaoke">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Acupuncture</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Acupuncture">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Banking or Other Financial Services</span>
+            <a href="http://doublebay.localhost:3000/#!" class="secondary-content">
+              <i class="material-icons locate" id="Banking or Other Financial Services">location_on</i>
+              <i class="material-icons">list</i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div id="categories" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>CATEGORIES</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="http://doublebay.localhost:3000/#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <div id="events" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>CURRENT EVENTS</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="http://doublebay.localhost:3000/#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <div id="information" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>TOURIST INFORMATION</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="http://doublebay.localhost:3000/#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  
+  <div class="grammarly-disable-indicator"></div></body></html>

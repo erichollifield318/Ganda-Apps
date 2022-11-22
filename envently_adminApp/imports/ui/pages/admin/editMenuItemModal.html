@@ -1,0 +1,97 @@
+<template name="editMenuItemModal">
+    <!-- New Menu Item Modal -->
+    <div id="editMenuItem" class="modal modal-fixed-footer">
+        {{#with editMenuItemData}}
+        <form class="edit-menu-item-save" id="{{_id}}">
+            <div class="modal-content">
+                <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <h4 class="thin pull-left">
+                                Edit sub category
+                            </h4>
+
+                            <div class="input-field pull-right dt-add-external-resources-button">
+                                <a class="modal-trigger waves-effect waves-light btn" id="editExternalResourcesModal">
+                                    Edit External Resources
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="clearfix"></div>
+                        <!-- <div class="input-field">
+                            <input id="edit-menu-Item" type="text" class="validate" value={{name}} required>
+                            <label class="active" for="edit-menu-Item">Name</label>
+                        </div> -->
+                        <div class="row">
+                          <div class="col s4">
+                            <div class="adminLanguage">{{>languageSelectEditSubmenu}}</div>
+                          </div>
+                          <div class="col s8">
+                             {{# each language in languagesListForSubMenuEdit }}
+                            <div class="input-field col s12 allLanguageSubMenuEdit {{language.tag}}"  id="">
+                                <input class="validate" id="Submenu-name-edit" type="text" value="{{forValue name language.tag}}">
+                                <label class="active" for="menu-name">
+                                    Name
+                                </label>
+                            </div>
+                        {{/ each }}
+                          </div>
+                        </div>
+                        <div class="input-field col s9">
+                            <a class="modal-trigger waves-effect waves-light btn" href="#IconModal">Choose Icon</a>
+                        </div>
+                        <div class="input-field col s3 icon-img-container">
+                        {{#if selectedUpdateMenuIcon}}
+                        <input id="menu-item-icon" name="menu-item-icon" type="hidden" value="{{selectedUpdateMenuIcon}}"/>
+                        <img class="edit-menu-icon-img openColorPickerEditMenu img" height="30px" src="/img/maki/{{selectedUpdateMenuIcon}}.svg" style="background-color: {{initialColor}}"/>
+                        {{else}}
+                        <input id="menu-item-icon" name="menu-item-icon" type="hidden" value=""/>
+                        {{/if}}
+                        </div>
+                        <div class="file-field input-field col s8">
+                            <label for="menu-item-color" class="active">
+                                Color
+                            </label>
+                            <input class="menu-item-color" id="menu-item-color-edit-modal" name="menu-item-color" type="text" value="{{initialColor}}" />
+                        </div>
+                        <div class="input-field col s12 show-menus">
+                            <label class="active">Parent Category</label>
+                            <select id="showMenus">
+                                {{#each getMenus}}
+                                    <option value="{{_id}}" {{selected _id}}>{{defaultLangForMenu}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="col s10">
+                            <div class="color-out" id="outColorPickereditmodal" style="position: relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="waves-effect waves-green btn-flat">Save</button>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+            </div>
+        </form>
+        {{/with}}
+    </div>
+    {{> externalResource externalResourceObject=externalResourceObject }}
+</template>
+<template name="languageSelectEditSubmenu">
+  <div class="input-field">
+      <select name="language-select" id="language-select" class="SubmenuLangSelect">
+        <!-- <option value="" disabled selected>Choose your option</option> -->
+        {{# each language in languagesList }}
+      <!-- iterate through languages -->
+      {{# with language }} <!-- create a local data context -->
+        <option value="{{ tag }}" {{ activeLanguage }}> {{ name }} </option>
+      {{/ with }}
+    {{/ each }}
+    </select>
+    </div>
+</template>

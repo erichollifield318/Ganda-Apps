@@ -1,0 +1,24 @@
+<template name="editableMapbox">
+  <section class="container" id="eventFormContainer">
+    <div id="editableMapboxModal" class="modal modal-fixed-footer" style="top: auto; width: 90%; max-height: 90%; height: 90%;">
+      <form id="editEvent">
+        <div class="modal-content">
+          <h4 class="pull-left">Edit Marker</h4>
+          <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div class="clearfix"></div>
+          <div class="row">
+            <div class="col s12">
+                <div id="editableMap" style="height: 550px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" value="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Update</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+</template>

@@ -1,0 +1,205 @@
+$admin-nav-width: 20%;
+
+.bg-color{
+  background-color: #dedbdb;
+}
+
+.navClose {
+  display: none;
+}
+
+.modal-footer {
+  a {
+    margin-right: 5em;
+  }
+}
+
+#logoutButton {
+  margin-left: 2em;
+}
+
+// **************
+// #admin-nav start
+// **************
+#admin-nav {
+  background-color: Snow;
+  width: $admin-nav-width;
+  height:100%;
+  padding-bottom: 0px;
+
+  .background {
+    background-color: WhiteSmoke ;
+   }
+
+  .client {
+    text-transform: capitalize;
+   }
+
+  .menuItem {
+    padding: 5px;
+   }
+}
+// **************
+// #admin-nav end
+// **************
+
+
+// **************
+// #adminMain start
+// **************
+#adminMain {
+  // background-color: WhiteSmoke;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: $admin-nav-width;
+
+  .adminLanding {
+    height: calc(100vh - 20em);
+  }
+
+  .categoriesList {
+    margin-top: 2em;
+  }
+
+  .searchButtons {
+    margin-bottom: 1em;
+
+    .btn {
+      color: rgba(0, 0, 0, .7);
+      min-width: 100%;
+    }
+  }
+
+}
+// **************
+// #adminMain start
+// **************
+
+
+
+// **************
+// @media start
+// **************
+@media only screen and (max-width : 992px) {
+  #admin-nav {
+    width: 85%;
+  }
+
+  #adminMain {
+    padding-left: 0;
+  }
+
+  // #categoriesList {
+  //   &.modal {
+  //     &.open {
+  //       top: 0px!important;
+  //     }
+  //   }
+  //     width: 90vw;
+  // }
+
+  .navClose {
+    display: block;
+  }
+
+  .openButton {
+    margin-left: 2em;
+    position: relative;
+    top: 2em;
+  }
+
+  .logout {
+    margin-left: 2em;
+    position: relative;
+    bottom: 1em;
+
+    i {
+      position: relative;
+      top: 4px;
+    }
+  }
+
+}
+// **************
+// @media end
+// **************
+
+
+.edit-menu-item {
+  margin-right: 0 1em;
+}
+
+.margin-left-five {
+  margin-left:5px;
+}
+
+.color-grey {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.cursor-default {
+  cursor : default
+}
+
+.synced-at{
+  display:block;
+  font-size:13px;
+  text-align: center;
+}
+
+.sync-btn{
+  width:100%;
+  display:block;
+  text-align:center;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+
+.edit-menu-icon-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+input.edit-menu-icon-color{
+  border-bottom-color: transparent;
+  text-align: center;
+  margin-left: 10px;
+}
+label.edit-menu-icon-color-lbl{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.icon-img-container{
+    text-align: center;
+}
+
+@media screen and (max-width: 320px){
+  input.edit-menu-icon-color{
+    font-size: 0.8rem;
+    margin-left: 15px;
+  }
+  label.edit-menu-icon-color-lbl:not(.active),
+  label.edit-menu-icon-color-lbl.active{
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (min-width: 762px){
+  label.edit-menu-icon-color-lbl{
+    margin-left: 15px;
+  }
+  input.edit-menu-icon-color{
+    margin-left: 30px;
+  }
+}
+
+
+.submenuCloseLinks{
+  cursor: pointer; 
+  font-size: 16px !important;
+  position: relative;
+  top: 3px;
+}

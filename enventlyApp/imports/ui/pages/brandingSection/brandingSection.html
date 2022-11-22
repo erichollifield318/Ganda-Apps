@@ -1,0 +1,202 @@
+<template name="brandingSection">
+    <div id="brandingSection" class="modal modal-fixed-footer" style="width: 90%; height:90%; max-height: 90%">
+    <form id="editbrandingSection">
+        <div class="modal-content">
+            <h4 class="pull-left">Branding</h4>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+                {{#with branding}}
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="header" type="text" class="validate" value="{{header}}" required="" />
+                            <label class="active" for="header">Header</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea name="body" id="body" class="materialize-textarea" value="{{body}}"></textarea>
+                            <label class="active" for="body">Body</label>
+                        </div>
+                    </div>
+                 {{/with}}     
+
+                <div class="row">
+                    <div class="input-field col s10 mtop">
+                        <label for="mainImage">Main Image</label>
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Main Image</span>
+                            <input id="mainImage" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path " id="mainImageText" type="text" value="{{mainImage}}">
+                          </div>
+                        </div>
+                    </div>
+                    {{#if mainImage}}
+                        <div class="col s2">
+                            <div class="td-imgbox">
+                                <img src="{{mainImage}}">
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s10 mtop">
+                        <label for="image1">Image 1</label>
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Image1</span>
+                            <input id="image1" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path " id="imageText1" type="text" value="{{image1}}">
+                          </div>
+                        </div>
+                    </div>
+                    {{#if image1}}
+                        <div class="col s2">
+                            <div class="td-imgbox">
+                                <img src="{{image1}}">
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+
+                {{#with imageObj1}}    
+                    <div class="row">
+                        <div class="input-field col s2">
+                            <input id="image1-phone" type="tel" value="{{phone}}" />
+                            <label for="image1-phone" class="{{isActiveLink phone}}">Phone Number</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image1-link1" type="text" value="{{link1}}">
+                            <label for="image1-link1" class="{{isActiveLink link1}}">Link1&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image1-link2" type="text"  value="{{link2}}">
+                            <label for="image1-link2" class="{{isActiveLink link2}}">Link2&nbsp;&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image1-link3" type="text"  value="{{link3}}">
+                            <label for="image1-link3" class="{{isActiveLink link3}}">Link3&nbsp;&nbsp;<i class="fa fa-instagram" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image1-link4" type="text" value="{{link4}}">
+                            <label for="image1-link4" class="{{isActiveLink link4}}">Link4&nbsp;&nbsp;<i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                    </div>
+                {{/with}}    
+
+                <div class="row">
+                    <div class="input-field col s10 mtop">
+                        <label for="image2">Image 2</label>
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Image2</span>
+                            <input id="image2" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path " id="imageText2" type="text" value="{{image2}}">
+                          </div>
+                        </div>
+                    </div>
+                   
+                    {{#if image2}}
+                      <div class="col s2">
+                        <div class="td-imgbox">
+                            <img src="{{image2}}" width="150">
+                        </div>
+                      </div>
+                    {{/if}}
+                        
+                </div>
+
+                {{#with imageObj2}}
+                    <div class="row">
+                        <div class="input-field col s2">
+                            <input id="image2-phone" type="tel" value="{{phone}}" />
+                            <label for="image2-phone" class="{{isActiveLink phone}}">Phone Number</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image2-link1" type="text"  value="{{link1}}">
+                            <label for="image2-link1" class="{{isActiveLink link1}}">Link1&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image2-link2" type="text"  value="{{link2}}">
+                            <label for="image2-link2" class="{{isActiveLink link2}}">Link2&nbsp;&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image2-link3" type="text"  value="{{link3}}">
+                            <label for="image2-link3" class="{{isActiveLink link3}}">Link3&nbsp;&nbsp;<i class="fa fa-instagram" aria-hidden="true"></i></label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image2-link4" type="text"  value="{{link4}}">
+                            <label for="image2-link4" class="{{isActiveLink link4}}">Link4&nbsp;&nbsp;<i class="fa fa-twitter-square" aria-hidden="true"></i></label>
+                        </div>
+                    </div>
+                {{/with}}      
+
+                <div class="row">
+                    <div class="input-field col s10 mtop">
+                        <label for="image3">Image 3</label>
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Image3</span>
+                            <input id="image3" type="file">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path " id="imageText3" type="text" value="{{image3}}">
+                          </div>
+                        </div>
+                    </div>
+                    {{#if image3}}
+                        <div class="col s2">
+                            <div class="td-imgbox">
+                                <img src="{{image3}}" width="150">
+                            </div>
+                         </div>
+                    {{/if}}
+                        
+                </div>
+
+                {{#with imageObj3}}    
+                    <div class="row">
+                        <div class="input-field col s2">
+                            <input id="image3-phone" type="tel" value="{{phone}}" />
+                            <label for="image3-phone" class="{{isActiveLink phone}}">Phone Number</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image3-link1" type="text" value="{{link1}}">
+                            <label for="image3-link1" class="{{isActiveLink link1}}">Link1</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image3-link2" type="text" value="{{link2}}">
+                            <label for="image3-link2" class="{{isActiveLink link2}}">Link2</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image3-link3" type="text" value="{{link3}}">
+                            <label for="image3-link3" class="{{isActiveLink link3}}">Link3</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="image3-link4" type="text" value="{{link4}}">
+                            <label for="image3-link4" class="{{isActiveLink link4}}">Link4</label>
+                        </div>
+                    </div>
+                {{/with}}      
+           
+        </div>
+        <div class="modal-footer">
+        <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat hoverable">Update</button>
+        </div>
+        </form>
+    </div>
+</template>

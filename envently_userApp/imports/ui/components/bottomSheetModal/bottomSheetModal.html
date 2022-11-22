@@ -1,0 +1,215 @@
+<template name="bottomSheetModal">
+    <section class="container" id="newbottomSheetModal">
+        <div class="row doublebay  {{# if isEventsMenu }} eventDatesResponsive {{/if}}">
+            {{#with selectedMenu}}
+            <div class="modal bottom-sheet {{#unless currentMenu}}bottom-nav{{/unless}}" id="bottomSheetModalId"
+                style="background: {{bottomSheetSubMenu.modalBackgroundColor}}">
+                <div class="modal-content" id="modalContent">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right custom-close"
+                        style="background: {{bottomSheetSubMenu.closeButtonBackgroundColor}};">
+                        <i class="small material-icons"
+                            style=" color: {{bottomSheetSubMenu.closeButtonTextColor}};">close</i>
+                    </a>
+
+                    {{#if currentMenu}}
+                    <div class="add-whitespace">
+                        <div class="top-header"
+                            style="background-color: {{ bottomSheetSubMenu.headerBackgroundColor }}">
+                            <div class="side-logo pull-left">
+                                {{# if getFooterImage }}
+                                <img src="{{getFooterImage}}" />
+                                {{/ if }}
+                            </div>
+                            <h5 id="subMenuHeading" class="capitalize menuName"
+                                style="color: {{ bottomSheetSubMenu.headingFontColor }}">{{dynamicLangMenu name }}</h5>
+                            <!--<h5 class="heading-list">Show List</h5>-->
+                            {{# if isEventsMenu }}
+                            <div class="pull-right eventsDateSelect">
+                                <div class="input-field">
+                                    <input type="text" name="eventFrom" id="eventFrom" class="form-field"
+                                        value="{{ eventsDate.from }}">
+                                    <label for="eventFrom" class="active">Start</label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="eventTo" class="active">End</label>
+                                    <input type="text" name="eventTo" id="eventTo" placeholder="Please fill this field"
+                                        class="form-field" value="{{ eventsDate.to }}">
+                                </div>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if subCategoryHeader}}
+                    <div class="add-whitespace">
+                        <div class="top-header"
+                             style="background-color: {{ bottomSheetSubMenu.headerBackgroundColor }}">
+                            <div class="side-logo pull-left">
+                                <img class="circle" src="./assets/img/maki-white/{{subCategoryHeader.icon}}.svg" style="background-color:{{subCategoryHeader.color}}" />
+                            </div>
+                            <h5 id="destinationHeading" class="capitalize menuName"
+                                style="color: {{ bottomSheetSubMenu.headingFontColor }}">{{subCategoryHeader.title}}</h5>
+
+                        </div>
+                    </div>
+                    {{/if}}
+                    <!-- <div class="add-whitespace"></div> -->
+                    <ul class="collection btm-listing {{#unless currentMenu}}bottom-nav{{/unless}}" id="mainUl">
+                        {{#if currentMenu}}
+                        {{#if currentEvents}}
+                        <!-- /////////////////////////////////////////////////////////////// -->
+                        {{# if checkItems items }}
+                        {{#each items}}
+                        {{#if isPublish _id}}
+                        <li class="collection-item avatar locate valign-wrapper" id="{{_id}}"
+                            style="cursor:pointer; background-color: {{ bottomSheetSubMenu.listBackgroundColor }}"
+                            data-title="{{ dynamicLangMenuRss name }}" data-icon="{{ getMenuItemIcon preference }}" data-color="{{getBaseMenuColor selectedMenu.preference}}">
+                            <div class="side-icon" style="background-color: {{ bottomSheetSubMenu.iconBoxColor }}">
+                                <img src="./assets/img/maki-white/{{getMenuItemIcon preference}}.svg"
+                                    class="menu-item-img circle" id="{{_id}}"
+                                    style="background-color:{{getBaseMenuColor selectedMenu.preference}}!important; color: {{ bottomSheetSubMenu.iconColor }}" />
+                            </div>
+                            <p class="title" id="{{_id}}" style="color: {{ bottomSheetSubMenu.listFontColor }}">
+                                {{dynamicLangMenuRss name }}</p>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                        {{/if}}
+                        <!-- /////////////////////////////////////////////////////////////// -->
+                        {{#each currentEvents}}
+                        <li class="collection-item avatar locate-event valign-wrapper" data-title={{title}}
+                            style="cursor:pointer; background-color: {{ bottomSheetSubMenu.listBackgroundColor }}" data-icon="{{ getMenuItemIcon selectedMenu.preference }}" data-color="{{getBaseMenuColor selectedMenu.preference}}">
+                            <div class="side-icon" style="background-color: {{ bottomSheetSubMenu.iconBoxColor }}">
+                                <img src="./assets/img/maki-white/{{getMenuItemIcon selectedMenu.preference}}.svg"
+                                    class="menu-item-img circle"
+                                    style="background-color: {{getBaseMenuColor selectedMenu.preference}}!important;" />
+                            </div>
+                            <p class="title" style="color: {{ bottomSheetSubMenu.listFontColor }}">
+                                {{decodeString title}}</p>
+                        </li>
+                        {{/each}}
+                        {{else}}
+                        {{# if checkItems items }}
+                        {{#each items}}
+                        {{#if isPublish _id}}
+                        <li class="collection-item avatar locate valign-wrapper" id="{{_id}}"
+                            style="cursor:pointer; background-color: {{ bottomSheetSubMenu.listBackgroundColor }}"
+                            data-title="{{ dynamicLangMenuRss name }}" data-icon="{{ getMenuItemIcon preference }}" data-color="{{getBaseMenuColor selectedMenu.preference}}">
+                            <div class="side-icon" style="background-color: {{ bottomSheetSubMenu.iconBoxColor }}">
+                                <img src="./assets/img/maki-white/{{getMenuItemIcon preference}}.svg"
+                                    class="menu-item-img circle" id="{{_id}}"
+                                    style="background-color:{{getBaseMenuColor selectedMenu.preference}}!important; color: {{ bottomSheetSubMenu.iconColor }}" />
+                            </div>
+                            <p class="title" id="{{_id}}" style="color: {{ bottomSheetSubMenu.listFontColor }}">
+                                {{dynamicLangMenu name }}</p>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                        {{ else }}
+                        <li class="collection-item avatar locate valign-wrapper" id="no-item"
+                            style="cursor:pointer; background-color: {{ bottomSheetSubMenu.listBackgroundColor }}">
+                            <div class="side-icon" style="background-color: {{ bottomSheetSubMenu.iconBoxColor }}">
+
+                            </div>
+                            <p class="title" style="color: {{ bottomSheetSubMenu.listFontColor }}">No Menu Items</p>
+                        </li>
+                        {{/ if }}
+                        {{/if}}
+                        {{else}}
+                        {{#if markers.length}}
+
+
+                        <!--<div class="add-whitespce">-->
+                            <!--<div style="width: 100%;">-->
+                                <!--<div class="side-icon" style="background-color: #dbdcde; text-align: center;">-->
+                                    <!--<img src="./assets/img/maki-white/{{subCategoryHeader.icon}}.svg"-->
+                                         <!--class="menu-item-img circle"-->
+                                         <!--style="background-color:{{subCategoryHeader.color}} !important;" />-->
+                                <!--</div>-->
+                                <!--<p class="title" style="color: #1c1c1c; padding-left: 120px; line-height: 38px;">-->
+                                    <!--{{subCategoryHeader.title}}</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        {{#each markers}}
+                        <li>
+                            <div class="sidenav-popup-content"
+                                style="min-width: auto;background-color: {{bottomSheetLocationList.modalBackgroundColor}}; border:{{bottomSheetLocationList.modalBorderColor}};">
+                                <div class="row marker-tooltip">
+                                    <div class="{{dynamicclass}} side-mapinfo" style=" margin-left: 4px">
+                                        <div class="pull-left">
+                                            <h6 style="color: {{bottomSheetLocationList.locationNameFontColor}}">
+                                                {{markerName}}</h6>
+                                            <p style="color: {{bottomSheetLocationList.locationInfoFontColor}}">
+                                                <b>Address:</b> {{markerAddress}}</p>
+                                            {{#if isEventTypeMarkers}}
+                                                <p><b>Beginning:</b> {{getBeginDate}} </p>
+                                            <p><b>Ending:</b> {{getEndDate}} </p>
+                                            {{/if}}
+                                        </div>
+                                        <div class="pull-right pad-r-4">
+                                            <a class="waves-effect waves-light btn more-info" id={{markerId}}
+                                                style="background-color: {{bottomSheetLocationList.detailsButtonColor}}; color: {{bottomSheetLocationList.detailsButtonTextColor}}">
+                                                {{_ "mapBoxMarkers.detailsButton" }}
+                                            </a>
+                                            <a class="waves-effect waves-light btn align-center directions"
+                                                id={{markerId}}
+                                                style="background-color: {{bottomSheetLocationList.directionButtonColor}}; color: {{bottomSheetLocationList.directionButtonTextColor}}">
+                                                {{_ "mapBoxMarkers.directionButton" }}
+                                            </a>
+                                            {{# if isKioskUser }}
+                                            {{#if isPhone}}
+                                            {{# if phone }}
+                                            <a class="waves-effect waves-light btn align-center call" id={{markerId}}
+                                                style="background-color: {{bottomSheetLocationList.callButtonColor}}; color: {{bottomSheetLocationList.callButtonTextColor}}">
+                                                {{_ "mapBoxMarkers.callButton" }}
+                                            </a>
+                                            {{/ if}}
+                                            {{/ if}}
+                                            {{/ if }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                        {{/if}}
+                        {{/if}}
+                    </ul>
+                </div>
+                <div class="load-items-wrapper">
+                    <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i> Loading
+                </div>
+            </div>
+            {{/with}}
+        </div>
+
+
+
+        <!-- <div id="eventStartEndDate" class="modal modal-fixed-footer" style="width: 60%; height:80%; max-height: 80%">
+            <form id="eventStartEndDateForm" >
+                <div class="modal-content">
+                    <h4 class="pull-left"> Filter Events By Date </h4>
+                    <span aria-hidden="true" aria-label="Close" class="modal-action modal-close pull-right" data-dismiss="modal">
+                        <i aria-hidden="true" class="fa fa-times">
+                        </i>
+                    </span>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col s6">
+                            <label for="eventFrom" >Starting Date</label>
+                            <input type="text" name="eventFrom" id="eventFrom" class="form-field datepicker1" required />
+                        </div>
+                        <div class="col s6">
+                            <label for="eventTo" >Ending Date</label>
+                            <input type="text" name="eventTo" id="eventTo" placeholder="Please fill this field" class="form-field datepicker2" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="dateAdd" class="modal-action waves-effect waves-green btn-flat">Submit</button>
+                </div>
+            </form>
+        </div> -->
+    </section>
+</template>

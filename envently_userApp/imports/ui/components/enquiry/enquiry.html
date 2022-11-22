@@ -1,0 +1,38 @@
+<template name="enquiryModal">
+    <div id="enquiryModal" class="modal modal-fixed-footer enquiry-modal">
+        <form id="newEnquiry">
+            <div class="modal-content modal-grey-bg" style="background: {{enquiryModal.modalBackgroundColor}}">
+                <h4 class="custom-label" style="color: {{enquiryModal.headingFontColor}}">Enquiry</h4>
+           
+                    <div class="input-field">
+                        <input id="contactName" type="text" class="validate custom-input text-white" style="border-bottom:{{enquiryModal.inputBorderColor}}; box-shadow:{{enquiryModal.inputBoxShadowColor}};" required />
+                        <label for="contactName" style="color: {{enquiryModal.labelFontColor}}">Enter your full name</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="tel" type="tel" class="validate custom-input text-white" style="border-bottom:{{enquiryModal.inputBorderColor}}; box-shadow:{{enquiryModal.inputBoxShadowColor}};" required />
+                        <label for="tel" style="color: {{enquiryModal.labelFontColor}}">Enter your mobile Number</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="text" class="validate custom-input text-white" style="border-bottom:{{enquiryModal.inputBorderColor}}; box-shadow:{{enquiryModal.inputBoxShadowColor}};" required  autocomplete="off" />
+                        <label for="email" style="color: {{enquiryModal.labelFontColor}}">Enter your email address</label>
+                    </div>    
+                    <div class="input-field">
+                        <textarea id="query" class="text-white" style="border-bottom:{{enquiryModal.inputBorderColor}}; box-shadow:{{enquiryModal.inputBoxShadowColor}};" required ></textarea>
+                        <label for="query" style="color: {{enquiryModal.labelFontColor}}">Enter your Comments</label>
+                    </div>
+            </div>
+            <div class="modal-footer" style="background: {{enquiryModal.footerBackgroundColor}}">
+                <button type="button" class="modal-action modal-close waves-effect waves-green btn-flat" style="background: {{enquiryModal.closeButtonBackgroundColor}}; color:{{enquiryModal.closeButtontextColor}} ">
+                    close
+                </button>
+                <button type="submit" value="submit" class="modal-action waves-effect waves-green btn-flat" style="background: {{enquiryModal.submitButtonBackgroundColor}}; color:{{enquiryModal.submitButtonTextColor}} ">
+                    Submit
+                </button>
+                <div aria-hidden="true" class="modal-action modal-close pull-right" style="padding: 15px;" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times pull-right" aria-hidden="true" data-dismiss="modal"></i>
+             </div>
+             <div style="clear: right;"></div>
+            </div>
+        </form>
+    </div>
+</template>

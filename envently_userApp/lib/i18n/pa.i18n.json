@@ -1,0 +1,193 @@
+{
+	"landingPage": {
+	"searchBoxText": "ਇੱਥੇ ਖੋਜਣ ਲਈ ਟਾਈਪ ਕਰੋ",
+	"menuTitle": "ਮੀਨੂ"
+	},
+		"sideNav": {
+		"time": "ਸਮਾਂ",
+		"date": "ਤਾਰੀਖ",
+		"weather": "ਮੌਸਮ",
+		"savedLocation": "ਸੁਰੱਖਿਅਤ ਸਥਾਨ",
+		"shareLocation": "ਥਾਂ ਸਾਂਝੀ ਕਰੋ",
+		"sendFeedback": "ਫੀਡਬੈਕ ਭੇਜੋ",
+		"termsOfService": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+		"privacyPolicy": "ਪਰਾਈਵੇਟ ਨੀਤੀ",
+		"copyright": "ਕਾਪੀਰਾਈਟ",
+		"version": "ਵਰਜਨ"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "ਸਾਈਨ - ਇਨ",
+		"registerNow": "ਹੁਣੇ ਦਰਜ ਕਰਵਾਓ",
+		"emailIdLable": "ਈਮੇਲ Id",
+		"password": "ਪਾਸਵਰਡ",
+		"userName": "ਯੂਜ਼ਰ ਨਾਮ",
+		"register": "ਰਜਿਸਟਰ"
+	},
+		"feedBackModal": {
+		"feedback": "ਫੀਡਬੈਕ",
+		"textAreaLabel": "ਸਾਨੂੰ ਆਪਣਾ ਫੀਡਬੈਕ ਦੱਸੋ",
+		"send": "ਭੇਜੋ"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "ਪਰਾਈਵੇਟ ਨੀਤੀ"
+	},
+		"mapBoxMarkers": {
+		"directionButton": "ਦਿਸ਼ਾ",
+		"detailsButton": "ਜਾਣਕਾਰੀ",
+		"callButton": "ਕਾਲ",
+		"currentLocationPopup":"ਤੁਹਾਡਾ ਵਰਤਮਾਨ ਸਥਿਤੀ"
+	},
+		"profileModal": {
+		"emailIdLable": "ਈਮੇਲ Id",
+		"editDetails": "ਜਾਣਕਾਰੀ ਨੂੰ ਸੰਪਾਦਿਤ ਕਰੋ",
+		"username": "ਯੂਜ਼ਰ ਨਾਮ",
+		"oldPassword": "ਪੁਰਾਣਾ ਪਾਸਵਰਡ",
+		"newPassword": "ਨਵਾਂ ਪਾਸਵਰਡ",
+		"confirmPassword": "ਪਾਸਵਰਡ ਪੱਕਾ ਕਰੋ",
+		"update": "ਅੱਪਡੇਟ",
+		"logOut": "ਲਾੱਗ ਆਊਟ"
+},
+
+	"bottomSheetModal": {
+		"address": "ਪਤਾ",
+		"telephone": "ਟੈਲੀਫੋਨ",
+		"category": "ਸ਼੍ਰੇਣੀ",
+		"description": "ਸਾਡੇ ਬਾਰੇ",
+		"directions": "ਦਿਸ਼ਾਵਾਂ",
+		"call": "ਕਾਲ",
+		"share": "ਸਾਂਝਾ",
+		"save": "ਬਚਾਓ",
+		"menu": "ਮੇਨੂ",
+		"menuItem": "ਮੇਨੂ ਆਈਟਮ",
+		"details": "ਜਾਣਕਾਰੀ",
+		"hours": "ਘੰਟੇ",
+		"web": "ਵੈਬ"
+	},
+
+	"accommodation": {
+		"accommodation" :"ਰਿਹਾਇਸ਼",
+		"allAccommodation": "ਸਾਰੇ ਰਿਹਾਇਸ਼",
+		"apartments": "ਅਪਾਰਟਮੈਂਟਸ",
+		"hostels": "ਹੋਸਟਲਜ਼",
+		"bedAndBreakfast": "ਮੰਜੇ ਅਤੇ ਬ੍ਰੇਕਫ",
+		"cottages": "ਕਾਟੇਜ",
+		"camping": "ਕੈਂਪਿੰਗ",
+		"hotels": "ਹੋਟਲ",
+		"resorts": "ਰਿਜ਼ੋਰਟ",
+		"motels": "ਮੋਟਲਜ਼",
+		"holidayHouses": "ਛੁੱਟੀ ਵਾਲੇ ਘਰ",
+		"farmStays": "ਫਾਰਮ ਘਰ",
+		"retreatAndLodge": "ਰਿਟਰੀਟ ਐਂਡ ਲਾਜ",
+		"selfContained": "ਸਵੈ ਸ਼ਾਮਿਲ",
+		"wildernessSafariRetreat": "ਵਾਈਲਡੈਰੀ ਸਫਾਰੀ ਰਿਟਰੀਟ"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "ਕਰਨ ਵਾਲਾ ਕਮ",
+		"allAttractions": "ਸਾਰੇ ਆਕਰਸ਼ਣ",
+		"amusementAndThemeParks": "ਮਨੋਰੰਜਨ ਅਤੇ ਥੀਮ ਪਾਰਕ",
+		"beaches": "ਬੀਚ",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "ਕੈਸੀਨੋ",
+		"cinemas": "ਸਿਨੇਮਾ",
+		"galleriesMuseumsAndCollections": "ਗੈਲਰੀਆਂ, ਅਜਾਇਬ ਅਤੇ ਸੰਗ੍ਰਹਿ",
+		"golfCourse": "ਗੌਲਫ ਦਾ ਮੈਦਾਨ",
+		"karaoke": "ਕਰੌਕੇ",
+		"kids": "ਕਿਡਜ਼",
+		"libraries": "ਲਾਇਬ੍ਰੇਰੀਆਂ",
+		"nationalParksAndReserves": "ਨੈਸ਼ਨਲ ਪਾਰਕਸ ਅਤੇ ਰਿਜ਼ਰਵ",
+		"naturalAttractions": "ਕੁਦਰਤੀ ਆਕਰਸ਼ਣ",
+		"nightclubs": "ਨਾਈਟ ਕਲੱਬ",
+		"parksAndGardens": "ਪਾਰਕ ਅਤੇ ਗਾਰਡਨ",
+		"sportsAndRecreationFacilities": "ਖੇਡ ਅਤੇ ਮਨੋਰੰਜਨ ਸੁਵਿਧਾਵਾਂ",
+		"watersports": "ਵਾਟਰਸਪੋਰਟਸ",
+		"wineriesVineyardsAndBreweries": "ਵਾਈਨਰੀਆਂ, ਵਾਈਨਯਾਰਡ ਅਤੇ ਬਰੂਅਰੀਆਂ",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "ਚਿਡ਼ਿਆਘਰ, ਪ੍ਰਿੰਸੀਪਲ, ਐਕੁਆਰੀਆਂ ਅਤੇ ਜੰਗਲੀ ਜੀਵ ਪਾਰਕ"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "ਟੂਰ ਅਤੇ ਹੋਟਲ",
+		"allTours": "ਸਾਰੇ ਟੂਰ",
+		"extendedTours": "ਐਕਸਟੈਡਿਡ ਟੂਰ",
+		"nightTours": "ਨਾਈਟ ਟੂਰਸ",
+		"helicopterTours": "ਹੈਲੀਕਾਪਟਰ ਟੂਰ",
+		"adventures": "ਅਡ੍ਵੇਨ੍ਚਰ",
+		"carHire": "ਭਾੜੇ ਲਈ ਕਾਰ",
+		"bicycleHire": "ਭਾੜੇ ਲਈ ਸਾਈਕਲ",
+		"boatHire": "ਭਾੜੇ ਲਈ ਕਿਸ਼ਤੀ",
+		"campervansAndMotorhomeHire": "ਕੈਂਪਰਵੈਨਸ ਐਂਡ ਮੋਟਰ ਹੋਮ ਹਾਇਰ",
+		"fourWheelDriveHire": "ਫੋਰ ਵੀਲ ਡ੍ਰਾਈਵ ਹਾਇਰ",
+		"houseboatHire": "ਹਾਊਸਬੋਟ ਹਾਇਰ",
+		"minibusAndCoachHire": "ਮਿੰਨੀਬੱਸ ਅਤੇ ਕੋਚ ਹਾਇਰ",
+		"motorcycleHire": "ਮੋਟਰਸਾਈਕਲ ਹਾਇਰ",
+		"yachtHire": "ਯਾਚ ਹਾਇਰ"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "ਭੋਜਨ ਅਤੇ ਡ੍ਰਿੰਕ",
+		"restaurants": "ਰੈਸਟੋਰੈਂਟ",
+		"chineseRestaurants": "ਚੀਨੀ ਰੈਸਟੋਰੈਂਟ",
+		"thaiRestaurants": "ਥਾਈ ਰੈਸਟੋਰੈਂਟ",
+		"indianRestaurants": "ਇੰਡੀਅਨ ਰੈਸਟਰਾਂਟ",
+		"italianRestaurants": "ਇਟਾਲੀਅਨ ਰੈਸਟਰਾਂਟ",
+		"cafesAndCoffeeShops": "Cafes & Coffee Shops",
+		"fastFoods": "ਫਾਸਟ ਫੂਡਜ਼",
+		"bars": "ਬਾਰ",
+		"clubs": "ਕਲੱਬ",
+		"pubs": "ਪੱਬ",
+		"iceCream": "ਆਇਸ ਕਰੀਮ",
+		"bottleshops": "ਸ਼ਰਾਬ ਦੀ ਬੋਤਲ ਦੀ ਦੁਕਾਨ",
+		"supermarkets": "ਸੁਪਰ ਬਜ਼ਾਰ"
+	},
+	"gettingAround": {
+		"gettingAround": "ਆਲੇ ਦੁਆਲੇ ਮਿਲ ਰਿਹਾ ਹੈ",
+		"allTransport": "ਸਾਰੇ ਆਵਾਜਾਈ",
+		"airServices": "ਏਅਰ ਸਰਵਿਸਿਜ਼",
+		"busesAndCoachServices": "ਬੱਸਾਂ ਅਤੇ ਕੋਚ ਸੇਵਾਵਾਂ",
+		"information": "ਜਾਣਕਾਰੀ",
+		"taxisAndWaterTaxis": "ਟੈਕਸੀਜ਼ ਅਤੇ ਵਾਟਰ ਟੈਕਸੀ",
+		"railServices": "ਰੇਲ ਸੇਵਾਵਾਂ",
+		"transfers": "ਟ੍ਰਾਂਸਫਰ",
+		"rechargeStations": "ਰੀਚਾਰਜ ਸਟੇਸ਼ਨ"
+
+	},
+	"shopping": {
+		"shopping": "ਸ਼ਾਪਿੰਗ",
+		"shoppingCentres": "ਸ਼ਾਪਿੰਗ ਸੈਂਟਰ",
+		"womensFashion": "ਮਹਿਲਾ ਫੈਸ਼ਨ",
+		"mensClothing": "ਪੁਰਸ਼ ਫੈਸ਼ਨ",
+		"womensClothing": "ਮਹਿਲਾ ਕੱਪੜੇ",
+		"childrensFashion": "ਬੱਚਿਆਂ ਲਈ ਫੈਸ਼ਨ",
+		"hairdressers": "ਹੇਅਰਡਰੈਸਰਸ",
+		"florists": "ਫੁੱਲਾਂ ਦੀ ਦੁਕਾਨ",
+		"handbags": "ਹੈਂਡਬੈਗਸ",
+		"furnitureAndHomewares": "ਫਰਨੀਚਰ ਅਤੇ ਘਰੇਲੂ ਮਾਲ",
+		"dutyFree": "ਡਿਊਟੀ ਮੁਫ਼ਤ",
+		"footwear": "ਫੁੱਟਵੀਅਰ",
+		"newsagencies": "ਨਿਊਜੀਏਜੈਂਸੀ",
+		"dryCleaning": "ਸੁੱਕੀ ਸਫਾਈ",
+		"alterations": "ਤਬਦੀਲੀ",
+		"convenienceStore": "ਸੁਵਿਧਾ ਸਟੋਰ",
+		"souvenirs": "ਸੋਵੀਨਾਰ"
+	},
+
+	"amenities": {
+		"amenities": "ਸੁਵਿਧਾਜਨਕ",
+		"toilets": "ਪਖਾਨੇ",
+		"hospitals": "ਹਸਪਤਾਲ",
+		"atms": "ਏਟੀਐਮ",
+		"chemists": "ਕੈਮਿਸਟ",
+		"policeStation": "ਪੁਲਿਸ ਸਟੇਸ਼ਨ",
+		"bikeRacks": "ਬਾਈਕ ਰੈਕਸ",
+		"parking": "ਪਾਰਕਿੰਗ"
+	},
+	"accessibility": {
+		"accessibility": "ਪਹੁੰਚਣ ਵਾਲਾ",
+		"accessibilityToilets": "ਪਹੁੰਚਣ ਵਾਲਾ ਪਖਾਨੇ",
+		"busStops": "ਬਸ ਸਟੌਪਸ",
+		"accessibilityBeachShowers": "ਬੀਚ ਸ਼ਾਵਰ",
+		"accessibilityParking": "ਪਾਰਕਿੰਗ",
+		"accessibleBarbeque": "ਬਾਰਬੇਕਿਊ"
+	}
+
+}

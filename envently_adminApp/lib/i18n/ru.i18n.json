@@ -1,0 +1,192 @@
+{
+	"landingPage": {
+	"searchBoxText": "Type to search here",
+	"menuTitle": "МЕНЮ"
+	},
+	"sideNav": {
+		"time": "Время",
+		"date": "Дата",
+		"weather": "Погода",
+		"savedLocation": "Сохраненные места",
+		"shareLocation": "Рассказать о выбранном месте",
+		"sendFeedback": "Написать отзыв",
+		"termsOfService": "Пользовательское соглашение",
+		"privacyPolicy": "Политика конфиденциальности",
+		"copyright": "авторское право",
+		"version": "Версия"
+	},
+	"signinAndSignupModal": {
+		"signInButton": "ВОЙТИ",
+		"registerNow": "Зарегистрироваться",
+		"emailIdLable": "Адрес эл. почты",
+		"password": "Пароль",
+		"userName": "Имя пользователя",
+		"register": "регистр"
+	},
+	"feedBackModal": {
+		"feedback": "Обратная связь",
+		"textAreaLabel": "Расскажите нам о своем опыте",
+		"send": "ОТПРАВИТЬ"
+	},
+	"privacyPolicy": {
+		"privacyPolicy": "Политика конфиденциальности"
+	},
+	"mapBoxMarkers": {
+		"directionButton": "Направление",
+		"detailsButton": "Детали",
+		"callButton": "Вызов"
+	},
+	"profileModal": {
+		"emailIdLable": "Адрес эл. почты",
+		"editDetails": "Изменить детали",
+		"username": "Имя пользователя",
+		"oldPassword": "Старый пароль",
+		"newPassword": "Новый пароль",
+		"confirmPassword": "Подтвердите Пароль",
+		"update": "UPDATE",
+		"logOut": "ВЫЙТИ"
+},
+
+	"bottomSheetModal": {
+		"address": "Адрес",
+		"telephone": "Телефон",
+		"category": "Категория",
+		"description": "О нас",
+		"directions": "КАК ДОБРАТЬСЯ",
+		"call": "ПОЗВОНИТЬ",
+		"share": "ПОДЕЛИТЬСЯ",
+		"save": "СОХРАНИТЬ",
+		"menu": "МЕНЮ",
+		"menuItem": "Пункт меню",
+		"details": "ДЕТАЛИ",
+		"hours": "Часы",
+		"web": "ВЕБ"
+	},
+
+	"accommodation": {
+		"accommodation" :"Проживание",
+		"allAccommodation": "Все варианты",
+		"apartments": "Апартаменты",
+		"hostels": "Хостелы",
+		"bedAndBreakfast": "Проживание с завтраком",
+		"cottages": "Коттеджи",
+		"camping": "Кемпинг",
+		"hotels": "Гостиницы",
+		"resorts": "Курорты",
+		"motels": "Мотели",
+		"holidayHouses": "Загородные дома",
+		"farmStays": "Фермерские дома",
+		"retreatAndLodge": "Уединенные домики",
+		"selfContained": "Отдельное проживание",
+		"wildernessSafariRetreat": "Дикое сафари"
+	},
+
+	"thingsToDo": {
+		"thingsToDo": "Чем заняться",
+		"allAttractions": "Все туристические объекты",
+		"amusementAndThemeParks": "Тематические и развлекательные парки",
+		"beaches": "Пляжи",
+		"surfingLessons": "Surfing Lessons",
+		"standUpPaddleboarding": "Stand Up Paddleboarding",
+		"casinos": "Казино",
+		"cinemas": "Кинотеатры",
+		"galleriesMuseumsAndCollections": "Галереи, музеи и выставки коллекций",
+		"golfCourse": "Поля для гольфа",
+		"karaoke": "Караоке",
+		"kids": "Для детей",
+		"libraries": "Библиотеки",
+		"nationalParksAndReserves": "Национальные парки и заповедники",
+		"naturalAttractions": "Природные достопримечательности",
+		"nightclubs": "Ночные клубы",
+		"parksAndGardens": "Парки и сады",
+		"sportsAndRecreationFacilities": "Спортивные и оздоровительные объекты",
+		"watersports": "Водные виды спорта",
+		"wineriesVineyardsAndBreweries": "Винодельни, виноградники и пивоварни",
+		"zoosSanctuariesAquariumsAndWildlifeParks": "Зоопарки, заповедники, аквариумы и парки дикой природы"
+	},
+
+	"toursAndHire": {
+		"toursAndHire": "Аренда и туры",
+		"allTours": "Все туры",
+		"extendedTours": "Расширенные туры",
+		"nightTours": "Ночные туры",
+		"helicopterTours": "Вертолетные туры",
+		"adventures": "Приключения",
+		"carHire": "Прокат авто",
+		"bicycleHire": "Прокат велосипедов",
+		"boatHire": "Прокат лодок",
+		"campervansAndMotorhomeHire": "Автодома и прокат домов на колесах",
+		"fourWheelDriveHire": "Прокат полноприводных транспортных средств",
+		"houseboatHire": "Прокат плавучих домов",
+		"minibusAndCoachHire": "Прокат автобусов и тур. автобусов",
+		"motorcycleHire": "Прокат мотоциклов",
+		"yachtHire": "Аренда яхт"
+	},
+	"foodAndDrink": {
+		"foodAndDrink": "Еда и напитки",
+		"restaurants": "рестораны",
+		"chineseRestaurants": "Китайские рестораны",
+		"thaiRestaurants": "Тайские рестораны",
+		"indianRestaurants": "Индийские рестораны",
+		"italianRestaurants": "Итальянские рестораны",
+		"cafesAndCoffeeShops": "Кафе и кофейни",
+		"fastFoods": "Фаст-фуд",
+		"bars": "Бары",
+		"clubs": "Клубы",
+		"pubs": "Пабы",
+		"iceCream": "Мороженое",
+		"bottleshops": "Магазины спиртного",
+		"supermarkets": "Супермаркеты"
+	},
+	"gettingAround": {
+		"gettingAround": "Транспорт",
+		"allTransport": "Все виды транспорта",
+		"airServices": "Авиаперевозки",
+		"busesAndCoachServices": "Автобусы и туристические автобусы",
+		"information": "Информация",
+		"taxisAndWaterTaxis": "Такси и водное такси",
+		"railServices": "Услуги ж/д транспорта",
+		"transfers": "Трансферы",
+		"rechargeStations": "Зарядные станции"
+
+	},
+	"shopping": {
+		"shopping": "Шоппинг",
+		"shoppingCentres": "Торговые центры",
+		"womensFashion": "WЖенская мода",
+		"mensClothing": "Мужская одежда",
+		"womensClothing": "Женская одежда",
+		"childrensFashion": "Детская мода",
+		"hairdressers": "Парикмахерские",
+		"florists": "Флористы",
+		"handbags": "Дамские сумочки",
+		"furnitureAndHomewares": "Мебель и товары для дома",
+		"dutyFree": "Duty Free",
+		"footwear": "Обувь",
+		"newsagencies": "Информационные агентства",
+		"dryCleaning": "Химчистки",
+		"alterations": "Изменения",
+		"convenienceStore": "Продовольственный магазин",
+		"souvenirs": "Сувениры"
+	},
+
+	"amenities": {
+		"amenities": "Городские службы",
+		"toilets": "Туалеты",
+		"hospitals": "Больницы",
+		"atms": "БАНКОМАТЫ",
+		"chemists": "Аптеки",
+		"policeStation": "Полицейские участки",
+		"bikeRacks": "Велосипедные парковки",
+		"parking": "Парковки"
+	},
+	"accessibility": {
+		"accessibility": "Объекты общего пользования",
+		"accessibilityToilets": "ОБЩЕСТВЕННЫЕ ТУАЛЕТЫ",
+		"busStops": "АВТОБУСНЫЕ ОСТАНОВКИ",
+		"accessibilityBeachShowers": "ПЛЯЖНЫЕ ДУШЕВЫЕ",
+		"accessibilityParking": "AОБЩЕСТВЕННЫЕ ПАРКОВКИ",
+		"accessibleBarbeque": "ГРИЛИ ДЛЯ БАРБЕКЮ"
+	}
+
+}

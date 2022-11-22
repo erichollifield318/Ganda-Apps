@@ -1,0 +1,28 @@
+
+#userEdit, #userDelete {
+	cursor: pointer;
+}
+
+.selectedUsers {
+	background: #beb9b9;
+}
+
+.userIconSize{
+	font-size: 1.5em;
+}
+
+.activate {
+	color: #218838;
+}
+
+.deactivate {
+	color: #dc3545;
+}
+
+.dark {
+	color: #343a40
+}
+
+.action-list > li {
+    display: inline-block;
+}

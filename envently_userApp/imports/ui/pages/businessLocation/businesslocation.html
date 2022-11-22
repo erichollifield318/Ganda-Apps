@@ -1,0 +1,31 @@
+<template name="businesslocation">
+    <div id="businesslocation" class="modal modal-fixed-footer" style="width: 60%; height:80%; max-height: 80%; background: #fafafa !important;">
+
+        <form id="businesslocationForm">
+            <div class="modal-content">
+                <h4 class="pull-left" style="color: {{businesslocationModalColor.headingTextColor}}">Share Business Location</h4>
+                <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close" style="color: {{feedbackModalColor.closeButtonTextColor}}">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+                <div class="clearfix"></div>
+                <div class="row" style="height: 5%">
+                    <b>Subject :</b> <span id="locationSubject">{{ getbusinesslocation.subject }}</span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row" style="height: 15%">
+                    <b>To :</b> <input type="text"  id="userEmail" name="userEmail" class="{{#if isKiosk }}slKeyboard {{/if}}"/>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row" style="height: 50%">
+                    <b>Business Location :</b><textarea rows="17" style="color: {{businesslocationColor.bodyTextColor}}; border:{{businesslocationColor.inputBoxBorderColor}}; resize:none;height: auto;height: -webkit-fill-available" id="businesslocationText" placeholder="Tell us your experience" class="{{#if isKiosk }}slKeyboard {{/if}}">
+                        {{ getbusinesslocation.body }}
+                    </textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #bbbbbb !important; background: #fff !important">
+                <button type="submit" value="submit" class="businesslocation modal-action waves-effect waves-green btn-flat hoverable" style="color: #262626 !important">share</button>
+            </div>
+        </form>
+    </div>
+</template>

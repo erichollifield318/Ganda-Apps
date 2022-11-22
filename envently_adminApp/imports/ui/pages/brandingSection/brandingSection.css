@@ -1,0 +1,37 @@
+.mtop {
+	margin-top: 5.1rem;
+}
+
+.td-imgbox{
+	margin-right: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 140px;
+    border: #cec9c9 solid 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.td-imgbox img{
+	width:100%;
+    height: 100%;
+	display: block;
+}
+
+.dtImgDelete:hover {
+    background: #c70000;
+}
+
+.dtImgDelete {
+    color: white;
+    line-height: initial;
+    background: #ef2929;
+    cursor: pointer;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+}
+
+.dtImgDelete i {
+    font-size: 20px;
+    padding: 0px;
+}

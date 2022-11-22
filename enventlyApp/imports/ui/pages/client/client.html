@@ -1,0 +1,21 @@
+<template name="client">
+  <main id='{{currentClient}}'>
+    <!-- {{#if markers.length}} -->
+      {{> sideNav}}
+    <!-- {{/if}} -->
+
+    {{> searchBar getMenuItemName}}
+    {{> fab getMenuItemName}}
+    {{#if showMap}}
+      {{> mapbox}}
+    {{/if}}
+  	
+    {{#if pageLoading}}
+      {{> spinner}}
+    {{/if}}
+    
+  </main>
+  {{> bottomSheetModal getMenuItemName}}
+  {{> dynamicFooter}}
+
+</template>

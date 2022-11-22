@@ -1,0 +1,64 @@
+.page-footer{
+	width: 100%;
+  /*height: 86px;*/
+  height: 86px;
+  background: #939597;
+  padding: 0px 0px;
+  background-image:none; 
+}
+
+.footer-main .main-logo {
+  /*display: inline-block;*/
+  /*background: #dbdcde;
+  width: 93px;
+  height: 135px;*/
+  padding: 0px 0px;
+  /*width: 86px;*/
+  display: block;
+}
+
+.footer-main .main-logo img{
+  /*width: 93px;
+  height: 94px;
+  cursor: pointer;*/
+  max-height: 86px;
+  /*width: 100%;*/
+}
+
+.footer-main .heading-list {
+  display: inline-block;
+  /*float: right;*/
+  color: white;
+  font-size: 18px;
+ /* margin-top: 30px;*/
+  /*margin-right: 100px;*/
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 50px);
+}
+
+.page-footer.gctourism {
+    background: #fff;
+}
+
+.fixed-action-btn.locate-me-wrapper {
+    right: 165px;
+}
+
+@media(max-width:400px){
+  .footer-main .main-logo img{
+    max-height: 68px;
+  }
+
+  #branding-2{
+    margin-left: 5px;
+  }
+  .page-footer {
+    height: 68px;
+  }
+
+  #overlay-box{
+    height: calc(100% - 65px);
+  }
+}

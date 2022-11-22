@@ -1,0 +1,55 @@
+<template name="fab">
+  {{#if isNotKioskUser}}
+    <style>
+      ::-webkit-scrollbar { 
+          display: none; 
+      }
+    </style>
+  {{/if}}
+  
+<div class="fixed-action-btn click-to-toggle bottom-fifty-five" >
+  <!-- <div class="fixed-action-btn"> -->
+    <a class="btn-floating btn-large black toggle-btm" id="fabModalBtn">
+      {{#if isNotKioskUser}}
+          {{#if isDomainGctourism}}
+            <i id="fabModal" class="large material-icons" style="background: #000000; color: #FFFFFF;">{{_ "landingPage.menuTitle" }}</i>
+          {{else}}
+            <i id="fabModal" class="large material-icons">dehaze</i>
+          {{/if}}
+      {{else}}
+        <i id="fabModal" class="ksMenuText" style="background: {{landingPageModal.showMenusButtonColor}}; color: {{landingPageModal.footerButtonTextColor}};">{{_ "landingPage.menuTitle" }}</i>
+      {{/if}}
+    </a>
+
+    
+    <ul class="menuList dt-nav-list" id="mainMenuList" >
+      {{#each menu in getMenu}}
+      <!-- <h1>Lig of menu</h1> -->
+        <li class="clicker" id="{{menu._id}}" data-name={{dynamicLangMenu menu.name}}>
+          <a href="#{{menu._id}}" class="btn-floating icon" id="{{menu._id}}" style="background-color:{{getMenuColor menu}}">
+
+            <img src="./assets/img/maki-white/{{getMenuIcon menu}}.svg" height='20px' class="icon-area" style="margin-top:9px;" />
+          </a>
+          {{#if backgroundGray }}
+            <span class="clicker" id="{{menu._id}}"><a href="#{{menu._id}}" class="btn-floating dt-nav-items abcd" style="background: {{landingPageModal.nameBackgroundColor}}; color: {{landingPageModal.menuTextColor}}">{{ dynamicLangMenu menu.name }}</a></span>
+          {{else}}
+            <span class="clicker" id="{{menu._id}}"><a href="#{{menu._id}}" class="btn-floating dt-nav-items" style="background: #000 !important; color: {{landingPageModal.menuTextColor}}">{{ dynamicLangMenu menu.name }}</a></span>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  
+
+
+
+  <div class=" fixed-mobilemenu fab-zindex locate-me-wrapper" style="{{#if isVisibleText}}{{/if}}">
+      <a id="fabUserLocationBtn" class="btn-floating btn-large black" style="padding:8px 2px 0px 4px;display: none;"><img src="/img/locate-me5.svg" height="40px"></a>
+  </div>
+  {{#if isVisibleText}}
+  <div class=" fixed-mobilemenu fab-zindex heading-list" style="" title="Open Markers List">
+      <a  class="btn-floating btn-large black " id="markersBtn" style="padding:7px 5px 0px 4px;"><img src="/img/list.svg" height="40px" style="height: 37px;width: 19px;padding-top: 5px;"></a>
+  </div>
+  {{/if}}
+
+</template>

@@ -1,0 +1,7 @@
+.DS_Store
+node_modules
+settings
+.idea
+package-lock.json
+./envently_userApp/package-lock.json
+./envently_adminApp/package-lock.json

@@ -1,0 +1,47 @@
+@import '{}/imports/ui/stylesheets/home';
+@import '{}/imports/ui/stylesheets/not-found';
+@import '{}/imports/ui/pages/client/client';
+@import '{}/imports/ui/components/bottomSheetModal/bottomSheetModal';
+@import '{}/imports/ui/components/mapbox/mapbox';
+@import '{cedla:mdi}/materialdesignicons.scss';
+
+$primary-color: color('grey', 'darken-3') !default;
+
+.locationAddress {
+  float: right !important;
+  margin: 0px -25px !important;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.medium {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.fat {
+  font-weight: 600;
+}
+
+.plus {
+  font-size: 1.5em;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hidden {
+	display:none
+}
+
+.padding-zero {
+	padding:0px;
+}

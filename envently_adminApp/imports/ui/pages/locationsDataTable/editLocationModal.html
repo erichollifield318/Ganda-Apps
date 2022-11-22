@@ -1,0 +1,107 @@
+<template name="editLocationModal">
+  <section class="container" id="editLocationFormContainer">
+    <div id="editLocationModal" class="modal modal-fixed-footer" style="max-height: 90%; height: 90%;">
+      <form id="editLocationForm">
+        <div class="modal-content">
+          <h4 class="pull-left">Edit Location</h4>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          <div class="clearfix"></div>
+          {{#with selectedLocation }}
+            <div class="row">
+              <div class="col s12 m6">
+                <label class="label-icon" for="editLocationName">Location Name</label>
+                <input name="LocationName" id="editLocationName" class="location-form-field" type="text" placeholder="Location Name" value={{name}} autocomplete="off" required />
+              </div>
+
+              <input name="sensisId" id="sensisId" class="location-form-field hidden" type="text" autocomplete="off">
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editlocationAddress">Location Address</label>
+                <input name="locationAddress" id="editlocationAddress" class="location-form-field" type="text" placeholder="Location Address" value={{getAddress}} autocomplete="off" required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editlocationPhone">Location Phone</label>
+                <input name="locationPhone" id="editlocationPhone" class="location-form-field" type="tel" placeholder="XXX-XXX-XXXX" value={{getPhone}} autocomplete="off" required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editlocationWebsite" >Location Website</label>
+                <input name="locationWebsite" title="Must be a valid URL" id="editlocationWebsite" class="location-form-field" type="text" placeholder="Valid Website Adress" pattern="https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,}" autocomplete="off" value={{getWebsite}} />
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editEmail">Email</label>
+                <input name="email" id="editEmail" class="location-form-field" type="text" placeholder="Email" autocomplete="off" value={{getEmail}} required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="editcategories">Categories</label>
+                <input name="categories" id="editcategories" class="location-form-field" type="text" placeholder="Categories" autocomplete="off" value={{getCategory}} required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="edittext1" >About us</label>
+                <textarea id="edittext1" class="materialize-textarea location-form-field">{{getDesc1}}</textarea>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="edittext2" >Hours</label>
+                <textarea id="edittext2" class="materialize-textarea location-form-field">{{getDesc2}}</textarea>
+              </div>
+
+              <div class="col s12 m12">
+                <p class="logo-size-term">Logo should be 100X100.</p>
+                <!-- <label class="label-icon" for="editimage1" >Image1</label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Logo</span>
+                    <input id="editimage1" type="file" class="location-form-field" />
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path location-form-field" id="editimagetext1" type="text" value={{getImage1}} >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m12">
+                <!-- <label class="label-icon" for="editimage2" >Image2</label> -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Image</span>
+                    <input id="editimage2" type="file" class="location-form-field">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path location-form-field" id="editimagetext2" type="text" value={{getImage2}}>
+                  </div>
+                </div>
+              </div>
+
+              <!-- for custom latitude & longitude values -->
+              <!-- <div class="col s12 m6">
+                <label class="label-icon" for="latitude">Latitude</label>
+                <input name="latitude" id="latitude" class="location-form-field" type="tel" placeholder="Latitude" autocomplete="off" title="Must be a valid latitude" required>
+              </div>
+
+              <div class="col s12 m6">
+                <label class="label-icon" for="longitude" >Longitude</label>
+                <input name="longitude" title="Must be a valid longitude" id="longitude" class="location-form-field" type="text" placeholder="Longitude" autocomplete="off">
+              </div> -->
+              <!-- for custom latitude & longitude values -->
+            </div>
+          {{/with}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-action waves-effect waves-green btn-flat" id="edit-location-marker">Edit Location</button>
+          <button type="submit" class="modal-action waves-effect waves-green btn-flat">Update</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  {{#if editLocationMarker }}
+    {{> editableMapbox currentLocation}}
+  {{/if}}
+</template>

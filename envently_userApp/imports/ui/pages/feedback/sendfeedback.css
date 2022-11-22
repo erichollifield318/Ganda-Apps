@@ -1,0 +1,12 @@
+.kioskScreen #sendFeedBackForm textarea {
+	height: 100% !important;
+}
+ #sendFeedBackForm textarea {
+    height: 75% !important;
+}
+@media (max-width: 767px){
+	.modal.modal-fixed-footer.open{
+		width: 90% !important;
+		height: 70% !important;
+	}
+}

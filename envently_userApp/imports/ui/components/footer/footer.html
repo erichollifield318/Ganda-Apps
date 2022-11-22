@@ -1,0 +1,60 @@
+<template name="footer">
+  <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="col l6">
+          <h5 class="white-text">ganda.app logo</h5>
+        </div>
+        © {{currentYear}} ganda.app
+      </div>
+    </div>
+  </footer>
+</template>
+
+<template name="dynamicFooter">
+    <footer class="page-footer {{currentClient}}" style="background: {{footer.footerBackgroundColor}}">
+    {{# if isNotKioskUser }}
+      <div class="footer-main">
+
+      {{#if getFooterImage}}
+        <div class="main-logo pull-left">
+          {{# if checkDataLoad }}
+            <img id="branding" src="{{getFooterImage}}">
+            <img id="branding-2" src="{{getFooterImage2}}">
+          {{/ if }}
+        </div>
+          <!-- <div class="container">
+            <div class="col l6">
+              <h5 class="white-text">{{currentClient}} logo</h5>
+            </div>
+            © {{currentYear}} {{currentClient}} Municipal Council
+          </div> -->
+      {{/if}}
+
+      <!-- {{#if isVisibleText}}
+          <div class="heading-list" style="top: 17px;">
+            <div style="height: 57px;width: 57px;background-color: #000;text-align: center;border-radius: 48%;">
+              <img src="/img/list.svg" style="height: 48px;width: 19px;padding-top: 5px;">
+            </div>
+          </div>
+          {{/if}}  -->
+        </div>
+        {{else}}
+        <div class="footer-main">
+        
+          {{> searchBar getMenuItemName}}
+         <!--  {{> sideNav}} -->
+         {{# if isMultiLanguage }} 
+          <div class="KioskFlag">
+            <span class="kioskFlagImg"> <img src="img/english.svg"> </span>
+            <span class="kioskMultiLang"> {{> languageSelect}} </span> 
+          </div>
+          {{/ if }}
+
+         
+        </div>
+        {{/if}}
+    </footer>
+    {{> brandingModal}}
+
+</template>

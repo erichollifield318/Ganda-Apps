@@ -1,0 +1,9 @@
+@media (max-width: 767px){
+    .modal.modal-fixed-footer.open{
+        width: 90% !important;
+        height: 70% !important;
+    }
+}
+#businesslocation {
+	z-index: 110000 !important;
+}

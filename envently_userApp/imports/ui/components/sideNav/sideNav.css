@@ -1,0 +1,267 @@
+.dt-adminModalImage > img {
+    width: 100%;
+    height: 100%;
+}
+
+.dt-adminModalImage {
+    padding: 40px;
+}
+
+.sidenav-popup-content {
+    background: #0c0c0c!important;
+    color: #fff!important;
+    width: 300px;
+    text-align: left!important;
+    border: #fff solid 6px!important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.39), 0 -1px 0px rgba(0,0,0,0.02)!important;
+    padding: 0px!important;
+    pointer-events: auto;
+    min-width: 350px;
+}
+
+.sidenav-popup-content img {
+  width:100px;
+  display:block;
+  height:100px;
+}
+
+a.button-collapse.show-on-large.kioskScreen {
+    position: fixed;
+    bottom: 89px;
+    left: 0;
+    z-index: 101;
+}
+
+.sidenav-popup-content p {
+    margin: 0px 0px;
+    padding: 0px;
+    color: #b9b9b9;
+    /*line-height: 184%;*/
+    line-height: 17px;
+    margin: 5px 0px;
+}
+
+.sidenav-popup-content h6 {
+    font-weight: 600!important;
+    text-transform: capitalize;
+    font-size: 16px!important;
+    margin: 5px 0px;
+}
+
+.sidenav-popup-content p a {
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 10px 0px 0px;
+    font-size: 13px;
+    font-weight: 400;
+        height: 30px;
+    line-height: 30px;
+}
+
+.sidenav-popup-content .row {
+    margin-bottom: 0px;
+}
+
+.sidenav-popup-content  .row .col {
+    padding: 0;
+}
+
+.sidenav-popup-content {
+    width: auto;
+}
+
+/*img.admin-console-link {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    z-index: 9;
+    top: 24px;
+}*/
+
+i.admin-console-link {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    z-index: 9;
+    top: 24px;
+}
+
+@media(max-width: 362px){
+    img.admin-console-link{
+        top: 19px;
+    }
+    .update-user,
+    .log-out{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+@media(max-width: 736px) {
+    img.admin-console-link{
+        top: 20px !important;
+    }
+}
+
+@media(max-width: 768px) {        
+    
+    .sidenav-popup-content p a {
+        padding: 0px 5px;
+        margin: 10px 5px 0px 0px;
+
+    }
+
+    .sidenav-popup-content img {
+        width: 80px;
+        display: block;
+        height: 80px;
+    }
+
+    img.admin-console-link{
+        top: 22px;
+    }
+    
+}
+
+
+.user-detail.side-nav li:not(.userdeta-wrapper){
+    margin:0px 22px 0px 19px;
+    border-bottom: solid 1px #fff;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.user-detail .sidenav-popup-content{
+    padding-left: 40px !important; 
+}
+
+.user-detail.side-nav li:not(.userdeta-wrapper) div{
+    line-height: 35px;
+}
+
+.info-btn-wrapper{
+    padding-left: 0px !important;
+    padding-top: 13px;
+    padding-bottom: 22px;
+}
+
+.normal-cursor,
+.normal-cursor.row{
+    cursor: default !important;
+}
+
+.info-btn-wrapper .row{
+    height: 35px;
+    margin-bottom: 0px;
+}
+
+.hand-pointer{
+    cursor: pointer;
+}
+
+.hand-pointer:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.top-bottom-spacing{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.terms-services .row{
+    margin-bottom: 0px;
+}
+
+.navicon-wrapper{
+    padding: 3px 5px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.navicon-text-wrapper{
+    margin: 3px 5px 0;
+    padding: 0px;
+    font-weight: 600;
+}
+.edit-userdetails-icon{
+    font-size: 25px;
+    cursor: pointer;
+    padding: 6px 8px 6px 8px;
+    float: right;
+}
+
+#slide-out{
+    z-index: 999!important;
+}
+
+.login-span {
+    display: inline-block;
+    /* text-align: right; */
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.login-span:hover {
+    background: #000;
+}
+
+.login-span a{
+    color: #fff;
+    padding: 0 10px;
+}
+
+
+#sideflagMobile .headTopFlag {
+    position:relative;
+    right: 0;
+    top: 0;
+    width: auto;
+    left:10px;
+}
+
+#sideflagMobile .headTopFlag .topFlagSelection .select-wrapper input.select-dropdown {
+    border: none;
+}
+#sideflagMobile .headTopFlag .topFlagSelection .select-wrapper input.select-dropdown {
+    line-height: 1rem;
+    margin: 0 0 0px 5px;
+}
+#sideflagMobile .headTopFlag .select-wrapper span.caret{
+    color:#fff;
+}
+#sideflagMobile .headTopFlag .topFlagSelection {
+    display: inline-block;
+    width: auto;
+}
+.user-detail.side-nav #sideflagMobile .headTopFlag li:not(.userdeta-wrapper) {
+    padding: 0px;
+    margin: 0px;
+}
+#sideflagMobile .input-field {
+ margin-top: 0;
+}
+#sideflagMobile .headTopFlag .topFlagSelection .select-wrapper input.select-dropdown {
+ line-height: 2.5rem;
+}
+
+.user-detail.side-nav .info-btn-wrapper .row {
+ height: auto;
+ margin-bottom: 10px;
+}
+.user-detail.side-nav li:not(.userdeta-wrapper) div {
+ line-height: 25px;
+}
+.terms-services .row {
+ margin-bottom: 10px;
+}
+#sideflagMobile .headTopFlag {
+ top: 4px;
+}

@@ -1,0 +1,74 @@
+<template name="sociallogin">
+    <div class="modal modal-fixed-footer" id="sociallogin">
+        <div class="modal-content">
+            <div class="wrapper">
+                <div class="btn-group btn-group-justified">
+                    <a class="btn btn-primary signIn socialbtn" href="#" style="{{#if isLogin}}background-color:#fafafa; color:#26a69a;box-shadow: none;{{/if}}">
+                        SIGN IN
+                    </a>
+                    <a class="btn btn-primary register socialbtn" href="#" style="{{#unless isLogin}}background-color:#fafafa; color:#26a69a;box-shadow: none;{{/unless}}">
+                        REGISTER NOW
+                    </a>
+                </div>
+                {{#if isLogin}}
+                <div class="row" style="margin-top: 24px;">
+                    <form name="loginform" id="loginform" >
+                        <div class="col-md-12">
+                            <div class="input-field">
+                                <input id="loginEmail" type="email" class="validate custom-input " required />
+                                <label for="loginEmail">Email ID</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-field">
+                                <input id="loginPassword" type="password" class="validate custom-input " required />
+                                <label for="loginPassword">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success form-control sign-in socialbtn">SIGN IN</button>
+                        </div>
+                    </form>
+                </div>
+                {{else}}
+                <div class="row" style="margin-top: 24px;">
+                    <form name="registerform" id="registerform" >
+                   
+                        <div class="col-md-12">
+                            <div class="input-field">
+                                <input id="registerEmail" type="email" class="validate custom-input " required />
+                                <label for="registerEmail">Email ID</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-field">
+                                <input id="registerPassword" type="password" class="validate custom-input " required />
+                                <label for="registerPassword">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-field">
+                                <input id="registerUsername" type="text" class="validate custom-input " required />
+                                <label for="registerUsername">Username</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success form-control sign-in socialbtn">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span aria-hidden="true" aria-label="Close" class="modal-action modal-close pull-right" data-dismiss="modal" style="height: 95%;width: 40px;margin-right: 15px">
+                <svg fit="" height="100%" preserveaspectratio="xMidYMid meet" style="" viewbox="0 0 24 24" width="100%">
+                    <g>
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+        </div>
+    </div>
+</template>

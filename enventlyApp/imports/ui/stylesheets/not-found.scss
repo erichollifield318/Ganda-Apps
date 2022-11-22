@@ -1,0 +1,32 @@
+#not-found {
+  margin: 0 auto;
+  width: 80vw;
+
+  .not-found-image {
+    float: right;
+    margin: 0 auto;
+    max-width: 15em;
+    width: 100%;
+  }
+
+  .not-found-title {
+
+    float: left;
+  }
+}
+
+// **************
+// @media start
+// **************
+@media only screen and (max-width : 992px) {
+  #not-found {
+    .not-found-image {
+      float: none;
+      margin: 0 auto;
+      max-width: 10em;
+    }
+  }
+}
+// **************
+// @media end
+// **************

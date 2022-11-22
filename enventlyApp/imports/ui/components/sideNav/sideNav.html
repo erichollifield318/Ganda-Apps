@@ -1,0 +1,147 @@
+<template name="sideNav">
+    <ul class="side-nav user-detail" id="slide-out" style="background: #616161; width: 309px">
+
+        {{#if isLoggedIn}}
+            <li class="userdeta-wrapper">
+                <div class="sidenav-popup-content" style="min-width: auto">
+                    <h4>
+                        {{userName}}<i class="material-icons edit-userdetails-icon">settings</i>
+                    </h4>
+                    <!-- <h6>
+                        {{counts}}
+                    </h6> -->
+                </div>
+            </li>
+        {{/if}}
+        <!-- <li style="{{getPadding}} {{#unless isLoggedIn}}border-color:#616161;{{/unless}}">
+
+            {{#each markers}}
+            <div>
+                {{markerName}}
+            </div>
+            {{/each}}
+        </li> -->
+        <li class="top-bottom-spacing" style="">
+            <div>
+                <span style="font-weight: 700;font-size: 20px;">{{currentClient}}</span>
+            </div>
+        </li>
+        <li class="top-bottom-spacing" style="">
+            <div>
+                <span style="font-weight: 600;">Time: </span><span>{{fullTime}}</span>
+            </div>
+            <div>
+                <span style="font-weight: 600;">Date: </span><span>{{fullDate}}</span>
+            </div>
+            <div>
+                <span style="font-weight: 600;">Weather: </span><span id="weatherlbl"> {{weather}}</span>
+            </div>
+        </li>
+        <li class="info-btn-wrapper">
+            <div class="row normal-cursor">
+                <div class="col s2" style="padding: 3px 5px 0;height: 30px;">
+                    <img src="{{englishImg}}" style="width:31px;height: auto;">
+                </div>
+                <div class="col s9 navicon-text-wrapper" style="height: 30px;">
+                    English
+                </div>
+            </div>
+            <div class="row hand-pointer" id="savedLocationsBtn">
+                <div class="col s2 navicon-wrapper" style="color: #EB992A;">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="col s9 navicon-text-wrapper">
+                    Saved Location
+                </div>
+            </div>
+            <div class="row hand-pointer" id="shareCurrentLocation">
+                <div class="col s2 navicon-wrapper">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+                <div class="col s9 navicon-text-wrapper">
+                    Share Location
+                </div>
+            </div>
+            <div class="row hand-pointer" id="sendFeedBackBtn">
+                <div class="col s2 navicon-wrapper">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+                <div class="col s9 navicon-text-wrapper">
+                    Send Feedback
+                </div>
+            </div>
+        </li>
+        <li class="top-bottom-spacing terms-services">
+            <div class="row hand-pointer" id="termsOfServiceBtn" style="font-weight: 600;"> Terms of Service </div>
+            <div class="row hand-pointer" id="privacyPolicyBtn" style="font-weight: 600;"> Privacy Policy </div>
+            <div class="row hand-pointer" id="copyrightBtn" style="font-weight: 600;"> Copyright </div>
+        </li>
+        <li>
+            <small class="pull-right">
+                Version 1.0
+            </small>
+        </li>
+    </ul>
+    <a class="button-collapse show-on-large" data-activates="slide-out" href="#" title="Markers Details Navigation">
+        <!-- <img alt="" class="admin-console-link" src="/adminConsoleIcon.png"/> -->
+        <i class=" material-icons admin-console-link" style="font-size: 2.1rem;top: 15px;color: white;">menu</i>
+        
+        <!--  <i style="color: rgba(255, 255, 255, 0.7); transition: color .3s; font-size: 35px; position: absolute; top: 13px; left: 0px; z-index: 9;" class="material-icons showSideNavigation">chevron_right</i> -->
+    </a>
+    {{> Template.dynamic template=loadTemplate }}
+
+
+    <!-- Edit user details modal -->
+       <div class="modal modal-fixed-footer" id="edit-user-detail">
+         <div class="modal-header" style="background: #6D6B6B;color: #fff; padding: 10px 15px 0px;">
+            <h5 class="pull-left" style="margin-top: 0;">Edit Details</h5>
+            <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <form name="updateForm" id="updateForm" >
+                     <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="updateEmail" type="text" class="validate custom-input " value="{{userData.emails.[0].address}}" readonly="" style="background-color:#6d6b6b33;border-bottom: 1px solid #dfdede;box-shadow: 0 1px 0 0 #dfdede;color:#000000;" />
+                            <label for="updateEmail" class="active">Email ID</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="updateUsername" name="updateUsername" type="text" class="custom-input validate" value="{{userData.profile.username}}"/>
+                            <label for="updateUsername" class="{{#if userData.profile.username}}active{{/if}}">Username</label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="oldpassword" type="password" class="validate custom-input " />
+                            <label for="oldpassword">Old Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="newpassword" type="password" class="validate custom-input " />
+                            <label for="newpassword">New Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <input id="confirmpassword" type="password" class="validate custom-input " />
+                            <label for="confirmpassword">Confirm Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success update-user socialbtn">UPDATE</button>
+                        <button type="button" class="btn btn-success socialbtn log-out" style="background-color: #bb1d24;">Logout</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     
+    </div>
+
+</template>

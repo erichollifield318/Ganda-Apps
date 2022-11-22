@@ -1,0 +1,128 @@
+<template name="advertisement">
+	
+	<a class="btn waves-effect waves-light pull-right" id="newAdBtn">
+    <i class="small material-icons edit dark" style="color: #fff">add_circle_outline</i>
+    <span style="vertical-align: top;">&nbsp;&nbsp;new ad</span>
+  </a>
+
+  <h2>
+    Advertisement
+  </h2>
+
+
+  <table id="advertisements-datatable" class="responsive-table highlight" width="100%">
+    <thead>
+      <th class="arr-item name-h">Name      
+      </th>
+      
+      <th class="address-h">Image
+      </th>
+      
+      <th class="phone-h">Start Date
+      </th>
+
+      <th class="phone-h">End Date
+      </th>
+
+      <th class="phone-h">Published
+      </th>
+
+      <th>Action</th>
+    </thead>
+    <tbody>
+      {{# each advertisements }}
+        <tr class="" id="{{ _id }}">
+          <td class="">
+            {{ name }}
+          </td>
+          <td class="">
+          <img class="" src="{{ imageUrl }} " style="height: 25px;">
+            
+          </td>
+          <td class="">
+            {{ convertToLocaleDate startDate }}
+          </td>
+          <td class="">
+            {{ convertToLocaleDate endDate }}
+          </td>
+          <td>
+            {{#if publish }}
+            	YES
+            {{else}}
+            	NO
+            {{/if}}
+          </td>
+          <td>
+            <a id="editAdvertisenment" title="Edit" style="cursor: pointer;">
+              <i class="small material-icons amber-text">edit</i>
+            </a>
+            <a id="deleteAdvertisenment" title="Delete" style="cursor: pointer;">
+              <i class="small material-icons red-text">delete</i>
+            </a>
+          </td>
+        </tr>
+      {{/ each }}
+    </tbody>
+  </table>
+
+
+  <div class="modal modal-fixed-footer" id="newAdFormModal">
+  <!-- New Advertisement Form Modal -->
+    <form id="newAdForm">
+      <div class="modal-content">
+        <h4 class="pull-left">{{ #if isUpdate }}Update {{ else }}Add{{ /if }} Advertisement</h4>
+        <span aria-hidden="true" class="modal-action modal-close pull-right" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="input-field col s12">
+              <input id="adName" type="text" class="validate" required>
+              <label class="active" for="adName">Name</label>
+            </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s9 mtop">
+            <label for="adImage">Image</label>
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Image</span>
+                <input id="sliderImages" type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path" id="adImageText" type="text">
+              </div>
+             
+            </div>
+          </div>
+          <div class="col s3">
+          <img style="border: 2px solid black; height: 110px;"  id="my_image" src=""/>
+           <!--  <div></div> -->
+          </div>
+      	</div>
+
+      	<div class="row">
+      		<div class="input-field col s12 m6">
+            <label for="adStartDate">Start</label>
+	      		<input type="text" id="adStartDate" class="datepicker" required>
+  				</div>
+  				<div class="input-field col s12 m6">
+            <label for="adEndDate">End</label>
+	      		<input type="text" id="adEndDate" class="datepicker" required>
+  				</div>
+      	</div>
+
+      	<div class="row">
+      		<input type="checkbox" id="adPublish" checked="checked" >
+      		<label for="adPublish">Publish this advertisement</label>
+      	</div>
+
+      </div>
+      <div class="modal-footer">
+          <button type="reset" id="resetForm" style="display: none;" class="waves-effect waves-green btn hoverable">Reset</button>
+          <button type="submit" class="waves-effect waves-green btn hoverable">Submit</button>
+      </div>
+    </form>
+  </div>
+</template>

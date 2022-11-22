@@ -1,0 +1,33 @@
+<template name="searchBar">
+  <nav>
+    <div class="nav-wrapper grey darken-2">
+      <form id="searchForm">
+        <div class="input-field">
+          <input id="autocomplete-input" type="search" name="search" placeholder="Type to search here" class="autocomplete" autocomplete="off" required value="{{getMenuItemName}}">
+          {{#if showLoader}}
+            <div class="search-loader">
+              {{> spinner opts}}
+            </div>
+          {{else}}
+              <label class="label-icon" for="search" style="left: 50px;"><i style="cursor: pointer" class="material-icons searchIcon">search</i></label>
+          {{/if}}
+          <i class="material-icons closeIcon">close</i>
+        </div>
+      </form>
+      
+      <div class="doublebay-image">
+      <div id="overlay-box">
+      </div>
+      {{#if isHome}}
+        <div class="heading">Welcome to Double Bay</div>
+        <div class="subheading">Sydney's stylish bayside village</div>
+      {{/if}}
+      </div>
+
+      <!-- {{#unless searching}}
+      <div class="doublebay-image">
+      </div>
+      {{/unless}} -->
+    </div>
+  </nav>
+</template>

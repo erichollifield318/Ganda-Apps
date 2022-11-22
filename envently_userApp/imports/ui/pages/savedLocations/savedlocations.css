@@ -1,0 +1,41 @@
+#savedlocations .modal-content{
+	height: calc(100% - 70px);
+}
+
+#savedlocations .row{
+	margin-bottom: 10px;
+}
+
+.location-text-wrapper{
+    border-bottom: 1px solid #F3F3F4;
+    line-height: 35px;
+}
+
+
+@media (max-width: 767px){
+	.modal.modal-fixed-footer.open{
+		width: 90% !important;
+	}
+}
+
+@media (max-width: 320px){
+	#savedlocations .modal-content{
+		padding: 18px 20px 18px 0px;
+	}
+}
+
+
+.location-heading-wrapper{
+	line-height: 22px;
+}
+
+.location-heading{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.location-address{
+	line-height: 24px;
+	margin-bottom: 5px;
+	color: #7E7E7E;
+}

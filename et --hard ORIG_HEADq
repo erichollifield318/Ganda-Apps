@@ -1,0 +1,4360 @@
+[33mcommit 93a94beb04bb3d4c24770a0e9ac1f3ee56abc438[m
+Merge: 970d748 1f62717
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 17 15:06:51 2017 +0530
+
+    Merge branch 'issue-115' into development
+    
+    Merge development with local 115 branch
+
+[33mcommit 1f627172eae819af8938deb33a3e019f8723e585[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 17 15:01:45 2017 +0530
+
+    Base skeleton for Login on client side functionality
+
+[33mcommit 970d74891de07849158436ceef11e8b2f2d6688f[m
+Merge: 0d33b0f 5da7529
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 17 15:00:36 2017 +0530
+
+    Merge pull request #170 from Envently/issue-115
+    
+    small changes
+
+[33mcommit 5da752972b79455b0004b162da61a6b9805e89ab[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 17 14:54:54 2017 +0530
+
+    for dummy pr request small changes
+
+[33mcommit 0d33b0f19bde2f24d9adecbf6467aecefd33fe42[m
+Merge: 9940494 172b872
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 17 13:17:26 2017 +0530
+
+    Merge pull request #169 from Envently/issue-124
+    
+    issue-124 with centred marker resolved
+
+[33mcommit 172b87269d766fb47dd5d0a05e1fecc3282a3a3c[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 17 13:11:48 2017 +0530
+
+    issue-124 with centred marker resolved
+
+[33mcommit 9940494868e52972054590ff8627c2b0d4564945[m
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 17 11:48:43 2017 +0530
+
+    changes for bottom sheet modal for sub menus
+
+[33mcommit 3ea11e23af3185396f384d39e37eadaeb6c887a6[m
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 21:00:50 2017 +0530
+
+    RESOLVED ERROR
+
+[33mcommit 900a56868fad724a88d22452347f71653aa64ee2[m
+Merge: bafa48c 0093d82
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 20:56:38 2017 +0530
+
+    Merge pull request #168 from Envently/issue-114/Bottom-nav-as-list-of-results-for-Menu-Items
+    
+    make width 100%
+
+[33mcommit 0093d82b9ac9315d77c9ef8d4627d6f3586ce714[m
+Merge: 3bdc25b bafa48c
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 20:56:30 2017 +0530
+
+    Merge branch 'development' into issue-114/Bottom-nav-as-list-of-results-for-Menu-Items
+
+[33mcommit 3bdc25b5ed8e44a2a5bb48be4d6a89b512d6d97b[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Thu Nov 16 20:54:44 2017 +0530
+
+    make width 100%
+
+[33mcommit bafa48c5165270fb1f7f9dfaf166bf49eca5a1cc[m
+Merge: f189a4f 21754f4
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 20:37:41 2017 +0530
+
+    Merge pull request #167 from Envently/issue-124
+    
+    fixed error undefined
+
+[33mcommit 21754f4f4d282fdb64892989dc229c9e01fb4190[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Thu Nov 16 20:35:13 2017 +0530
+
+    fixed error undefined
+
+[33mcommit f189a4fe3114a880c95383ac9e34ba6ce8823e8d[m
+Merge: 955c718 59a7762
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 20:03:42 2017 +0530
+
+    Merge pull request #166 from Envently/revert-165-issue-115
+    
+    Revert "Completed Issue-115 and Contains code of Issue-114"
+
+[33mcommit 59a776293a8387a76ac4c0213f858f644ab1c66e[m
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 20:00:58 2017 +0530
+
+    Revert "Completed Issue-115 and Contains code of Issue-114"
+
+[33mcommit 955c718fa2ff8a1d4a861139cb07dbfa37e80daa[m
+Merge: ffbc31a 97d5ac0
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 19:53:45 2017 +0530
+
+    Merge pull request #165 from Envently/issue-115
+    
+    Completed Issue-115 and Contains code of Issue-114
+
+[33mcommit ffbc31a4b7dec04ff925f4dbc1a6c622f331540e[m
+Merge: b36ef2d 08dd72c
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 16 19:52:35 2017 +0530
+
+    Merge pull request #164 from Envently/issue-124
+    
+    changes on issue 124
+
+[33mcommit 97d5ac0b40081226c1252f1eaa2bce954aaa0a63[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 19:25:10 2017 +0530
+
+    Final Push after testing
+
+[33mcommit 2474f8fd5708673aeb7d71544bd2d4f4a4f9384c[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 19:07:13 2017 +0530
+
+    Fix the Layout for your location window
+
+[33mcommit b7eed3e465cafc9b7624153aaa009fa0fb992d5b[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 18:52:27 2017 +0530
+
+    Completed Send Feedback functionality
+
+[33mcommit 1d4d33834436228ac84d69bba570ea7164cd0280[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 17:40:05 2017 +0530
+
+    Completed Saved Location POPUP and pushed some dummy texts
+
+[33mcommit b6ba5f401a203e9297b47fd7363cf947ce4d8272[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 16:58:04 2017 +0530
+
+    Completed Share Current Location functionality
+
+[33mcommit 0bf5191c0d2942b226a3cf150e63b2e9b36d1e86[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 15:43:15 2017 +0530
+
+    Completely bind btns to show the privacy, terms and copyright details client side.
+
+[33mcommit 144e9c81c07404b2750dfc6bc8429350be60e78d[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 16 15:26:13 2017 +0530
+
+    Client Side Implementation of Privacy policy and Terms Service.
+
+[33mcommit 08dd72cb4c675b8f1d3dc9a32e81ffc5eb0e6355[m
+Author: Krashna <krashna@deligence.com>
+Date:   Thu Nov 16 14:35:44 2017 +0530
+
+    issue 124 modify
+
+[33mcommit 308c285dbf74f688074c9c504dfb3d5fbabd258c[m
+Author: Krashna <krashna@deligence.com>
+Date:   Thu Nov 16 12:48:50 2017 +0530
+
+    changes on issue 124
+
+[33mcommit f3d84e7aac4ac082571d1f8e6d13a4867dfc8d0f[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 19:59:27 2017 +0530
+
+    Setup the Layout skeleton
+
+[33mcommit b36ef2d559487676476470837b0823b35c546453[m
+Merge: d1ddb9d 274a484
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 15 19:21:25 2017 +0530
+
+    Merge pull request #162 from Envently/issue-78
+    
+    issue 78 resolved
+
+[33mcommit d1ddb9dc0c3fa96484b3b40250b6aacf7a842b93[m
+Merge: e1355c5 64de7cb
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 15 18:08:02 2017 +0530
+
+    Merge pull request #163 from Envently/issue-124
+    
+    Issue 124
+
+[33mcommit 64de7cb3d0682fea2c3eeec82b05c1ec0fc56341[m
+Merge: fa9269a e1355c5
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 15 18:06:53 2017 +0530
+
+    Merge branch 'development' into issue-124
+
+[33mcommit fa9269a95d481253a2c13e8eb61fcf364ad7a534[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 15 17:54:46 2017 +0530
+
+    added Location form on admin side and display it on popup
+
+[33mcommit 99ed86396b67db0ad120ca58039f7248e040217e[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 15 17:45:54 2017 +0530
+
+    issue124 resolved
+
+[33mcommit 887b9161a66721ebe408488005970030443881de[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 16:32:44 2017 +0530
+
+    Functionality to save the privacy policy from Admin.
+
+[33mcommit 6a8a7bc8c902deed5ccdeba51b9f36c9b081c225[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 16:20:53 2017 +0530
+
+    Functionality to save Terms of Service for Admin
+
+[33mcommit 311b32d3bb9f92696ea2ed3ca0da39dd496bc533[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 16:15:20 2017 +0530
+
+    Admin Functionality to add the Copyrights content into system.
+
+[33mcommit 5fa2b16523deef99f79727d711694450e31def01[m
+Merge: 4482076 362568c
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 13:11:13 2017 +0530
+
+    Merge Issue-114 and resolve conflicts.
+
+[33mcommit 448207684708862f729b4840bb39140543c6dcad[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 12:53:11 2017 +0530
+
+    Minor fix regarding scrollbar
+
+[33mcommit 274a48478c7c54e2aac7cececcc72471ec3f655d[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 15 12:49:39 2017 +0530
+
+    issue 78 resolved
+
+[33mcommit 362568c030c0d1846853546a5362bf702712e750[m
+Merge: 5331055 b6adb81
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Wed Nov 15 12:44:38 2017 +0530
+
+    I have removed time and image from bottom sheet modal
+
+[33mcommit 73b3d984e55a8c29a98144580b4290d2f9ec6342[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 12:00:43 2017 +0530
+
+    Functionality to Open menu on press of E from keyboard
+
+[33mcommit b6adb81f6892023358aa4f63a92e5fa3e7085ca3[m
+Merge: 7688c60 e1355c5
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 15 11:43:55 2017 +0530
+
+    Merge branch 'development' into issue-114/Bottom-nav-as-list-of-results-for-Menu-Items
+
+[33mcommit 67a0d8c25ace7e2f609e65f42c29efc3f5d304bf[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 15 10:15:10 2017 +0530
+
+    Fix the Position of the Top menu and search bar.
+
+[33mcommit e1355c534506215785ab502a606b805e99c64d71[m
+Merge: cf3a389 e3478ea
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Tue Nov 14 19:44:31 2017 +0530
+
+    Merge pull request #160 from Envently/issue-116
+    
+    Issue 116
+
+[33mcommit cf3a389d58cce75088a13c0136b101ccf677324b[m
+Merge: 24dae05 d7cde44
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Tue Nov 14 19:43:58 2017 +0530
+
+    Merge pull request #161 from Envently/issue-78
+    
+    Issue 78
+
+[33mcommit d7cde44eef654e4fda38e598a77179284b15759e[m
+Author: Krashna <krashna@deligence.com>
+Date:   Tue Nov 14 18:42:36 2017 +0530
+
+    issue 78 resolved
+
+[33mcommit e3478ea3f558d199307672bb50658dea5a1fc578[m
+Merge: 5812d73 cb7d066
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Tue Nov 14 12:28:05 2017 +0530
+
+    Merge branch 'issue-116' of https://github.com/Envently/envent.ly into issue-116
+
+[33mcommit 5812d730253dbceda4a607d117a22e85cf05e584[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Tue Nov 14 12:25:07 2017 +0530
+
+    Image has been removed from popup
+
+[33mcommit 7b184a4c5fff6ba3732cd6fe408efb8fc7892629[m
+Author: Krashna <krashna@deligence.com>
+Date:   Tue Nov 14 10:32:07 2017 +0530
+
+    in progress
+
+[33mcommit 24dae0533de52c96d5da4ef37ea871f153aea123[m
+Merge: a48e94a cb7d066
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 19:48:44 2017 +0530
+
+    Merge pull request #159 from Envently/issue-116
+    
+    Issue-116 resolved
+
+[33mcommit a48e94ad2dae657b7282683b82f6fb0d87416cc2[m
+Merge: f3e3dd9 2d147a7
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 19:32:42 2017 +0530
+
+    Merge pull request #158 from Envently/issue-132
+    
+    issue 132 resolved
+
+[33mcommit f3e3dd927f6f00e79409337b5553f96376fc1937[m
+Merge: 05b0a23 51037b3
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 19:32:12 2017 +0530
+
+    Merge pull request #157 from Envently/issue-78
+    
+    Issue 78
+
+[33mcommit 51037b35f5536ce0b82ea99392863d46a4507ed1[m
+Merge: cc662a4 05b0a23
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 19:31:23 2017 +0530
+
+    Merge branch 'development' into issue-78
+
+[33mcommit cb7d06659026e7204d9536c672a21346aa247f16[m
+Merge: 170debd 05b0a23
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 19:05:58 2017 +0530
+
+    Merge branch 'development' into issue-116
+
+[33mcommit 53310556c494cf5c41912f1d6c44904bed437b30[m
+Merge: 05b0a23 7688c60
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Mon Nov 13 18:44:35 2017 +0530
+
+    resolved conflict
+
+[33mcommit 170debd804d6ffe055dce1acf12c36b149a6251d[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Mon Nov 13 18:31:13 2017 +0530
+
+    Issue-116 resolved
+
+[33mcommit 2d147a785737def66a35b479533fa7a87629990a[m
+Merge: cd65e82 05b0a23
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Mon Nov 13 18:07:02 2017 +0530
+
+    Merge branch 'development' into issue-132
+
+[33mcommit cd65e8249edae886772a2393448def91dcfca9e5[m
+Author: Krashna <krashna@deligence.com>
+Date:   Mon Nov 13 17:29:07 2017 +0530
+
+    issue 132 resolved
+
+[33mcommit cc662a4f49b301314ff44b02ce860f00331d07d4[m
+Author: Krashna <krashna@deligence.com>
+Date:   Mon Nov 13 13:30:54 2017 +0530
+
+    issue 78 resolved
+
+[33mcommit 51e80e1aa1f1dd63b6c642849dd9291efd98889d[m
+Author: Krashna <krashna@deligence.com>
+Date:   Mon Nov 13 13:25:10 2017 +0530
+
+    work inprogress
+
+[33mcommit f470577985f56d1db89fcba11945b25612010bec[m
+Author: Krashna <krashna@deligence.com>
+Date:   Sat Nov 11 19:17:32 2017 +0530
+
+    issue 78 in progress
+
+[33mcommit 05b0a23f7be466d5a4a1a5aae8aed24f981a00a4[m
+Merge: dfa150c 89cd47c
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Sat Nov 11 18:27:02 2017 +0530
+
+    Merge pull request #155 from Envently/issue-130
+    
+    Issue 130
+
+[33mcommit dfa150c64859a0dec7ab0915c38a07640638c0f3[m
+Merge: d23bf2b 62bee51
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Sat Nov 11 18:26:42 2017 +0530
+
+    Merge pull request #154 from Envently/issue-123
+    
+    Issue 123
+
+[33mcommit 62bee5188c842191c51938c9f892f9baa02364f1[m
+Merge: e9fc81e d23bf2b
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Sat Nov 11 18:26:21 2017 +0530
+
+    Merge branch 'development' into issue-123
+
+[33mcommit d23bf2b17808c6bb0ca6b7b450371fc58e898981[m
+Merge: 64b888c cf0003a
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Sat Nov 11 18:25:06 2017 +0530
+
+    Merge pull request #156 from Envently/dt_ui_issues
+    
+    fixed issue of marker on landmark
+
+[33mcommit cf0003a4fe7a43c93aa48e8e9ceddf5a4acd32cf[m
+Author: saransh-dev <saransh@deligence.com>
+Date:   Sat Nov 11 18:23:50 2017 +0530
+
+    fixed issue of marker on landmark
+
+[33mcommit 89cd47c814857de30cae52878e79d2e276467848[m
+Author: Krashna <krashna@deligence.com>
+Date:   Sat Nov 11 17:03:53 2017 +0530
+
+    issue 130 resolved
+
+[33mcommit b83e410a0dd299ef79b2a6df98856b66d583c763[m
+Author: Krashna <krashna@deligence.com>
+Date:   Sat Nov 11 15:05:36 2017 +0530
+
+    issue-130
+
+[33mcommit e9fc81ed6425982972fba8176410ad560e235940[m
+Author: Krashna <krashna@deligence.com>
+Date:   Sat Nov 11 11:27:53 2017 +0530
+
+    issue 123 resolved
+
+[33mcommit 64b888cefc27ed789354ebefc6a2f4cd98f67276[m
+Merge: c073818 2a6bc75
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 19:42:28 2017 +0530
+
+    Merge pull request #147 from Envently/issue-110
+    
+    Issue-110 You are here Navigation Button
+
+[33mcommit 2a6bc751a28a9facc8cb4c0bd4ef5a035660562a[m
+Merge: 88bdeaa c073818
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 19:41:48 2017 +0530
+
+    Merge branch 'development' into issue-110
+
+[33mcommit 88bdeaa69280f077eda1a25d547874de964e8354[m
+Merge: 570266a 322898b
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 10 19:39:48 2017 +0530
+
+    Resolve conflicts with dev
+
+[33mcommit c0738187ee054fa8a87b027685acdb8008879745[m
+Merge: 162c73c 5688c35
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 19:05:47 2017 +0530
+
+    Merge pull request #146 from Envently/issue-132
+    
+    issue #132 resolved
+
+[33mcommit 162c73cef78e2d6fdf7cc3f6772abf53b7aff197[m
+Merge: 47ed88a 52647e7
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 19:01:39 2017 +0530
+
+    Merge pull request #148 from Envently/issue-104
+    
+    Issue-104 Fixing the Position of Icons according to comments.
+
+[33mcommit 47ed88ad7e9f8b6d8fd8dfa63bc06335970843fd[m
+Merge: 2c62deb 61b9147
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 19:00:56 2017 +0530
+
+    Merge pull request #149 from Envently/issue-128
+    
+    issue #128 resolved
+
+[33mcommit 2c62debc91ee1d98d9c943cd159a8cee91ea5d4d[m
+Merge: ff3fdec 3d472b6
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 18:57:59 2017 +0530
+
+    Merge pull request #150 from Envently/issue-119
+    
+    Issue-119 Reduce the size of Points by 50%
+
+[33mcommit ff3fdec91a48707d5319623b5d61849ff07f15ff[m
+Merge: 15b9e1c 3a3100c
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 18:56:55 2017 +0530
+
+    Merge pull request #152 from Envently/dt_ui_issues
+    
+    Dt ui issues
+
+[33mcommit 15b9e1cbe74d4acc6beeef46cd997fae53557a40[m
+Merge: 322898b c28b046
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 10 18:55:20 2017 +0530
+
+    Merge pull request #151 from Envently/issue-93
+    
+    Issue-93 has been resolved
+
+[33mcommit 3a3100c1d0ade4d8db6d26fe56881addc19a05fd[m
+Merge: 4e4371b 4e8884a
+Author: amit <amit@deligence.com>
+Date:   Fri Nov 10 18:39:38 2017 +0530
+
+    Fixed issue #113 white icons BG issue
+
+[33mcommit 4e4371b4463ed27bb34c983f585481b3aca6c7aa[m
+Author: amit <amit@deligence.com>
+Date:   Fri Nov 10 18:31:48 2017 +0530
+
+    Fixed issue 113 for white color markers
+
+[33mcommit c28b0463fffdf2c1490f40c69b834a57cb51f53f[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Fri Nov 10 16:10:46 2017 +0530
+
+    Issue-93 has been resolved
+
+[33mcommit 3d472b680b01fc3e87987728e3f0972726849d3b[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 10 16:05:38 2017 +0530
+
+    Reduce the size of Points by 50%
+
+[33mcommit 61b9147ea9ecd10cc5e1fd6ccaad51519cd81e20[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 10 16:02:00 2017 +0530
+
+    issue #128 resolved
+
+[33mcommit 52647e77520fdf7cf697649ed2374167dc2a02c4[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 10 15:43:25 2017 +0530
+
+    Fixing the Position of Icons according to comments.
+
+[33mcommit 6b4c65115bbe904b01f6e61f99577760098cd999[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 10 14:43:22 2017 +0530
+
+    work in progress
+
+[33mcommit 81bef70c6146af5cca39a0b2ec355db7e90c23b5[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 10 12:21:26 2017 +0530
+
+    work in progress
+
+[33mcommit 570266a2bc9311f05234505e6cf616c644b5e02b[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Fri Nov 10 11:18:41 2017 +0530
+
+    Slight CSS adjustment for the iPhone5 users.
+
+[33mcommit 5688c3565558199b5c83176890574eb0824141ce[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 10 11:05:49 2017 +0530
+
+    issue #132 resolved
+
+[33mcommit dc9a6b7d5a864010c39d3d38fb5c18900d413a72[m
+Author: Krashna <krashna@deligence.com>
+Date:   Fri Nov 10 10:43:29 2017 +0530
+
+    work in progress
+
+[33mcommit 322898bce393bfd50dcc07724df0d570d0ec8102[m
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:37:50 2017 +0530
+
+    make subdomain index as 0
+
+[33mcommit 92d472c77816c30ff023dd92af274687d921d73a[m
+Merge: 6a18687 3161ddf
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:27:44 2017 +0530
+
+    Merge pull request #133 from Envently/issue-104
+    
+    Social media Icon in Admin Site
+
+[33mcommit 6a18687d2c2b32698ed671b6692ca319d20f8ab8[m
+Merge: afa06a5 31b1c8b
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:24:00 2017 +0530
+
+    Merge pull request #144 from Envently/feature/edit-location
+    
+    show map in location form
+
+[33mcommit 31b1c8b97bb1ac4a0935cb85bc45f3040e3cd9ca[m
+Merge: 7299f10 afa06a5
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:20:01 2017 +0530
+
+    Merge branch 'development' into feature/edit-location
+
+[33mcommit 7299f10adc1e6725c467999cf36f33e5550d9244[m
+Author: saransh-dev <saransh@deligence.com>
+Date:   Thu Nov 9 20:15:40 2017 +0530
+
+    show map in location form
+
+[33mcommit afa06a57680c5fc4b253f6f1926a2cefce747be1[m
+Merge: 320a6a6 72eb442
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:13:10 2017 +0530
+
+    Merge pull request #143 from Envently/issue-116
+    
+    Issue-116 has been resolve
+
+[33mcommit 320a6a6306033a0e3d27967680b818427e5d2649[m
+Merge: cffb0f5 ca86bcb
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:09:29 2017 +0530
+
+    Merge pull request #142 from Envently/issue-123
+    
+    issue #123 resolved
+
+[33mcommit cffb0f57a0a74078af8d10d1bad9b66eec9c6f94[m
+Merge: b8e061f 4e8884a
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:03:11 2017 +0530
+
+    Merge pull request #137 from Envently/dt_ui_issues
+    
+     fixed issue #121
+
+[33mcommit 4e8884a6320a58848417be13ad73167904c552bf[m
+Merge: bb21af6 b8e061f
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 20:02:57 2017 +0530
+
+    Merge branch 'development' into dt_ui_issues
+
+[33mcommit bb21af61de5a545bf7c38d350aaf48c05a622f62[m
+Author: monalisa <monalisa.deligence@gmail.com>
+Date:   Thu Nov 9 19:56:36 2017 +0530
+
+    fixed issue #113, #117
+
+[33mcommit 72eb442db77b7c0378d9950be986f36c5489eb6a[m
+Author: Salim Akhtar <salim@deligence.com>
+Date:   Thu Nov 9 19:31:40 2017 +0530
+
+    Issue-116 has been resolve
+
+[33mcommit 6bc74ae3b2962a90f42939739fd8e600d07f08c7[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Thu Nov 9 19:01:23 2017 +0530
+
+    Completed Functionality to show the Center on Location Button.
+
+[33mcommit ca86bcb15320b0687757c83826c2be192b97dd64[m
+Author: Krashna <krashna@deligence.com>
+Date:   Thu Nov 9 17:58:19 2017 +0530
+
+    issue #123 resolved
+
+[33mcommit 7688c60af3d087f258ec51a3cd81f4267a8799c5[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Nov 9 14:34:12 2017 +0500
+
+    issue-114/ Show List button styling
+
+[33mcommit b8e061fd5baf9af417ca7f0d712b8ee69368bbef[m
+Merge: 101af7c 341327f
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 9 11:53:51 2017 +0530
+
+    Merge pull request #141 from Envently/issue-119
+    
+    Should show source and destination marker of direction path
+
+[33mcommit e4bd74902dcfe42778548b29342981a6d1bb2652[m
+Author: deligent <deligent@deligence.com>
+Date:   Wed Nov 8 20:50:04 2017 +0500
+
+    Bottom-nav as list of results for Menu Items
+
+[33mcommit 101af7c99b4316c80d291e184e17b937f7b8e56b[m
+Merge: 62664a4 20575c5
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 8 19:25:47 2017 +0530
+
+    Merge pull request #139 from Envently/issue-135
+    
+    issue #135 resolved
+
+[33mcommit 62664a4a05cbf09e2315fb385b3aae8430275d00[m
+Merge: 17e77cc b1dc9dd
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 8 19:25:00 2017 +0530
+
+    Merge pull request #138 from Envently/issue-128
+    
+    Issue 128
+
+[33mcommit 341327f4f0890eafdd6d16bdf18da65eb8c2423e[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 8 18:13:03 2017 +0530
+
+    Should show source and destination marker of direction path
+
+[33mcommit 20575c5da32aba8d3d9735683dcd4857828fc0dc[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 8 16:22:37 2017 +0530
+
+    issue #135 resolved
+
+[33mcommit d036dc9d1feea8177ec10c3c8b93874426bd5bca[m
+Author: monalisa <monalisa.deligence@gmail.com>
+Date:   Wed Nov 8 16:13:42 2017 +0530
+
+    fixed issue #121 ->hide button solved
+
+[33mcommit b1dc9dd628813f3ea267b76633ab7e1cb66af7f4[m
+Merge: 333fd16 17e77cc
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 8 16:07:04 2017 +0530
+
+    Merge branch 'issue-128' of https://github.com/Envently/envent.ly into issue-128
+
+[33mcommit 333fd16c6aaaa989d016b4be05f07d264f1aed1d[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 8 16:04:34 2017 +0530
+
+    issue #128 resolved
+
+[33mcommit 4935e9d15d336b7f1271005d4564a6670adb6781[m
+Author: monalisa <monalisa.deligence@gmail.com>
+Date:   Wed Nov 8 15:48:58 2017 +0530
+
+    fixed issue #121
+
+[33mcommit 17e77cce75f03898a6cfcd8d0cecdc64e89dbe72[m
+Merge: 943ab72 07e4967
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 8 14:47:42 2017 +0530
+
+    Merge pull request #136 from Envently/issue-132-and-122
+    
+    fixed issue #122 and #132
+
+[33mcommit 07e496737b54fbc7f44fe94cf4e8e8be4f98c10c[m
+Author: Krashna <krashna@deligence.com>
+Date:   Wed Nov 8 13:04:27 2017 +0530
+
+    fixed issue #122 and #132
+
+[33mcommit 3161ddf6d8d3fd1259c1b7db8d3a13856fef3dc1[m
+Author: Sachin <sachin@angularminds.com>
+Date:   Wed Nov 8 10:57:48 2017 +0530
+
+    Social media Icon in Admin Site
+
+[33mcommit 943ab720e39b8c43dbc90bdbc3bfd79292c7847b[m
+Merge: d6bef5d 328a021
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Tue Nov 7 21:36:59 2017 +0530
+
+    Merge pull request #126 from Envently/issue-97/feedback
+    
+    delete admin ip
+
+[33mcommit 328a021d3737afbbc1980709525af9467dc5e020[m
+Author: saransh-dev <saransh@deligence.com>
+Date:   Tue Nov 7 21:34:18 2017 +0530
+
+    delete admin ip
+
+[33mcommit d6bef5db7d93949ee9ad50c373c9d1953a083d49[m
+Merge: 3c6222f f505401
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Tue Nov 7 17:13:18 2017 +0530
+
+    Merge pull request #125 from Envently/issue-97/feedback
+    
+    remove condition for subdomain from admin_settings
+
+[33mcommit f5054019487e55c06dec3630ab789c6c23a6087e[m
+Author: saransh-dev <saransh@deligence.com>
+Date:   Tue Nov 7 17:09:23 2017 +0530
+
+    remove condition for subdomain from admin_settings
+
+[33mcommit 3c6222fa6b65c14c7a7a3cf0bcab9bc1f82f4372[m
+Merge: 923fac8 da9a04e
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Sat Nov 4 12:05:02 2017 +0530
+
+    Merge pull request #109 from Envently/issue-97/feedback
+    
+    issue-97/feedback issue resolved
+
+[33mcommit da9a04ed2a017fa018a4ed46bb840f6f80b4c18d[m
+Author: deligent <deligent@deligence.com>
+Date:   Fri Nov 3 22:34:26 2017 +0500
+
+    issue-97/feedback issue resolved
+
+[33mcommit 923fac8f8596d3866ca230bbdefb3808224dba6c[m
+Merge: 711a9fc 959bcb8
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 3 19:36:27 2017 +0530
+
+    Merge pull request #108 from Envently/feature/87-item
+    
+    fixed issue Business listings to show Menu Item + Category name to be…
+
+[33mcommit 959bcb881eee17d77bd376d5fcd1da86cc07390a[m
+Author: deligent <deligent@deligence.com>
+Date:   Fri Nov 3 19:34:49 2017 +0530
+
+    fixed issue Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 711a9fca5723a00bd74b2e2c98c2e72177794879[m
+Merge: 69a8075 19fd2ea
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Nov 3 19:26:49 2017 +0530
+
+    Merge pull request #106 from Envently/issue-99/Ability-to-Drag-and-drop
+    
+    Issue 99/ability to drag and drop
+
+[33mcommit 69a80753b7a206790814afbfc20b81adf8ce1e5b[m
+Merge: 05060e7 ec3e371
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Thu Nov 2 19:19:54 2017 +0530
+
+    Merge pull request #107 from Envently/issue-95/feedback
+    
+    issue-95/feedback issue resolved
+
+[33mcommit ec3e37124843f26259bba1694ebafb0cfceafde8[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Nov 2 17:55:27 2017 +0500
+
+    issue-95/feedback issue resolved
+
+[33mcommit 19fd2ea66f5b290464412a36d321402e7e5f2075[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Nov 2 12:57:08 2017 +0500
+
+    issue-99/Ability-to-Drag-and-drop Done
+
+[33mcommit 1fc4976fad08c9c57d80e9f1ddd4a75d1db2d80a[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Nov 2 00:37:32 2017 +0500
+
+    issue-99/Fixed
+
+[33mcommit fd6503cba1576bb74e71c39d4a270dc5f9fb626b[m
+Author: deligent <deligent@deligence.com>
+Date:   Wed Nov 1 20:14:06 2017 +0500
+
+    issue-99/Ability-to-Drag-and-drop
+
+[33mcommit 05060e7bc32a1b1f39838ee7fec297b10571a966[m
+Merge: 4b19617 7a5dc76
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Wed Nov 1 17:11:34 2017 +0530
+
+    Merge pull request #103 from Envently/#97ManuallyEnteredMarkerLocationsButton
+    
+    #97 Manually entered marker Locations button
+
+[33mcommit 7a5dc76687fbc8524050bf9b2835cabaa04296f8[m
+Merge: 17a04c0 4b19617
+Author: deligent <deligent@deligence.com>
+Date:   Wed Nov 1 15:40:00 2017 +0500
+
+    Merge branch 'development' into #97ManuallyEnteredMarkerLocationsButton
+    
+    Conflicts:
+    	enventlyApp/imports/ui/pages/locationsDataTable/locationsDataTable.html
+    	enventlyApp/imports/ui/pages/locationsDataTable/locationsDataTable.js
+
+[33mcommit 17a04c0a210ef1fac15951f03813bd6159003bef[m
+Author: deligent <deligent@deligence.com>
+Date:   Tue Oct 31 11:46:37 2017 +0500
+
+    #97 z-index issue resolved
+
+[33mcommit 494c468eaa1567e2b9e31fb4c19822cd95a85e19[m
+Author: deligent <deligent@deligence.com>
+Date:   Tue Oct 31 07:11:41 2017 +0500
+
+    #97 Modal close issue fixed
+
+[33mcommit cf8283aff3b5dde37522218584859f51bfc089e7[m
+Author: deligent <deligent@deligence.com>
+Date:   Mon Oct 30 21:15:49 2017 +0500
+
+    #97 marker.isApproved
+
+[33mcommit 816e8c7f6ab26d36cd7ee028a5e6bf9973ea5125[m
+Author: deligent <deligent@deligence.com>
+Date:   Mon Oct 30 19:46:26 2017 +0500
+
+    #97 Button selection, Marker styling, Edit Button
+
+[33mcommit 2303412077223d45494e0b19999435228bd636eb[m
+Author: deligent <deligent@deligence.com>
+Date:   Mon Oct 30 18:35:16 2017 +0500
+
+    #97 Styling bugs fixed
+
+[33mcommit 4b19617eb18e96b97c9700b2df2b918172a155b1[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Oct 28 17:44:53 2017 +0530
+
+    Fixes re #95, syntax error
+
+[33mcommit 973856d996bac1fb3c4e64e6f2ef536008ff898f[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Oct 28 17:40:49 2017 +0530
+
+    Fixes re #95, category sorting and csv fields
+
+[33mcommit 961a4b1f1bc27979da8f2d406e7e145ef3ba4f19[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Oct 28 16:54:35 2017 +0530
+
+    Changes re some issue fixes in 95
+
+[33mcommit 1ddc2e10e46e3624f0fe8edf3ca1865fccf5cfc3[m
+Author: deligent <deligent@deligence.com>
+Date:   Fri Oct 27 21:13:41 2017 +0500
+
+    #97 Manually entered marker Locations button
+
+[33mcommit 1dcde66d663a11239a4387043f4adb01c26aae23[m
+Merge: aa4a12d 9628814
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Fri Oct 27 16:18:48 2017 +0530
+
+    Merge pull request #102 from Envently/Fixes
+    
+    Fixes
+
+[33mcommit 962881422c3038ee006e0e8db9ba56c58a95bedf[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Oct 27 16:15:03 2017 +0530
+
+    Fixed location edit, and menu, submenu names in locations datatable
+
+[33mcommit 88aba59722cb3c0e43284d33baec2ebd545187c9[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Oct 27 14:42:32 2017 +0530
+
+    Fixed text1, text2, logo and image related issue.
+
+[33mcommit 54dcffdd8879b575021c85417a7860bad425c974[m
+Merge: 687db2a 6ca88e3
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Oct 27 10:20:41 2017 +0530
+
+    Merge branch 'Fixes' of https://github.com/Envently/envent.ly into Fixes
+
+[33mcommit 6ca88e3375800a0e2cd1193f4fcce9326b101b53[m
+Merge: 4bc774d e9bf628
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 26 19:30:15 2017 +0500
+
+    Merge remote-tracking branch 'origin/Fixes' into Fixes
+
+[33mcommit e9bf62882122d4808989e083b6e1715e10365f2f[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 26 19:00:46 2017 +0500
+
+    issue #95 active or unactive button
+
+[33mcommit 4bc774ddb0e2a41031476e6bc227f1ffce26e76a[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 26 18:50:56 2017 +0500
+
+    Fixed: csv export fields done
+
+[33mcommit e8d5bfe217d5a6b0f5ce048da1f451f0b1757753[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 26 17:12:39 2017 +0500
+
+    issue #95 Menu and update work
+
+[33mcommit 687db2a3ff5889fc7177f4d302811d1dbe31367b[m
+Merge: ba29640 01ac56a
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Oct 25 17:52:01 2017 +0530
+
+    Merge branch 'Fixes' of https://github.com/Envently/envent.ly into Fixes
+
+[33mcommit ba296401ecc8f66ad3e7ffb2e86d15052a76dd0e[m
+Merge: aa4a12d 52be8b7
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Oct 25 17:15:05 2017 +0530
+
+    Merge branch 'Fixes' of https://github.com/Envently/envent.ly into Fixes
+
+[33mcommit aa4a12d01bf658922d08c9501e6cdcecb59d85f7[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Oct 25 17:07:22 2017 +0530
+
+    Changes re. Issue fixes in text1, text2, logo&image deletion and name updation in locations edit modal
+
+[33mcommit 01ac56a16692b2ae37b365c1cd89b72844f7af46[m
+Author: deligent <deligent@deligence.com>
+Date:   Tue Oct 24 20:42:37 2017 +0500
+
+    Manually entered locations work Done
+
+[33mcommit 52be8b7cf7f90aefba96d8487987bafdf5e94379[m
+Author: deligent <deligent@deligence.com>
+Date:   Tue Oct 24 19:54:41 2017 +0500
+
+    Fixed: csv export
+
+[33mcommit a9e98ebea1d0396c40ab257458845ac1dc329a8c[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Oct 24 18:39:54 2017 +0530
+
+    Changes re Feedbacks on marker details logo, side navigation alignment and redundant records
+
+[33mcommit 6b607696cdefd5cc94b46914800af583aaab8e8e[m
+Merge: 2e10f15 75da3d1
+Author: deligent <32838396+deligent@users.noreply.github.com>
+Date:   Tue Oct 24 10:48:48 2017 +0500
+
+    Merge pull request #101 from Envently/searchFieldClear/92
+    
+    Fixed - Issues #92, #93, #96, #91
+
+[33mcommit 75da3d1810e953633f56c79e16a87171088e9cee[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Oct 24 11:14:57 2017 +0530
+
+    Some issue fixes re. 'Side navigation bar' and 'Search bar'
+
+[33mcommit 640c5bac4c6605785c6772e0de5a612a11e4dde9[m
+Merge: 4476623 8293ff0
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Oct 24 09:37:37 2017 +0530
+
+    Merge branch 'searchFieldClear/92' of https://github.com/Envently/envent.ly into searchFieldClear/92
+
+[33mcommit 8293ff00cb4922a1a8b2394ba46d7a3c8942de98[m
+Author: deligent <deligent@deligence.com>
+Date:   Mon Oct 23 17:55:29 2017 +0500
+
+    Fixed: Close button bug fixed, sidenav bug fixed
+
+[33mcommit 91fba325db3e410f65c161f5f465f3b34a6fa1c4[m
+Author: deligent <deligent@deligence.com>
+Date:   Mon Oct 23 17:33:45 2017 +0500
+
+    Fixed: mapbox resizing issue fixed
+
+[33mcommit 44766235fd1adb73c13fe6be706864bdfd00c68a[m
+Merge: 2e10f15 8b8e126
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Oct 23 11:05:39 2017 +0530
+
+    Merge branch 'searchFieldClear/92' of https://github.com/Envently/envent.ly into searchFieldClear/92
+
+[33mcommit 2e10f15dcdcc0e846114794f25d65829ed93b7fc[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Oct 23 10:54:26 2017 +0530
+
+    Fixes re. 'proper website URL with http:// in marker details modal', 'Locations datatable edited sensis location reflection on userApp pridictive search result - done' and 'Locations datatable edited sensis location reflection on userApp Submenu selection'
+
+[33mcommit 8b8e126ed7a7c58218f3df23a5902081767b141f[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 19 18:55:58 2017 +0500
+
+    Fixed:
+    side-nav as a list of results #91
+
+[33mcommit 3ee7f5e89165c70d10ac6b75a0cca4123e9faa6b[m
+Author: deligent <deligent@deligence.com>
+Date:   Thu Oct 19 13:12:52 2017 +0500
+
+    Fixed:
+    Editing a menu item from admin
+     Events marker popup to show times #96
+
+[33mcommit 223a1ef15942f0603b05e6b549c85587544c8262[m
+Author: deligent <deligent@deligence.com>
+Date:   Wed Oct 18 18:09:23 2017 +0500
+
+    Fixed the issue of removing image on search #93
+
+[33mcommit 93cfcd0d0de15741131a2599cf77e44751920fa8[m
+Author: deligent <deligent@deligence.com>
+Date:   Tue Oct 17 20:49:08 2017 +0500
+
+    Fixed the issue of search clearing
+
+[33mcommit 6b1fe7f43e892851ec73d0d114b625feb888cd99[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Oct 11 13:28:14 2017 +0530
+
+    Done changes re locations datatable, category header enhencment and category searching feature
+
+[33mcommit f4cd406b277c97206ad53ac5cdea2e293624ca0d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Oct 9 16:56:31 2017 +0530
+
+    changes in location datatable
+
+[33mcommit 2b0ccec919161ebb8707bc32acd8b89b42584ff0[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Oct 5 18:21:31 2017 +0530
+
+    Changes re locatiosn data table sensis listing and showing rss feed events in current events sections ins userapp
+
+[33mcommit 44196ebbfe645fa99e43c293720996517b60ae38[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Sep 21 15:09:51 2017 +0530
+
+    Changes re website filed updation in location form
+
+[33mcommit adebe8934b2427642068521bc80ca8415a55b590[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Sep 15 17:56:51 2017 +0530
+
+    changes re live RSS Feed event task
+
+[33mcommit f0ba585b136c2b69e13423bc7db46aaccc2fd3a0[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Sep 14 15:17:41 2017 +0530
+
+    Changes regarding considration of primaryaddress(type:URL) instead of details link #89
+
+[33mcommit 064385d45621ca64569edc0e5f7e3da4da13db2e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Sep 14 13:21:10 2017 +0530
+
+    Changes regarding #85 pathing and mraker location updation
+
+[33mcommit 777bb79f959e2b0a78ab7b519b6f086307b02978[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Sep 5 18:17:10 2017 +0530
+
+    changes regarding menu submenu and category names
+
+[33mcommit 02bb14213642e49b19dc119a82d7993a4867b26e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Sep 2 11:02:43 2017 +0530
+
+    Changes regarding co-ordinate options in event/location forms
+
+[33mcommit 2ac67befb19edb06d3c04aae145c4c474dee8460[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Aug 29 17:13:13 2017 +0530
+
+    Changes regarding mapbox-gl geocodes
+
+[33mcommit b464c6871257d8bc9140e12d5ecbfbb75ae6471b[m
+Merge: 6ebb7b6 f987717
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Aug 29 14:42:55 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 6ebb7b6bfaeb7d30fe07c1362f334475c6854876[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Aug 29 14:36:46 2017 +0530
+
+    design related changes
+
+[33mcommit f987717dda4d5558e79f769cd648ebdf68a1277e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Aug 25 11:46:38 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 452e5e7de3afd4e302a753b85797afe20425257d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Aug 25 11:28:13 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 3477acbcab2a4501c979f366e9e86435407f094f[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Aug 25 10:54:51 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 0f44c3dd7aa41a9d1b991442b98aa4d7785ac703[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Aug 24 18:35:36 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 55b580f6f605f3626de1f17efb548697d99cb758[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Aug 24 18:01:15 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 17c0b1444d7b361f90d86ecbfd0ea97e887b417f[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Aug 24 16:37:57 2017 +0530
+
+    Business listings to show Menu Item + Category name to be shown in Details Modal #87
+
+[33mcommit 5a533f8bd64e100c8e7eeae94a72d241b9cf0cc2[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Aug 23 17:13:27 2017 +0530
+
+    admin menu and menuitems sort order
+
+[33mcommit 4bf1081f243e1a8cb014ff5b1018f57ae8b21862[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Aug 23 15:15:57 2017 +0530
+
+    iPhone 7 screen layout
+
+[33mcommit 6b484a50f311835d029d34bd7e35279b35d65e57[m
+Merge: cc07c79 d842d69
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Aug 18 13:00:48 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit cc07c79431cd7e85bd12913d42fe4cabee72203d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Aug 18 12:58:04 2017 +0530
+
+    Changes suggested regarding branding icons
+
+[33mcommit 407481817d12ce137123c3f4efe9797bf5755d45[m
+Merge: 78c1a6a 77ed3cf
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Aug 18 10:58:44 2017 +0530
+
+    Merge branch 'master' of https://github.com/Envently/envent.ly
+
+[33mcommit 78c1a6aed254840c47a13c6f3c0d081d93627b38[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Aug 2 17:21:06 2017 +0530
+
+    changes in gitignore files
+
+[33mcommit d842d69b603495fcd70f4620c1e91b2a9e633aa5[m
+Author: Sanjay Kumar <sanjay@deligence.com>
+Date:   Wed Aug 2 17:20:09 2017 +0530
+
+    Update .gitignore
+
+[33mcommit f1558e5c8cec9ccb062b3f3778146516f4c66c63[m
+Author: Sanjay Kumar <sanjay@deligence.com>
+Date:   Wed Aug 2 17:19:31 2017 +0530
+
+    Update .gitignore
+
+[33mcommit 39e7dbb30ae4107153b3fc0ed2df2b5cc3033d95[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Aug 2 17:18:17 2017 +0530
+
+    changes regarding gitignore
+
+[33mcommit 53c4438bcd2cc01ae2acf0efa4ab72f798d6f192[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Aug 2 17:17:40 2017 +0530
+
+    changed gitignore
+
+[33mcommit bbd0f7dbd2f62f9367a6e9c08f58f086cfd781ce[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Aug 1 18:18:13 2017 +0530
+
+    ok
+
+[33mcommit 6e8efc560afa265f325fc19e06ab13f47ac5cbdb[m
+Merge: 2c9a844 8c906d1
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Aug 1 17:25:24 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 2c9a844f205d3c8df798e55fd3be8105dc6e9937[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Aug 1 17:25:17 2017 +0530
+
+    replace empty image holder with marker icon
+
+[33mcommit 8c906d16962e91c3348bf4177b829557b66efa79[m
+Merge: 8279453 bff7309
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Aug 1 16:50:19 2017 +0530
+
+    conflict resolved
+
+[33mcommit bff73095844d008e3ba5c1d2a99a7d9ae6b0711c[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Aug 1 16:48:36 2017 +0530
+
+    branding modal and travel modal
+
+[33mcommit 8279453b463c860add9537766c0d0b2da325f6d4[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Aug 1 16:36:51 2017 +0530
+
+    Changes regarding dynamic import and code optimization
+
+[33mcommit 40a84af62b9b6efe932f2c4f4da3a231b05893fb[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jul 28 10:04:02 2017 +0530
+
+    Changes regarding some minor branding changes
+
+[33mcommit e1bbd61cf069cec9771e4ad20ed6974b2511e3e2[m
+Merge: 809b9cc 2ade8ce
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jul 27 17:23:22 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 809b9ccd12ed80c68f41e431f614f63bf6cd2946[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jul 27 17:22:45 2017 +0530
+
+    Changes regarding some modal init
+
+[33mcommit 2ade8ceb2afb3cca6ba97816c048a28c786fc71d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jul 27 17:06:44 2017 +0530
+
+    branding modal
+
+[33mcommit 1413ea2f2ace3f9f760beb13c348761a7284f410[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jul 27 15:50:45 2017 +0530
+
+    branding modal
+
+[33mcommit e719de9b32561d4c2fe973f8c99c170ea364f05c[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 26 19:06:17 2017 +0530
+
+    details modal layout #56 new design
+
+[33mcommit 3215003eae3579b9f57cc80ae21204ec2ec97cf9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 26 17:57:58 2017 +0530
+
+    details modal layout #56 new design
+
+[33mcommit 7349adae9d19d72ece825d8682614dd1ccdafb69[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 26 17:42:19 2017 +0530
+
+    details modal layout #56 new design
+
+[33mcommit 8217f55626241e4c0a3030151eb4408cbdf1c46a[m
+Merge: e8ce64f 7b75d0a
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jul 26 16:40:09 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit e8ce64fad1f9bf7aee4a60a48563c762022af112[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jul 26 16:39:30 2017 +0530
+
+    No major change
+
+[33mcommit 7b75d0a250bb16f4a79a9e8684149f612c748924[m
+Merge: 093eae6 430d10e
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 26 16:35:50 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 093eae6f4d7fba3a18ba454ee71d7df0218212ab[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 26 16:34:59 2017 +0530
+
+    details modal layout #56 new design
+
+[33mcommit 430d10e067fd3378fde56c89debe319eff72924c[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jul 25 16:04:50 2017 +0530
+
+    Changes regarding dynamic imports in routing
+
+[33mcommit e0eec789a0662b6c9d8d197071a38bed775fd08d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 25 13:02:56 2017 +0530
+
+    loader show in searching
+
+[33mcommit 44b688b015b61f1ea07c0aef505502d5ecd7fc5e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jul 25 10:04:47 2017 +0530
+
+    some minor changes related to meteor settimeout in mapbox
+
+[33mcommit 2dc68a784c2a8f27e0197fe39cc019f133a129bb[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 24 18:37:24 2017 +0530
+
+    changes regarding #77 & #3
+
+[33mcommit 75daf9fe04c27c52f2f4e8a023596212420176de[m
+Merge: 7c94161 3bab5fc
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 24 12:06:35 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 7c9416126ffb3bbd8415721738c8a753f8770fb1[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 24 11:58:16 2017 +0530
+
+    Some minor changes regarding sensis api call method
+
+[33mcommit 3bab5fc0647a9b3403808ac499368441140e26a1[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jul 21 16:54:25 2017 +0530
+
+    cache dev bottomsheet modal
+
+[33mcommit c0ef0b75d0f6bdba1fa3eb9417f56e795890ef71[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jul 21 16:29:32 2017 +0530
+
+    Changes regarding predictive search changes
+
+[33mcommit ad46a6b77ecf9b5c6c3fff96c3923923079e7ffa[m
+Merge: 53972cd 03c1cec
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jul 21 15:35:43 2017 +0530
+
+    fix regarding dynamic impots
+
+[33mcommit 53972cd9abef047a76717f37c617bca71d9fe128[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jul 21 14:44:44 2017 +0530
+
+    Changes regardign predictive search
+
+[33mcommit 03c1cec051a2153da3391d0ec6688b5ee0f9c457[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jul 21 13:27:34 2017 +0530
+
+    cache dev bottomsheet modal
+
+[33mcommit 2a92578714c8420bde3dca10f9b6ebd2cbf4888b[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jul 21 13:24:50 2017 +0530
+
+    cache dev bottomsheet modal
+
+[33mcommit 6c380e312cad90a05a48d4fd5b350778892eb026[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jul 21 10:06:07 2017 +0530
+
+    Changes reagarding performance testing and code optimization
+
+[33mcommit 7961b10a122faa4933e9d970fb896b72414b8943[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 18 12:58:27 2017 +0530
+
+    mapbox-gl cdn
+
+[33mcommit 6cbe497335132dd4d99e5257a5262144328d4f52[m
+Merge: 5650cc1 547be09
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 18 11:26:51 2017 +0530
+
+    meteor 1.5 migration
+
+[33mcommit 5650cc1c5e00ecde7f09b6368b231deed16e8fc3[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 18 11:25:38 2017 +0530
+
+    meteor 1.5 migration
+
+[33mcommit 547be0983719fd65e8865989e54d0a6939831d56[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 18 11:09:22 2017 +0530
+
+    time console
+
+[33mcommit e1b7859c6becb3375a508713feabcc9108a359c5[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 18 10:22:08 2017 +0530
+
+    submenus reordering
+
+[33mcommit aaad329a4e13a40b854773232e8a2ad98c77ce5e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jul 14 11:38:06 2017 +0530
+
+    show categories at admin site
+
+[33mcommit 050e6c3a66cb0e643d13b1b9bbd7bb7cc694a0dc[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 12 15:26:59 2017 +0530
+
+    time taken by process
+
+[33mcommit 35eec0db936f542b8fc9dfb5c861a76e1fbf9a85[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 11 11:39:32 2017 +0530
+
+    enquiry form corrections
+
+[33mcommit 3b1275c83e691d1d5a9dd83216806f16682835e5[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jul 11 11:19:20 2017 +0530
+
+    bug: when searching sensis, only intercontinental hotel appears #76
+
+[33mcommit e10d1ec3fdf0eeababb2e79d26d15b1cb34b3f8c[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 10 19:17:39 2017 +0530
+
+    Travel Modal Modification. #68
+
+[33mcommit 91bc46302afed4e14e2b7e97134f31785a062d2e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 10 16:38:52 2017 +0530
+
+    Travel Modal Modification. #68
+
+[33mcommit dcbc964d356d799d14551372fe802e1bceeb69d1[m
+Merge: 545cbef e8b6c01
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jul 6 10:24:06 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 545cbef8ed6ce36603430084adb264d2b2b2ac72[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jul 6 10:23:56 2017 +0530
+
+    marker details ui
+
+[33mcommit e8b6c01cea5197e0cfe1ef6fb819640366caa92f[m
+Merge: 5f9c805 251a374
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jul 6 10:19:15 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 5f9c805c74bd4dc822c494fcc891e23e91b6cf76[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jul 6 10:17:26 2017 +0530
+
+    Changes regarding Travel Modal Modification task
+
+[33mcommit 251a374ee77d76f64e1b8af5555e78cbbd8a3cf4[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jul 5 16:00:42 2017 +0530
+
+    details modal layout #56
+
+[33mcommit d6aa4d74cf3d1c7bdadeb0fdfd2e75c434c4329e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 16:56:25 2017 +0530
+
+    header alignment bottom sheet modal
+
+[33mcommit 73ad016b7c97b085f517875790f4bfd7e08f14be[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 16:25:11 2017 +0530
+
+    header alignment bottom sheet modal
+
+[33mcommit 899ea7a1bf736f16db86d7bc7afb89db2d2a41b1[m
+Merge: fdbf708 3ba9fe7
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 15:43:00 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit fdbf708bbb2a7aca6baf04909f2b9adf18281877[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 15:42:53 2017 +0530
+
+    enquiry mail and query field
+
+[33mcommit 3ba9fe72cc5bc91110e42b74fdc2519fccae5a3f[m
+Merge: e0ada68 6c084f2
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 3 12:43:03 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit e0ada68bc6ef705f338ee274224085d0d5edbff5[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 3 12:42:24 2017 +0530
+
+    Changes reagarding predictive search issue fix
+
+[33mcommit 6c084f2e135a414996f3dad4d0426794eb493f59[m
+Merge: a2fb66b aacfe9d
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 12:20:57 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit a2fb66bea3b6cb540a9c1aac1901269488f482de[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jul 3 12:20:35 2017 +0530
+
+    make the number visible next to the CALL button
+
+[33mcommit aacfe9d34100536ecb8f697afcac3e82599d3aa5[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 3 12:00:13 2017 +0530
+
+    Changes reagarding predictive search issue fix
+
+[33mcommit 16e0a8aebd723232850c0e24b3aac134f77dac5a[m
+Merge: c42372e 1a0b322
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jul 3 10:45:03 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 1a0b32203a5d256ccf322dc730f68debe5409407[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 30 13:33:45 2017 +0530
+
+    menu logic adjustment #74
+
+[33mcommit d306c828f1714219048c1eabf6f5aad6d88f6b09[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 17:07:55 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit c42372e05a81c5abcbc6f3fd67d6e251394581f2[m
+Merge: aa63878 660c648
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 16:44:40 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 660c648e0b9dc734ed47a3dac4ee4e463047c856[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 16:36:57 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit 8b16aff66ac87881f10dbc830176f29d44320fbc[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 16:20:48 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit aa63878dc536d1595147092e9cf90d595d281ff6[m
+Merge: ff5565e dd6861e
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 15:54:53 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit ff5565efc578d68d17e84aeec3b3a214a0e81af1[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 15:54:25 2017 +0530
+
+    Changes regarding predictive search issue fix
+
+[33mcommit dd6861ee56307886ace03b34e74521ab06382196[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 15:52:00 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit ca877a731e9c4cbe130ced351e9ee660fced5820[m
+Merge: d3c361e 81644f2
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 15:09:45 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit d3c361e4d3971007b1d43c74b1d61a68a2a04f64[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 15:09:01 2017 +0530
+
+    debug results
+
+[33mcommit 81644f211bb25dd27ad890c6cb9194dcf86f55e1[m
+Merge: 227bbdd e24182a
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 15:06:37 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit 227bbdd4b0a5b6399ea12cc0f99a4a46b83e5dd9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 15:05:09 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit e24182adf95cf17edec5cbdae743e4cdce2af312[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 14:58:48 2017 +0530
+
+    Changes reagarding sub-menu duplication debug
+
+[33mcommit 3c0b501ddbcdbfc96ff693657f433ebb0c084a9f[m
+Merge: 18219a1 95ac97a
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 13:29:56 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 95ac97a2509cc1d0260138b5eaac7f6d08e645ea[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 13:29:30 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit de4644a696b3c65d61e863690cb19d2edd41b9be[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 13:28:42 2017 +0530
+
+    bug: submenu duplicates on name change #75
+
+[33mcommit 18219a1a6275ef568945726e53e62cf05ca1cfba[m
+Merge: 50b9d11 ab3cb2b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 13:18:43 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 50b9d11da8647a6714819ee9b381f0666481019b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 29 13:16:22 2017 +0530
+
+    Some issue fixes
+
+[33mcommit ab3cb2b473ea268710972eb2e74470a7944f15b1[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 12:17:38 2017 +0530
+
+    iamge inplace of file
+
+[33mcommit 6aa088d52adf082324fb59d36ac0118654a63a05[m
+Merge: 31b20a6 cf54089
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 11:45:06 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 31b20a6796a162739a88efce45cf644c03115f43[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 29 11:44:59 2017 +0530
+
+    submenu layout #72
+
+[33mcommit cf54089298ccb627f7e45fc2b5334ba3181755c5[m
+Merge: 0d662ae 6a3b1e0
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 18:46:45 2017 +0530
+
+    Resolved conflicts
+
+[33mcommit 0d662aea6d42230648dce365279d5a50486f1d42[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 18:39:53 2017 +0530
+
+    Changes reagrding direction issues
+
+[33mcommit 6a3b1e04fb6a38200724096f913c7e32e5312845[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 17:56:15 2017 +0530
+
+    close on markerdetails and on bottomsheetmodal
+
+[33mcommit 4cd36fc04c42f6e2e7b3040758d17befd9b8c499[m
+Merge: 4ad56de ac04bdb
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 16:39:25 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 4ad56debea2fc1bbb9ac39648b18efc4ff058000[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 16:39:19 2017 +0530
+
+    enquiry modal color
+
+[33mcommit ac04bdb7affbbdb84acc11cb78c1ed53980ea2f3[m
+Merge: 635ad66 8c41776
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 16:31:07 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 635ad669336be00faeed325937d7b6f3af0d81bd[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 16:30:41 2017 +0530
+
+    some minor changes regarding design
+
+[33mcommit 8c417760493bc8e7f957a9af1559b98d52b4ec2b[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 16:27:59 2017 +0530
+
+    enquiry modal color
+
+[33mcommit 371239442d49eedbb2ba5ab4d6fd068de1c9a42e[m
+Merge: e9b0a72 be5f8e2
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 16:13:12 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit be5f8e22de542405aa425d6250d090bf5c73c82d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 16:09:50 2017 +0530
+
+    Change Footer Modal/Council Info Pop Up Window. #65
+
+[33mcommit e9b0a727379550d0993e15222552680fd33b9800[m
+Merge: 901924c 95112d6
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 16:03:16 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 901924c73f156bbfef6f33bed0311ae983ddf37e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 28 16:02:47 2017 +0530
+
+    Changes in predictive search
+
+[33mcommit 95112d60c5f3cd07a8d895066ce9d4f49eac1f69[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 13:27:24 2017 +0530
+
+    Formatting "Details" Pop up window
+
+[33mcommit 0ce4a269418ce3a5166a3660b313faa09194b258[m
+Merge: 4e5e0c7 b8e26f0
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 12:03:01 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 4e5e0c79e041785e4e89d24e6a07a14a4a575406[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 28 12:02:53 2017 +0530
+
+    Enquiries Form on Home Page
+
+[33mcommit b8e26f0587569af9a1c61e7139eae9faebbd080e[m
+Merge: c00e93b d896e34
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 18:47:53 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit c00e93bfb640fa42df7f569e4d27e501dc8c16a9[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 18:47:15 2017 +0530
+
+    Changes regarding predictive search
+
+[33mcommit d896e346183e92ede74d8f45621035808c0f3248[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 27 18:44:59 2017 +0530
+
+    Formatting "Details" Pop up w
+
+[33mcommit 28c8554ad02de85577ec2da73a7594333a34cb07[m
+Merge: 35232a0 1fc807b
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 27 17:04:14 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 35232a0d55e51d9bbb4f05a21cdbc9032766d7ca[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 27 17:04:05 2017 +0530
+
+    Formatting "Details" Pop up window #56
+
+[33mcommit 1fc807b0473b90f726e7c01484eaa0f6ac38f92d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 16:59:29 2017 +0530
+
+    predictive serach related feature
+
+[33mcommit d2e59308fea4ab8cfddf16b2b5bc0ac0352b80c5[m
+Merge: 1be980e 4432337
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 12:20:16 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 1be980e47a9d4abc75f3b9c5d872c7441303c02d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 12:19:45 2017 +0530
+
+    Time and Distance shown for each selected journey/ Direction #69 - -
+
+[33mcommit 4432337ea75840dc5ad7b245deb707bf4bf60d67[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 27 12:12:25 2017 +0530
+
+    issue 55 resolve
+
+[33mcommit bdb87c4edfbc3031e2891dddccaa9613c1a3bd79[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 27 11:09:13 2017 +0530
+
+    Changes regarding call option on marker details modal and fab icon click
+
+[33mcommit 17c044189a56b715089c9287e916e503b261505d[m
+Merge: bf0882f 0b25972
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 23 19:18:43 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit bf0882f0ca7dbc9f5cd9193bb834ecbb874426d7[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 23 19:17:12 2017 +0530
+
+    changes regarding marker details and search bar
+
+[33mcommit 0b259725740dc3787634f44a98dcb2145dc3ce71[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 23 11:53:08 2017 +0530
+
+    on select some menu it preserve its state without save
+
+[33mcommit 4652f74a2c4924acf435c1a3a1acae6df1a87fd9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 23 11:21:54 2017 +0530
+
+    menu reorder
+
+[33mcommit 17fa499613d40f54c8fdc228b7770ad34b5c1f42[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 22 18:52:02 2017 +0530
+
+    Changes regarding call feature
+
+[33mcommit 7d5bb2a861aa1c041805aca1001bae6a8b820438[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 22 18:51:28 2017 +0530
+
+    changes regarding call feature
+
+[33mcommit 693002abd61f276f283206b09187986836f7d349[m
+Merge: 760754d 5055f8b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 22 14:49:39 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 760754d8953ceefd63e273789eb06ad6c274cb7d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 22 14:49:11 2017 +0530
+
+    Started implimenting call feature
+
+[33mcommit 5055f8b0760d9ed19b6855c9e0421a730582f904[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 22 11:24:48 2017 +0530
+
+    reordering of submenus, assign to new menus
+
+[33mcommit 9666e476c263e3684c52edd47eac93b80dc6700f[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 21 15:30:55 2017 +0530
+
+    implement sensis pagination #43
+
+[33mcommit 87046816b5f6b1227ff2a2b68127258a5ffaea3e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 21 11:58:39 2017 +0530
+
+    branding modal icon size on mobile correction
+
+[33mcommit 503d58d665dd267264369a66165fe3b54818f181[m
+Merge: 3431977 8cf9b02
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 18:46:34 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 34319772b0ad8c7b988de1591f5ef5c193aa32e5[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 18:46:00 2017 +0530
+
+    Changes in mapbox issue fixes
+
+[33mcommit 8cf9b02b7fa8837991b28a57cb373680cd8a1651[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 20 18:20:57 2017 +0530
+
+    footer and bottom sheet modal, event and location local search issue
+
+[33mcommit 89edaa217179054235a891dcc577c1d9be57b5d2[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 20 18:10:05 2017 +0530
+
+    footer and bottom sheet modal, event and location local search issue
+
+[33mcommit 69025cd566d80e299365a1b9cd28785de1462723[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 20 17:56:29 2017 +0530
+
+    footer and bottom sheet modal, event and location local search issue
+
+[33mcommit 4b8405e60b1072b59b29fe044b187913b2f13d28[m
+Merge: 11e6244 eb2126b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 16:43:27 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 11e62446703993bfd37f40f1f55ae14d581c029a[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 16:42:22 2017 +0530
+
+    no changes
+
+[33mcommit eb2126b7491b5899608cfe2091746280f4fca045[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 20 16:40:30 2017 +0530
+
+    footer and bottom sheet modal, event and location local search issue
+
+[33mcommit 87e3ee76e947c33eeb9f7f86a94d2515e877de7c[m
+Merge: 1dd7700 4e9aa19
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 16:34:09 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 1dd770019ecc128de4930508825d34baed1ece64[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 20 16:33:47 2017 +0530
+
+    Changes regarding mapbox direction issue fix
+
+[33mcommit 4e9aa19634c6f08fc56a69916d7e339ef522490b[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 20 16:27:31 2017 +0530
+
+    footer and bottom sheet modal, event and location local search issue
+
+[33mcommit 77ed3cf9fc758583b1bb8ed3f791be5e0c1f5d16[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Tue Jun 20 11:39:58 2017 +1000
+
+    Set theme jekyll-theme-slate
+
+[33mcommit 9399be85578db77bf2bd76912553190d88e6cad3[m
+Merge: d280dc3 cc023bf
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 19 19:03:48 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit d280dc34292e0b7d0456d916e115ac5449d3f747[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 19 19:02:50 2017 +0530
+
+    no changes
+
+[33mcommit cc023bf7c902e3f19f8af6aa018dbf0da0bf5b32[m
+Merge: b36d41f 517ec84
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 19 16:35:47 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit b36d41fe6bccd374d1e79f66b0236c4523cd2f30[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 19 16:35:37 2017 +0530
+
+    branding section social icons
+
+[33mcommit 517ec847a389c6299e65fd0d2709100cf701b547[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 19 13:32:53 2017 +0530
+
+    issue fixes regarding mapbox style reflection on adming maps
+
+[33mcommit 88895bd5964bfe267bc9579ce367dab2e64a3702[m
+Merge: 12114c1 57fbb2b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 19 12:45:14 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 12114c1c65dd871d7cc6ae9a389f3c7a717b0ec1[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 19 12:44:37 2017 +0530
+
+    Changes in mapbox style
+
+[33mcommit 57fbb2be4e55f0588369e673c349a52cb41a8270[m
+Merge: db90503 53fa481
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 19 12:30:53 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit db90503e7f5069a9403b686d7096daec145163cd[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 19 12:30:46 2017 +0530
+
+    document title , marker popup height width, item icon click
+
+[33mcommit 53fa48108f73e4cb1d64449ed3d437839701874d[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 18:57:36 2017 +0530
+
+    some minor changes
+
+[33mcommit 5d2e5e6e8657d7f1cdfbb013df745e28fe66742d[m
+Merge: 7d4acce 96d23d7
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 18:53:01 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 7d4acce1aa78d83a184eafb4be983b7f4a2c9f9b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 18:52:22 2017 +0530
+
+    Changes regarding dark style and property layer
+
+[33mcommit 96d23d7c6265ad6da5f744d862154ab80d818095[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 18:06:03 2017 +0530
+
+    loading spinner
+
+[33mcommit abe3452309c7a23f574fb74904e1b506bca656a8[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 17:47:05 2017 +0530
+
+    loading spinner
+
+[33mcommit e364b28e341d110bbeb16c0a6c35be4aa7a231ed[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 16:44:52 2017 +0530
+
+    external link loggly
+
+[33mcommit 03e750d0279688f9e06f97b1982899f97f4b0ad0[m
+Merge: b888e3d 244c0a8
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 16:23:22 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit b888e3de25b4701d3c906a9636fb2c8f5506b097[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 16:23:15 2017 +0530
+
+    external link loggly
+
+[33mcommit 244c0a8f4a150961fb413a4b54c9571e5f87aa24[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 15:11:16 2017 +0530
+
+    changes regarding new marker style
+
+[33mcommit e1b5c7645f1b14ea819e490b14382837587d0e1c[m
+Merge: 48a0041 bf1ab6e
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 14:34:21 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 48a004169f8ac3c3ee163fc14d5c3aa1b6ce4bb4[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 14:33:30 2017 +0530
+
+    Changes regarding mapbox marker
+
+[33mcommit 6c3998a0e52e530127ad8706eacbb97ea7d2b83b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 16 14:33:18 2017 +0530
+
+    Changes regarding mapbox marker
+
+[33mcommit bf1ab6e264c6b4e1abb36cb929fa0d4bc0d23fab[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 12:46:45 2017 +0530
+
+    loggly app start and app loaded
+
+[33mcommit 9543a93fe81ca9631a7587b0bba1126856f7adb9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 16 11:39:41 2017 +0530
+
+    menu not deleting issue
+
+[33mcommit a04a942a148dfd2a46f66703ed205ab0e3f07382[m
+Merge: 361cdf7 23978f9
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 18:40:57 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 361cdf7520adfc7927c7e1f999dc89e2acb9839e[m
+Merge: 3d3f49f 3569813
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 18:40:31 2017 +0530
+
+    resolved conflicts
+
+[33mcommit 23978f9694933cb54e758e15347841000a9b28f7[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 15 18:32:00 2017 +0530
+
+    using maki icon in menu and submenu
+
+[33mcommit 3d3f49ff85b7f4a6f71759094185a6be3a9a870b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 18:28:23 2017 +0530
+
+    Some minor bug fixes
+
+[33mcommit 356981356aace8263505eb88942870f73474a87a[m
+Merge: 68666ad 74e9daf
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 16:37:25 2017 +0530
+
+    code merge
+
+[33mcommit 68666adef0a7470bc039bce581effafbabeba19b[m
+Merge: 739e256 8131ec1
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 16:32:18 2017 +0530
+
+    Changes regarding maki icons
+
+[33mcommit 74e9daf37a9be51125ec9a7c21b52664b5cc4cd9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 15 16:20:58 2017 +0530
+
+    issues 51 resolved
+
+[33mcommit adffeed3b02c8420da20372f17c583c2fcd90cb9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 15 15:40:47 2017 +0530
+
+    issues 51 resolved
+
+[33mcommit 847b2406c92ab4c496d6798e7c86850e65ddcec7[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 15 14:29:50 2017 +0530
+
+    issues 47 resolved
+
+[33mcommit 739e256776e41bccc6112c517cde2b07d7e7624a[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 15 10:56:51 2017 +0530
+
+    Changes regarding mapbox-marker maki
+
+[33mcommit 8131ec1f445f41c410dcdea032284eced0f79632[m
+Merge: 2ab5531 9f91985
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 14 15:23:52 2017 +0530
+
+    Fixed mabox conflicts
+
+[33mcommit 2ab55315a5b6625206952d5a23ffe093df256778[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 14 15:19:56 2017 +0530
+
+    Changes regarding mapbox issue fix
+
+[33mcommit 9f9198544a2bd105889b87ed3cb84543d68d77be[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 14 14:50:12 2017 +0530
+
+    loggly
+
+[33mcommit 41c632faba432ddfda2c7b7440652a40d15470a6[m
+Merge: 2a07466 3fcc2d3
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 14 14:42:43 2017 +0530
+
+    resolved conflicts
+
+[33mcommit 2a0746680e51c7f4fcf5f9f26fcb918e97d3313e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 14 14:40:24 2017 +0530
+
+    Changes regarding mapbox loader
+
+[33mcommit 3fcc2d37a52261a94b062b4e65c5b7b72fbed4e1[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 14 13:35:02 2017 +0530
+
+    loggly
+
+[33mcommit 096efe06c0827e5291f4dba476157feca8c8cb8b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 13 18:48:15 2017 +0530
+
+    Changes regarding search bor enter
+
+[33mcommit 678dee559e2fd8b15b9d7dec7f141d052db89d8e[m
+Merge: 90e25de 07dafe3
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 13 17:42:39 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 90e25de1595018f42901c6aedfc3a97d05d5fb05[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 13 17:41:33 2017 +0530
+
+    Changes regarding mapbox marker and path blinking issue
+
+[33mcommit 07dafe3828169b11cf0bcacf9252ebc173dc66a0[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 13 13:04:12 2017 +0530
+
+    alert message where we are deleteing - menu, submenu
+
+[33mcommit edde69e4ab8163d5c13825e37bb76b1a400bd934[m
+Merge: 4d39868 0705e0b
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 13 12:09:15 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 4d398688bb1f7ffb162e8c0671c74cc5af7b7b35[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 13 12:08:40 2017 +0530
+
+    issue in add location on production, working fine on local, bottomsheetmodal item menu issue
+
+[33mcommit 0705e0b27f207a19158add60d467888d47b80075[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 12 18:00:53 2017 +0530
+
+    Some minor changes suggested by client
+
+[33mcommit 834389355ebb0263dd02a7663f815d4994310079[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 12 17:30:19 2017 +0530
+
+    Changes regarding maps to contain address numbers #39
+
+[33mcommit eddd301bf2eb20a37d7034a7f86293e121fe9af4[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 12 12:37:31 2017 +0530
+
+    minor design fix in branding modal
+
+[33mcommit fc4991ca3f21a5d080b93a052c4afc2fbc4eef9d[m
+Merge: 053a921 6c620a4
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 12 12:04:25 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 053a921be3f04be51419f5bf6f0d69890737a757[m
+Merge: 0fa4462 8abb5cc
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 12 12:03:44 2017 +0530
+
+    Some minor bug fixes
+
+[33mcommit 6c620a4f1d3e0d0372f2ae99b8b07a78cd91a40d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 12 11:26:35 2017 +0530
+
+    branding section mandatory
+
+[33mcommit 98b50c50bed0b1a8d20287654c0c029d1e0c8a40[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 12 11:23:18 2017 +0530
+
+    branding section mandatory
+
+[33mcommit 8abb5cc3b84153219b78dd3735b7eb53de0c6c3a[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Sat Jun 10 18:45:52 2017 +0530
+
+    meteor logger
+
+[33mcommit 0fa4462e4edfe0000d1473e22ab1a2a1ff815faf[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Jun 10 18:42:47 2017 +0530
+
+    Changes regarding mapbox direction style
+
+[33mcommit d4daa6c78ba9263f170e1a5905edb7bcdd50a0fd[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Jun 10 18:32:04 2017 +0530
+
+    Minor changes
+
+[33mcommit d05f181cb952a1b6a24bc8fa2a46b8aaef3f4bb1[m
+Merge: aed7d90 625da84
+Author: Rajit garg <rajit@deligence.com>
+Date:   Sat Jun 10 18:30:38 2017 +0530
+
+    meteor logger
+
+[33mcommit aed7d90e4e5ff0d224b5cdc5486a066c20cc7fd0[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Sat Jun 10 18:27:09 2017 +0530
+
+    meteor logger
+
+[33mcommit 213ba5b5fcaa7d908e424826dc2afad334461399[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Sat Jun 10 18:26:28 2017 +0530
+
+    Changes regarding issue #7 and #29
+
+[33mcommit 625da848474ab602d1847713df787b562a3d50cc[m
+Merge: 1b5201c 077bc21
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 9 18:39:03 2017 +0530
+
+    Changes regarding branding section
+
+[33mcommit 1b5201cbeffe2fd0fcf31de625d7dcffce5267af[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri Jun 9 18:26:56 2017 +0530
+
+    Changes regarding issue map markers to reload only as search results #42
+
+[33mcommit 077bc2144a7766096f26bef5676268ea05b50454[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 18:23:51 2017 +0530
+
+    file upload - location and events
+
+[33mcommit d54cb81b594bd8d52e3f67ea4a8e860313eb3493[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 18:23:09 2017 +0530
+
+    file upload - location and events
+
+[33mcommit da5e067f2ea24aedbc2c269c98283eac71a5f6df[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 16:01:42 2017 +0530
+
+    console remove
+
+[33mcommit 1648a6cf72c882a286c6fb9e6d37569eca494ecb[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 15:52:25 2017 +0530
+
+    branding section and detail modal height
+
+[33mcommit 7b3f8c86cc545719bb9c1ceaeb8af9e978958055[m
+Merge: 4ceb7a5 86c635a
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 15:19:36 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 4ceb7a50768ff98cc6c426c95ca37c10ef98c0f9[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 9 15:19:24 2017 +0530
+
+    branding section and detail modal height
+
+[33mcommit 86c635a9283775ad2c3a6a88277ce3d7f9a12ac9[m
+Merge: be06746 51efc0b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 8 18:57:42 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit be067469a07b8132cdc9bbb031d2889388f8ca6a[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 8 18:57:05 2017 +0530
+
+    Some minor changes
+
+[33mcommit 51efc0bf1785a217f9a29c9c0c80805f38ed631d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 8 13:11:38 2017 +0530
+
+    save and display suburb value as it is, no need to add or remove +
+
+[33mcommit 05f92270d1fd15efb02c48fecd699008ad8a90cc[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 8 12:37:54 2017 +0530
+
+    image upload, update details #28, event phone pattern remove
+
+[33mcommit 961cb3c25cab8e3f721a4382e8558f744e56e735[m
+Merge: 98d2a38 2186cac
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 8 11:13:43 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 98d2a38b5a77cc7c660d632e726a1e208f1004e3[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 8 11:13:34 2017 +0530
+
+    load events from RSS feed #37
+
+[33mcommit 2186cac19c3f43f846f9f97bbc391e315a94c7c6[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 7 18:57:06 2017 +0530
+
+    Changes in geo json shapes
+
+[33mcommit 8484a6319982ed2d63d4a660b4d3f09ae7ef9953[m
+Merge: 6d7041e 282f0e6
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 7 18:45:12 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 6d7041ea2c6c2e56bc46b37bdd8e66d324b61ee3[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 7 18:44:44 2017 +0530
+
+    Some basic changes
+
+[33mcommit 282f0e64d8cb1d7bea06681457e6ff71ec3ea2cb[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 7 16:20:28 2017 +0530
+
+    testing for sensis api for searches
+
+[33mcommit 271aa41f702e38406c21bfc13c886ac9ee573bb5[m
+Merge: fba975e 5d1c765
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 7 13:07:50 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit fba975e2ad672d00da8689255202c4ebb32f9c20[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed Jun 7 13:07:09 2017 +0530
+
+    Changes regarding bottom sheet modal issue fixes
+
+[33mcommit 5d1c76578439b9ee8530d213fbe225f2b3a1f6e7[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 7 13:02:13 2017 +0530
+
+    testing for sensis api for searches
+
+[33mcommit fadaed2d6e19041656f68da1b721589faaf98ad8[m
+Merge: 4767ade 7122fe5
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 7 12:24:54 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 4767adee2ca1424f7a10fc0a86662450225e1b0e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed Jun 7 12:24:47 2017 +0530
+
+    file upload lepozepo and amazon s3 #26
+
+[33mcommit 027a132642e24727b82ae8a9ef94ddf050a2ac0c[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 6 19:06:11 2017 +0530
+
+    Some issue fixes
+
+[33mcommit 7122fe518ac10c7b6685f72026c5ac847283531f[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 6 12:23:04 2017 +0530
+
+    Minor design issue fix
+
+[33mcommit 79c18324b01e09704897200511f5d0d9306ffbb1[m
+Merge: f340ac0 101a34b
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 6 11:53:20 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit f340ac0b49be9b8ec2e122c8d0dc0584aaf50d4e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue Jun 6 11:52:42 2017 +0530
+
+    Chnages regardign GeoJson line
+
+[33mcommit 101a34bce61a215a4297b8ca19174daaab466a47[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue Jun 6 10:56:53 2017 +0530
+
+    issue #18 completed
+
+[33mcommit 972d2de81b050c0e60cd19db04518eed0021031f[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 5 18:59:05 2017 +0530
+
+    settings supurb
+
+[33mcommit cd6b035553a2de5704681714ba8b9788697e84ee[m
+Merge: 65093e8 c5a525f
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 5 18:02:36 2017 +0530
+
+    Resolved conflict in admin-settinsg methods.js
+
+[33mcommit 65093e840d68d17c999f23a1618bf5a6519edce0[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon Jun 5 17:54:16 2017 +0530
+
+    Changes regarding geoJSON line task
+
+[33mcommit c5a525f8de9bded539a5101a2ce38746d2a23257[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 5 17:52:59 2017 +0530
+
+    settings supurb
+
+[33mcommit b72879ba51163225fe775b086161efe72f51dd5e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 5 12:55:14 2017 +0530
+
+    location - custom- editable, sensis-readonly
+
+[33mcommit 3462fc093e8412b60a3339904913953e253f47a3[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 5 12:43:21 2017 +0530
+
+    location - custom- editable, sensis-readonly
+
+[33mcommit 3baa7c38cc15086a77b2ee32a41fc14ffba93167[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon Jun 5 11:37:44 2017 +0530
+
+    detail link target and #16
+
+[33mcommit 0619ed23bfb0b0976fba04e67aa6d7cdf8fc7452[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri Jun 2 11:26:09 2017 +0530
+
+    cache sensis results #14
+
+[33mcommit ac0c24fc6fcbd0aeec9340912e47f6c601ef10aa[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 1 18:56:06 2017 +0530
+
+    cache sensis results #14
+
+[33mcommit df308a637878606e4effaff61ee3474f130ad56c[m
+Merge: 802b5dc 1139063
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 14:34:56 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 802b5dc329130cda34089271f512664d020b9244[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 14:34:27 2017 +0530
+
+     minor changes
+
+[33mcommit 11390631efe1a8f474a23a9ab8344bc764c9c852[m
+Merge: b853ffe 9c75632
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 12:50:34 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit b853ffe46fc761013605a9c0847a9c690a8801e9[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 12:49:31 2017 +0530
+
+    Some small changes in menu edit
+
+[33mcommit 9c75632c4eed02a9825301215f6484e3d0205f2d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 1 12:48:36 2017 +0530
+
+    edit menu item
+
+[33mcommit 5017be8db780245d493a68536cde3221df9208e3[m
+Merge: e07d354 f1b7ee9
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 12:07:16 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit e07d35484d262642f866a0a2c6d0a7ffc8281c19[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 12:06:56 2017 +0530
+
+    some minow changes
+
+[33mcommit f1b7ee94d7023ec393e09ceece1780c89ff0d28f[m
+Merge: 88d69a2 19f4f95
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 1 11:58:32 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 88d69a24491d704e474c5c8ef1f5928ba1a82528[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu Jun 1 11:58:15 2017 +0530
+
+    edit menu item
+
+[33mcommit 19f4f95f8324078dc168b62c91bf01539bdcc67c[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu Jun 1 11:39:15 2017 +0530
+
+    Changes regarding sensis search api method modification
+
+[33mcommit 5adf70d063932678f8e43f8f524b5ddc24d18b24[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 31 15:27:04 2017 +0530
+
+    Changes rearding modification in predective search
+
+[33mcommit 78cd72b87fd4d9fcad7d7b76d5dd9e07384075ed[m
+Merge: 660488b b37fe49
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 31 14:15:59 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 660488b3668f143bcfcffddf6f2d800288ca6a74[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 31 14:15:28 2017 +0530
+
+    Some changes regarding category marker population on user app
+
+[33mcommit b37fe49ae87d27afe44c749e3dd73e9881bf6c10[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 31 13:16:49 2017 +0530
+
+    cache sensis results #14
+
+[33mcommit 2afbf79c0bb6acf13b9f9ccefb24ca730c658727[m
+Merge: 3f62a3f fa3bfe3
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 30 18:04:16 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 3f62a3f5ad5fca8a6c2600c06aae49b34ddafe30[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 30 18:03:22 2017 +0530
+
+    Changes regarding events and location population on map
+
+[33mcommit fa3bfe312c283bc96f8000511d0a332fded01c39[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 30 15:56:03 2017 +0530
+
+    menu icon on footer
+
+[33mcommit f66e049d346c52a3d48793516128561bb1184cb8[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 30 13:14:36 2017 +0530
+
+    add location autofill data label not visible
+
+[33mcommit fa77757ff817b1c09d36d5edd74f5eb6a96d836b[m
+Merge: 12564cf bb12962
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 30 12:08:03 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 12564cfc06a26aea137c13121922cd8abaec7278[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 30 12:07:39 2017 +0530
+
+    Some minor changes
+
+[33mcommit bb12962340ea84912229baa5b6f1ad112e754115[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 30 12:03:45 2017 +0530
+
+    add location custom
+
+[33mcommit 69f00992e708377d3ff18682a2b6e5aee0740b43[m
+Merge: 54714a3 734248a
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 30 10:33:47 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 54714a3b0ba54140590ec1a7ad958a27a99f405e[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 30 10:33:42 2017 +0530
+
+    add location custom
+
+[33mcommit 734248afb75f03a30a136947e87ec8baec91cc94[m
+Merge: 7607f0a eb97d12
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 29 19:48:22 2017 +0530
+
+    Changes regarding new changes in events and locatinos
+
+[33mcommit eb97d128649087beb9d238b789487f55d4237c0d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon May 29 19:37:55 2017 +0530
+
+    custom search location
+
+[33mcommit 7607f0af61afd09b91ddb1d23fbf64dd77ea5b38[m
+Merge: ce9c61b 6f591b5
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 29 19:34:59 2017 +0530
+
+    Changes regarding event search
+
+[33mcommit ce9c61b7548a7af2fd9699478b57a4fb87725b90[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 29 16:48:47 2017 +0530
+
+    Changes in mapbox map-pane
+
+[33mcommit 6f591b50b0beff7302cd59ffe57c758c2f187975[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon May 29 16:01:49 2017 +0530
+
+    location form corrections
+
+[33mcommit eab697194144cd21bb4791296a447370c88d479c[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon May 29 11:53:23 2017 +0530
+
+    change menu and menu item color
+
+[33mcommit e2de4518cbd678323c129dbdfe5a67bb2a177b1b[m
+Merge: ab55fb6 dad334d
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 29 10:09:34 2017 +0530
+
+    Changes regarding map-pane on create event and create location
+
+[33mcommit ab55fb64f2ca1c98950b09c6319448ccb645d8b7[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri May 26 18:29:18 2017 +0530
+
+    Changes regarding mapPan while creating new event or location
+
+[33mcommit dad334d16d26da5701a7b71df8c13224d5d4e403[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri May 26 17:18:06 2017 +0530
+
+    margin between marker details and search using events, location and categories
+
+[33mcommit 5335462eef9c70e4eb19534277bde60bc5d49b75[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri May 26 16:15:17 2017 +0530
+
+    increase markerdetails modals height, increase z-index of menu icon so that it come above markerdetails, close markerdetails modal on menu icon click
+
+[33mcommit 74c4fffdeb3eb86475376696eb60fb558fe8dc93[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri May 26 15:11:34 2017 +0530
+
+    show icon for menu and menu item @ doublebay
+
+[33mcommit 22cdb335e09e90d7b52fd3951ae6379cc663dc34[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri May 26 13:27:58 2017 +0530
+
+    insert menu item icon value  in database
+
+[33mcommit ccc4086a05a2bdef3b7b27dbdda130bc6b5d1554[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Fri May 26 12:28:39 2017 +0530
+
+    show only published menu on doublebay
+
+[33mcommit acbbaaeea1d45b84e775639390c40ac0622439ab[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Fri May 26 12:06:52 2017 +0530
+
+    Changes regarding markerDetaisl issue
+
+[33mcommit a00ee789cf6eef1bccbf336447ba10ba398cc0f8[m
+Merge: 6b71433 2ce5b57
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu May 25 19:49:42 2017 +0530
+
+    some issue fixes before deployment
+
+[33mcommit 6b7143368ca723ed02a446cdc7807874d07a8882[m
+Merge: 2ac635b 037c6c7
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu May 25 19:02:28 2017 +0530
+
+    Changes regarding issue #15
+
+[33mcommit 2ce5b57e63b11c1652b4ba09f5e1e14e3e862a2c[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 18:53:51 2017 +0530
+
+    use both sensis key and sensis url for both prod and dev in settings.json
+
+[33mcommit 440a9f98f340c9047fc1910cd3e4728babb9d558[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 18:29:18 2017 +0530
+
+    resolve cors issue for prod sensis key
+
+[33mcommit 959efdc61d87f13f9ac734ab7de28dcf841feea6[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 16:44:38 2017 +0530
+
+    last published on
+
+[33mcommit 2ac635b79f9ae2b739fc1e4c171ae0299f28f5e3[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Thu May 25 16:18:30 2017 +0530
+
+    Changes regarding color and icon issue fixes and ostrio file upload
+
+[33mcommit 037c6c701427b848d1fa295cfbd96066aeba29c6[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 16:02:57 2017 +0530
+
+    publish menu item
+
+[33mcommit 96a5a6302560fa1049d818c34d439c1e6358d657[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 11:22:44 2017 +0530
+
+    location sensis api
+
+[33mcommit c8b5ab23d49fa9d92e78ee256eebb7987875e22c[m
+Merge: 1b38cca 0f3772a
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 10:58:20 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 1b38ccada8e7eaa54919f4bc1994e71f3bea5008[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Thu May 25 10:57:54 2017 +0530
+
+    images work remove
+
+[33mcommit 1ae16b2a27f98443afcce146084ff12f739dfd17[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 24 19:02:48 2017 +0530
+
+     some minor issue fixes
+
+[33mcommit 0f3772ac1ff3ba3ac9d5ff6b67134c9fb88556ef[m
+Merge: 036f12b 2187b53
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 24 17:57:01 2017 +0530
+
+     fixed conflict & changes regading issue #15.
+
+[33mcommit 036f12b848649498085109f11e4770fa5982f043[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 24 17:54:46 2017 +0530
+
+    fixed issue - #15
+
+[33mcommit 2187b531dd2c6eac59ee001a4fe7e2f0bbfb62ca[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 17:35:58 2017 +0530
+
+    image upload event new
+
+[33mcommit 1760538f8975250ca498df8fdc86ad28b9a8a27d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 16:47:30 2017 +0530
+
+    issue #30, #22, #25, #24 resolved
+
+[33mcommit 1efe19043d5e696640bc4695e5a82ccd43bd0573[m
+Merge: 41b0418 6b31fc2
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 11:21:50 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 41b041856bd1fe3789d18adaa6ad179c0fc94aa2[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 11:21:43 2017 +0530
+
+    images gridfs remove
+
+[33mcommit 6b31fc2ac5741d5bf0a9f3aa343c9cfd0684519f[m
+Merge: 39ee43e 3d8cb67
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 24 11:05:38 2017 +0530
+
+    Merge branch 'development' of https://github.com/Envently/envent.ly into development
+
+[33mcommit 39ee43e390fd9cde32049a39797d3cbae5587e7e[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Wed May 24 11:05:08 2017 +0530
+
+    Changes in add main menu modal and some code standards in admin section
+
+[33mcommit 3d8cb672b9d50b948230a5f380b237202033d051[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 11:03:30 2017 +0530
+
+    edit event form
+
+[33mcommit d2dc042a0836c6bb7affa92d4766ed7d9f27e53f[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 10:29:43 2017 +0530
+
+    location add package.json error
+
+[33mcommit 51f294fa4c2bbc14cb204eab6a22051fd609916d[m
+Merge: b18c9c9 b8840bc
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 10:27:56 2017 +0530
+
+    location add
+
+[33mcommit b18c9c998f0095acd152659f174bd35df17d337d[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Wed May 24 10:04:59 2017 +0530
+
+    location add
+
+[33mcommit b8840bcc9f31fd074840958162d9d61e37ad2125[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 23 19:36:20 2017 +0530
+
+    some minor changes
+
+[33mcommit 41188fb9dbb756a9ddd3bd228f35779e4f1b77a5[m
+Merge: 0e9f96f 45e7d0c
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 23 19:30:45 2017 +0530
+
+    merged code
+
+[33mcommit 0e9f96ff4090e41a7a5c06e62d21270b5f85cb34[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 23 18:22:26 2017 +0530
+
+    Changes regarding issue fix #15.
+
+[33mcommit 45e7d0c4d1099f60765cc131c32857bcf50c1b43[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Tue May 23 18:16:52 2017 +0530
+
+    view and edit events and create new locations
+
+[33mcommit eb64937cfd7609ef2be0b6d8087159e06e7b6326[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Tue May 23 11:30:08 2017 +0530
+
+    Fixed #28
+
+[33mcommit b2e1b008e23f6af0889aac064aaf6a6818e8510f[m
+Merge: 74262d6 20d22a0
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon May 22 18:41:30 2017 +0530
+
+    resolves issue #19 and #20 and working on #30
+
+[33mcommit 74262d690188c2af5f82afca8117fdeacbf074cc[m
+Author: Rajit garg <rajit@deligence.com>
+Date:   Mon May 22 18:29:46 2017 +0530
+
+    resolves issue #19 and #20 and working on #30
+
+[33mcommit 20d22a017d0e345017d005889dd75b6a57f57e9a[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 22 18:27:18 2017 +0530
+
+    Minor change in routes file
+
+[33mcommit cdb8eb6f3f6b19982773dfb7b73a9aeaec3c2a8b[m
+Author: amardeep-deligence <amardeep@deligence.com>
+Date:   Mon May 22 18:09:14 2017 +0530
+
+    Changes regarding issueFix 32 and 28
+
+[33mcommit de1a2530a7b3b0f17471bd9494e3dae63a4311db[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 15:59:15 2017 -0500
+
+    Adding events from admin dashboard
+
+[33mcommit 58fa0b69c0727b82f20955479253bf5be65965ff[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 15:58:35 2017 -0500
+
+    Event add and remove methods
+
+[33mcommit 3c06a2f9ffa0ca019a6440387f0b74a45fcb6b08[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 15:56:22 2017 -0500
+
+    Updated Check package
+
+[33mcommit f8f02fd8a64fc9998a003046de3b423e631a4512[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 12:29:30 2017 -0500
+
+    Fixed typo on comments
+
+[33mcommit 2b0613b040b41f17ad2d70a9b82327f7114e4202[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 12:28:51 2017 -0500
+
+    Created event_dev collection, publications and methods
+
+[33mcommit 133f196c26d7a92ae478b4e695f70af2133fb5f5[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 10:51:27 2017 -0500
+
+    removed unnecessary subscriptions
+
+[33mcommit c6e781a4d85580316d84b9aa144775af7e24ad27[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 14 10:15:05 2017 -0500
+
+    responsive improvements on admin UI
+
+[33mcommit 640d6266d2397e1031e6cbcd1c6a7cf98957a213[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat May 13 15:28:42 2017 -0500
+
+    Lightened colors on search buton @dashboard
+
+[33mcommit cc98a5f790092f0ab08c3f3f9fe234e3d777c3ca[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat May 13 15:22:10 2017 -0500
+
+    Color coding menu items
+
+[33mcommit 49fae38ff30db6f14ad1882d87022152ef4027c3[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat May 13 14:42:50 2017 -0500
+
+    Fixed bug with category names on admin dashboard
+
+[33mcommit 40fb3e3f10d0fd7151358a1ce804960bb734d663[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu May 11 10:49:48 2017 -0500
+
+    removed development logs
+
+[33mcommit 13e9d3e36d1a2534efbfb839b04788d98b00be03[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed May 10 14:11:48 2017 -0500
+
+    Returning sensis category in query items
+
+[33mcommit 1cd4d3a612f98fc7325180b9af588cef43b40d66[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed May 10 13:31:50 2017 -0500
+
+    Fixed search on category selection modal
+
+[33mcommit 177085e33ec2cb66bc69c0390460db640b7bac58[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed May 10 13:03:26 2017 -0500
+
+    Removing category query items
+
+[33mcommit 00b4ea92afc7e13304a85a8b5b9c900acfacf777[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 7 18:06:04 2017 -0500
+
+    Added categoryName helper to display selected category name using sensis category id
+
+[33mcommit 533b38fee68b93ca6f9f5b53b7dc5d07e854c03f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun May 7 15:38:57 2017 -0500
+
+    Adding selected categories to an array on each menu_item_dev document
+
+[33mcommit 8229a1692f4901781f8d0292ac258ce118f2b07b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed May 3 15:55:16 2017 -0500
+
+    SCSS linter config file
+
+[33mcommit 6a2c03ae048e758b03531ede60f64385b789e3ed[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed May 3 15:53:41 2017 -0500
+
+    panels on each menuItem
+
+[33mcommit 42c7719bd900302998357918b5d2ab94503ae8e0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon May 1 11:36:37 2017 -0500
+
+    Fixed all CRUD operations on menus
+
+[33mcommit 909830abba63c07c485714588227e8095744b152[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon May 1 10:51:45 2017 -0500
+
+    Improved menuItemDev.newMenuItem method
+
+[33mcommit 0ca1838f987eeaeaa548c4e6d136d7b9dc5b197e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon May 1 09:23:05 2017 -0500
+
+    Creating and saving unique IDs with each menu item
+
+[33mcommit b69cb0463e13cdb769255788bc4a3ae7d3fdebf6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon May 1 09:21:06 2017 -0500
+
+    Adapting logic to new data structure
+
+[33mcommit 3d19a12389e0eb5179a8f6637bc45f6b0155e457[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon May 1 09:07:49 2017 -0500
+
+    Added aggregate package
+
+[33mcommit de2f915d24b99741885071c7f6eecae143b83c48[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 30 17:04:20 2017 -0500
+
+    WIP, :poop: adding categories to menu items
+
+[33mcommit 87efafddb301aaa7a8061976c2d5af0921f811f1[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 30 15:53:13 2017 -0500
+
+    Creating new menu items with custom names
+
+[33mcommit 1b5a74024840fcb8d4ef0706f7385972af6681bf[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 30 13:07:02 2017 -0500
+
+    Adding typography classes for font weight
+
+[33mcommit 977a5ae178d1b36cc14a65a53c17fb471499dcf4[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 30 13:06:24 2017 -0500
+
+    Cleaning up
+
+[33mcommit 02927b3e8141c5cf82ad7320f87127a60fe2479f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 30 12:18:31 2017 -0500
+
+    All onRendered functions are named and without arrow shorthand
+
+[33mcommit d76c73608bfd15283bab630ce8a404c7d2d4e1b9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 28 14:21:13 2017 -0500
+
+    Improved homepage with an environmental variable used to create URL
+
+[33mcommit e1f776b2bb6c9dab6f4f4fbbf10fd4471a37e950[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 28 12:03:12 2017 -0500
+
+    Cleaned searchBar component :shower:
+
+[33mcommit f0a9b5820faa6398cf2eb899d8741b83bb77555b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 28 11:59:14 2017 -0500
+
+    Removed minified mapbox version
+
+[33mcommit 6b592808dc6768eb8615d4b194ebc52432e6322a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 27 16:24:15 2017 -0500
+
+    Closing the FAB when clicking on map or search box
+
+[33mcommit 60321f69870d894dca567949b089e11bc417b1f7[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 27 14:24:54 2017 -0500
+
+    Updated mobile side navigation
+
+[33mcommit 99657eb97da0a20093a1817cae624a1c85ec5a12[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 17:19:36 2017 -0500
+
+    Fixed menu and FAB bugs on deployment
+
+[33mcommit fa0e4b903d7f25329ec078af8bf37a629c5a9dea[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 16:40:52 2017 -0500
+
+    Improved looks for each menu in bottom-sheet-modal
+
+[33mcommit 9a8b2872dc946d55aed34507371d7966068db31d[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 16:40:16 2017 -0500
+
+    Fixed issue where FAB action button was loading a URL
+
+[33mcommit d45c80b5a44a658dc8fc78079b76cc749614605b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 16:33:07 2017 -0500
+
+    Fixed footer and bottom-sheet-modal backgrounds on desktop
+
+[33mcommit f055ef32412111c90a58f82eb96006ab7dcb20a4[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 16:16:13 2017 -0500
+
+    Fixed issue where double click was necessary to open bottom drawer with menus
+
+[33mcommit dd94856aedb274b182e6d76a73a2325c1475aa83[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 16:03:29 2017 -0500
+
+    Improved routing logic
+
+[33mcommit 52fdef27c54779a21227cb74a01de024d59b3bf7[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 15:30:36 2017 -0500
+
+    Homepage with page links for desktop and mobile
+
+[33mcommit f7ae7bc230c3dfb8ef91c6d81d78207756355701[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 15:05:48 2017 -0500
+
+    Added a page title when no client variable is selected
+
+[33mcommit 7c820b02457530f3627c0ac10f92c4a841a06cec[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 14:51:07 2017 -0500
+
+    fixed issue where footer was not rendered last
+
+[33mcommit 981f0368054f1475993c5f7be2ba77c2f5422b08[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 14:49:54 2017 -0500
+
+    Improved logout
+
+[33mcommit 653efeffdf60c672b073e214aa93c5b6dca68205[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 14:38:37 2017 -0500
+
+    removed init logs
+
+[33mcommit 1641938c0f4a39c6ff189b8c30fc1646adfc8417[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 12:14:35 2017 -0500
+
+    formatted buttons on admin panel and categories list
+
+[33mcommit b9b3d26d011b19647b3531917a190a1590abcf0b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 10:50:56 2017 -0500
+
+    created logout button and event handler
+
+[33mcommit 90e59336344a0df92e526cf6467bf207d2901d09[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 26 10:48:55 2017 -0500
+
+    Changed button order
+
+[33mcommit 38c83607cbfa4144a76cf96466d39c91137a7fbc[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 21:00:42 2017 -0500
+
+    Prevent reroute to admin panel
+
+[33mcommit f172e60fe47a97f6d1ee856e4d006a6a772f776e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 20:38:43 2017 -0500
+
+    last minute changes before sending MVP to client
+
+[33mcommit ed620acd96dff8d6135a1fb056490a8c257deb41[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 19:56:37 2017 -0500
+
+    Fixed admin dashboard and page title
+
+[33mcommit 17748188295c80c3884d4b5831de54029a90a31a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 19:46:53 2017 -0500
+
+    Tooltips in each marker popup
+
+[33mcommit 21aad96fb44a939124e3bc1d3fddd285aaa7e42e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:39:40 2017 -0500
+
+    A little color as menu background
+
+[33mcommit 0bafb9c60f08c34dd17f7830b115b3495a49da70[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:38:31 2017 -0500
+
+    Adding query string to search bar after successful query performed
+
+[33mcommit e54f88d62c94530b7998f4a865c344ddea98b6bd[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:36:40 2017 -0500
+
+    Removed click-to-toggle class from FAB
+
+[33mcommit 86b99366235a5b52b9fdaab41658e35fd206551c[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:20:35 2017 -0500
+
+    Removed unecessary style
+
+[33mcommit e022d408bf1e3c055ab0a79e143c5870531331bf[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:20:13 2017 -0500
+
+     loading queryed category on search box qhen loading markers
+
+[33mcommit bcd201f7ea6e58cb664f369d3e35066b1c5ad721[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 18:00:10 2017 -0500
+
+    Fixed issue with bottom menu z-index after loading markers
+
+[33mcommit a28831413e4444fe00d95248e2d3c611d3b1c293[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 17:59:41 2017 -0500
+
+    initilizing modals on route change
+
+[33mcommit f820f41d3f6b06e1e12e8f79a94b408a11be47cf[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 17:49:42 2017 -0500
+
+    Marker popup modal working
+
+[33mcommit 963471e206ab2e80f7f1c24f4f27b35638e3e571[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 17:45:40 2017 -0500
+
+    Added mapbox scss file, styling marker popups and modals
+
+[33mcommit e9d8b720f9a54f0b9b41a835a2b4ee49f9e67ba4[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 25 17:44:56 2017 -0500
+
+    working on footer, it now works on desktop and mobile
+
+[33mcommit 60bf5a37a6611d1290703cfd31c71cc2c8a7e9a9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 21:26:08 2017 -0500
+
+    hover effects on clickable items
+
+[33mcommit c2338c4876eddfe2686b6251a5cc42e296b2962f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 21:08:29 2017 -0500
+
+    Fixed sidebar on mobile
+
+[33mcommit 3314aa9882a6760b0a38a6f76cf3e8e3fa2e6c0f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 19:48:23 2017 -0500
+
+    Displaying results on map, still querying sensis
+
+[33mcommit 0089117b618b95bc0452326bc04facf5ad53d201[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 19:06:56 2017 -0500
+
+    Improved menu, always 100% v\isible
+
+[33mcommit 3129c27aa4f802eb802906a92b2dbfa4c3f4d843[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 18:49:49 2017 -0500
+
+    Dynamic menus on front end
+
+[33mcommit 62e1d1446f90d10f44befad436320e5bc4196690[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 16:06:07 2017 -0500
+
+    Admin sidebar control button on mobile
+
+[33mcommit 94a4e28ac77871f964af43a576dbbccb28a26676[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 15:19:05 2017 -0500
+
+    Landing page for admin and redirect to client homepage
+
+[33mcommit a69af1b7ef47b63a964acfe20e33012453d85942[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 15:18:38 2017 -0500
+
+    Improved feedback masages on update and error
+
+[33mcommit d6c2ca0180a886d471fae52c9bd3a91bcd3b8f1a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 13:13:00 2017 -0500
+
+    Managing menus as admin, CRUD functionality ready
+
+[33mcommit 027bf93cb3f2747194cb3b64928f15e68cb38f97[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 13:11:49 2017 -0500
+
+    Removed validation code from client
+
+[33mcommit 6d2316b1a92b1a32df1b93c36e29027a8c842164[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 13:11:05 2017 -0500
+
+    cleaned methods file, removed unecessary code
+
+[33mcommit f42e0c5c95cef2c6a4a3d517e93260bf131b0bb9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 13:03:22 2017 -0500
+
+    menuItemDev.update method now checks if menu item is already selected
+
+[33mcommit 1a6efa85ed2e8ab65639338aa12af86ed66e93b2[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 24 11:16:44 2017 -0500
+
+    Gray footer again
+
+[33mcommit bfdb465ad2a99838fd8536b9c8584418b1e01001[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 18:54:47 2017 -0500
+
+    moved modal closing function to start of event handler
+
+[33mcommit d55a9f796518a1ee9222991fd15bb2ea851d45eb[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 17:58:17 2017 -0500
+
+    Managing and viewing menus per client
+
+[33mcommit 9db6b5ce17a58fe9588cf050577a29ac0d4b784e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 16:17:01 2017 -0500
+
+    Loading client menus dynamically
+
+[33mcommit 36fa8c9204228cfb07a3ac96d6871db8be9c7f6b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 16:16:25 2017 -0500
+
+    created menuItem route
+
+[33mcommit a3f2f2c954a991c90286345e6e72758e17e49f33[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 16:15:42 2017 -0500
+
+    Created menuItem.remove method
+
+[33mcommit 7ec1f374f10bf1f0464a28511c6c042355c29635[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 12:13:17 2017 -0500
+
+    Cleaned up files a bit :trollface:
+
+[33mcommit 3a96c948474adb9d2298568b18531c84d74d56b0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 23 00:10:17 2017 -0500
+
+    Created MenuItemDev.update method
+
+[33mcommit 2bc8f0a3f4aac6a68743ef3df3cd1fd5f84c06c4[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 21:19:25 2017 -0500
+
+    Created doublebay route and redirect
+
+[33mcommit a566b0ca1a76ea0201cbc714300239d16ec5f1f3[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 21:18:43 2017 -0500
+
+    Added meteor shell package
+
+[33mcommit 9db15167b7e614a8e576072f5b35b523ff8fb098[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 16:59:03 2017 -0500
+
+    Doublebay background menu
+
+[33mcommit c6196728e3b74f7b094e8546cfee18bf1431a722[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 16:55:43 2017 -0500
+
+    Openong menu dynamically
+
+[33mcommit 5e175a33369cc4216d29757d060fd9e9c9947990[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 16:41:58 2017 -0500
+
+    Added menu._id ad container id
+
+[33mcommit 79c36dadb30313533f79a93c99c56040bc0c7c20[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 16:41:02 2017 -0500
+
+    added event handler that returns menuID
+
+[33mcommit 072af55f093f1cba16be8e9f7e616f73940cc3d0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sat Apr 22 16:38:57 2017 -0500
+
+    added alanning:roles
+
+[33mcommit b449dead8af45a8c4fe5cab691eefe8a240faf6a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 20 16:52:24 2017 -0500
+
+    Dynamic menus linked
+
+[33mcommit f90404b380ba22b6368d8cfa7d2089801162ec16[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 20 15:38:35 2017 -0500
+
+    fab bug fixed
+
+[33mcommit 572662e82e0b195046a371d310e0b1212f137b11[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 20 14:55:33 2017 -0500
+
+    Dynamic and styled menus
+
+[33mcommit 1b8ca72afae5b30e0ebdaeece6fcff0a1b0d4cbc[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 20 12:39:37 2017 -0500
+
+    Loading custom landing page for each client
+
+[33mcommit 306be276e740aabf58a271d97b5b30865dad42c4[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Thu Apr 20 13:09:07 2017 +1000
+
+    clarified id references to _prod and _dev
+    
+    also made a division line between data responsibilities in reference to
+    the admin subdomain versus other subdomains , each referencing its own
+    collections
+
+[33mcommit 6314ec27638c0651f507691d6249ad62fda22431[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 18:40:47 2017 -0500
+
+    Separated category list into its component, loading from modal now
+
+[33mcommit 35297487b66bd922f67c920cc581c3558896b7a6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 16:54:33 2017 -0500
+
+    Admins can edit and delete menu items
+
+[33mcommit b2017a816e6391cb70177bb73829ab81fd01c37a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 15:45:23 2017 -0500
+
+    Admins can insert menu items in DB
+
+[33mcommit b3ea51aedacb4dd2de126a3a789d84023e1c6f08[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 15:44:30 2017 -0500
+
+    Adding admin to currentCLient sesssionvariable
+
+[33mcommit ad4e041fc3664707f172fee7e022c4339668f9ec[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 15:43:49 2017 -0500
+
+    Created menu_item_dev collection, including  methods andd publications files
+
+[33mcommit 465f21573ca49d2894e25a769277a0f8b7b135e1[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 15:42:39 2017 -0500
+
+    Created admin stylesheet file
+
+[33mcommit ca094017d11bd13efef2a8fe9375cf0dff647664[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 19 15:41:43 2017 -0500
+
+    Imported admin stylesheet
+
+[33mcommit 7fcda909e0ffe9216671fb3e5bbbd28c589ea3f9[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Wed Apr 19 16:39:14 2017 +1000
+
+    data diagram for wiki
+    
+    containing data objects for envent.ly
+
+[33mcommit 4d2429dccd45bfb9f5fcb3313f7eba94ff601038[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 23:03:02 2017 -0500
+
+    Simpler popup, to avoid errors when data returns undefined
+
+[33mcommit 29c8cf168e9f6a0db86fe68e67483adc62af17fc[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 22:37:15 2017 -0500
+
+    Working example selecting from menu, tested
+
+[33mcommit e349255e0ced24f398f9adc27f7fd4e21f1a0e07[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 17:26:42 2017 -0500
+
+    Changed API queries to https
+
+[33mcommit cb1898b17a16c1d8f0fe65d2a8a211e8c4eb03bc[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 17:15:32 2017 -0500
+
+    Showing icons on map based on query from menu selection
+
+[33mcommit 4b14524c677d54bbf6fd12e8e90760eadd26c414[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 14:03:03 2017 -0500
+
+    Better routing between subdomains
+
+[33mcommit 4508b37b7b7a5cc7a3f72eedb2c58005dee12e40[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 13:32:01 2017 -0500
+
+    removed unecessary code
+
+[33mcommit 6c07d1eaabf08ad23fa32e1dc0e9fb53d985884c[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 13:24:25 2017 -0500
+
+    Dynamically loading map location based on subdomain
+
+[33mcommit 9dd59e875754aae287f5fc481b6f8b8704d33ea8[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 18 09:17:39 2017 -0500
+
+    Created globalHelpers file and a global helper  decoding text for display
+
+[33mcommit df0aff47e09fc8c5add1880a27afc40229440d38[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 19:20:26 2017 -0500
+
+    Styling improvementes on admin dashboard
+
+[33mcommit 88fc459f34f65269e1189fb0ae8f826d90336f4e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 18:21:05 2017 -0500
+
+    Fixed signup template
+
+[33mcommit 8f98027e85317524eb708059494855015e175a9b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 16:54:57 2017 -0500
+
+    Fix searchBar styles on search suggestions
+
+[33mcommit 108d1ace3e27bd3fcee52f9d069396828bb13ba2[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 16:11:55 2017 -0500
+
+    Admin can add menu item from dashboard
+
+[33mcommit 0737e4ef925302ddf5d7f6fb89bc37419a5e3b21[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 15:36:50 2017 -0500
+
+    Delete button on admin search form works properly now
+
+[33mcommit 8578113941ee63da681ae77773b904a9d17ef8f1[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 14:55:09 2017 -0500
+
+    Admins can select categories for client menu
+
+[33mcommit dac2cb964295a42925ae4924ab29a80da8bb61ca[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 14:04:54 2017 -0500
+
+    Added bert alerts package
+
+[33mcommit 0fded9c0f5c96037c038df67fca91bd0805f5973[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 02:26:07 2017 -0500
+
+    Search/autocomplete working on homepage
+
+[33mcommit 79b2f6aee808260f11cdcf335d9a22ba972f38ff[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 17 02:25:33 2017 -0500
+
+    Created Loader template
+
+[33mcommit 259384391f6ed9fc90031557d688d6b21f26face[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 16 23:53:57 2017 -0500
+
+    Search on admin page implemented
+
+[33mcommit 32fbfe3eb763ceaf6c0acbc7efa4931265ae3537[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 16 23:52:16 2017 -0500
+
+    Added category search publication
+
+[33mcommit 25293171db5afad4094d23d07fa33414ff91674f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 19:29:22 2017 -0500
+
+    Completed test running meteor with --production flag, modules package was reverted by meteor build tool
+
+[33mcommit 53f2da88b2b7e59de3a77501ec38368fbe403a36[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 19:24:14 2017 -0500
+
+    Reverted meteor release to 1.4.3.2, Mapbox was not loading on production after update
+
+[33mcommit 2eb34548a646c065dda94327ce07e9164694fd5a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 19:22:25 2017 -0500
+
+    Reverted packages and build tool version to fix minification error on deployment
+
+[33mcommit e0436722df8ae2703ef032b9f8f160836f781f7d[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 18:46:42 2017 -0500
+
+    Changed mapbox import entrypoint to dist version, trying to fix deployed app
+
+[33mcommit a1b1beba64d49db2d10ef7318be226ebc7f59123[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 18:11:49 2017 -0500
+
+    Querying sensis over HTTPS
+
+[33mcommit 83d2c5722a38391404db205ebbf48d04ec54ba12[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 17:57:55 2017 -0500
+
+    Loading categories data on a table on Admin template
+
+[33mcommit 5e323a221060e417f844b34ca70aa6b7dd9239c0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 16:59:20 2017 -0500
+
+    Added template import statement
+
+[33mcommit a0f70014909052c3e7ac88c68e3994a8be8fc147[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 16:58:04 2017 -0500
+
+    Dynamic footer does not show www
+
+[33mcommit 7306229bcfd7e9d3a5762aa8c8950e6d40167e25[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 16:57:08 2017 -0500
+
+    removed get request, moved it to Admon template
+
+[33mcommit 370c5c0459b2bffe77b6d27219c5dbba7078f81c[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 16:50:47 2017 -0500
+
+    removed resizing property feom mapbox initialization
+
+[33mcommit 7e0517fd24f5a771fef7127a026583977abadb16[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 10:58:33 2017 -0500
+
+    renamed files and layout template
+
+[33mcommit fdddda813e0f4ec5826fd4634293e29753c9e796[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 10:58:00 2017 -0500
+
+    Dynamic footer template and helper created
+
+[33mcommit 3bf2c426793ea4af660847697f9c844d6ac32d25[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 10:57:24 2017 -0500
+
+    dynamic routing implemented
+
+[33mcommit 15fe6469dba1a78ff3c72ce21ffda2783fa7ce9f[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 10:33:47 2017 -0500
+
+    Removed auth helpers from main layout and added them to admin layout
+
+[33mcommit 0b23b19cb21c9b990fc4e892b39dedba4e561d29[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 13 10:31:33 2017 -0500
+
+    Meteor update to 1.4.4.1
+
+[33mcommit c06c894a2b10359fa0aa94169659724ce0ce80a3[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 20:08:11 2017 -0500
+
+    Created admin layout with authentication enabled
+
+[33mcommit 239640549aae8fdd138f4ed31dc7157ec403b08f[m
+Merge: e8c543f 6bbed1c
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 18:13:04 2017 -0500
+
+    Merge branch 'master' of github.com:Envently/envent.ly
+
+[33mcommit e8c543fbb7daedec6c66c4ee47f6fd4e4dccc7c4[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 18:12:31 2017 -0500
+
+    Bottom Sheet modals and triggers implemented
+
+[33mcommit 7d2f1c69a9325410d5706875d3b0b84a75c6b0b0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 18:10:07 2017 -0500
+
+    Created bottom sheet modal component
+
+[33mcommit 7c3e424769f9726b680fda6fd843d316aa962613[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 18:09:34 2017 -0500
+
+    Added HTTP package
+
+[33mcommit 7360f6a193107bac06f7ec4a75589e1d4afb618b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 16:35:10 2017 -0500
+
+    Removed unnecesary links from fuuter and made it smaller. It works better on mobile now
+
+[33mcommit 54a236a187f0768fd9b3b8520d358bf6537ee8d6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 16:08:38 2017 -0500
+
+    FAB opens on click only, not on hover
+
+[33mcommit 5329a04a89a48a738e8648c3427a14e26ddf1648[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 12 15:58:10 2017 -0500
+
+    removed logout button from FAB
+
+[33mcommit 6bbed1c3f7845b1240713d417bd85941a254c7fc[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Mon Apr 10 16:39:46 2017 +1000
+
+    moving content to wiki
+    
+    this stuff is not appropriate and doesn't belong in code versioning, check [the wiki](https://github.com/Envently/envent.ly/wiki) for updates
+
+[33mcommit 612219320c39b4eb71882eb60254687382d3dcb6[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Mon Apr 10 15:47:06 2017 +1000
+
+    updated readme with categories formulation
+    
+    to wrangle the correct data from sensis and make it effective in the app, categorygroups are to be used
+
+[33mcommit aa19a229a240a48d059ccbceb74959215a0e4184[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 18:51:04 2017 -0500
+
+    Fixed issue 1, map now fills its container on reload
+
+[33mcommit 467c0d3154a4d686dae0c3de867116e1b6b95cc0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:51:17 2017 -0500
+
+    Implemented auth logic, now users need to login to see any content
+
+[33mcommit 7ce28079779d61d3a34ed068576fb72d89616ed5[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:50:28 2017 -0500
+
+    Moved mapbox initialization to template
+
+[33mcommit 9c42793f896fc66bd0d41c03764118516534b03e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:49:28 2017 -0500
+
+    Added logout button and event handler
+
+[33mcommit a9f4a38873306db1f8c91dfee5e1bf1d1f05236b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:48:45 2017 -0500
+
+    Login form is now using materialize styles
+
+[33mcommit 288722cd3132a8b94c49d7a5ddd317f61c7b24e9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:46:38 2017 -0500
+
+    Matched template name and changed functions to arrow callback style
+
+[33mcommit f85b95bc7fe04d41c7ceed113334e98a2acf2551[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:44:08 2017 -0500
+
+    Rerouting after login implemented
+
+[33mcommit 3a4941e78874f31ba2d6b4448768387ab37f9a83[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:40:55 2017 -0500
+
+    Removed useraccounts:unstyled and reordered packages for proper loading
+
+[33mcommit a5293123c26b60b37ceed34ac8359ee530e154a9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:39:41 2017 -0500
+
+    Renamed template to camelcase as defined on linter
+
+[33mcommit b1e46aa0a2067b4ad3f80ff786c36f765fdfa7f8[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Sun Apr 9 16:36:53 2017 -0500
+
+    Centering signup/login form on page
+
+[33mcommit 912dce82a2558a6f60203cbacdf63b9e37a2d944[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 19:29:00 2017 -0500
+
+    Removed accounts-ui package since it is not being used
+
+[33mcommit 36045d4ede86569b94649b9f3f0347c13f44e450[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 19:28:00 2017 -0500
+
+    Added redirect after login
+
+[33mcommit 0de1f957d60afd9fa9eee57cf05e6160c5b3bfaa[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 19:27:38 2017 -0500
+
+    Imported login configuration on client entrypoint
+
+[33mcommit dc805152a945ee7a629562bbcaabb18bf88c9d73[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 19:26:39 2017 -0500
+
+    Added Bcrypt package
+
+[33mcommit 1064c01a889f8bd165da6908bbcfc6db8b4b5bd6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 19:25:59 2017 -0500
+
+    Created login template, layout and configuration files
+
+[33mcommit 4bde89a393418f48d41be7fe6066ae780d892396[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Fri Apr 7 16:07:03 2017 -0500
+
+    Added accounts-ui, accounts-password, useraccounts:materialize and useraccounts:flow-router packages
+
+[33mcommit 72d6f4a660bd9ece8396fc39e15d8e88d863e97a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:46:26 2017 -0500
+
+    Loading mapbox key from settings file, and current year from Moment.js
+
+[33mcommit 2008403bed97d2fd11712a707efdde30a7261ceb[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:27:24 2017 -0500
+
+    Added Moment.js and Mapbox NPM packages
+
+[33mcommit 5db0fbf9a8559bfca2dd14a023727ece4ae397ad[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:26:53 2017 -0500
+
+    Removed mapbox script tag
+
+[33mcommit 5b7bc8065f3a90c18523e414f680bd2df4f45d77[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:11:36 2017 -0500
+
+    Renamed base templates for consistency
+
+[33mcommit 6094c8d8741c4aa6f5f4ed44c1673fa5a6292d23[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:10:59 2017 -0500
+
+    Added mapbox component
+
+[33mcommit a017da3d360c6ed95a721fc6d915406d584cbf8e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:05:56 2017 -0500
+
+    Turned no-session rule off from linter
+
+[33mcommit 3002240e6309a107ca761c256edf6300fac53ed1[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Thu Apr 6 15:05:10 2017 -0500
+
+    Added Session Package
+
+[33mcommit a587f3db6d0a5ff02f2d106a1e4bf4fdf8d53cc5[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Thu Apr 6 16:40:15 2017 +1000
+
+    Update README.md
+
+[33mcommit 39e7233b182e09ba299e12e8db4d392fa0ad0fb6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:55:51 2017 -0500
+
+    Matched colors from codepen example
+
+[33mcommit 7e16761883bf55eaf49004af1f01c9c3abf8dfa1[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:55:22 2017 -0500
+
+    Added script to position FAB above footer regardless of its height
+
+[33mcommit b61412035090b90f286783804e316aaafd51fb0a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:54:39 2017 -0500
+
+    Created footer component
+
+[33mcommit 7327dc015e51e4da5c80bebfcaf7436f3387923a[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:54:03 2017 -0500
+
+    Added footer to homepage
+
+[33mcommit 430d3b9048c7cc831b3c857a43bf5fdefe95c17b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:51:58 2017 -0500
+
+    Created home.scss aded sticky footer and fab styles. Also added to pipeline
+
+[33mcommit 586e25246dc3ec19da24ccdf9fe89fe9f0581d55[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:50:30 2017 -0500
+
+    Removed no-undefined rule from linter
+
+[33mcommit 100de3e7bec1a647df4cb6e9ca3ef837346d9112[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 18:49:56 2017 -0500
+
+    Set <body> as root for BlazeLayout
+
+[33mcommit b49412ce873d69fbf4bac91662d0daef2bd8d718[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Wed Apr 5 17:21:56 2017 -0500
+
+    Created searchBar component and added it to homepage
+
+[33mcommit 1398e64aacc9cb41a1645aa84d58e514fd5136ab[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Wed Apr 5 16:48:20 2017 +1000
+
+    more readme content
+    
+    some more details added, milestones and feature items of the MVP
+
+[33mcommit db90c15e82459d18db2d8626331c35ceffb125d6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 20:01:58 2017 -0500
+
+    Removed files that should not be tracked :ambulance:
+
+[33mcommit 9d8bb10133db53d328cada5d6a0d708ceada4657[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:57:23 2017 -0500
+
+    Fixed gitignore file
+
+[33mcommit 66636e23cfd8355096a05917a88c09293ad88812[m
+Merge: 56562b4 be52046
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:51:02 2017 -0500
+
+    Merged with JaimeDev branch
+
+[33mcommit be520463da7fc5cb92d1528c6109affc7f1bb122[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:35:09 2017 -0500
+
+    fixed routing without subdomain
+
+[33mcommit 3d9da06ed995b0f5f9c45249463d5cfc56cba48b[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:32:46 2017 -0500
+
+    Simple subdomain routing, probably needs work
+
+[33mcommit aa8aa133031e37ae5a42c7c8befa78c547abfc04[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:05:58 2017 -0500
+
+    Removed LESS files
+
+[33mcommit 5465e4fabef0957cca501d4ae61beac5d4b27a32[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:05:38 2017 -0500
+
+    Imported and added FAB component to homepage
+
+[33mcommit 2ca7ec8fd41494de12076dd79f4a9ce49d766f2c[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:04:55 2017 -0500
+
+    Created fixed action button component
+
+[33mcommit f6bde5f21682f522c424b833ffa65111aca891a6[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:03:59 2017 -0500
+
+    Switched from LESS to SASS
+
+[33mcommit deeedbb2408e38a718991d6ecf9225d7184afe94[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:03:20 2017 -0500
+
+    Switched to SASS
+
+[33mcommit 3d6ab56ef19ff10656308413c464e6d4cf44d15e[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:02:20 2017 -0500
+
+    Added link to materialize icons font
+
+[33mcommit c9e2bd738883f5affeef5989e608b4e904ac1366[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 19:01:16 2017 -0500
+
+    Removed LESS, added SASS and materialize packages
+
+[33mcommit 26348c6eb87c02724c69df19de07bb0e672619f9[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 18:59:46 2017 -0500
+
+    Updated meteor to 1.4.3.2
+
+[33mcommit 6d8a72b0e3b1a8002513437e9568c07f332eb9b0[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 18:59:13 2017 -0500
+
+    Updated meteor to 1.4.3.2
+
+[33mcommit 56562b4c9405a5637681dba6fde65e149a548714[m
+Merge: a1b98ff 9a4f8d0
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 17:06:18 2017 -0500
+
+    Merge branch 'master' of github.com:Envently/envent.ly
+
+[33mcommit b62bb289938365712d27413ffa65cc03a8cf9f9b[m
+Merge: 07c7bb5 9a4f8d0
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 17:04:15 2017 -0500
+
+    Merge branch 'master' of github.com:Envently/envent.ly into jaimeDev
+
+[33mcommit a1b98ffb37faae6781a0e3fac0b45a7811b172ed[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 17:03:46 2017 -0500
+
+    Merge with jaimeDev branch
+
+[33mcommit 07c7bb5efde9d09d06e12029390949bb0970f177[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 16:56:16 2017 -0500
+
+    Meteor scaffolded install
+
+[33mcommit 1dfb0d545b761c6de1246b0b5250dbd4852d0cdb[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Tue Apr 4 16:55:42 2017 -0500
+
+    Added airbnb style guide lint plugin and dependencies, fine tuned for meteor
+
+[33mcommit 9a4f8d017f1d1377fc4a2b38fad5c8a6ed49d1ec[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Tue Apr 4 11:58:38 2017 +1000
+
+    initial commit of readme
+    
+    as much info as possible at this point, plenty of blanks to fill in
+
+[33mcommit e2a3fc65c132a338c9e438098b01e5b325e0036c[m
+Author: JaimeVelasco <contact@jaimevelas.co>
+Date:   Mon Apr 3 19:40:41 2017 -0500
+
+    Testing push rights
+
+[33mcommit afa672832ddcdf43a60005d308f153af7754aaa9[m
+Author: Michal Polonski <polonski@gmail.com>
+Date:   Mon Apr 3 15:31:27 2017 +1000
+
+    Initial commit

@@ -1,0 +1,54 @@
+.pagination li.active {
+    background-color: #2bbbad;
+}
+
+.pagination li.hover {
+    background-color: silver;
+}
+
+select[name=location-datatable_length] {
+    display: inline;
+}
+
+.sorting-icon {
+    color: silver;
+    cursor: pointer;
+}
+
+.category {
+    margin: 10px 10px;
+}
+
+.category a.btn {
+    padding: 0px 5px;
+    width: 100%;
+}
+
+.margin-top-20 {
+    margin-top: 20px!important;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0px!important;
+}
+
+.tinyicon {
+    display: inline-block;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.tinyicon i {
+    display: block;
+    line-height: 10px;
+}
+#location-datatable td  {
+    border:1px solid black;
+}
+#location-datatable th  {
+    border:1px solid black;
+}
+/*.category {
+	margin: 20px; border: 1px solid grey; cursor: pointer; overflow: hidden; margin-top: 0.36%; margin-left: 0.4%;
+}
+*/

@@ -1,0 +1,48 @@
+
+#subDomainEdit, #subDomainDelete {
+	cursor: pointer;
+}
+
+.selectedSubdomain {
+	background: #beb9b9;
+}
+
+.subdomainIconSize{
+	font-size: 1em;
+}
+
+.create-subdomain {
+	background: #fff;
+  padding: 13px;
+  border: solid 2px #fff;
+  margin-top: 50px;
+}
+
+#subdomainContainer > .card-panel {
+	background-color: gainsboro;
+}
+
+#editModal {
+	display: none
+}
+
+.gap {
+	margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.activate {
+	color: #218838;
+}
+
+.deactivate {
+	color: #dc3545;
+}
+
+.dark {
+	color: #343a40
+}
+
+.action-list > li {
+    display: inline-block;
+}
